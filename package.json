@@ -2,6 +2,7 @@
   "name": "nuxt-ui-pro-template-docs",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@8.15.5",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port 4512",
