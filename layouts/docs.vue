@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { filter, filterAndExtract } from '~/utils/navigation'
+
 const lang = useLang().lang
 
 const navigation = inject<Ref<NavItem[]>>('navigation')

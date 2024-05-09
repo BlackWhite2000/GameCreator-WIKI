@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxthq/studio',
     'nuxt-og-image',
-    "@nuxt/image",
-    "nuxt-icons",
+    '@nuxt/image',
+    'nuxt-icons',
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt'
   ],
@@ -46,6 +46,6 @@ export default defineNuxtConfig({
     classSuffix: '',
     dataValue: 'theme',
     preference: 'dark',
-    fallback: 'dark',
-  },
+    fallback: 'dark'
+  }
 })

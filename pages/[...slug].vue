@@ -48,22 +48,47 @@ const links = computed(() => [toc?.bottom?.edit && {
 
 <template>
   <UPage>
-    <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
+    <UPageHeader
+      :title="page.title"
+      :description="page.description"
+      :links="page.links"
+      :headline="headline"
+    />
 
     <UPageBody prose>
-      <ContentRenderer v-if="page.body" :value="page" />
+      <ContentRenderer
+        v-if="page.body"
+        :value="page"
+      />
       <hr v-if="langSurround?.length">
       <UContentSurround :surround="langSurround" />
     </UPageBody>
 
-    <template v-if="page.toc !== false" #right>
+    <template
+      v-if="page.toc !== false"
+      #right
+    >
+      <UContentToc
+        :title="toc?.title"
+        :links="page.body?.toc?.links"
+      >
+        <template
+          v-if="toc?.bottom"
+          #bottom
+        >
+          <div
+            class="hidden lg:block space-y-6"
+            :class="{ '!mt-6': page.body?.toc?.links?.length }"
+          >
+            <UDivider
+              v-if="page.body?.toc?.links?.length"
+              type="dashed"
+            />
 
-      <UContentToc :title="toc?.title" :links="page.body?.toc?.links">
-        <template v-if="toc?.bottom" #bottom>
-          <div class="hidden lg:block space-y-6" :class="{ '!mt-6': page.body?.toc?.links?.length }">
-            <UDivider v-if="page.body?.toc?.links?.length" type="dashed" />
-
-            <UPageLinks :title="toc.bottom.title" :links="links" />
+            <UPageLinks
+              :title="toc.bottom.title"
+              :links="links"
+            />
           </div>
         </template>
       </UContentToc>

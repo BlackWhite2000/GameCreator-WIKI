@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import { filter, filterAndExtract } from '~/utils/navigation'
+
 const lang = useLang().lang
 
 const { seo } = useAppConfig()
@@ -26,7 +27,7 @@ useHead({
 
 useSeoMeta({
   titleTemplate: `%s - ${seo?.siteName}`,
-  ogSiteName: seo?.siteName,
+  ogSiteName: seo?.siteName
 })
 
 provide('navigation', navigation)
@@ -49,7 +50,11 @@ const tocData = filterAndExtract(filter(navigation.value, lang), lang)
     <AppFooter />
 
     <ClientOnly>
-      <LazyUContentSearch :files="files" :navigation="tocData" :hideColorMode="true" />
+      <LazyUContentSearch
+        :files="files"
+        :navigation="tocData"
+        :hide-color-mode="true"
+      />
     </ClientOnly>
 
     <UNotifications />

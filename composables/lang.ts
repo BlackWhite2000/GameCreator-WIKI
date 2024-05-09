@@ -1,7 +1,6 @@
 import { defineStore } from 'pinia'
 
 export const useLang = defineStore('lang', () => {
-
   const lang = ref<'zh-cn' | 'zh-tw' | 'en'>('zh-cn')
   const isSetLang = ref(false)
 
@@ -10,5 +9,5 @@ export const useLang = defineStore('lang', () => {
     isSetLang
   }
 }, {
-  persist: true,
+  persist: true
 })

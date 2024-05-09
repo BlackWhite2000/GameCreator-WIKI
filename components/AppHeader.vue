@@ -13,24 +13,42 @@ const { header } = useAppConfig()
         <UColorModeImage v-bind="{ class: 'h-6 w-auto', ...header?.logo }" />
       </template>
       <template v-else>
-        <NuxtIcon name="logo" class="logo" filled></NuxtIcon>
+        <NuxtIcon
+          name="logo"
+          class="logo"
+          filled
+        />
         GCW
-        <UBadge label="GameCreator WIKI" variant="subtle" class="mb-0.5" />
+        <UBadge
+          label="GameCreator WIKI"
+          variant="subtle"
+          class="mb-0.5"
+        />
       </template>
     </template>
 
-    <template v-if="header?.search" #center>
+    <template
+      v-if="header?.search"
+      #center
+    >
       <UContentSearchButton class="hidden lg:flex" />
     </template>
 
     <template #right>
-      <UContentSearchButton v-if="header?.search" :label="null" class="lg:hidden" />
+      <UContentSearchButton
+        v-if="header?.search"
+        :label="null"
+        class="lg:hidden"
+      />
 
       <UColorModeButton v-if="header?.colorMode" />
 
       <template v-if="header?.links">
-        <UButton v-for="(link, index) of header.links" :key="index"
-          v-bind="{ color: 'gray', variant: 'ghost', ...link }" />
+        <UButton
+          v-for="(link, index) of header.links"
+          :key="index"
+          v-bind="{ color: 'gray', variant: 'ghost', ...link }"
+        />
       </template>
     </template>
 
