@@ -24,30 +24,30 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => qu
 const langSurround = surround.value.filter(item => item._path.startsWith(`/${lang}`))
 
 useSeoMeta({
-  title: page.value.title,
-  ogTitle: `${page.value.title} - ${seo?.siteName}`,
-  description: page.value.description,
-  ogDescription: page.value.description
+  title: page?.value?.title,
+  ogTitle: `${page?.value?.title} - ${seo?.siteName}`,
+  description: page?.value?.description,
+  ogDescription: page?.value?.description
 })
 
 defineOgImage({
   component: 'Docs',
-  title: page.value.title,
-  description: page.value.description
+  title: page?.value?.title,
+  description: page?.value?.description
 })
 
 const headline = computed(() => findPageHeadline(page.value))
 
 const links = computed(() => [toc?.bottom?.edit && {
   icon: 'i-heroicons-pencil-square',
-  label: indexPage.value.pageEditLabel,
+  label: indexPage?.value?.pageEditLabel,
   to: `${toc.bottom.edit}/${page?.value?._file}`,
   target: '_blank'
 }, ...(toc?.bottom?.links || [])].filter(Boolean))
 </script>
 
 <template>
-  <UPage>
+  <UPage v-if="page">
     <UPageHeader
       :title="page.title"
       :description="page.description"

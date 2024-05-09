@@ -1,8 +1,11 @@
 export function filter(data, lang) {
+  if (!data || !lang) return null
   return data.filter(item => item._path.includes(`/${lang}`) || (item.children && filter(item.children, lang).length > 0))
 }
 
 export function filterAndExtract(data, lang, key = 'title') {
+  if (!data || !lang || !key) return null
+
   const filteredData = []
 
   data.forEach((item) => {

@@ -5,15 +5,15 @@ const { data: page } = await useAsyncData('index', () => queryContent(`/${lang}`
 
 useSeoMeta({
   titleTemplate: '',
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
+  title: page?.value?.title,
+  ogTitle: page?.value?.title,
+  description: page?.value?.description,
+  ogDescription: page?.value?.description
 })
 </script>
 
 <template>
-  <div>
+  <div v-if="page">
     <ULandingHero
       v-if="page && page.title"
       class="mb-0 !pt-20 !pb-12"
