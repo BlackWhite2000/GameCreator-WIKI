@@ -21,7 +21,7 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => qu
   .only(['title', 'description', '_path'])
   .findSurround(withoutTrailingSlash(route.path))
 )
-const langSurround = surround.value.filter(item => item && item._path && item._path.startsWith(`/${lang}`));
+const langSurround = surround.value.filter(item => item && item._path && item._path.startsWith(`/${lang}`))
 
 useSeoMeta({
   title: page?.value?.title,
@@ -48,21 +48,47 @@ const links = computed(() => [toc?.bottom?.edit && {
 
 <template>
   <UPage v-if="page">
-    <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
+    <UPageHeader
+      :title="page.title"
+      :description="page.description"
+      :links="page.links"
+      :headline="headline"
+    />
 
     <UPageBody prose>
-      <ContentRenderer v-if="page.body" :value="page" />
+      <ContentRenderer
+        v-if="page.body"
+        :value="page"
+      />
       <hr v-if="langSurround?.length">
       <UContentSurround :surround="langSurround" />
     </UPageBody>
 
-    <template v-if="page.toc !== false" #right>
-      <UContentToc :title="toc?.title" :links="page.body?.toc?.links">
-        <template v-if="toc?.bottom" #bottom>
-          <div class="hidden lg:block space-y-6" :class="{ '!mt-6': page.body?.toc?.links?.length }">
-            <UDivider v-if="page.body?.toc?.links?.length" type="dashed" />
+    <template
+      v-if="page.toc !== false"
+      #right
+    >
+      <UContentToc
+        :title="toc?.title"
+        :links="page.body?.toc?.links"
+      >
+        <template
+          v-if="toc?.bottom"
+          #bottom
+        >
+          <div
+            class="hidden lg:block space-y-6"
+            :class="{ '!mt-6': page.body?.toc?.links?.length }"
+          >
+            <UDivider
+              v-if="page.body?.toc?.links?.length"
+              type="dashed"
+            />
 
-            <UPageLinks :title="toc.bottom.title" :links="links" />
+            <UPageLinks
+              :title="toc.bottom.title"
+              :links="links"
+            />
           </div>
         </template>
       </UContentToc>

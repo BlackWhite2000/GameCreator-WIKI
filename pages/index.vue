@@ -14,19 +14,11 @@ useSeoMeta({
 
 <template>
   <div v-if="page">
-    <ULandingHero
-      v-if="page && page.title"
-      class="mb-0 !pt-20 !pb-12"
-    >
+    <ULandingHero v-if="page && page.title" class="mb-0 !pt-20 !pb-12">
       <div
-        class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-      />
+        class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
       <template #title>
-        <NuxtIcon
-          name="logo"
-          class="logo-index flex justify-center pb-5 items-center"
-          filled
-        />
+        <NuxtIcon name="logo" class="logo-index flex justify-center pb-5 items-center" filled />
         <div class="text-6xl tracking-wide text-primary">
           {{ page.title }}
         </div>
@@ -36,12 +28,7 @@ useSeoMeta({
           {{ page.description }}
         </div>
       </template>
-      <UContentSearchButton
-        size="xl"
-        class="mt-[-3.5rem]"
-        color="primary"
-        :label="page.description"
-      />
+      <UContentSearchButton size="xl" class="mt-[-3.5rem]" color="primary" :label="page.description" />
     </ULandingHero>
 
     <div class=" text-center font-bold text-2xl tracking-wide py-10">
@@ -51,31 +38,14 @@ useSeoMeta({
       <template #default="{ data }">
         <ULandingSection class="!pt-0">
           <UPageGrid class="md:!grid-cols-2 lg:!grid-cols-3 xl:!grid-cols-4">
-            <template
-              v-for="item in (data as any)"
-              :key="item._path"
-            >
+            <template v-for="item in (data as any)" :key="item._path">
               <ULandingCard v-if="item.mid">
-                <NuxtLink
-                  :to="`${lang}/template/${item.mid}`"
-                  class="w-full h-full group"
-                >
-                  <UBadge
-                    v-if="item.type"
-                    class="absolute top-0 left-0 px-4 m-2"
-                    variant="subtle"
-                    size="md"
-                  >
+                <NuxtLink :to="`${lang}/template/${item.mid}`" class="w-full h-full group">
+                  <UBadge v-if="item.type" class="absolute top-0 left-0 px-4 m-2" variant="subtle" size="md">
                     {{ item.type }}
                   </UBadge>
-                  <NuxtImg
-                    v-if="item"
-                    :src="`/template/${item.mid}.png`"
-                  />
-                  <div
-                    v-else
-                    class="pt-2"
-                  />
+                  <NuxtImg v-if="item" :src="`/template/${item.mid}.png`" />
+                  <div v-else class="pt-2" />
                   <h2 class="group-hover:text-primary transition ease-in font-bold">
                     {{ item.title }}
                   </h2>
