@@ -51,7 +51,7 @@ export default defineAppConfig({
     title: 'Table of Contents',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/BlackWhite2000/GameCreator-WIKI',
+      edit: 'https://github.com/BlackWhite2000/GameCreator-WIKI/blob/master/content',
       links: [{
         icon: 'i-heroicons-star',
         label: 'Star on GitHub',
