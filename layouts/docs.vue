@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { filter, filterAndExtract } from '~/utils/navigation'
 
 const lang = useLang().lang
 
 const navigation = inject<Ref<NavItem[]>>('navigation')
-const tocData = lang ? filterAndExtract(filter(navigation.value, lang), lang) : null
 
 
 import mediumZoom from 'medium-zoom'
@@ -15,14 +13,29 @@ onMounted(async () => {
     background: 'rgba(0, 0, 0, 0.8)',
   })
 })
+
+const route = useRoute()
+const { navPageFromPath } = useContentHelpers()
+const { headerLinks } = useNavigation()
+
+const links = computed(() => headerLinks.value.find(link => link.to === '/docs')?.children ?? [])
+
+const navigationLinks = computed(() => {
+  const path = [`/${lang}`, route.params.slug?.[1]].filter(Boolean).join('/')
+  return mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
+})
+
+
 </script>
 
 <template>
   <UContainer>
     <UPage>
       <template #left>
-        <UAside>
-          <UNavigationTree v-if="tocData" :links="mapContentNavigation(tocData)" />
+        <UAside :links="links">
+          <UDivider type="dashed" class="mb-6" />
+          <UNavigationTree :links="navigationLinks" default-open :multiple="false" />
+          <template #bottom></template>
         </UAside>
       </template>
       <slot />

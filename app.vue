@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import { filter, filterAndExtract } from '~/utils/navigation'
-
 const lang = useLang().lang
 
 const { seo } = useAppConfig()
@@ -32,7 +30,11 @@ useSeoMeta({
 
 provide('navigation', navigation)
 
-const tocData = filterAndExtract(filter(navigation.value, lang), lang)
+const { navPageFromPath } = useContentHelpers()
+const navigationLinks = computed(() => {
+  const path = [`/${lang}`].filter(Boolean).join('/')
+  return navPageFromPath(path, navigation.value)?.children || []
+})
 </script>
 
 <template>
@@ -50,7 +52,7 @@ const tocData = filterAndExtract(filter(navigation.value, lang), lang)
     <AppFooter />
 
     <ClientOnly>
-      <LazyUContentSearch :files="files" :navigation="tocData" :hide-color-mode="true" />
+      <LazyUContentSearch :files="files" :navigation="navigationLinks" :hide-color-mode="true" />
     </ClientOnly>
 
     <UNotifications />
