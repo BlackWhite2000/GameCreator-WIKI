@@ -50,13 +50,15 @@ const tocData = filterAndExtract(filter(navigation.value, lang), lang)
     <AppFooter />
 
     <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        :navigation="tocData"
-        :hide-color-mode="true"
-      />
+      <LazyUContentSearch :files="files" :navigation="tocData" :hide-color-mode="true" />
     </ClientOnly>
 
     <UNotifications />
   </div>
 </template>
+<style>
+.dark {
+  --ui-background: var(--color-gray-950);
+  --ui-foreground: var(--color-gray-200);
+}
+</style>
