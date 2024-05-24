@@ -1,8 +1,8 @@
 ---
 title: "注释"
 description: 仅用于备注说明使用
-applicationScope: '0'
-exclusionScope: ''
+applicationScope: [0]
+exclusionScope: []
 ---
 
 ## 基本使用

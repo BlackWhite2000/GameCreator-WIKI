@@ -1,8 +1,8 @@
 ---
 title: "显示选项"
 description: 选项是游戏中场景的表现显示，不同的选项执行不同的指令
-applicationScope: '0'
-exclusionScope: '302,325'
+applicationScope: [0]
+exclusionScope: [302,325]
 ---
 
 ## 选项使用

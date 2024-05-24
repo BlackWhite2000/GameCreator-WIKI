@@ -1,8 +1,8 @@
 ---
 title: "提交信息"
 description: 用于批量获取游戏中的值，如获取玩家填写的表格信息
-applicationScope: '0'
-exclusionScope: '302,325'
+applicationScope: [0]
+exclusionScope: [302,325]
 ---
 
 ## 批量玩家输入的表格信息
