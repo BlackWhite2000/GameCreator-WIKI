@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const lang = useLang().lang
-const route = useRoute()
+const lang = computed(() => useLang().lang || 'zh-cn')
 
 const props = defineProps({
   type: {
@@ -21,38 +20,38 @@ const i18nData = {
   },
 }
 
-const currentLangData = computed(() => i18nData[lang] || i18nData['zh-cn'])
+const currentLangData = computed(() => i18nData[lang.value] || i18nData['zh-cn'])
 
 const allTargets = computed(() => [
   {
     name: currentLangData.value.numberVariables,
     type: 0,
-    url: `/${lang}/commands/gameprogress/numbervariables`,
+    url: `/${lang.value}/commands/gameprogress/numbervariables`,
   },
   {
     name: currentLangData.value.switch,
     type: 2,
-    url: `/${lang}/commands/gameprogress/switchs`
+    url: `/${lang.value}/commands/gameprogress/switchs`
   },
   {
     name: currentLangData.value.stringVariables,
     type: 1,
-    url: `/${lang}/commands/gameprogress/stringvariables`
+    url: `/${lang.value}/commands/gameprogress/stringvariables`
   },
   {
     name: currentLangData.value.ngNumberVariables,
     type: 0,
-    url: `/${lang}/commands/gameprogress/ng_numbervariables`
+    url: `/${lang.value}/commands/gameprogress/ngnumbervariables`
   },
   {
     name: currentLangData.value.ngSwitch,
     type: 2,
-    url: `/${lang}/commands/gameprogress/ng_switchs`
+    url: `/${lang.value}/commands/gameprogress/ngswitchs`
   },
   {
     name: currentLangData.value.ngStringVariables,
     type: 1,
-    url: `/${lang}/commands/gameprogress/ng_stringvariables`
+    url: `/${lang.value}/commands/gameprogress/ngstringvariables`
   }
 ])
 

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const lang = useLang().lang
+const lang = computed(() => useLang().lang || 'zh-cn')
 
-const { data: page } = await useAsyncData('index', () => queryContent(`/${lang}`).findOne())
-const { data: count } = await useAsyncData('count', () => queryContent(`/${lang}`).count())
+const { data: page } = await useAsyncData('index', () => queryContent(`/${lang.value}`).findOne())
+const { data: count } = await useAsyncData('count', () => queryContent(`/${lang.value}`).count())
 
 useSeoMeta({
   titleTemplate: '',
