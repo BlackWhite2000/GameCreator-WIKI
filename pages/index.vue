@@ -2,6 +2,7 @@
 const lang = useLang().lang
 
 const { data: page } = await useAsyncData('index', () => queryContent(`/${lang}`).findOne())
+const { data: count } = await useAsyncData('count', () => queryContent(`/${lang}`).count())
 
 useSeoMeta({
   titleTemplate: '',
@@ -10,6 +11,12 @@ useSeoMeta({
   description: page?.value?.description,
   ogDescription: page?.value?.description
 })
+
+const i18nName = {
+  'zh-cn': '简体中文',
+  'zh-tw': '繁体中文',
+  'en': '英文'
+}
 </script>
 
 <template>
@@ -27,6 +34,21 @@ useSeoMeta({
         <div class="text-2xl tracking-wide">
           {{ page.description }}
         </div>
+        <div v-if="count" class="text-xl tracking-wide mt-3">
+          {{ page.pageCount }}
+          <span class="text-primary font-bold">
+            {{ count }}
+          </span>
+          <span class="ml-3">
+            {{ page.pageLang }}
+            <span class="text-primary font-bold">
+              {{ i18nName[lang] }}
+            </span>
+          </span>
+          <span class="ml-3 underline cursor-pointer hover:text-primary">
+            {{ page.switchLang }}
+          </span>
+        </div>
       </template>
       <UContentSearchButton size="xl" class="mt-[-3.5rem]" color="primary" :label="page.description" />
     </ULandingHero>
@@ -40,7 +62,7 @@ useSeoMeta({
           <UPageGrid class="md:!grid-cols-2 lg:!grid-cols-3 xl:!grid-cols-4">
             <template v-for="item in (data as any)" :key="item._path">
               <ULandingCard v-if="item.mid">
-                <NuxtLink :to="`${lang}/template/${item.mid}`" class="w-full h-full group">
+                <ULink :to="`${lang}/template/${item.mid}`" class="w-full h-full group">
                   <UBadge v-if="item.type" class="absolute top-0 left-0 px-4 m-2" variant="subtle" size="md">
                     {{ item.type }}
                   </UBadge>
@@ -52,7 +74,7 @@ useSeoMeta({
                   <p class="text-sm opacity-60">
                     {{ item.description }}
                   </p>
-                </NuxtLink>
+                </ULink>
               </ULandingCard>
             </template>
           </UPageGrid>
