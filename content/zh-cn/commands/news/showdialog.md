@@ -1,7 +1,8 @@
 ---
 title: "显示对话"
 description: 通过该指令可在游戏中显示剧情对话，只需要填写相关对话文本即可
-templateArr: '1,182'
+applicationScope: '0'
+exclusionScope: '302,325'
 ---
 
 ## 基本使用
@@ -10,7 +11,7 @@ templateArr: '1,182'
 
 你可以像使用word文档一样轻松的使用它
 
-![](/zh-cn/commands/show_dialog/1.png)
+![](/zh-cn/commands/news/showdialog/1.png)
 
 ## 名称
 
@@ -18,11 +19,11 @@ templateArr: '1,182'
 
 也支持显示变量，如图中的[@s1]表示编号为1的字符串变量。
 
-![](/zh-cn/commands/show_dialog/2.png)
+![](/zh-cn/commands/news/showdialog/2.png)
 
 关于变量如何调用，可通过插入了解。内容区调用变量的方法也同理。
 
-![](/zh-cn/commands/show_dialog/3.png)
+![](/zh-cn/commands/news/showdialog/3.png)
 
 ## 气泡对话(漫画对话框模式)
 
@@ -32,7 +33,7 @@ templateArr: '1,182'
 
 指定希望跟随的场景对象即可。
 
-![](/zh-cn/commands/show_dialog/4.png)
+![](/zh-cn/commands/news/showdialog/4.png)
 
 但是使用漫画对话框的情况下，最好调整好样式。
 
@@ -40,21 +41,21 @@ templateArr: '1,182'
 
 如： 
 
-![](/zh-cn/commands/show_dialog/5.png)
+![](/zh-cn/commands/news/showdialog/5.png)
 
-![](/zh-cn/commands/show_dialog/6.png)
+![](/zh-cn/commands/news/showdialog/6.png)
 
 模板默认预设里提供了漫画对话框模式下专用的样式，可供参考：
 
-![](/zh-cn/commands/show_dialog/7.png)
+![](/zh-cn/commands/news/showdialog/7.png)
 
-![](/zh-cn/commands/show_dialog/8.png)
+![](/zh-cn/commands/news/showdialog/8.png)
 
 ## 对话框样式
 
 对话最终的样式排版都取决于指定的对话样式。
 
-![](/zh-cn/commands/show_dialog/9.png)
+![](/zh-cn/commands/news/showdialog/9.png)
 
 ## 自定义对话框样式
 
@@ -62,13 +63,13 @@ templateArr: '1,182'
 
 直接选择对应组件然后替换素材、修改位置即可。步骤全程可视化，所以请大胆尝试。
 
-![](/zh-cn/commands/show_dialog/10.png)
+![](/zh-cn/commands/news/showdialog/10.png)
 
 ## 预览漫画模式
 
 开启预览漫画模式可以获取行走图来当参考目标。
 
-![](/zh-cn/commands/show_dialog/11.png)
+![](/zh-cn/commands/news/showdialog/11.png)
 
 
 ## 对话与选项一起出现
@@ -77,13 +78,13 @@ templateArr: '1,182'
 
 而如果希望同时出现也很简单，只需要使用文字效果 **跳过本次对话** 即可
 
-![](/zh-cn/commands/show_dialog/12.png)
+![](/zh-cn/commands/news/showdialog/12.png)
 
-![](/zh-cn/commands/show_dialog/13.png)
+![](/zh-cn/commands/news/showdialog/13.png)
 
 ## 预览对话
 
 开启预览对话可以直接在指令界面中预览游戏的效果。
 
-![](/zh-cn/commands/show_dialog/14.png)
+![](/zh-cn/commands/news/showdialog/14.png)
 
