@@ -1,4 +1,13 @@
 {
   "eslint.experimental.useFlatConfig": true,
-  "common-intellisense.ui": []
+  "common-intellisense.ui": [],
+  "markdownlint.config": {
+    "default": true,
+    "MD033": false
+  },
+  "cSpell.words": [
+    "callout",
+    "heroicons",
+    "nuxt"
+  ],
 }
