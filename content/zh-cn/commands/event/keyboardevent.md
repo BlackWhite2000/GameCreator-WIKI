@@ -10,3 +10,5 @@ exclusionScope: []
 如果希望将事件绑定到键盘按键上则可以使用此指令。
 
 如图示中就是设置了 按键R 按下时 触发事件
+
+![alt text](/image/zh-cn/commands/keyboardevent/image.png)

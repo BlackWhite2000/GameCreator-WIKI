@@ -10,4 +10,7 @@
     "heroicons",
     "nuxt"
   ],
+  "markdown.copyFiles.destination": {
+    "/content/zh-cn/commands/*/(*).md": "/public/image/zh-cn/commands/${documentBaseName}/${fileName}"
+  },
 }
