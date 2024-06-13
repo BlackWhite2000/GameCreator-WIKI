@@ -7,7 +7,7 @@ exclusionScope: [302,325]
 
 直接在内容区域输入对应文案即可，支持修改文本颜色、支持调用变量、函数等
 
-你可以像使用word文档一样轻松的使用它
+你可以像使用word文檔一樣輕鬆的使用它
 
 ![alt text](/image/zh-cn/commands/news/showdialog/1.png)
 
