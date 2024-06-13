@@ -15,5 +15,11 @@
     "/content/zh-cn/commands/gameprogress/*.md": "/public/image/zh-cn/commands/gameprogress/${documentBaseName}/${fileName}",
     "/content/zh-cn/commands/logic/*.md": "/public/image/zh-cn/commands/logic/${documentBaseName}/${fileName}",
     "/content/zh-cn/commands/news/*.md": "/public/image/zh-cn/commands/news/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/images/*.md": "/public/image/zh-cn/commands/images/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/effect/*.md": "/public/image/zh-cn/commands/effect/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/interface/*.md": "/public/image/zh-cn/commands/interface/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/audio/*.md": "/public/image/zh-cn/commands/audio/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/system/*.md": "/public/image/zh-cn/commands/system/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/plugincommand/*.md": "/public/image/zh-cn/commands/plugincommand/${documentBaseName}/${fileName}",
   },
 }
