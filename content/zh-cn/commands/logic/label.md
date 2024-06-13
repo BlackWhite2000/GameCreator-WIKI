@@ -7,7 +7,7 @@ exclusionScope: []
 
 ## 示例
 
-在指定位置对标签进行命名，之后需配合指令 [标签跳转](./jumptolabel.md)。完整的执行
+在指定位置对标签进行命名，之后需配合指令 [标签跳转](./jumptolabel)。完整的执行
 
 ![alt text](/image/zh-cn/commands/logic/label/image.png)
 

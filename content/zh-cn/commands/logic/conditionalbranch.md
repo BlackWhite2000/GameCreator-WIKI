@@ -39,7 +39,7 @@ exclusionScope: []
 
 ## 开关
 
-通过 [开关变量](../gameprogress/switchs.md) 的当前状态来判断是否满足条件
+通过 [开关变量](../gameprogress/switchs) 的当前状态来判断是否满足条件
 
 ![alt text](/image/zh-cn/commands/logic/conditionalbranch/image-4.png)
 

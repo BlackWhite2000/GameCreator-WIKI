@@ -29,7 +29,7 @@ const navigationLinks = computed(() => {
 </script>
 
 <template>
-  <UContainer>
+  <UContainer class="max-w-[120rem]">
     <UPage>
       <template #left>
         <UAside :links="links">

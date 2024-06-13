@@ -11,6 +11,9 @@
     "nuxt"
   ],
   "markdown.copyFiles.destination": {
-    "/content/zh-cn/commands/*/(*).md": "/public/image/zh-cn/commands/${documentBaseName}/${fileName}"
+    "/content/zh-cn/commands/event/*.md": "/public/image/zh-cn/commands/event/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/gameprogress/*.md": "/public/image/zh-cn/commands/gameprogress/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/logic/*.md": "/public/image/zh-cn/commands/logic/${documentBaseName}/${fileName}",
+    "/content/zh-cn/commands/news/*.md": "/public/image/zh-cn/commands/news/${documentBaseName}/${fileName}",
   },
 }

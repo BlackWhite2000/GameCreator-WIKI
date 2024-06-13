@@ -7,7 +7,7 @@ exclusionScope: []
 
 ## 示例
 
-执行标签跳转前，请确保事件页上已执行了指令 [标签](./label.md)
+执行标签跳转前，请确保事件页上已执行了指令 [标签](./label)
 
 ![alt text](/image/zh-cn/commands/logic/jumptolabel/image.png)
 

@@ -7,11 +7,11 @@ exclusionScope: []
 
 ## 示例
 
-想停止循环的执行，可使用指令 [中断循环](./breakloop.md)
+想停止循环的执行，可使用指令 [中断循环](./breakloop)
 
 ![alt text](/image/zh-cn/commands/logic/loop/image.png)
 
-一个无脑的小技巧：可以先写完循环后看是否会死循环，如果会再去插入指令 [等待](./wait.md)
+一个无脑的小技巧：可以先写完循环后看是否会死循环，如果会再去插入指令 [等待](./wait)
 
 ## 占进程
 
