@@ -15,25 +15,25 @@ exclusionScope: [302,325]
 
 由于名称是各种各样都有，所以选择文本输入界面
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image.png)
 
 因为玩家输入内容并提交后，会自动赋值给输入值0
 
 但是需要注意 `输入值0是临时变量`，因此建议是再用字符串获取输入值0
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-1.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-1.png)
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-2.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-2.png)
 
 ## 游戏效果
 
 输入名称
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-3.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-3.png)
 
 最终通过字符串 `此字符串是上面通过输入值0设值得到` 获取到了玩家输入的信息
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-4.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-4.png)
 
 ## 使用规范
 
@@ -41,9 +41,9 @@ exclusionScope: [302,325]
 
 因此请确保所指定的界面拥有该组件
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-5.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-5.png)
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-6.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-6.png)
 
 玩家可以输入的值是根据 `可输入文本组件(UIInput)` 属性面板中的 输入类型 来的
 
@@ -54,8 +54,8 @@ exclusionScope: [302,325]
 文本模式=可以输入字符串，也就是任意内容
 ::
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-7.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-7.png)
 
 模板预设了三种类型的输入界面，可供参考
 
-![](/image/zh-cn/commands/news/waitplayerentertext/image-8.png)
+![alt text](/image/zh-cn/commands/news/waitplayerentertext/image-8.png)

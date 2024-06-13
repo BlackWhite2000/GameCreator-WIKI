@@ -17,10 +17,10 @@ exclusionScope: []
 
 二周目数值设值的用法基本与 [数值变量设值](/zh-cn/commands/gameprogress/numbervariables) 一致，因此具体用法请查阅数值变量设值
 
-![](/image/zh-cn/commands/gameprogress/ngnumbervariables/image.png)
+![alt text](/image/zh-cn/commands/gameprogress/ngnumbervariables/image.png)
 
 ## 存储
 
 为了确保二周目变量能全局生效，使用后需执行一次 [存档]()
 
-![](/image/zh-cn/commands/gameprogress/ngnumbervariables/image-1.png)
+![alt text](/image/zh-cn/commands/gameprogress/ngnumbervariables/image-1.png)

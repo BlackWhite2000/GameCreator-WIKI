@@ -9,4 +9,4 @@ exclusionScope: []
 
 使用中断循环时，请确保写在循环事件内。一般中断循环都需要配合指令 [条件分歧](./conditionalbranch.md) 来进行判断执行。
 
-![](/image/zh-cn/commands/logic/breakloop/image.png)
+![alt text](/image/zh-cn/commands/logic/breakloop/image.png)

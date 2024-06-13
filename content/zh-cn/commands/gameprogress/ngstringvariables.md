@@ -17,10 +17,10 @@ exclusionScope: []
 
 二周目字符串设值的用法基本与 [字符串设值](/zh-cn/commands/gameprogress/stringvariables) 一致，因此具体用法请查阅字符串设值
 
-![](/image/zh-cn/commands/gameprogress/ngstringvariables/image.png)
+![alt text](/image/zh-cn/commands/gameprogress/ngstringvariables/image.png)
 
 ## 存储
 
 为了确保二周目变量能全局生效，使用后需执行一次 [存档]()
 
-![](/image/zh-cn/commands/gameprogress/ngnumbervariables/image-1.png)
+![alt text](/image/zh-cn/commands/gameprogress/ngnumbervariables/image-1.png)

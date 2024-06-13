@@ -9,6 +9,6 @@ exclusionScope: []
 
 在指定位置对标签进行命名，之后需配合指令 [标签跳转](./jumptolabel.md)。完整的执行
 
-![](/image/zh-cn/commands/logic/label/image.png)
+![alt text](/image/zh-cn/commands/logic/label/image.png)
 
-![](/image/zh-cn/commands/logic/label/image-1.png)
+![alt text](/image/zh-cn/commands/logic/label/image-1.png)

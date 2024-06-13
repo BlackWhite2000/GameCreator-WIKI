@@ -15,14 +15,14 @@ exclusionScope: []
 
 即游戏的时间帧
 
-![](/image/zh-cn/commands/logic/wait/image.png)
+![alt text](/image/zh-cn/commands/logic/wait/image.png)
 
-![](/image/zh-cn/commands/logic/wait/image-1.png)
+![alt text](/image/zh-cn/commands/logic/wait/image-1.png)
 
 ## 毫秒
 
 即时间单位毫秒
 
-![](/image/zh-cn/commands/logic/wait/image-2.png)
+![alt text](/image/zh-cn/commands/logic/wait/image-2.png)
 
-![](/image/zh-cn/commands/logic/wait/image-3.png)
+![alt text](/image/zh-cn/commands/logic/wait/image-3.png)

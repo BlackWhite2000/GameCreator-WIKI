@@ -7,4 +7,4 @@ exclusionScope: []
 
 ## 界面展示
 
-![](/image/zh-cn/commands/logic/clientscript/image.png)
+![alt text](/image/zh-cn/commands/logic/clientscript/image.png)

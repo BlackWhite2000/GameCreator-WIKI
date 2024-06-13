@@ -19,13 +19,13 @@ exclusionScope: []
 
 字符串可以存储各种各样的值，比如文字、字符串、特殊符号。
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image.png)
 
 字符串还可以互相嵌套，以及插入其他的变量、函数
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image-1.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image-1.png)
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image-2.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image-2.png)
 
 ### 使用字符串
 
@@ -33,9 +33,9 @@ exclusionScope: []
 
 `[@s1]`表示调用了编号为 1 的字符串
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image-3.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image-3.png)
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image-4.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image-4.png)
 
 ## 设置为游戏字符串
 
@@ -47,10 +47,10 @@ exclusionScope: []
 
 当勾选 设置为游戏字符串 后， 原本的输入区域变为了一个按钮。
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image-5.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image-5.png)
 
 通过点击按钮然后去获取对应游戏中的值即可，比如获取游戏的当前场景地图名称。
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image-6.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image-6.png)
 
-![](/image/zh-cn/commands/gameprogress/stringvariables/image-7.png)
+![alt text](/image/zh-cn/commands/gameprogress/stringvariables/image-7.png)

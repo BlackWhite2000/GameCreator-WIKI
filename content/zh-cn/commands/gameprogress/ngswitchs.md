@@ -17,10 +17,10 @@ exclusionScope: []
 
 二周目开关设置的用法基本与 [开关设置](/zh-cn/commands/gameprogress/switchs) 一致，因此具体用法请查阅开关设置
 
-![](/image/zh-cn/commands/gameprogress/ngswitchs/image.png)
+![alt text](/image/zh-cn/commands/gameprogress/ngswitchs/image.png)
 
 ## 存储
 
 为了确保二周目变量能全局生效，使用后需执行一次 [存档]()
 
-![](/image/zh-cn/commands/gameprogress/ngnumbervariables/image-1.png)
+![alt text](/image/zh-cn/commands/gameprogress/ngnumbervariables/image-1.png)

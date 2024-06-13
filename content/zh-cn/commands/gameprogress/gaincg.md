@@ -9,8 +9,8 @@ exclusionScope: []
 
 指定CG图片集即可解锁。
 
-![](/image/zh-cn/commands/gameprogress/gaincg/image.png)
+![alt text](/image/zh-cn/commands/gameprogress/gaincg/image.png)
 
 CG图片基于数据库中的CG鉴赏。
 
-![](/image/zh-cn/commands/gameprogress/gaincg/image-1.png)
+![alt text](/image/zh-cn/commands/gameprogress/gaincg/image-1.png)

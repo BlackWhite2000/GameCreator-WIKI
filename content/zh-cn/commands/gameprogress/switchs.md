@@ -19,9 +19,9 @@ exclusionScope: []
 
 比如借助条件分歧来判断是否拥有某种道具。
 
-![](/image/zh-cn/commands/gameprogress/switchs/image.png)
+![alt text](/image/zh-cn/commands/gameprogress/switchs/image.png)
 
-![](/image/zh-cn/commands/gameprogress/switchs/image-1.png)
+![alt text](/image/zh-cn/commands/gameprogress/switchs/image-1.png)
 
 ## 游戏开关
 
@@ -29,6 +29,6 @@ exclusionScope: []
 
 比如可以获取玩家是否是在移动端上玩游戏。
 
-![](/image/zh-cn/commands/gameprogress/switchs/image-2.png)
+![alt text](/image/zh-cn/commands/gameprogress/switchs/image-2.png)
 
-![](/image/zh-cn/commands/gameprogress/switchs/image-3.png)
+![alt text](/image/zh-cn/commands/gameprogress/switchs/image-3.png)
