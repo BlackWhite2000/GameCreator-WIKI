@@ -12,12 +12,6 @@ https://new.gcw.wiki/
 
 1、避免请求网络服务，优先纯本地化设计，核心目的为离线可用文档
 
-2、编译使用静态编译
-
-```
-pnpm run build
-```
-
 ## 参与多语言翻译
 
 [参与多语言翻译](https://hosted.weblate.org/engage/gamecreator-wiki/)
