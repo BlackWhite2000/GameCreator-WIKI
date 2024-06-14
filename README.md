@@ -15,5 +15,13 @@ https://new.gcw.wiki/
 2、编译使用静态编译
 
 ```
-pnpm run generate
+pnpm run build
 ```
+
+## 参与多语言翻译
+
+[参与多语言翻译](https://hosted.weblate.org/engage/gamecreator-wiki/)
+
+<a href="https://hosted.weblate.org/engage/gamecreator-wiki/">
+<img src="https://hosted.weblate.org/widget/gamecreator-wiki/open-graph.png" alt="翻译状态" />
+</a>
