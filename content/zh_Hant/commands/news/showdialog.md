@@ -1,7 +1,5 @@
 ---
-title: "显示对话"
-description: 通过该指令可在游戏中显示剧情对话，只需要填写相关对话文本即可
-applicationScope: [0]
+title: "显示对话" description: 通过该指令可在游戏中显示剧情对话，只需要填写相关对话文本即可 applicationScope: [0]
 exclusionScope: [302,325]
 ---
 
@@ -39,7 +37,7 @@ exclusionScope: [302,325]
 
 否则一整个对话框都显示在了场景对象上，这并不好看。
 
-如： 
+如：
 
 ![alt text](/image/zh_hans/commands/news/showdialog/5.png)
 
