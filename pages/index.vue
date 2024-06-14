@@ -20,7 +20,7 @@ const i18nName = {
 </script>
 
 <template>
-  <div>
+  <div v-if="page">
     <ULandingHero v-if="page && page.title" class="mb-0 !pt-20 !pb-12">
       <div
         class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
