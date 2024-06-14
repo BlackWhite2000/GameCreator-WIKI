@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const lang = computed(() => useLang().lang || 'zh-cn')
+const lang = computed(() => useLang().lang || 'zh_hans')
 
 const { data: page } = await useAsyncData('index', () => queryContent(`/${lang.value}`).findOne())
 const { data: count } = await useAsyncData('count', () => queryContent(`/${lang.value}`).count())
@@ -13,14 +13,14 @@ useSeoMeta({
 })
 
 const i18nName = {
-  'zh-cn': '简体中文',
-  'zh-tw': '繁体中文',
+  'zh_hans': '简体中文',
+  'zh_hant': '繁体中文',
   'en': '英文'
 }
 </script>
 
 <template>
-  <div v-if="page">
+  <div>
     <ULandingHero v-if="page && page.title" class="mb-0 !pt-20 !pb-12">
       <div
         class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />

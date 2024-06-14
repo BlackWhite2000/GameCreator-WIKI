@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const lang = computed(() => useLang().lang || 'zh-cn')
+const lang = computed(() => useLang().lang || 'zh_hans')
 
 const props = defineProps({
   type: {
@@ -9,7 +9,7 @@ const props = defineProps({
 })
 
 const i18nData = {
-  'zh-cn': {
+  'zh_hans': {
     'numberVariables': '数值变量设值',
     'switch': '开关设置',
     'stringVariables': '字符串设值',
@@ -20,7 +20,7 @@ const i18nData = {
   },
 }
 
-const currentLangData = computed(() => i18nData[lang.value] || i18nData['zh-cn'])
+const currentLangData = computed(() => i18nData[lang.value] || i18nData['zh_hans'])
 
 const allTargets = computed(() => [
   {

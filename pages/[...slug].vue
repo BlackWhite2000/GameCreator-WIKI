@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { withoutTrailingSlash } from 'ufo'
 
-const lang = computed(() => useLang().lang || 'zh-cn')
+const lang = computed(() => useLang().lang || 'zh_hans')
 definePageMeta({
   layout: 'docs'
 })

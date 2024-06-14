@@ -58,8 +58,8 @@ const _useNavigation = () => {
     libraryDescription: '引擎文档'
   }
   const i18n = {
-    'zh-cn': zhCN,
-    'zh-tw': zhCN,
+    'zh_hans': zhCN,
+    'zh_hant': zhCN,
     'en': zhCN
   }
 
