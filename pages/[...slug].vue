@@ -9,7 +9,6 @@ definePageMeta({
 const route = useRoute()
 const { toc, seo } = useAppConfig()
 
-
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
 const { data: indexPage } = await useAsyncData('index', () => queryContent(`/${lang.value}`).findOne())
 
@@ -68,7 +67,8 @@ const links = computed(() => [toc?.bottom?.edit && {
       <!-- 如果是插件 -->
       <Callout icon="i-heroicons-light-bulb" v-if="dir?.pid">
         {{ dir.title }} - {{ description }} -
-        <ULink :to="`https://www.gamecreator.com.cn/plug/det/${dir.pid}`" target="_block">插件安装地址</ULink>
+        <ULink :to="`https://www.gamecreator.com.cn/plug/det/${dir.pid}`" target="_block">{{ indexPage?.plugUrl }}
+        </ULink>
       </Callout>
 
       <ContentRenderer v-if="page.body" :value="page" />
