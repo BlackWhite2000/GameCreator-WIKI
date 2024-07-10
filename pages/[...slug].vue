@@ -43,10 +43,12 @@ defineOgImage({
   description: page?.value?.description
 })
 
-// const headline = computed(() => findPageHeadline(page.value))
-const headline = computed(() => {
-  return dir?.value?.title
-})
+const headline = computed(() => findPageHeadline(page.value))
+// const headline = computed(() => {
+//   return dir?.value?.title
+// })
+
+console.log(dir.value)
 const description = computed(() => {
   return page?.value?.description ? page.value.description : dir?.value?.description
 })
