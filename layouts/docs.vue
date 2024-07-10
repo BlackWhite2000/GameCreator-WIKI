@@ -25,7 +25,6 @@ const navigationLinks = computed(() => {
   return mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
 })
 
-
 </script>
 
 <template>

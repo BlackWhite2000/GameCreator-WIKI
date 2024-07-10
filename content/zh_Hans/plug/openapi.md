@@ -2,7 +2,11 @@
 title: OpenAPI
 ---
 
-## System 
+::callout{icon="i-heroicons-light-bulb"}
+OpenAPI - 为GC提供了更多好用的API - [插件安装地址](https://www.gamecreator.com.cn/plug/det/641?title=openapi&page=1&free=0&reid=161)
+::
+
+## System
 
 ```ts [OpenAPI.ts]
 /**

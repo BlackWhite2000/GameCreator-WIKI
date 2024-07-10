@@ -54,7 +54,7 @@ export default defineAppConfig({
       edit: 'https://github.com/BlackWhite2000/GameCreator-WIKI/blob/master/content',
       links: [{
         icon: 'i-heroicons-star',
-        label: 'Star on GitHub',
+        label: '关注项目',
         to: 'https://github.com/BlackWhite2000/GameCreator-WIKI',
         target: '_blank'
       }]
