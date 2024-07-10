@@ -9,6 +9,7 @@ definePageMeta({
 const route = useRoute()
 const { toc, seo } = useAppConfig()
 
+
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
 const { data: indexPage } = await useAsyncData('index', () => queryContent(`/${lang.value}`).findOne())
 
@@ -23,9 +24,16 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => qu
 )
 const langSurround = surround.value.filter(item => item && item._path && item._path.startsWith(`/${lang.value}`))
 
+const { data: dir } = await useAsyncData(`${route.path}-dir`, () => queryContent(route.path)
+  .findSurround(withoutTrailingSlash(route.path)).then((v) => {
+    return v.find(k => k?._extension == 'yml')
+  })
+)
+const title = dir?.value?.dirName ? `${dir?.value?.dirName} - ${page?.value?.title}` : page?.value?.title
+
 useSeoMeta({
-  title: page?.value?.title,
-  ogTitle: `${page?.value?.title} - ${seo?.siteName}`,
+  title: `${title}`,
+  ogTitle: `${title} - ${seo?.siteName}`,
   description: page?.value?.description,
   ogDescription: page?.value?.description
 })
@@ -36,7 +44,13 @@ defineOgImage({
   description: page?.value?.description
 })
 
-const headline = computed(() => findPageHeadline(page.value))
+// const headline = computed(() => findPageHeadline(page.value))
+const headline = computed(() => {
+  return dir?.value?.title
+})
+const description = computed(() => {
+  return page?.value?.description ? page.value.description : dir?.value?.description
+})
 
 const links = computed(() => [toc?.bottom?.edit && {
   icon: 'i-heroicons-pencil-square',
@@ -48,9 +62,15 @@ const links = computed(() => [toc?.bottom?.edit && {
 
 <template>
   <UPage v-if="page">
-    <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
+    <UPageHeader :title="page.title" :description="description" :links="page.links" :headline="headline" />
 
     <UPageBody prose>
+      <!-- 如果是插件 -->
+      <Callout icon="i-heroicons-light-bulb" v-if="dir?.pid">
+        {{ dir.title }} - {{ description }} -
+        <ULink :to="`https://www.gamecreator.com.cn/plug/det/${dir.pid}`" target="_block">插件安装地址</ULink>
+      </Callout>
+
       <ContentRenderer v-if="page.body" :value="page" />
       <hr v-if="langSurround?.length">
       <UContentSurround :surround="langSurround" />
