@@ -16,7 +16,8 @@ const i18nData = {
     'ngNumberVariables': '二周目数值设值',
     'ngSwitch': '二周目开关设置',
     'ngStringVariables': '二周目字符串设值',
-    'gameNumberVariables': '游戏数值'
+    'gameNumberVariables': '游戏数值',
+    'objectSwitch': '对象开关设置'
   },
 }
 
@@ -52,6 +53,11 @@ const allTargets = computed(() => [
     name: currentLangData.value.ngStringVariables,
     type: 1,
     url: `/${lang.value}/commands/gameprogress/ngstringvariables`
+  },
+  {
+    name: currentLangData.value.objectSwitch,
+    type: 2,
+    url: `/${lang.value}/commands/gameprogress/objectswitchs`
   }
 ])
 

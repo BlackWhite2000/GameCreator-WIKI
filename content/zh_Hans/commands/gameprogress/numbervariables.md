@@ -7,7 +7,7 @@ exclusionScope: []
 
 ::card{title="数值变量类型" icon="i-heroicons-cube-transparent"}
 一种可以记录数字的值，可以进行公式计算。<br>
-可以借助 [条件分歧]() 进行数值之间的判断。<br><br>
+可以借助 [条件分歧](../logic/conditionalbranch) 进行数值之间的判断。<br><br>
 相同类型的功能：<br>
   ::VariablesList{type=0}
   ::

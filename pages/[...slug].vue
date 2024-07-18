@@ -24,11 +24,11 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => qu
 const langSurround = surround.value.filter(item => item && item._path && item._path.startsWith(`/${lang.value}`))
 
 const { data: dir } = await useAsyncData(`${route.path}-dir`, () => queryContent(route.path)
-  .findSurround(withoutTrailingSlash(route.path)).then((v) => {
+  .findSurround(route.path).then((v) => {
     return v.find(k => k?._extension == 'yml')
   })
 )
-const title = dir?.value?.dirName ? `${dir?.value?.dirName} - ${page?.value?.title}` : page?.value?.title
+const title = dir?.value?.dirName ? `${dir?.value?.dirName} - ${dir?.value?.title} - ${page?.value?.title}` : page?.value?.title
 
 useSeoMeta({
   title: `${title}`,
@@ -43,16 +43,21 @@ defineOgImage({
   description: page?.value?.description
 })
 
-const headline = computed(() => findPageHeadline(page.value))
-// const headline = computed(() => {
-//   return dir?.value?.title
-// })
+// const headline = computed(() => findPageHeadline(page.value))
+const headline = computed(() => {
+  return page?.value._path.split('/').filter(v => v !== '').filter(v => v !== lang.value).map((v) => {
+    return {
+      label: v,
+      icon: '',
+      to: ''
+    }
+  })
+})
+console.log(headline.value)
 
-console.log(dir.value)
 const description = computed(() => {
   return page?.value?.description ? page.value.description : dir?.value?.description
 })
-
 const links = computed(() => [toc?.bottom?.edit && {
   icon: 'i-heroicons-pencil-square',
   label: indexPage?.value?.pageEditLabel,
@@ -63,11 +68,16 @@ const links = computed(() => [toc?.bottom?.edit && {
 
 <template>
   <UPage v-if="page">
-    <UPageHeader :title="page.title" :description="description" :links="page.links" :headline="headline" />
+
+    <UPageHeader :title="page.title" :description="description" :links="page.links">
+      <template #headline>
+        <UBreadcrumb :links="headline" />
+      </template>
+    </UPageHeader>
 
     <UPageBody prose>
       <!-- 如果是插件 -->
-      <Callout icon="i-heroicons-light-bulb" v-if="dir?.pid">
+      <Callout icon="i-heroicons-light-bulb" v-if="dir?.pid && route.path != `/${lang}/plug`">
         {{ dir.title }} - {{ description }} -
         <ULink :to="`https://www.gamecreator.com.cn/plug/det/${dir.pid}`" target="_block">{{ indexPage?.plugUrl }}
         </ULink>

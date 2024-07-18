@@ -11,11 +11,3 @@ https://new.gcw.wiki/
 ## 注意事项
 
 避免请求网络服务，优先纯本地化设计，核心目的为离线可用文档
-
-## 参与多语言翻译
-
-[参与多语言翻译](https://hosted.weblate.org/engage/gamecreator-wiki/)
-
-<a href="https://hosted.weblate.org/engage/gamecreator-wiki/">
-<img src="https://hosted.weblate.org/widget/gamecreator-wiki/open-graph.png" alt="翻译状态" />
-</a>

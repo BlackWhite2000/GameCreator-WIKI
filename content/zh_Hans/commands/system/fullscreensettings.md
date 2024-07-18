@@ -1,0 +1,12 @@
+---
+title: "全屏设置"
+description: 勾选后可让游戏全屏化
+applicationScope: [182]
+exclusionScope: []
+---
+
+## 使用
+
+勾选后触发，即可让游戏窗口变为全屏。
+
+![alt text](/image/zh_hans/commands/system/fullscreensettings/image.png)

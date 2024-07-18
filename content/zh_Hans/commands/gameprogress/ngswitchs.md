@@ -7,7 +7,7 @@ exclusionScope: []
 
 ::card{title="开关变量类型" icon="i-heroicons-cube-transparent"}
 记录开和关两种状态的一种变量。<br>
-可以借助 [条件分歧]() 进行开启关闭之间的判断。<br><br>
+可以借助 [条件分歧](../logic/conditionalbranch) 进行开启关闭之间的判断。<br><br>
 相同类型的功能：<br>
   ::VariablesList{type=2}
   ::
@@ -21,6 +21,6 @@ exclusionScope: []
 
 ## 存储
 
-为了确保二周目变量能全局生效，使用后需执行一次 [存档]()
+为了确保二周目变量能全局生效，使用后需执行一次 [存档#全局数据](../system/save#全局数据)
 
 ![alt text](/image/zh_hans/commands/gameprogress/ngnumbervariables/image-1.png)
