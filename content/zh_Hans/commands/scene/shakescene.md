@@ -1,0 +1,14 @@
+---
+title: "场所震动"
+description: 可以为游戏中增加场景震动效果
+applicationScope: [3]
+exclusionScope: []
+---
+
+## 使用
+
+支持实时预览，根据自己实际情况来调整震动效果即可
+
+![alt text](/image/zh_hans/commands/scene/shakescene/1.gif)
+
+![alt text](/image/zh_hans/commands/scene/shakescene/2.gif)

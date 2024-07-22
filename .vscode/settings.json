@@ -22,5 +22,8 @@
     "/content/zh_Hans/commands/system/*.md": "/public/image/zh_hans/commands/system/${documentBaseName}/${fileName}",
     "/content/zh_Hans/commands/plugincommand/*.md": "/public/image/zh_hans/commands/plugincommand/${documentBaseName}/${fileName}",
     "/content/zh_Hans/plug/gamedialogcolorshowui/*.md": "/public/image/zh_hans/plug/gamedialogcolorshowui/${documentBaseName}/${fileName}",
+    "/content/zh_Hans/commands/scene/*.md": "/public/image/zh_hans/commands/scene/${documentBaseName}/${fileName}",
+    "/content/zh_Hans/commands/sceneobject/*.md": "/public/image/zh_hans/commands/sceneobject/${documentBaseName}/${fileName}",
+    "/content/zh_Hans/commands/player/*.md": "/public/image/zh_hans/commands/player/${documentBaseName}/${fileName}",
   },
 }
