@@ -1,9 +1,5 @@
 <script setup lang="ts">
-function isTemplate(templateArr: string, mid: number) {
-  if (!templateArr || mid == -1) return false
-  const idArr = templateArr.split(',')
-  return idArr.includes(mid.toString())
-}
+const { locale, messages, setLocale } = useI18n()
 
 defineProps({
   mid: {
@@ -11,23 +7,22 @@ defineProps({
     default: -1
   }
 })
+
 </script>
 
 <template>
   <div>
-    <ContentQuery path="/commands">
-      <template #default="{ data }">
-        <div
-          v-for="item of data"
-          :key="item.title"
-        >
-          <template v-if="item.templateArr && isTemplate(item.templateArr, Number(mid))">
-            <div>
+    <UCard class="overflow-y-auto h-[500px]">
+      <ContentQuery :path="`/${locale}/commands`" v-slot="{ data }">
+        <div class="grid sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 w-full gap-2">
+          <template v-for="(item, index) in data" :key="index">
+            <UButton color="white" variant="ghost" :to="item._path"
+              v-if="item.applicationScope && (item.applicationScope.includes(mid) || item.applicationScope.includes(0))">
               {{ item.title }}
-            </div>
+            </UButton>
           </template>
         </div>
-      </template>
-    </ContentQuery>
+      </ContentQuery>
+    </UCard>
   </div>
 </template>

@@ -1,68 +1,52 @@
 <script setup lang="ts">
-const lang = computed(() => useLang().lang || 'zh_hans')
+const { locale, messages, setLocale } = useI18n()
 
-const { data: page } = await useAsyncData('index', () => queryContent(`/${lang.value}`).findOne())
-const { data: count } = await useAsyncData('count', () => queryContent(`/${lang.value}`).count())
+const messagesLocales = computed(() => {
+  const localeKey = locale.value;
+  if (messages.value[localeKey]) {
+    return messages.value[localeKey];
+  }
+  return {};
+});
 
 useSeoMeta({
   titleTemplate: '',
-  title: page?.value?.title,
-  ogTitle: page?.value?.title,
-  description: page?.value?.description,
-  ogDescription: page?.value?.description
+  title: messagesLocales?.value?.webName,
+  ogTitle: messagesLocales?.value?.webName,
+  description: messagesLocales?.value?.description,
+  ogDescription: messagesLocales?.value?.description
 })
-
-const i18nName = {
-  'zh_hans': '简体中文',
-  'zh_hant': '繁体中文',
-  'en': '英文'
-}
 </script>
 
 <template>
-  <div v-if="page">
-    <ULandingHero v-if="page && page.title" class="mb-0 !pt-20 !pb-12">
+  <div v-if="messagesLocales">
+    <ULandingHero v-if="messagesLocales && messagesLocales.webName" class="mb-0 !pt-20 !pb-12">
       <div
         class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
       <template #title>
         <NuxtIcon name="logo" class="logo-index flex justify-center pb-5 items-center" filled />
         <div class="text-6xl tracking-wide text-primary">
-          {{ page.title }}
+          {{ messagesLocales.webName }}
         </div>
       </template>
       <template #description>
         <div class="text-2xl tracking-wide">
-          {{ page.description }}
-        </div>
-        <div v-if="count" class="text-xl tracking-wide mt-3">
-          {{ page.pageCount }}
-          <span class="text-primary font-bold">
-            {{ count }}
-          </span>
-          <span class="ml-3">
-            {{ page.pageLang }}
-            <span class="text-primary font-bold">
-              {{ i18nName[lang] }}
-            </span>
-          </span>
-          <span class="ml-3 underline cursor-pointer hover:text-primary">
-            {{ page.switchLang }}
-          </span>
+          {{ messagesLocales.description }}
         </div>
       </template>
-      <UContentSearchButton size="xl" class="mt-[-3.5rem]" color="primary" :label="page.description" />
+      <UContentSearchButton size="xl" class="mt-[-3.5rem]" color="primary" :label="messagesLocales.description" />
     </ULandingHero>
 
     <div class=" text-center font-bold text-2xl tracking-wide py-10">
-      {{ page.templateTitle }}
+      {{ messagesLocales.templateTitle }}
     </div>
-    <ContentQuery :path="`${lang}/template`">
+    <ContentQuery :path="`${locale}/template`">
       <template #default="{ data }">
         <ULandingSection class="!pt-0">
           <UPageGrid class="md:!grid-cols-2 lg:!grid-cols-3 xl:!grid-cols-4">
             <template v-for="item in (data as any)" :key="item._path">
               <ULandingCard v-if="item.mid">
-                <ULink :to="`${lang}/template/${item.mid}`" class="w-full h-full group">
+                <ULink :to="`${locale}/template/${item.mid}`" class="w-full h-full group">
                   <UBadge v-if="item.type" class="absolute top-0 left-0 px-4 m-2" variant="subtle" size="md">
                     {{ item.type }}
                   </UBadge>

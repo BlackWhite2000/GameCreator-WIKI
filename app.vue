@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-const lang = useLang().lang
 
+const { locale, messages, setLocale } = useI18n()
 const { seo } = useAppConfig()
 
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
@@ -9,6 +9,7 @@ const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', {
   default: () => [],
   server: false
 })
+
 
 useHead({
   meta: [
@@ -18,7 +19,7 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: lang,
+    lang: locale.value,
     class: 'dark hello world'
   }
 })
@@ -32,7 +33,7 @@ provide('navigation', navigation)
 
 const { navPageFromPath } = useContentHelpers()
 const navigationLinks = computed(() => {
-  const path = [`/${lang}`].filter(Boolean).join('/')
+  const path = [`/${locale.value}`].filter(Boolean).join('/')
   return navPageFromPath(path, navigation.value)?.children || []
 })
 </script>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const lang = computed(() => useLang().lang || 'zh_hans')
+const { locale, messages, setLocale } = useI18n()
 
 const props = defineProps({
   type: {
@@ -8,56 +8,49 @@ const props = defineProps({
   }
 })
 
-const i18nData = {
-  'zh_hans': {
-    'numberVariables': '数值变量设值',
-    'switch': '开关设置',
-    'stringVariables': '字符串设值',
-    'ngNumberVariables': '二周目数值设值',
-    'ngSwitch': '二周目开关设置',
-    'ngStringVariables': '二周目字符串设值',
-    'gameNumberVariables': '游戏数值',
-    'objectSwitch': '对象开关设置'
-  },
-}
-
-const currentLangData = computed(() => i18nData[lang.value] || i18nData['zh_hans'])
+const messagesLocales = computed(() => {
+  const localeKey = locale.value;
+  if (messages.value[localeKey]) {
+    return messages.value[localeKey];
+  }
+  return {};
+});
 
 const allTargets = computed(() => [
   {
-    name: currentLangData.value.numberVariables,
+    name: messagesLocales.value?.numberVariables,
     type: 0,
-    url: `/${lang.value}/commands/gameprogress/numbervariables`,
+    url: `/${locale.value}/commands/gameprogress/numbervariables`,
   },
   {
-    name: currentLangData.value.switch,
+    name: messagesLocales.value?.switch,
     type: 2,
-    url: `/${lang.value}/commands/gameprogress/switchs`
+    url: `/${locale.value}/commands/gameprogress/switchs`
   },
   {
-    name: currentLangData.value.stringVariables,
+    name: messagesLocales.value?.stringVariables,
     type: 1,
-    url: `/${lang.value}/commands/gameprogress/stringvariables`
+    url: `/${locale.value}/commands/gameprogress/stringvariables`
   },
   {
-    name: currentLangData.value.ngNumberVariables,
+    name: messagesLocales.value?.ngNumberVariables,
     type: 0,
-    url: `/${lang.value}/commands/gameprogress/ngnumbervariables`
+    url: `/${locale.value}/commands/gameprogress/ngnumbervariables`
   },
   {
-    name: currentLangData.value.ngSwitch,
+    name: messagesLocales.value?.ngSwitch,
     type: 2,
-    url: `/${lang.value}/commands/gameprogress/ngswitchs`
+    url: `/${locale.value}/commands/gameprogress/ngswitchs`
   },
   {
-    name: currentLangData.value.ngStringVariables,
+    name: messagesLocales.value?.ngStringVariables,
     type: 1,
-    url: `/${lang.value}/commands/gameprogress/ngstringvariables`
+    url: `/${locale.value}/commands/gameprogress/ngstringvariables`
   },
   {
-    name: currentLangData.value.objectSwitch,
+    name: messagesLocales.value?.objectSwitch,
     type: 2,
-    url: `/${lang.value}/commands/gameprogress/objectswitchs`
+    url: `/${locale.value}/commands/gameprogress/objectswitchs`
   }
 ])
 

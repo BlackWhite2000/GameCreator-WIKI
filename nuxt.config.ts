@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-icons',
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt'
+    '@pinia-plugin-persistedstate/nuxt',
+    "@nuxtjs/i18n"
   ],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -51,5 +52,9 @@ export default defineNuxtConfig({
     dataValue: 'theme',
     preference: 'dark',
     fallback: 'dark'
+  },
+
+  i18n: {
+    vueI18n: './i18n.config.ts'
   }
 })

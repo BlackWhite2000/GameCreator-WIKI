@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import { withoutTrailingSlash } from 'ufo'
+const { locale, messages, setLocale } = useI18n()
+const messagesLocales = computed(() => {
+  const localeKey = locale.value;
+  if (messages.value[localeKey]) {
+    return messages.value[localeKey];
+  }
+  return {};
+});
 
-const lang = computed(() => useLang().lang || 'zh_hans')
 definePageMeta({
   layout: 'docs'
 })
@@ -10,7 +17,6 @@ const route = useRoute()
 const { toc, seo } = useAppConfig()
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
-const { data: indexPage } = await useAsyncData('index', () => queryContent(`/${lang.value}`).findOne())
 
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
@@ -21,7 +27,7 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => qu
   .only(['title', 'description', '_path'])
   .findSurround(withoutTrailingSlash(route.path))
 )
-const langSurround = surround.value.filter(item => item && item._path && item._path.startsWith(`/${lang.value}`))
+const langSurround = surround.value.filter(item => item && item._path && item._path.startsWith(`/${locale.value}`))
 
 const { data: dir } = await useAsyncData(`${route.path}-dir`, () => queryContent(route.path)
   .findSurround(route.path).then((v) => {
@@ -45,7 +51,7 @@ defineOgImage({
 
 // const headline = computed(() => findPageHeadline(page.value))
 const headline = computed(() => {
-  return page?.value._path.split('/').filter(v => v !== '').filter(v => v !== lang.value).map((v) => {
+  return page?.value._path.split('/').filter(v => v !== '').filter(v => v !== locale.value).map((v) => {
     return {
       label: v,
       icon: '',
@@ -53,14 +59,13 @@ const headline = computed(() => {
     }
   })
 })
-console.log(headline.value)
 
 const description = computed(() => {
   return page?.value?.description ? page.value.description : dir?.value?.description
 })
 const links = computed(() => [toc?.bottom?.edit && {
   icon: 'i-heroicons-pencil-square',
-  label: indexPage?.value?.pageEditLabel,
+  label: messagesLocales?.value?.pageEditLabel,
   to: `${toc.bottom.edit}/${page?.value?._file}`,
   target: '_blank'
 }, ...(toc?.bottom?.links || [])].filter(Boolean))
@@ -68,7 +73,6 @@ const links = computed(() => [toc?.bottom?.edit && {
 
 <template>
   <UPage v-if="page">
-
     <UPageHeader :title="page.title" :description="description" :links="page.links">
       <template #headline>
         <UBreadcrumb :links="headline" />
@@ -77,9 +81,9 @@ const links = computed(() => [toc?.bottom?.edit && {
 
     <UPageBody prose>
       <!-- 如果是插件 -->
-      <Callout icon="i-heroicons-light-bulb" v-if="dir?.pid && route.path != `/${lang}/plug`">
+      <Callout icon="i-heroicons-light-bulb" v-if="dir?.pid && route.path != `/${locale}/plug`">
         {{ dir.title }} - {{ description }} -
-        <ULink :to="`https://www.gamecreator.com.cn/plug/det/${dir.pid}`" target="_block">{{ indexPage?.plugUrl }}
+        <ULink :to="`https://www.gamecreator.com.cn/plug/det/${dir.pid}`" target="_block">{{ messagesLocales?.plugUrl }}
         </ULink>
       </Callout>
 

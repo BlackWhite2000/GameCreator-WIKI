@@ -3,8 +3,15 @@ import { createSharedComposable } from '@vueuse/core'
 
 const _useNavigation = () => {
   const headerLinks = computed(() => {
-    const lang = useLang().lang
     const route = useRoute()
+    const { locale, messages, setLocale } = useNuxtApp().$i18n
+    const messagesLocales = computed(() => {
+      const localeKey = locale.value;
+      if (messages.value[localeKey]) {
+        return messages.value[localeKey];
+      }
+      return {};
+    });
 
     return [{
       label: 'Docs',
@@ -12,56 +19,39 @@ const _useNavigation = () => {
       to: '/docs',
       search: false,
       children: [{
-        label: i18n[lang]?.gettingStartedLabel,
-        description: i18n[lang]?.gettingStartedDescription,
+        label: messagesLocales.value?.gettingStartedLabel,
+        description: messagesLocales.value?.gettingStartedDescription,
         icon: 'i-heroicons-rocket-launch',
-        to: `/${lang}/getting-started/introduction`,
-        active: route.path.startsWith(`/${lang}/getting-started`)
+        to: `/${locale.value}/getting-started/introduction`,
+        active: route.path.startsWith(`/${locale.value}/getting-started`)
       }, {
-        label: i18n[lang]?.templateLabel,
-        description: i18n[lang]?.templateDescription,
+        label: messagesLocales.value?.templateLabel,
+        description: messagesLocales.value?.templateDescription,
         icon: 'i-heroicons-hashtag',
-        to: `/${lang}/template`,
-        active: route.path.startsWith(`/${lang}/template`)
+        to: `/${locale.value}/template`,
+        active: route.path.startsWith(`/${locale.value}/template`)
       }, {
-        label: i18n[lang]?.commandsLabel,
-        description: i18n[lang]?.commandsDescription,
+        label: messagesLocales.value?.commandsLabel,
+        description: messagesLocales.value?.commandsDescription,
         icon: 'i-heroicons-window',
-        to: `/${lang}/commands`,
-        active: route.path.startsWith(`/${lang}/commands`)
+        to: `/${locale.value}/commands`,
+        active: route.path.startsWith(`/${locale.value}/commands`)
       }, {
-        label: i18n[lang]?.plugLabel,
-        description: i18n[lang]?.plugDescription,
+        label: messagesLocales.value?.plugLabel,
+        description: messagesLocales.value?.plugDescription,
         icon: 'i-heroicons-puzzle-piece',
-        to: `/${lang}/plug`,
-        active: route.path.startsWith(`/${lang}/plug`)
+        to: `/${locale.value}/plug`,
+        active: route.path.startsWith(`/${locale.value}/plug`)
       }, {
-        label: i18n[lang]?.libraryLabel,
-        description: i18n[lang]?.libraryDescription,
+        label: messagesLocales.value?.libraryLabel,
+        description: messagesLocales.value?.libraryDescription,
         icon: 'i-heroicons-cube',
-        to: `/${lang}/library`,
-        active: route.path.startsWith(`/${lang}/library`)
+        to: `/${locale.value}/library`,
+        active: route.path.startsWith(`/${locale.value}/library`)
       }]
     }]
   })
 
-  const zhCN = {
-    gettingStartedLabel: '开始使用',
-    gettingStartedDescription: '开始使用',
-    templateLabel: '游戏模板教程',
-    templateDescription: '游戏模板教程',
-    commandsLabel: '指令教程',
-    commandsDescription: '指令教程',
-    plugLabel: '插件教程',
-    plugDescription: '插件教程',
-    libraryLabel: '引擎文档',
-    libraryDescription: '引擎文档'
-  }
-  const i18n = {
-    'zh_hans': zhCN,
-    'zh_hant': zhCN,
-    'en': zhCN
-  }
 
   return {
     headerLinks,

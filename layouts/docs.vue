@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 
-const lang = useLang().lang
-
+const { locale, messages, setLocale } = useI18n()
 const navigation = inject<Ref<NavItem[]>>('navigation')
 
 
-import mediumZoom from 'medium-zoom'
-onMounted(async () => {
-  await nextTick()
-  mediumZoom(document.querySelectorAll('img'), {
-    background: 'rgba(0, 0, 0, 0.8)',
-  })
-})
+// import mediumZoom from 'medium-zoom'
+// onMounted(async () => {
+//   await nextTick()
+//   mediumZoom(document.querySelectorAll('img'), {
+//     background: 'rgba(0, 0, 0, 0.8)',
+//   })
+// })
 
 const route = useRoute()
 const { navPageFromPath } = useContentHelpers()
@@ -21,7 +20,7 @@ const { headerLinks } = useNavigation()
 const links = computed(() => headerLinks.value.find(link => link.to === '/docs')?.children ?? [])
 
 const navigationLinks = computed(() => {
-  const path = [`/${lang}`, route.params.slug?.[1]].filter(Boolean).join('/')
+  const path = [`/${locale.value}`, route.params.slug?.[1]].filter(Boolean).join('/')
   return mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
 })
 
