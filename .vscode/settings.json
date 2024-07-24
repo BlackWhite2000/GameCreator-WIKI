@@ -25,5 +25,9 @@
     "/content/zh_Hans/commands/scene/*.md": "/public/image/zh_hans/commands/scene/${documentBaseName}/${fileName}",
     "/content/zh_Hans/commands/sceneobject/*.md": "/public/image/zh_hans/commands/sceneobject/${documentBaseName}/${fileName}",
     "/content/zh_Hans/commands/player/*.md": "/public/image/zh_hans/commands/player/${documentBaseName}/${fileName}",
+    "/content/zh_Hans/commands/actor/*.md": "/public/image/zh_hans/commands/actor/${documentBaseName}/${fileName}",
+    "/content/zh_Hans/commands/battle/*.md": "/public/image/zh_hans/commands/battle/${documentBaseName}/${fileName}",
+    "/content/zh_Hans/commands/battle/startbattle/*.md": "/public/image/zh_hans/commands/battle/startbattle/${documentBaseName}/${fileName}",
+    "/content/zh_Hans/commands/battle/endbattle/*.md": "/public/image/zh_hans/commands/battle/endbattle/${documentBaseName}/${fileName}",
   },
 }

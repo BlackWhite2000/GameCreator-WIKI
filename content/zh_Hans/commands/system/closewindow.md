@@ -5,6 +5,11 @@ applicationScope: [0]
 exclusionScope: []
 ---
 
+::callout{icon="i-heroicons-light-bulb"}
+<br> 该指令在不同模板存在不同名称
+<br> 关闭窗口
+::
+
 ## 使用
 
 执行后，游戏窗口会关闭。
