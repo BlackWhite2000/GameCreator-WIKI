@@ -17,7 +17,7 @@ defineProps({
         <div class="grid sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 w-full gap-2">
           <template v-for="(item, index) in data" :key="index">
             <UButton color="white" variant="ghost" :to="item._path"
-              v-if="item.applicationScope && (item.applicationScope.includes(mid) || item.applicationScope.includes(0))">
+              v-if="item.applicationScope && item.applicationScope.includes(mid)">
               {{ item.title }}
             </UButton>
           </template>

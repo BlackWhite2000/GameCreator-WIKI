@@ -4,7 +4,7 @@
   "packageManager": "pnpm@8.15.5",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port 6100",
+    "dev": "nuxt dev --port 6101",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
