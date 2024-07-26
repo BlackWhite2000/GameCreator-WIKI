@@ -1,8 +1,7 @@
 ---
-title: "修改场景对象模块属性"
+title: 修改场景对象模块属性
 description: 	可以通过此指令实现在游戏中修改场景对象的模块属性
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 与增减场景对象的模块区别?

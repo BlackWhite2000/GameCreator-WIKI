@@ -1,8 +1,7 @@
 ---
-title: "开始游戏"
+title: 开始游戏
 description: 执行后玩家将开始进入游戏，只有开始游戏才可以存档
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

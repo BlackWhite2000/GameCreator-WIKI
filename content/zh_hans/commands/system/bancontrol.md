@@ -1,8 +1,7 @@
 ---
-title: "允许使用菜单"
+title: 允许使用菜单
 description: 允许玩家打开菜单，通常用于禁止使用菜单后的恢复
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

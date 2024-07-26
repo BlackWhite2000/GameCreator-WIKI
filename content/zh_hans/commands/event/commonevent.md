@@ -1,8 +1,7 @@
 ---
-title: "调用事件库"
+title: 调用事件库
 description: 通过此指令可以调用事件库中的事件页,让事件拥有可复用性
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

@@ -1,8 +1,7 @@
 ---
 title: 预加载资源和卸载资源
 description: 通过此指令可提前加载/卸载缓存游戏中指定的资源，提升玩家的游戏体验
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ::callout{icon="i-heroicons-light-bulb"}

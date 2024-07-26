@@ -1,8 +1,7 @@
 ---
-title: "标签跳转"
+title: 标签跳转
 description: 通过指定命名好的标签，来执行希望跳转到的事件位置。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 示例

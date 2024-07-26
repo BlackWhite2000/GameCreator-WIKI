@@ -1,8 +1,7 @@
 ---
-title: "等待玩家输入文本"
+title: 等待玩家输入文本
 description: 最常见的应用场景为自定义玩家的名称，可通过输入值获取玩家输入的内容
-applicationScope: [0]
-exclusionScope: [302,325]
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 基本使用

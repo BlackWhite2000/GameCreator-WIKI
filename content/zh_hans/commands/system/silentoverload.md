@@ -2,7 +2,6 @@
 title: 静默重载
 description: 执行后将会立刻存档并重启游戏回到当前位置，利用重启游戏清空当前内存占用
 applicationScope: [182]
-exclusionScope: []
 ---
 
 ## 使用

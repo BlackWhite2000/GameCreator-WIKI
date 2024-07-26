@@ -1,8 +1,7 @@
 ---
 title: 修改角色的技能
 description: 通过指令修改角色拥有的技能模块设置
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,1]
 ---
 
 ## 使用

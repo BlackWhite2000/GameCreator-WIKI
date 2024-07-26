@@ -1,8 +1,7 @@
 ---
-title: "条件分歧"
+title: 条件分歧
 description: 用于判断处理不同情况的指令，是常用的指令之一。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 

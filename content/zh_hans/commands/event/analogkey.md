@@ -1,8 +1,7 @@
 ---
-title: "模拟按键"
+title: 模拟按键
 description: 通过此指令可以模拟触发按键，而不是必须通过快捷键来触发
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

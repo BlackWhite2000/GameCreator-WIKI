@@ -1,8 +1,7 @@
 ---
-title: "禁止使用菜单"
+title: 禁止使用菜单
 description: 使用后将无法打开模板预设的菜单界面
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

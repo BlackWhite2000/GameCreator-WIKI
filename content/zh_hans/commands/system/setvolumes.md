@@ -1,8 +1,7 @@
 ---
-title: "设置全局音量"
+title: 设置全局音量
 description: 可以修改游戏中音乐的音量大小
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

@@ -1,8 +1,7 @@
 ---
-title: "设置图像层镜头"
+title: 设置图像层镜头
 description: 可通过此指令快速改变图像层的镜头效果
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 开启预览事件页模式来使用

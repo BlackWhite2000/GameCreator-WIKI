@@ -1,8 +1,7 @@
 ---
-title: "设置场景对象的属性"
+title: 设置场景对象的属性
 description: 	可以通过此指令实现在游戏中修改场景对象的属性
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

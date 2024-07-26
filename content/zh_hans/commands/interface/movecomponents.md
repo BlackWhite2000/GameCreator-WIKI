@@ -1,8 +1,7 @@
 ---
 title: 移动界面内的元件
 description: 可以快速实现界面动画效果，类似于移动界面
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

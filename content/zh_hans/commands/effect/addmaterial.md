@@ -1,8 +1,7 @@
 ---
 title: 添加材质
 description: 通过此指令可以给指定目标添加材质组效果
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

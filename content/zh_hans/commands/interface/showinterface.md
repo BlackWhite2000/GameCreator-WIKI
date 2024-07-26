@@ -1,8 +1,7 @@
 ---
 title: 显示界面
 description: 用于显示设置的游戏界面
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

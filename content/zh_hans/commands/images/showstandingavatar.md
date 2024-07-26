@@ -1,8 +1,7 @@
 ---
-title: "显示立绘"
+title: 显示立绘
 description: 通过该指令可在图像层上显示指定立绘
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

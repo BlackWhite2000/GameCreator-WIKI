@@ -1,8 +1,7 @@
 ---
-title: "场所移动"
+title: 场所移动
 description: 使用后可更改玩家所在的场景地图
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

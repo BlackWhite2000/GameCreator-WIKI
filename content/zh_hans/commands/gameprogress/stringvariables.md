@@ -1,8 +1,7 @@
 ---
-title: "字符串设值"
+title: 字符串设值
 description: 一种可以记录文字内容的值。当记录了内容后，可以在不同的地方进行调用。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ::card{title="字符串变量类型" icon="i-heroicons-cube-transparent"}

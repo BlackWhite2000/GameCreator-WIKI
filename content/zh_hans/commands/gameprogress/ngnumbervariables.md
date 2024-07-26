@@ -1,8 +1,7 @@
 ---
-title: "二周目数值设值"
+title: 二周目数值设值
 description: 与其他变量不同，二周目变量可以跨存档调用，即全局生效的变量。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ::card{title="数值变量类型" icon="i-heroicons-cube-transparent"}

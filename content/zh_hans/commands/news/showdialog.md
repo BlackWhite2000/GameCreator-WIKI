@@ -1,8 +1,7 @@
 ---
-title: "显示对话"
+title: 显示对话
 description: 通过该指令可在游戏中显示剧情对话，只需要填写相关对话文本即可
-applicationScope: [0]
-exclusionScope: [302,325]
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 基本使用

@@ -1,8 +1,7 @@
 ---
-title: "更改角色的职业"
+title: 更改角色的职业
 description: 在游戏中更改角色的职业
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,193,1]
 ---
 
 ## 使用

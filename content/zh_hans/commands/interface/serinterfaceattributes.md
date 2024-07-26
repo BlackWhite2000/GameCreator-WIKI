@@ -1,8 +1,7 @@
 ---
 title: 设置界面属性
 description: 可以修改界面组件的属性值或者绑定变量
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

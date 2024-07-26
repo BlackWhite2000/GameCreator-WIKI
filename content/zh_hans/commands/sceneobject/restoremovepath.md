@@ -1,8 +1,7 @@
 ---
-title: "恢复移动路径"
+title: 恢复移动路径
 description: 	执行记录移动路径时的路径。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1]
 ---
 
 ## 使用

@@ -1,8 +1,7 @@
 ---
 title: 打开商店
 description: 为游戏中设置商店商品，并且会自动打开商店界面
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

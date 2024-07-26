@@ -1,8 +1,7 @@
 ---
-title: "绘制自动元件"
+title: 绘制自动元件
 description: 在游戏中为场景添加自动元件图块
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ::callout{icon="i-heroicons-light-bulb"}

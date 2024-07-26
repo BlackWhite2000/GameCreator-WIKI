@@ -1,8 +1,7 @@
 ---
-title: "修改行走图部件"
-description: 	可以在游戏中更改行走图的部件
-applicationScope: [0]
-exclusionScope: []
+title: 修改行走图部件
+description: 可以在游戏中更改行走图的部件
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

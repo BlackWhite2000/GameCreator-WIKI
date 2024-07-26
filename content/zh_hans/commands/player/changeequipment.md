@@ -1,8 +1,7 @@
 ---
-title: "增减装备"
+title: 增减装备
 description: 	可通过此指令增加减少玩家的装备，支持自定义装备属性值浮动、支持数值变量
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,193,1]
 ---
 
 ## 使用

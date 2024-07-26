@@ -1,8 +1,7 @@
 ---
 title: 设置列表焦点
 description: 可以为列表组件设置焦点效果
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

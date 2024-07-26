@@ -1,8 +1,7 @@
 ---
-title: "全屏设置"
+title: 全屏设置
 description: 勾选后可让游戏全屏化
-applicationScope: [182]
-exclusionScope: []
+applicationScope: [182,314]
 ---
 
 ## 使用

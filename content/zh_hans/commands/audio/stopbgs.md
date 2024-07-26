@@ -1,8 +1,7 @@
 ---
 title: 停止环境声效
 description: 停止播放环境声效的指令
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

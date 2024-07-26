@@ -1,8 +1,7 @@
 ---
 title: 修改角色的属性
 description: 通过指令修改角色模块的设置
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,193,1,325]
 ---
 
 ## 使用

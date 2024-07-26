@@ -1,8 +1,7 @@
 ---
-title: "关闭游戏窗口"
+title: 关闭游戏窗口
 description: 用于关闭整个游戏的窗口
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ::callout{icon="i-heroicons-light-bulb"}

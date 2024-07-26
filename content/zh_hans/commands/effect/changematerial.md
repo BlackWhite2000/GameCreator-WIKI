@@ -1,8 +1,7 @@
 ---
 title: 更改材质
 description: 通过此指令可以将指定目标的材质组进行修改变更
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

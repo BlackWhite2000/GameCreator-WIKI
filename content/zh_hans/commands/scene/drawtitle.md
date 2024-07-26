@@ -1,8 +1,7 @@
 ---
-title: "绘制图块"
+title: 绘制图块
 description: 通过此指令可以在游戏中为场景添加图块
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ::callout{icon="i-heroicons-light-bulb"}

@@ -1,8 +1,7 @@
 ---
-title: "等待行为结束"
+title: 等待行为结束
 description: 设置对象行为执行完毕后才会执行后续事件
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

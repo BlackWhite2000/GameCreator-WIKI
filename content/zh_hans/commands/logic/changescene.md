@@ -1,8 +1,7 @@
 ---
-title: "更换场景"
+title: 更换场景
 description: 使用后可以进入到另外一个游戏场景地图
-applicationScope: [182]
-exclusionScope: []
+applicationScope: [182,314]
 ---
 
 ## 使用

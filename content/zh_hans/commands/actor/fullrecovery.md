@@ -1,8 +1,7 @@
 ---
-title: "完全恢复"
+title: 完全恢复
 description: 完全恢复角色的生命值、魔法值
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,1]
 ---
 
 ## 使用

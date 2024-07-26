@@ -1,8 +1,7 @@
 ---
-title: "设置对话音效"
+title: 设置对话音效
 description: 用于开启或关闭设定的对话音效
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

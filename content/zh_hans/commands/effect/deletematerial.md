@@ -1,8 +1,7 @@
 ---
 title: 删除材质
 description: 删除指定目标的材质效果
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

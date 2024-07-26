@@ -1,8 +1,7 @@
 ---
-title: "清除图块"
+title: 清除图块
 description: 游戏中清除场景上的图块
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

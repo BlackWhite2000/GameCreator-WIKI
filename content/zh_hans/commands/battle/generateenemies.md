@@ -1,8 +1,7 @@
 ---
-title: "生成敌人"
+title: 生成敌人
 description: 战斗时，立即生成指定的敌人出来
 applicationScope: [199]
-exclusionScope: []
 ---
 
 ## 使用

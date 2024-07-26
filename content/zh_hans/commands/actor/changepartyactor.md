@@ -1,8 +1,7 @@
 ---
-title: "替换队伍角色"
+title: 替换队伍角色
 description: 在游戏中让角色加入、离开队伍
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,1]
 ---
 
 ## 加入队伍
@@ -17,6 +16,10 @@ exclusionScope: []
 
 
 ## 战斗中立刻生效
+
+::callout{icon="i-heroicons-light-bulb"}
+部分模板才拥有该功能
+::
 
 开启后，即使在战斗中也会马上上场。如果不开启的话战斗中新加入队伍的角色是不会上场的。
 

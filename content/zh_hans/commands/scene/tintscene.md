@@ -1,8 +1,7 @@
 ---
-title: "场景色调"
+title: 场景色调
 description: 更改场景上的色调，具体效果请自行手动尝试
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

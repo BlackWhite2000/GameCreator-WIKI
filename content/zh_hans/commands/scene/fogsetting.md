@@ -1,8 +1,7 @@
 ---
-title: "显示雾"
+title: 显示雾
 description: 可以为场景增加滚动雾气，支持图片混合模式
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

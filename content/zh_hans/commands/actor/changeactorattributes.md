@@ -1,8 +1,7 @@
 ---
-title: "增减角色的属性"
+title: 增减角色的属性
 description: 在游戏中增加、降低角色的某项属性
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,193,1,325]
 ---
 
 ## 增加、减少属性

@@ -2,7 +2,6 @@
 title: 强制行动
 description: 可以在战斗中强制战斗者行动一次
 applicationScope: [199]
-exclusionScope: []
 ---
 
 ## 使用

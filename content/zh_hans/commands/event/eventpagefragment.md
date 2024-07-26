@@ -1,8 +1,7 @@
 ---
-title: "事件页片段"
+title: 事件页片段
 description: 一个事件页里可以有多个事件页片段。事件页可以有效的整理事件过长问题，就像打组一样
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 示例

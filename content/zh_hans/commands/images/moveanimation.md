@@ -1,8 +1,7 @@
 ---
-title: "移动动画"
+title: 移动动画
 description: 可以通过使用此指令来为动画增加过渡效果
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

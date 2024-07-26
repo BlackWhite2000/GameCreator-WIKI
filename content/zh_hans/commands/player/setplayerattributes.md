@@ -1,8 +1,7 @@
 ---
-title: "设置玩家属性"
+title: 设置玩家属性
 description: 用于设置玩家设定的属性
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

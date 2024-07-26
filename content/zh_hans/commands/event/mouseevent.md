@@ -1,8 +1,7 @@
 ---
-title: "鼠标事件"
+title: 鼠标事件
 description: 通过绑定鼠标操作，来实现鼠标快捷键操作
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 示例

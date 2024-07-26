@@ -1,8 +1,7 @@
 ---
-title: "更改角色的形象"
+title: 更改角色的形象
 description: 在游戏中更改角色头像、行走图、战斗图
 applicationScope: [199]
-exclusionScope: []
 ---
 
 ## 使用

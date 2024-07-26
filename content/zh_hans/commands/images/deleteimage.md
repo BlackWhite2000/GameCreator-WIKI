@@ -1,8 +1,7 @@
 ---
-title: "消除图像"
+title: 消除图像
 description: 可以消除指定编号上的显示图片、显示动画、显示立绘、显示视频
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

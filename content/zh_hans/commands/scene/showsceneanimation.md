@@ -1,8 +1,7 @@
 ---
-title: "显示场景动画"
+title: 显示场景动画
 description: 可以将动画显示在场景对象或场景地图上
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 场景对象上显示

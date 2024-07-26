@@ -1,7 +1,5 @@
 ---
-title: '插件教程'
-titleTemplate: '%s'
-description: ''
+title: 插件教程
 navigation: false
 surround: false
 ---

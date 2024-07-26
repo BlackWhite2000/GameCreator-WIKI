@@ -1,8 +1,7 @@
 ---
-title: "设置对象行为"
+title: 设置对象行为
 description: 常用指令，通常是为了控制场景对象的行为
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

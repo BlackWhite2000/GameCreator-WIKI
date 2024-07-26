@@ -1,8 +1,7 @@
 ---
-title: "显示图片"
+title: 显示图片
 description: 通过该指令可在图像层上显示指定图片
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

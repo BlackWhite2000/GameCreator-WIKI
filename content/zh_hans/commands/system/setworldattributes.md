@@ -1,8 +1,7 @@
 ---
-title: "设置世界属性"
+title: 设置世界属性
 description: 通过指令来修改数据库-世界设定中的设置
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

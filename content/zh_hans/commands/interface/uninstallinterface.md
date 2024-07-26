@@ -2,7 +2,6 @@
 title: 卸载界面
 description: 执行卸载界面后，界面的缓存将会清除，是真正的关闭掉界面
 applicationScope: [182]
-exclusionScope: []
 ---
 
 ## 使用

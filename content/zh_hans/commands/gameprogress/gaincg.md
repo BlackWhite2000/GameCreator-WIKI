@@ -1,8 +1,7 @@
 ---
-title: "获得鉴赏图片"
+title: 获得鉴赏图片
 description: 通过此指令可以在游戏中解锁设定的CG鉴赏图片
-applicationScope: [182]
-exclusionScope: []
+applicationScope: [182,314]
 ---
 
 ## 使用

@@ -1,8 +1,7 @@
 ---
-title: "循环"
+title: 循环
 description: 循环顾名思义，可以将指令重复执行多次。合理的使用能够提高游戏的制作效率
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 示例

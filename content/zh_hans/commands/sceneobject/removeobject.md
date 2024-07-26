@@ -1,8 +1,7 @@
 ---
-title: "暂时移除对象"
+title: 暂时移除对象
 description: 	通过此指令可移除掉场景上的对象，但是对象列表里依然存在该对象，仍然可以被获取到。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

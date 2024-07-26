@@ -1,8 +1,7 @@
 ---
-title: "定时器"
+title: 定时器
 description: 轻松实现定时器功能
-applicationScope: [3,199]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

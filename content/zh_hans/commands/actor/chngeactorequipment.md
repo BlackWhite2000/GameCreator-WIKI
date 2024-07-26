@@ -1,8 +1,7 @@
 ---
-title: "替换角色的装备"
+title: 替换角色的装备
 description: 在游戏中佩戴、卸下、移除角色的装备
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,193,1]
 ---
 
 ## 佩戴装备

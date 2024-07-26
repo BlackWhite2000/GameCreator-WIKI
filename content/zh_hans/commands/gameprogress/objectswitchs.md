@@ -1,8 +1,7 @@
 ---
-title: "对象开关设置"
+title: 对象开关设置
 description: 需指定场景对象来使用，与其他变量的区别是场景对象不存在时，变量不存在。
-applicationScope: [1,3,193,199,302,325,350]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ::card{title="开关变量类型" icon="i-heroicons-cube-transparent"}

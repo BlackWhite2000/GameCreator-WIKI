@@ -1,8 +1,7 @@
 ---
 title: 关闭界面焦点
 description: 关闭界面指定的按钮焦点模式
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

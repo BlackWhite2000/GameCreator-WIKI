@@ -1,8 +1,7 @@
 ---
 title: 自动旋转
 description: 使用此指令可以让指定编号的图像自动旋转
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

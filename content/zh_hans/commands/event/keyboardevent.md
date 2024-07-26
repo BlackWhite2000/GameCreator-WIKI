@@ -1,8 +1,7 @@
 ---
-title: "按键事件"
+title: 按键事件
 description: 可以将事件绑定到键盘的按键上，来实现快捷键操作
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 示例

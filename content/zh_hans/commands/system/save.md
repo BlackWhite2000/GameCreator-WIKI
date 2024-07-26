@@ -1,8 +1,7 @@
 ---
-title: "存档"
+title: 存档
 description: 用于存储游戏中的进度
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

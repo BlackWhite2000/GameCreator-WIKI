@@ -1,8 +1,7 @@
 ---
-title: "开关设置"
+title: 开关设置
 description: 记录开和关两种状态的一种变量
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ::card{title="开关变量类型" icon="i-heroicons-cube-transparent"}

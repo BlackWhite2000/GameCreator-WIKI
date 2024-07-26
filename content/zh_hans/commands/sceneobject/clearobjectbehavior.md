@@ -1,8 +1,7 @@
 ---
-title: "清除对象行为"
+title: 清除对象行为
 description: 可以将当前场景对象的行为清除掉
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

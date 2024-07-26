@@ -1,8 +1,7 @@
 ---
-title: "显示动画"
+title: 显示动画
 description: 通过该指令可在图像层上显示指定动画
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

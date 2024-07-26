@@ -1,8 +1,7 @@
 ---
-title: "更改角色的名称"
+title: 更改角色的名称
 description: 在游戏中修改角色设定的名称
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,193,1]
 ---
 
 ## 使用

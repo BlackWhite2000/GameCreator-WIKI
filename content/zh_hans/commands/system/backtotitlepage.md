@@ -1,8 +1,7 @@
 ---
-title: "返回标题界面"
+title: 返回标题界面
 description: 返回游戏的标题界面，即开始游戏之前的地方
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

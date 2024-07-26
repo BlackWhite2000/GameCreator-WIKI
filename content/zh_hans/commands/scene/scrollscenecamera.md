@@ -1,8 +1,7 @@
 ---
-title: "镜头移动"
+title: 镜头移动
 description: 可以修改游戏中场景的聚焦显示，默认游戏镜头的聚焦点为玩家对象
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

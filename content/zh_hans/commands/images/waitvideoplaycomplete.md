@@ -1,8 +1,7 @@
 ---
 title: 等待视频播放完成
 description: 可以等待视频播放完成后才会执行后续事件
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

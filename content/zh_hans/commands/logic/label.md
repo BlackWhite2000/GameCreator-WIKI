@@ -1,8 +1,7 @@
 ---
-title: "标签"
+title: 标签
 description: 标签可以改变事件原本的执行顺序，需配合指令标签跳转使用。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 示例

@@ -1,8 +1,7 @@
 ---
 title: 关闭界面
 description: 将打开的游戏界面关闭，支持数值变量
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

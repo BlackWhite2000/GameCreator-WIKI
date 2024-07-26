@@ -1,8 +1,7 @@
 ---
-title: "停止移动"
+title: 停止移动
 description: 	停止移动可以停止对象的一个移动行为
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1]
 ---
 
 ## 使用

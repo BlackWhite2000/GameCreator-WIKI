@@ -1,8 +1,7 @@
 ---
-title: "等待"
+title: 等待
 description: 执行等待后，会根据设置的时间等待，之后才会继续执行后续事件。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 基本使用

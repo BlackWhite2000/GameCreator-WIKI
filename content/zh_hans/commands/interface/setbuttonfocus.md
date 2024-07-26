@@ -1,8 +1,7 @@
 ---
 title: 设置按钮焦点
 description: 可以为界面的按钮设置焦点皮肤。
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

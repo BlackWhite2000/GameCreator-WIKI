@@ -1,8 +1,7 @@
 ---
-title: "暂停游戏"
+title: 暂停游戏
 description: 使用后游戏将暂停
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

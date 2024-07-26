@@ -1,8 +1,7 @@
 ---
-title: "设置图层属性"
+title: 设置图层属性
 description: 通过此指令可以在游戏中修改图层自身的属性
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

@@ -1,8 +1,7 @@
 ---
-title: "获取鉴赏音乐"
+title: 获取鉴赏音乐
 description: 解锁游戏中音乐鉴赏界面中的音乐
-applicationScope: [182]
-exclusionScope: []
+applicationScope: [182,314]
 ---
 
 ## 使用

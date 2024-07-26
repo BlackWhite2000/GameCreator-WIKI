@@ -1,8 +1,7 @@
 ---
-title: "中断循环"
+title: 中断循环
 description: 当执行循环后想停止，即可使用中断循环停止循环的执行
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 示例

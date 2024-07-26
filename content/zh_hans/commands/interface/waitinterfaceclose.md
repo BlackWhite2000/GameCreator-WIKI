@@ -1,8 +1,7 @@
 ---
 title: 等待关闭界面
 description: 直到指定的界面关闭，才会继续执行当前事件页的后续事件
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

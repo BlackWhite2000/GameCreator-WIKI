@@ -1,8 +1,7 @@
 ---
-title: "克隆对象"
+title: 克隆对象
 description: 可以将一个场景对象克隆多份生成在场景上
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

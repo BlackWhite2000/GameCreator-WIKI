@@ -1,8 +1,7 @@
 ---
-title: "显示视频"
+title: 显示视频
 description: 显示指定的视频
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,325]
 ---
 
 ## 使用

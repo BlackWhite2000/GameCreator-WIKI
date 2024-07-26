@@ -1,8 +1,7 @@
 ---
-title: "销毁克隆对象"
+title: 销毁克隆对象
 description: 可以移除克隆的场景对象
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

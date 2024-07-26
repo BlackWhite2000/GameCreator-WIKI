@@ -1,8 +1,7 @@
 ---
-title: "对话功能菜单"
+title: 对话功能菜单
 description: 自由控制对话右下角的功能按钮显示隐藏状态
 applicationScope: [182]
-exclusionScope: []
 ---
 
 ## 使用

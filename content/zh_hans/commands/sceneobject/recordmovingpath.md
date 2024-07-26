@@ -1,8 +1,7 @@
 ---
-title: "记录移动路径"
+title: 记录移动路径
 description: 	执行此指令时，会同步记录当前的对象行为移动路径
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1]
 ---
 
 ## 使用

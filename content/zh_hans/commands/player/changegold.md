@@ -1,8 +1,7 @@
 ---
-title: "增减金币"
+title: 增减金币
 description: 	通过此指令可增加减少玩家的金币数量，支持数值变量
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

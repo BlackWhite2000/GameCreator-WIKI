@@ -1,8 +1,7 @@
 ---
-title: "数值变量设值"
+title: 数值变量设值
 description: 一种可以记录数字的值，可以进行公式计算。当记录了内容后，可以在不同的地方进行调用。
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ::card{title="数值变量类型" icon="i-heroicons-cube-transparent"}

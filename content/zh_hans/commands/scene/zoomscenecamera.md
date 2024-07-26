@@ -1,8 +1,7 @@
 ---
-title: "缩放场景镜头"
+title: 缩放场景镜头
 description: 可以缩放游戏中场景的比例大小
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

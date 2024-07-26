@@ -1,8 +1,7 @@
 ---
-title: "允许玩家控制"
+title: 允许玩家控制
 description: 允许操作玩家对象，通常用于禁止玩家控制后的恢复
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

@@ -1,8 +1,7 @@
 ---
-title: "增减场景对象的模块"
+title: 增减场景对象的模块
 description: 	可以在游戏中增加减少对象的模块
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 与修改场景对象模块属性区别?

@@ -1,8 +1,7 @@
 ---
-title: "恢复游戏"
+title: 恢复游戏
 description: 用于恢复执行暂停游戏的指令
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

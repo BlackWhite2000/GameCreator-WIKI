@@ -1,8 +1,7 @@
 ---
-title: "场所震动"
+title: 场所震动
 description: 可以为游戏中增加场景震动效果
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用

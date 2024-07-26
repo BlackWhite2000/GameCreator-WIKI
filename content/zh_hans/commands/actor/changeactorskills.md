@@ -1,8 +1,7 @@
 ---
-title: "替换角色的技能"
+title: 替换角色的技能
 description: 在游戏中增加、遗忘角色的技能
-applicationScope: [199]
-exclusionScope: []
+applicationScope: [199,193,1]
 ---
 
 ## 学习技能

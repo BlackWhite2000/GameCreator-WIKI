@@ -1,8 +1,7 @@
 ---
 title: 播放语音
 description: 可以为游戏增加语音的指令
-applicationScope: [0]
-exclusionScope: []
+applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
 ## 使用

@@ -1,8 +1,7 @@
 ---
-title: "设置地图网格数据"
+title: 设置地图网格数据
 description: 通过此指令可以在游戏中为场景增加、移除网格数据层
-applicationScope: [3]
-exclusionScope: []
+applicationScope: [199,3,193,1,302,325]
 ---
 
 ## 使用
