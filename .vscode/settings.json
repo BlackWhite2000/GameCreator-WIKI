@@ -29,6 +29,12 @@
     "/content/zh_hans/commands/battle/*.md": "/public/image/zh_hans/commands/battle/${documentBaseName}/${fileName}",
     "/content/zh_hans/commands/battle/startbattle/*.md": "/public/image/zh_hans/commands/battle/startbattle/${documentBaseName}/${fileName}",
     "/content/zh_hans/commands/battle/endbattle/*.md": "/public/image/zh_hans/commands/battle/endbattle/${documentBaseName}/${fileName}",
-    "/content/zh_hans/gettingstarted/*.md": "/public/image/zh_hans/gettingstarted/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/*.md": "/public/image/zh_hans/getting-started/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/6.assets/*.md": "/public/image/zh_hans/getting-started/6.assets/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/7.scene/*.md": "/public/image/zh_hans/getting-started/7.scene/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/8.sceneobject/*.md": "/public/image/zh_hans/getting-started/7.sceneobject/${documentBaseName}/${fileName}",
   },
+  "i18n-ally.localesPaths": [
+    "lang"
+  ],
 }
