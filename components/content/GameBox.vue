@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
   <div>
-    <div @click="isOpen = true" class="text-primary hover:underline cursor-pointer">
+    <div @click="isOpen = true" class="text-primary w-max hover:underline cursor-pointer">
       <slot />
     </div>
     <UModal v-model="isOpen" prevent-close :ui="{ width: 'sm:max-w-[max-content]' }">

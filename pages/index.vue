@@ -46,7 +46,7 @@ useSeoMeta({
           <UPageGrid class="md:!grid-cols-2 lg:!grid-cols-3 xl:!grid-cols-4">
             <template v-for="item in (data as any)" :key="item._path">
               <ULandingCard v-if="item.mid">
-                <ULink :to="`${locale}/template/${item.mid}`" class="w-full h-full group">
+                <ULink :to="`/${locale}/template/${item.mid}`" class="w-full h-full group">
                   <UBadge v-if="item.type" class="absolute top-0 left-0 px-4 m-2" variant="subtle" size="md">
                     {{ item.type }}
                   </UBadge>

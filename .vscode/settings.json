@@ -32,7 +32,12 @@
     "/content/zh_hans/getting-started/*.md": "/public/image/zh_hans/getting-started/${documentBaseName}/${fileName}",
     "/content/zh_hans/getting-started/6.assets/*.md": "/public/image/zh_hans/getting-started/6.assets/${documentBaseName}/${fileName}",
     "/content/zh_hans/getting-started/7.scene/*.md": "/public/image/zh_hans/getting-started/7.scene/${documentBaseName}/${fileName}",
-    "/content/zh_hans/getting-started/8.sceneobject/*.md": "/public/image/zh_hans/getting-started/7.sceneobject/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/8.sceneobject/*.md": "/public/image/zh_hans/getting-started/8.sceneobject/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/9.avatar/*.md": "/public/image/zh_hans/getting-started/9.avatar/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/10.standAvatar/*.md": "/public/image/zh_hans/getting-started/10.standAvatar/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/11.animation/*.md": "/public/image/zh_hans/getting-started/11.animation/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/12.dialog/*.md": "/public/image/zh_hans/getting-started/12.dialog/${documentBaseName}/${fileName}",
+    "/content/zh_hans/getting-started/13.interface/*.md": "/public/image/zh_hans/getting-started/13.interface/${documentBaseName}/${fileName}",
   },
   "i18n-ally.localesPaths": [
     "lang"

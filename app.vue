@@ -64,4 +64,17 @@ const navigationLinks = computed(() => {
   --ui-background: var(--color-gray-950);
   --ui-foreground: var(--color-gray-200);
 }
+
+blockquote {
+  font-style: normal !important;
+  color: rgb(var(--color-gray-300) / 1) !important;
+  background: rgb(var(--color-gray-900) / 1);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  p {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+}
 </style>

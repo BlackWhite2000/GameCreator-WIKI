@@ -50,15 +50,15 @@ defineOgImage({
 })
 
 // const headline = computed(() => findPageHeadline(page.value))
-const headline = computed(() => {
-  return page?.value._path.split('/').filter(v => v !== '').filter(v => v !== locale.value).map((v) => {
-    return {
-      label: v,
-      icon: '',
-      to: ''
-    }
-  })
-})
+// const headline = computed(() => {
+//   return page?.value._path.split('/').filter(v => v !== '').filter(v => v !== locale.value).map((v) => {
+//     return {
+//       label: v,
+//       icon: '',
+//       to: ''
+//     }
+//   })
+// })
 
 const description = computed(() => {
   return page?.value?.description ? page.value.description : dir?.value?.description
@@ -73,11 +73,7 @@ const links = computed(() => [toc?.bottom?.edit && {
 
 <template>
   <UPage v-if="page">
-    <UPageHeader :title="page.title" :description="description" :links="page.links">
-      <template #headline>
-        <UBreadcrumb :links="headline" />
-      </template>
-    </UPageHeader>
+    <UPageHeader :title="page?.title" :description="description" :links="page?.links" />
 
     <UPageBody prose>
       <!-- 如果是插件 -->
