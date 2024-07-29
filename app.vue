@@ -77,4 +77,8 @@ blockquote {
     margin-bottom: 0.5em !important;
   }
 }
+
+html.dark .shiki span {
+  font-style: normal !important;
+}
 </style>
