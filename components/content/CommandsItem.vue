@@ -17,17 +17,15 @@ defineProps({
 <template>
   <div>
     <ContentQuery :path="`/${locale}/commands/${typeName}/${pageName}`" v-slot="{ data }">
-      <ul>
-        <slot></slot>
-        <template v-for="(item, index) in data" :key="index">
-          <li v-if="item?.description">
-            <ULink :to="item._path">
-              {{ item.title }}
-            </ULink>
-            <span class="text-gray-400"> - {{ item.description }}</span>
-          </li>
-        </template>
-      </ul>
+      <slot></slot>
+      <template v-for="(item, index) in data" :key="index">
+        <li v-if="item?.description">
+          <ULink :to="item._path">
+            {{ item.title }}
+          </ULink>
+          <span class="text-gray-400"> - {{ item.description }}</span>
+        </li>
+      </template>
     </ContentQuery>
   </div>
 </template>
