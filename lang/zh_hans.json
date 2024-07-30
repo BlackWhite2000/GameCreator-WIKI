@@ -22,6 +22,6 @@
   "commandsDescription": "指令教程",
   "plugLabel": "插件教程",
   "plugDescription": "插件教程",
-  "libraryLabel": "引擎文档",
-  "libraryDescription": "引擎文档"
+  "libraryLabel": "API",
+  "libraryDescription": "API"
 }
