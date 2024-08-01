@@ -47,6 +47,7 @@
     "/content/zh_hans/getting-started/20.plug/*.md": "/public/image/zh_hans/getting-started/20.plug/${documentBaseName}/${fileName}",
     "/content/zh_hans/getting-started/21.template/*.md": "/public/image/zh_hans/getting-started/21.template/${documentBaseName}/${fileName}",
     "/content/zh_hans/getting-started/23.appendix/*.md": "/public/image/zh_hans/getting-started/23.appendix/${documentBaseName}/${fileName}",
+    "/content/zh_hans/library/3.script/*.md": "/public/image/zh_hans/library/3.script/${documentBaseName}/${fileName}",
   },
   "i18n-ally.localesPaths": [
     "lang"
