@@ -9,41 +9,41 @@ const props = defineProps({
   }
 })
 
-const langData = await useLangData(locale.value);
+const langData = await useLangData(locale.value)
 
 const allTargets = computed(() => [
   {
-    name: langData?.value?.numberVariables,
+    name: langData?.numberVariables,
     type: 0,
     url: `/${locale.value}/commands/gameprogress/numbervariables`,
   },
   {
-    name: langData?.value?.switch,
+    name: langData?.switch,
     type: 2,
     url: `/${locale.value}/commands/gameprogress/switchs`
   },
   {
-    name: langData?.value?.stringVariables,
+    name: langData?.stringVariables,
     type: 1,
     url: `/${locale.value}/commands/gameprogress/stringvariables`
   },
   {
-    name: langData?.value?.ngNumberVariables,
+    name: langData?.ngNumberVariables,
     type: 0,
     url: `/${locale.value}/commands/gameprogress/ngnumbervariables`
   },
   {
-    name: langData?.value?.ngSwitch,
+    name: langData?.ngSwitch,
     type: 2,
     url: `/${locale.value}/commands/gameprogress/ngswitchs`
   },
   {
-    name: langData?.value?.ngStringVariables,
+    name: langData?.ngStringVariables,
     type: 1,
     url: `/${locale.value}/commands/gameprogress/ngstringvariables`
   },
   {
-    name: langData?.value?.objectSwitch,
+    name: langData?.objectSwitch,
     type: 2,
     url: `/${locale.value}/commands/gameprogress/objectswitchs`
   }
