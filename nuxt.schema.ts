@@ -75,14 +75,14 @@ export default defineNuxtSchema({
       }
     }),
     seo: group({
-      title: 'SEO',
-      description: 'SEO configuration.',
+      title: 'GCW',
+      description: 'GameCreator WIKI - 一站式查询游戏制作教程',
       icon: 'i-ph-app-window',
       fields: {
         siteName: field({
           type: 'string',
-          title: 'Site Name',
-          description: 'Name used in ogSiteName and used as second part of your page title (My page title - Nuxt UI Pro).',
+          title: 'GCW',
+          description: 'GameCreator WIKI - 一站式查询游戏制作教程',
           icon: 'i-mdi-web',
           default: []
         })
