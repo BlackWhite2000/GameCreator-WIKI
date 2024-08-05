@@ -6,25 +6,25 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **id** : number;<br>动作ID 对应动作库中的ID  |
-| **[frameImageInfo](#frameimageinfo)** : AvatarFrameImage[][];<br>图集的帧数据信息 默认值=[]  |
-| **[oriMode](#orimode)** : number;<br>方向模式 1 2 3 4 5 8  |
+| <div style="width:1000px;text-align:left">属性</div>                                        |
+| ------------------------------------------------------------------------------------------- |
+| **id** : number;<br>动作ID 对应动作库中的ID                                                 |
+| **[frameImageInfo](#frameimageinfo)** : AvatarFrameImage[][];<br>图集的帧数据信息 默认值=[] |
+| **[oriMode](#orimode)** : number;<br>方向模式 1 2 3 4 5 8                                   |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[getFrameLength](#getframelength)**(ori : number,  useMapping? : boolean): number<br>获取指定面向的总帧数
-| **[getFrameImage](#getframeimage)**(ori : number,  frame : number,  useMapping? : boolean): AvatarFrameImage<br>获取当前动作中某个方向与某帧的数据图像
-| **[hasOri](#hasori)**(ori : number): boolean<br>是否存在该面向
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[getFrameLength](#getframelength)**(ori : number,  useMapping? : boolean): number<br>获取指定面向的总帧数                                            |
+| **[getFrameImage](#getframeimage)**(ori : number,  frame : number,  useMapping? : boolean): AvatarFrameImage<br>获取当前动作中某个方向与某帧的数据图像 |
+| **[hasOri](#hasori)**(ori : number): boolean<br>是否存在该面向                                                                                         |
 
 ## 详情
 
 ### frameImageInfo
 ###### frameImageInfo : AvatarFrameImage[][];
 图集的帧数据信息 默认值=[]<br>
-[面向](对应小键盘) - 帧图<br>
+面向 - 帧图<br>
 如 [2] = AvatarFrameImage[] 表示该动作面向下的一组帧图数据
 ### oriMode
 ###### oriMode : number;
