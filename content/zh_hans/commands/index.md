@@ -12,9 +12,7 @@ surround: false
 
 例: 通过显示对话指令，将本应该由程序实现的对话功能，变为了一个可以通过可视化面板实现的功能
 
-::div{class="w-1/3"}
 ![alt text](/image/zh_hans/commands/index/image.png)
-::
 
 ## 指令教程
 
