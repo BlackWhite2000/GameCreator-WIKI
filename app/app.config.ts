@@ -10,7 +10,7 @@ export default defineAppConfig({
     }
   },
   seo: {
-    siteName: 'Nuxt UI Pro - Docs template'
+    siteName: 'GameCreator WIKI'
   },
   header: {
     logo: {
@@ -64,7 +64,7 @@ export default defineAppConfig({
         target: '_blank'
       }, {
         icon: 'i-heroicons-book-open',
-        label: 'Nuxt UI Pro docs',
+        label: 'GameCreator WIKI',
         to: 'https://ui.nuxt.com/pro/guide',
         target: '_blank'
       }, {
