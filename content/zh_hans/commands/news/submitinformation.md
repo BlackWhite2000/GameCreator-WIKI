@@ -6,9 +6,7 @@ applicationScope: [199,3,182,193,1,302,325]
 
 ## 批量玩家输入的表格信息
 
-::callout{icon="i-heroicons-light-bulb"}
-[等待玩家输入文本](/zh_hans/commands/news/waitplayerentertext) 一次只能获取玩家输入的一种值，如果想批量获取多种输入值就可以用提交信息指令。
-::
+> [等待玩家输入文本](/zh_hans/commands/news/waitplayerentertext) 一次只能获取玩家输入的一种值，如果想批量获取多种输入值就可以用提交信息指令。
 
 ### 创建表格界面
 

@@ -14,12 +14,9 @@ applicationScope: [199,1]
 
 ![alt text](/image/zh_hans/commands/actor/changepartyactor/image-1.png)
 
-
 ## 战斗中立刻生效
 
-::callout{icon="i-heroicons-light-bulb"}
-部分模板才拥有该功能
-::
+> 部分模板才拥有该功能
 
 开启后，即使在战斗中也会马上上场。如果不开启的话战斗中新加入队伍的角色是不会上场的。
 

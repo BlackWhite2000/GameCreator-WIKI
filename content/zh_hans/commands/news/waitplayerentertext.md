@@ -6,9 +6,7 @@ applicationScope: [199,3,182,193,1,302,325]
 
 ## 基本使用
 
-::callout{icon="i-heroicons-light-bulb"}
-通过指定希望弹出的界面，玩家在弹出的界面内输入值后会自动将值赋值给输入值0
-::
+> 通过指定希望弹出的界面，玩家在弹出的界面内输入值后会自动将值赋值给输入值0
 
 最常见的案例是 `自定义名称`
 
@@ -46,12 +44,9 @@ applicationScope: [199,3,182,193,1,302,325]
 
 玩家可以输入的值是根据 `可输入文本组件(UIInput)` 属性面板中的 输入类型 来的
 
-::callout{icon="i-heroicons-light-bulb"}
-<br>
-数字模式=只能输入数值<br>
-密码模式=以星号代替显示<br>
-文本模式=可以输入字符串，也就是任意内容
-::
+> 数字模式=只能输入数值<br>
+> 密码模式=以星号代替显示<br>
+> 文本模式=可以输入字符串，也就是任意内容
 
 ![alt text](/image/zh_hans/commands/news/waitplayerentertext/image-7.png)
 

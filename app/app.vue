@@ -56,14 +56,12 @@ provide('navigation', navigation)
 
 <style>
 .dark {
-  --ui-background: var(--color-gray-950);
+  --ui-background: 2 4 32;
   --ui-foreground: var(--color-gray-200);
 }
 
 blockquote {
   font-style: normal !important;
-  color: rgb(var(--color-gray-300) / 1) !important;
-  background: rgb(var(--color-gray-900) / 1);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 
@@ -73,7 +71,16 @@ blockquote {
   }
 }
 
-html.dark .shiki span {
+.dark blockquote {
+  color: rgb(var(--color-gray-300) / 1) !important;
+  background-color: #131b30;
+}
+
+html .shiki span {
   font-style: normal !important;
+}
+
+.dark .prose :where(pre):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  background-color: #131b30 !important;
 }
 </style>

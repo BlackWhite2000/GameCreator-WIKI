@@ -6,9 +6,7 @@ applicationScope: [199,3,182,193,1,302,325]
 
 ## 选项使用
 
-::callout{icon="i-heroicons-light-bulb"}
-可以创建多个选项，如RPG中常见的 对话、购买。支持调用字符串变量。
-::
+> 可以创建多个选项，如RPG中常见的 对话、购买。支持调用字符串变量。
 
 ![alt text](/image/zh_hans/commands/news/showchoices/image.png)
 

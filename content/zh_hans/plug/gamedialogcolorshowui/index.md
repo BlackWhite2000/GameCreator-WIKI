@@ -18,21 +18,15 @@ title: 使用方式
 
 ### 举例子
 
-::callout{icon="i-heroicons-light-bulb"}
-带有颜色的标识符，换行了，那程序就无法判断这个标识符了。
-::
+> 带有颜色的标识符，换行了，那程序就无法判断这个标识符了。
 
 ![alt text](/image/zh_hans/plug/gamedialogcolorshowui/index/image.png)
 
-::callout{icon="i-heroicons-light-bulb"}
-带有颜色的标识符没有换行，所以悬浮框正常显示
-::
+> 带有颜色的标识符没有换行，所以悬浮框正常显示
 
 ![alt text](/image/zh_hans/plug/gamedialogcolorshowui/index/image-1.png)
 
-::callout{icon="i-heroicons-light-bulb"}
-不兼容部分材质效果。
-::
+> 不兼容部分材质效果。
 
 如：淡入淡出，使用了淡入淡出的话，标识符就无法被判断了。
 
@@ -98,10 +92,6 @@ title: 使用方式
 
 ## 文本调用变量
 
-::callout{icon="i-heroicons-light-bulb"}
-新功能 20230425 v1.2
-::
-
 现在文本模块支持调用变量了，输入对应占位符即可。
 
 ```ts
@@ -114,10 +104,6 @@ title: 使用方式
 ![alt text](/image/zh_hans/plug/gamedialogcolorshowui/index/image-10.png)
 
 ## 对话框最前方才显示悬浮框
-
-::callout{icon="i-heroicons-light-bulb"}
-新功能 20240710 v1.3
-::
 
 在 `世界设定` 开启 `对话框最前方才显示悬浮框` 后，只有对话框在界面最前方时，才会显示悬浮框。
 

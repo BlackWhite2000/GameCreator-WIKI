@@ -4,10 +4,8 @@ description: 用于关闭整个游戏的窗口
 applicationScope: [199,3,182,193,1,302,314,325]
 ---
 
-::callout{icon="i-heroicons-light-bulb"}
-<br> 该指令在不同模板存在不同名称
-<br> 关闭窗口
-::
+> 该指令在不同模板存在不同名称
+> <br>关闭窗口
 
 ## 使用
 

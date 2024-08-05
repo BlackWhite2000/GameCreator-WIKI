@@ -4,9 +4,7 @@ description: 在游戏中为场景添加自动元件图块
 applicationScope: [199,3,193,1,302,325]
 ---
 
-::callout{icon="i-heroicons-light-bulb"}
-在使用该命令前确保当前地图已使用了该图块,或者使用 [预加载资源](../images/preloadingandunloadingresources) 加载过该图块贴图。
-::
+> 在使用该命令前确保当前地图已使用了该图块,或者使用 [预加载资源](../images/preloadingandunloadingresources) 加载过该图块贴图。
 
 ## 使用
 

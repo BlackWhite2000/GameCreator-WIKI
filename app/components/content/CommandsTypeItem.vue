@@ -22,7 +22,7 @@ defineProps({
       <ul>
         <slot></slot>
         <template v-for="(item, index) in data" :key="index">
-          <li v-if="item?.description">
+          <li v-if="item?.description" class="text-gray-600">
             <ULink :to="item._path">
               {{ item.title }}
             </ULink>
