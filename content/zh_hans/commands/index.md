@@ -4,6 +4,12 @@ navigation: false
 surround: false
 ---
 
+## 指令教程
+
+你可以通过本站通过搜索指令名称，来了解各种指令的使用方法
+
+如果依然遇到有什么不懂的，可以前往 [官方社区](https://www.gamecreator.com.cn/forum) 提问。
+
 ## 什么是指令?
 
 指令是完成游戏流程的重要功能。
@@ -13,9 +19,3 @@ surround: false
 例: 通过显示对话指令，将本应该由程序实现的对话功能，变为了一个可以通过可视化面板实现的功能
 
 ![alt text](/image/zh_hans/commands/index/image.png)
-
-## 指令教程
-
-你可以通过本站通过搜索指令名称，来了解各种指令的使用方法
-
-如果依然遇到有什么不懂的，可以前往 [官方社区](https://www.gamecreator.com.cn/forum) 提问。

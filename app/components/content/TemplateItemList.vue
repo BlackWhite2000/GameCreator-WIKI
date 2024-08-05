@@ -12,7 +12,7 @@ const locale = ref('zh_hans')
         <slot></slot>
         <template v-for="(item, index) in data" :key="index">
           <li v-if="item?.description" class="text-gray-600">
-            <ULink :to="item._path" class="ml-1.5">
+            <ULink :to="item._path">
               {{ item.type }} - {{ item.title }}
             </ULink>
             <span class="text-gray-400"><br>{{ item.description }}</span>

@@ -9,7 +9,7 @@ const { navPageFromPath } = useContentHelpers()
 const locale = ref('zh_hans')
 const langData = await useLangData(locale.value);
 
-const headerLinks = [{
+const headerLinks = ref([{
   label: 'Docs',
   icon: 'i-ph-book-bookmark-duotone',
   to: '/docs',
@@ -46,15 +46,13 @@ const headerLinks = [{
     active: route.path.startsWith(`/${locale.value}/library`)
   }
   ]
-}]
+}])
 
-const links = computed(() => headerLinks.find(link => link.to === '/docs')?.children ?? [])
+const links = computed(() => headerLinks.value.find(link => link.to === '/docs')?.children ?? [])
 
 const navigationLinks = computed(() => {
   const path = [`/${locale.value}`, route.params.slug?.[1]].filter(Boolean).join('/')
   const data = mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
-  const arr = route.path.split('/')
-  if (arr.length < 2 || route.path.split('/')[2] != 'library') return data
   return sortTree(data);
 })
 
