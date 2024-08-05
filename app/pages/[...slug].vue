@@ -40,11 +40,18 @@ const links = computed(() => [toc?.bottom?.edit && {
   to: `${toc.bottom.edit}/${page?.value?._file}`,
   target: '_blank'
 }, ...(toc?.bottom?.links || [])].filter(Boolean))
+
+const path = computed(() => {
+  const arr = route.path.split('/')
+  if (arr.length < 4) return true
+  return route.path.split('/')[2] != 'library'
+})
 </script>
 
 <template>
   <UPage>
-    <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
+    <UPageHeader v-if="path" :title="page.title" :description="page.description" :links="page.links"
+      :headline="headline" />
 
     <UPageBody prose>
       <ContentRenderer v-if="page.body" :value="page" />

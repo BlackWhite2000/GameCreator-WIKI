@@ -38,6 +38,12 @@ const headerLinks = [{
     icon: 'i-heroicons-puzzle-piece',
     to: `/${locale.value}/plug`,
     active: route.path.startsWith(`/${locale.value}/plug`)
+  }, {
+    label: 'API',
+    description: 'API',
+    icon: 'i-heroicons-cube',
+    to: `/${locale.value}/library`,
+    active: route.path.startsWith(`/${locale.value}/library`)
   }
   ]
 }]
@@ -46,8 +52,29 @@ const links = computed(() => headerLinks.find(link => link.to === '/docs')?.chil
 
 const navigationLinks = computed(() => {
   const path = [`/${locale.value}`, route.params.slug?.[1]].filter(Boolean).join('/')
-  return mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
+  const data = mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
+  const arr = route.path.split('/')
+  if (arr.length < 2 || route.path.split('/')[2] != 'library') return data
+  return sortTree(data);
 })
+
+function sortTree(nodes) {
+  // 递归处理子节点并排序
+  return nodes.map(node => {
+    if (node.children) {
+      node.children = sortTree(node.children);
+    }
+    return node;
+  }).sort((a, b) => {
+    if (a.children && !b.children) {
+      return -1;
+    } else if (!a.children && b.children) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+}
 
 </script>
 
