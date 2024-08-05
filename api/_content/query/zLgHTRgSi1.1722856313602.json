@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/create","title":"创建界面","description":"编辑器中创建并编辑游戏的各种界面"},{"_path":"/zh_hans/getting-started/interface/uiroot","title":"容器组件 UIRoot","description":"容器组件用于装载子显示对象，并可以矩形裁剪区域，只显示一部分内容。容器内的子对象会受到该容器的位置、旋转等影响。"}]

@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/event/logic","title":"逻辑控制","description":"可以控制游戏的执行逻辑、执行顺序，如触发不用的游戏结局"},{"_path":"/zh_hans/getting-started/event/events","title":"事件库","description":"事件库是一组预设的事件页，允许各处事件页调用这些事件。以便达到重复使用的效果。"}]

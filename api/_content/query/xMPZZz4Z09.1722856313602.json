@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/uibitmap","title":"图片组件 UIBitmap","description":"用于显示一张图片用的组件，支持绑定玩家字符串变量（字符串变量存放地址）"},{"_path":"/zh_hans/getting-started/interface/uivariable","title":"数值变量组件 UIVariable","description":"可以选定一个变量绑定后即显示该变量的组件，当变量改变时该组件的文本会自动更新(实时显示)"}]

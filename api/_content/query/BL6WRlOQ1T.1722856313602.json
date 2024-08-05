@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/uiswitch","title":"开关组件 UISwitch","description":"用于绑定玩家开关的一种复选框组件，当玩家开关开启时，该组件处于选中状态，反之则处于未选中状态"},{"_path":"/zh_hans/getting-started/interface/uislider","title":"滑块组件 UISlider","description":"用于指定一个范围min和max，在min和max之间滑动取得一个值的组件"}]

@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/logic/label","title":"标签","description":"标签可以改变事件原本的执行顺序，需配合指令标签跳转使用。"},{"_path":"/zh_hans/commands/logic/wait","title":"等待","description":"执行等待后，会根据设置的时间等待，之后才会继续执行后续事件。"}]

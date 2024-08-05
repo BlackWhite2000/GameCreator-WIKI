@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/uicheckbox","title":"复选框组件 UICheckBox","description":"复选框是一种拥有选中或未选中状态的基础控件"},{"_path":"/zh_hans/getting-started/interface/uitabbox","title":"标签选项卡组件 UITabBox","description":"用于显示标签栏的一种组件，支持横向排列的标签和纵向排列的标签。如果标签组件中有N个标签的话，那么该组件的子对象放3个即可自动实现切换显示子对象"}]

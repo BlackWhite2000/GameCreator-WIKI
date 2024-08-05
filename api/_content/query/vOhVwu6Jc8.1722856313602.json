@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/sceneobject/status","title":"状态页和出现条件","description":"状态页搭配出现条件使用，当满足了该状态页的出现条件时，则切换到该状态页（顺序由下至上）"},{"_path":"/zh_hans/getting-started/sceneobject/event","title":"相关指令","description":"能够控制场景对象的指令"}]

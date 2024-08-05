@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/scene/scrollscenecamera","title":"镜头移动","description":"可以修改游戏中场景的聚焦显示，默认游戏镜头的聚焦点为玩家对象"},{"_path":"/zh_hans/commands/scene/setmapgriddata","title":"设置地图网格数据","description":"通过此指令可以在游戏中为场景增加、移除网格数据层"}]

@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/news/submitinformation","title":"提交信息","description":"用于批量获取游戏中的值，如获取玩家填写的表格信息"},{"_path":"/zh_hans/commands/news/waitplayerentertext","title":"等待玩家输入文本","description":"最常见的应用场景为自定义玩家的名称，可通过输入值获取玩家输入的内容"}]

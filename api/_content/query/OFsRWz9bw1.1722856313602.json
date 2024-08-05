@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/gameprogress/ngswitchs","title":"二周目开关设置","description":"与其他变量不同，二周目变量可以跨存档调用，即全局生效的变量。"},{"_path":"/zh_hans/commands/gameprogress/objectswitchs","title":"对象开关设置","description":"需指定场景对象来使用，与其他变量的区别是场景对象不存在时，变量不存在。"}]

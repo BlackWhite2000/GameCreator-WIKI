@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/sceneobject/recordmovingpath","title":"记录移动路径","description":"执行此指令时，会同步记录当前的对象行为移动路径"},{"_path":"/zh_hans/commands/sceneobject/restoremovepath","title":"恢复移动路径","description":"执行记录移动路径时的路径。"}]

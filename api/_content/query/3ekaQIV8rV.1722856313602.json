@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/gameprogress/objectswitchs","title":"对象开关设置","description":"需指定场景对象来使用，与其他变量的区别是场景对象不存在时，变量不存在。"},{"_path":"/zh_hans/commands/gameprogress/switchs","title":"开关设置","description":"记录开和关两种状态的一种变量"}]

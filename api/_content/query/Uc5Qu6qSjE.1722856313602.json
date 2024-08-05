@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/uilist","title":"列表组件 UIList","description":"列表组件是一个支持NxM矩阵式排列的组件，其内部的项（item）是通过创建另一个界面源实现的"},{"_path":"/zh_hans/getting-started/interface/uicombobox","title":"下拉框组件 UIComboBox","description":"下拉框是一种点击后可弹出一组选项并允许选择一个的组件"}]

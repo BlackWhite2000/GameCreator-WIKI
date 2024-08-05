@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/script","title":"概述","description":"软件提供了Typescript和Javascript脚本语言支持，支持编辑整个项目的代码和在事件指令等地方插入脚本代码。同时也支持使用VSCode编写"},{"_path":"/zh_hans/getting-started/script/use","title":"内嵌的脚本调用","description":"除了脚本编辑器中编写项目的核心代码外，还可以在可视化编辑器的一些地方使用到代码编写。"}]

@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/uivariable","title":"数值变量组件 UIVariable","description":"可以选定一个变量绑定后即显示该变量的组件，当变量改变时该组件的文本会自动更新(实时显示)"},{"_path":"/zh_hans/getting-started/interface/uicustomgamestring","title":"游戏字符串组件 UICustomGameString","description":"根据自定义游戏字符串中预设而定，实时显示游戏内相关的字符串，不同的项目可能有不同的游戏字符串"}]

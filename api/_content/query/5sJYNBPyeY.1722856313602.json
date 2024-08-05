@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/uitabbox","title":"标签选项卡组件 UITabBox","description":"用于显示标签栏的一种组件，支持横向排列的标签和纵向排列的标签。如果标签组件中有N个标签的话，那么该组件的子对象放3个即可自动实现切换显示子对象"},{"_path":"/zh_hans/getting-started/interface/uilist","title":"列表组件 UIList","description":"列表组件是一个支持NxM矩阵式排列的组件，其内部的项（item）是通过创建另一个界面源实现的"}]

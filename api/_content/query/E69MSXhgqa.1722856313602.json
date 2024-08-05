@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/system/setvolumes","title":"设置全局音量","description":"可以修改游戏中音乐的音量大小"},{"_path":"/zh_hans/commands/system/silentoverload","title":"静默重载","description":"执行后将会立刻存档并重启游戏回到当前位置，利用重启游戏清空当前内存占用"}]

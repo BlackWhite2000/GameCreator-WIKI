@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/news/waitingplayerinput","title":"等待玩家提交信息","description":"该指令需配合提交信息使用"},{"_path":"/zh_hans/commands/player/changeequipment","title":"增减装备","description":"可通过此指令增加减少玩家的装备，支持自定义装备属性值浮动、支持数值变量"}]

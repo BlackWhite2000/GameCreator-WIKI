@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/sceneobject/modifyobjectmodule","title":"修改场景对象模块属性","description":"可以通过此指令实现在游戏中修改场景对象的模块属性"},{"_path":"/zh_hans/commands/sceneobject/removeobject","title":"暂时移除对象","description":"通过此指令可移除掉场景上的对象，但是对象列表里依然存在该对象，仍然可以被获取到。"}]

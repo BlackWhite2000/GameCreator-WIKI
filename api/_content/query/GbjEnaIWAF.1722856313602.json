@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/interface/uistring","title":"文本组件 UIString","description":"显示文本的组件，支持绑定玩家字符串变量"},{"_path":"/zh_hans/getting-started/interface/uicustomgamenumber","title":"游戏数值组件 UICustomGameNumber","description":"根据自定义游戏数值中预设而定，实时显示游戏内相关的数值，不同的项目可能有不同的游戏数值"}]

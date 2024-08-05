@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/getting-started/edit/datastructure","title":"自定义数据结构","description":"自定义数据结构一般配合自定义属性使用，有些属性并非单一的类型，比如玩家的背包"},{"_path":"/zh_hans/getting-started/edit/playerdata","title":"玩家设定编辑(玩家属性)","description":"玩家是指游戏中玩家，每个玩家都对应一个玩家身份（单机内核只有一个玩家）。"}]

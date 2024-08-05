@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/system/allowcontrol","title":"允许玩家控制","description":"允许操作玩家对象，通常用于禁止玩家控制后的恢复"},{"_path":"/zh_hans/commands/system/bancontrol","title":"允许使用菜单","description":"允许玩家打开菜单，通常用于禁止使用菜单后的恢复"}]

@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/logic/exiteventprocessing","title":"终止事件处理","description":"当执行终止事件处理后，直接停止后续事件的执行。"},{"_path":"/zh_hans/commands/logic/label","title":"标签","description":"标签可以改变事件原本的执行顺序，需配合指令标签跳转使用。"}]

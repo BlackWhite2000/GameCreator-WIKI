@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/interface/showinterface","title":"显示界面","description":"用于显示设置的游戏界面"},{"_path":"/zh_hans/commands/interface/waitinterfaceclose","title":"等待关闭界面","description":"直到指定的界面关闭，才会继续执行当前事件页的后续事件"}]

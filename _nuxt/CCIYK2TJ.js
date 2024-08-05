@@ -1,0 +1,1 @@
+import{_ as t}from"./C6H19-x9.js";const a=async r=>{const e={zh_hans:()=>t(()=>import("./B-hdSx2S.js"),[],import.meta.url),en:()=>t(()=>import("./C0gz7v3Z.js"),[],import.meta.url)};if(e[r])try{return(await e[r]()).default}catch(o){return console.error("Error loading language file:",o),null}else return console.error("Unsupported language:",r),null},n=a;export{n as u};

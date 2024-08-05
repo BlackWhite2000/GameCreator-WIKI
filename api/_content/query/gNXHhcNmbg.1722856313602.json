@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/gameprogress/ngstringvariables","title":"二周目字符串设值","description":"与其他变量不同，二周目变量可以跨存档调用，即全局生效的变量。"},{"_path":"/zh_hans/commands/gameprogress/numbervariables","title":"数值变量设值","description":"一种可以记录数字的值，可以进行公式计算。当记录了内容后，可以在不同的地方进行调用。"}]

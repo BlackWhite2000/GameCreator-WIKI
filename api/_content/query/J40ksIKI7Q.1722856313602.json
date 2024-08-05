@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/event/analogkey","title":"模拟按键","description":"通过此指令可以模拟触发按键，而不是必须通过快捷键来触发"},{"_path":"/zh_hans/commands/event/cancelmouseevent","title":"取消鼠标事件","description":"执行后将会移除指定的鼠标快捷键操作"}]

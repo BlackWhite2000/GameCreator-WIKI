@@ -1,0 +1,1 @@
+[{"_path":"/zh_hans/commands/logic/conditionalbranch","title":"条件分歧","description":"用于判断处理不同情况的指令，是常用的指令之一。"},{"_path":"/zh_hans/commands/logic/jumptolabel","title":"标签跳转","description":"通过指定命名好的标签，来执行希望跳转到的事件位置。"}]
