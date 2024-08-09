@@ -53,7 +53,10 @@ const links = computed(() => headerLinks.value.find(link => link.to === '/docs')
 const navigationLinks = computed(() => {
   const path = [`/${locale.value}`, route.params.slug?.[1]].filter(Boolean).join('/')
   const data = mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
-  return sortTree(data);
+  const arr = route.path.split('/')
+  const pathIndex = route.path.split('/')[2]
+  if (arr.length < 2 || (pathIndex != 'getting-started' && pathIndex != 'template' && pathIndex != 'plug')) return sortTree(data)
+  return data;
 })
 
 function sortTree(nodes) {
