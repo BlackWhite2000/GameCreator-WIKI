@@ -52,7 +52,7 @@ features:
       # target: "_blank"
     - title: "API文档"
       description: "API使用文档"
-      icon: "i-heroicons-wallet"
+      icon: "i-heroicons-cube"
       to: "/zh_hans/library"
       # target: "_blank"
     - title: "官方教程帖子"
