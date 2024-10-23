@@ -56,6 +56,35 @@ const navigationLinks = computed(() => {
   const arr = route.path.split('/')
   const pathIndex = route.path.split('/')[2]
   if (arr.length < 2 || (pathIndex != 'getting-started' && pathIndex != 'template' && pathIndex != 'plug')) return sortTree(data)
+
+  if (pathIndex == 'plug') {
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].label == "OpenAPI") {
+        for (let j = 0; j < data[i].children.length; j++) {
+          if (data[i].children[j].label == "API") {
+            for (let k = 0; k < data[i].children[j].children.length; k++) {
+              const item = data[i].children[j].children[k]
+              const path = item.to.split('/').pop()
+              const pathArr = path.split('.')
+              pathArr.shift()
+              if (pathArr.length > 0) {
+                pathArr.shift()
+                if (pathArr.length > 0) {
+                  const newName = pathArr.join('.')
+                  if (newName) {
+                    item.label = newName.charAt(0).toUpperCase() + newName.slice(1)
+                  }
+                }
+              }
+            }
+            data[i].children[j].children.splice(1, 2)
+          }
+        }
+        break
+      }
+    }
+    return data
+  }
   return data;
 })
 

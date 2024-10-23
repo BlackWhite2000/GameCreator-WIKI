@@ -26,7 +26,6 @@ useSeoMeta({
           <NuxtLink :to="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
             <span class="absolute inset-0" aria-hidden="true" />
           </NuxtLink>
-
           {{ page.hero.headline.label }}
 
           <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon"
