@@ -14,11 +14,11 @@ applicationScope: [199,3,193,1,302,325]
 
 如果无法确定自己图块层编号是多少，可以鼠标悬停对应图块层来查看tips信息，最前面的 2 便是编号。
 
-![alt text](/image/zh_hans/commands/scene/drawautotitle/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/drawautotitle/image-1.png)
 
 ## 清除模式
 
-![alt text](/image/zh_hans/commands/scene/cleartitle/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/cleartitle/image.png)
 
 | 名称           | 说明                           |
 | -------------- | ------------------------------ |

@@ -10,8 +10,8 @@ applicationScope: [182]
 
 ### 开启状态下，按钮显示
 
-![alt text](/image/zh_hans/commands/system/dialogmenu/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/dialogmenu/image.png)
 
 ### 关闭状态下按钮隐藏
 
-![alt text](/image/zh_hans/commands/system/dialogmenu/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/dialogmenu/image-1.png)

@@ -10,11 +10,11 @@ applicationScope: [199,3,193,1,302,325]
 
 使用场合确保为 `场景对象`
 
-![alt text](/image/zh_hans/commands/scene/showsceneanimation/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/showsceneanimation/image.png)
 
 如此在游戏中，动画就会显示到指定的场景对象上了
 
-![alt text](/image/zh_hans/commands/scene/showsceneanimation/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/showsceneanimation/image-1.png)
 
 ## 场景地图上显示
 
@@ -22,6 +22,6 @@ applicationScope: [199,3,193,1,302,325]
 
 使用场合确保为 `场景坐标`
 
-![alt text](/image/zh_hans/commands/scene/showsceneanimation/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/showsceneanimation/image-2.png)
 
-![alt text](/image/zh_hans/commands/scene/showsceneanimation/image-3.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/showsceneanimation/image-3.png)

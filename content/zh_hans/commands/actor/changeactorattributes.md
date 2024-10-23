@@ -10,4 +10,4 @@ applicationScope: [199,193,1,325]
 
 例: 指定角色 `1-伊斯特` 增加经验值 `2000`
 
-![alt text](/image/zh_hans/commands/actor/changeactorattributes/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/changeactorattributes/image.png)

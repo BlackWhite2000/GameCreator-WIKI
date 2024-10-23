@@ -31,13 +31,13 @@ applicationScope: [199,3,193,1,302,325]
 
 场景对象开关的编号A、B、C，类似其他变量的编号ID。
 
-![alt text](/image/zh_hans/commands/gameprogress/objectswitchs/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/objectswitchs/image.png)
 
 设置指定场景对象编号A的开关状态，之后就可以借助如 [条件分歧](../logic/conditionalbranch) 来判断。
 
-![alt text](/image/zh_hans/commands/gameprogress/objectswitchs/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/objectswitchs/image-1.png)
 
-![alt text](/image/zh_hans/commands/gameprogress/objectswitchs/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/objectswitchs/image-2.png)
 
 其他用法
 

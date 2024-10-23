@@ -10,7 +10,7 @@ applicationScope: [199,193,1]
 
 例: 给 `敌方队伍编号 1` 附加状态 `中毒`
 
-![alt text](/image/zh_hans/commands/battle/changebattlerstatus/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/battle/changebattlerstatus/image.png)
 
 ## 强制附加
 

@@ -8,4 +8,4 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 使用中断循环时，请确保写在循环事件内。一般中断循环都需要配合指令 [条件分歧](./conditionalbranch) 来进行判断执行。
 
-![alt text](/image/zh_hans/commands/logic/breakloop/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/breakloop/image.png)

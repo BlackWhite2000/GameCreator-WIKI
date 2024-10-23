@@ -10,4 +10,4 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 如标题界面中，开始游戏按钮就是通过此指令实现的。
 
-![alt text](/image/zh_hans/commands/system/startgame/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/startgame/image.png)

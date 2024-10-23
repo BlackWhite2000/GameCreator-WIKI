@@ -12,4 +12,4 @@ applicationScope: [199,3,193,1,302,325]
 
 所以称为暂时移除。
 
-![alt text](/image/zh_hans/commands/sceneobject/removeobject/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/removeobject/image.png)

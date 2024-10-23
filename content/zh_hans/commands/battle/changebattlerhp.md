@@ -10,4 +10,4 @@ applicationScope: [199,193,1]
 
 例: 增加 `敌方队伍编号 1` 的角色生命值 `200`
 
-![alt text](/image/zh_hans/commands/battle/changebattlerhp/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/battle/changebattlerhp/image.png)

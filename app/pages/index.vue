@@ -38,7 +38,7 @@ useSeoMeta({
         <MDC :value="page.hero.title" />
       </template>
 
-      <img src="/image/zh_hans/getting-started/2.aboutgc/100.png">
+      <img src="https://oss.gcw.wiki/GCW/image/zh_hans/getting-started/2.aboutgc/100.png">
       <!-- <MDC :value="page.hero.code" tag="pre" class="prose prose-primary dark:prose-invert mx-auto" /> -->
     </ULandingHero>
 

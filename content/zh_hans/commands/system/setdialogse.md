@@ -10,6 +10,6 @@ applicationScope: [199,3,193,1,302,325]
 
 如果想关闭可以使用此指令，当然开启也可以使用此指令。默认是开启的。
 
-![alt text](/image/zh_hans/commands/system/setdialogse/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/setdialogse/image.png)
 
-![alt text](/image/zh_hans/commands/system/setdialogse/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/setdialogse/image-1.png)

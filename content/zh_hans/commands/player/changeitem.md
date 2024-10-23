@@ -8,4 +8,4 @@ applicationScope: [199,3,193,1,302,325]
 
 操作很简单，设置是否增加或减少，以及指定道具以及道具的数目即可。
 
-![alt text](/image/zh_hans/commands/player/changeitem/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/player/changeitem/image.png)

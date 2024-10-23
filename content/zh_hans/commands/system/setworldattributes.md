@@ -8,4 +8,4 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 根据出现的设置来修改即可，每个模板出现的可设置项都不同。
 
-![alt text](/image/zh_hans/commands/system/setworldattributes/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/setworldattributes/image.png)

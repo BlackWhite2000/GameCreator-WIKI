@@ -8,4 +8,4 @@ applicationScope: [199,3,193,1,302,325]
 
 添加等待行为结束后，只有设置对象行为完整的被执行完毕后才会继续执行后续事件。
 
-![alt text](/image/zh_hans/commands/sceneobject/waitbehaviorover/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/waitbehaviorover/image.png)

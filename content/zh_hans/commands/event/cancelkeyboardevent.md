@@ -12,6 +12,6 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 选择对应变量，执行事件即可
 
-![alt text](/image/zh_hans/commands/event/cancelkeyboardevent/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/event/cancelkeyboardevent/image.png)
 
-![alt text](/image/zh_hans/commands/event/cancelkeyboardevent/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/event/cancelkeyboardevent/image-1.png)

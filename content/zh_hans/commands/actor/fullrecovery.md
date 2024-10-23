@@ -10,4 +10,4 @@ applicationScope: [199,1]
 
 例: 指定角色 `1-伊斯特` 的生命值、魔法值完全恢复
 
-![alt text](/image/zh_hans/commands/actor/fullrecovery/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/fullrecovery/image.png)

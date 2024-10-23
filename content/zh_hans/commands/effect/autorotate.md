@@ -8,4 +8,4 @@ applicationScope: [199,3,182,193,1,302,325]
 
 填写图像的编号后，填写旋转角度即可让指定编号的图像自动旋转。
 
-![alt text](/image/zh_hans/commands/effect/autorotate/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/effect/autorotate/image.png)

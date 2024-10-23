@@ -12,12 +12,12 @@ applicationScope: [199,3,193,1,302,325]
 
 指定对象 `0-玩家的场景对象`
 
-![alt text](/image/zh_hans/commands/sceneobject/sceneobjectattributes/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/sceneobjectattributes/image.png)
 
 选择 `穿透` 设置为 `开启`
 
-![alt text](/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-1.png)
 
 最终场景对象将会拥有穿透效果
 
-![alt text](/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-2.png)

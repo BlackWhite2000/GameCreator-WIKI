@@ -10,4 +10,4 @@ applicationScope: [199,193,1]
 
 例: 增加 `敌方队伍编号 1` 的角色魔法值 `200`
 
-![alt text](/image/zh_hans/commands/battle/changebattlersp/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/battle/changebattlersp/image.png)

@@ -12,4 +12,4 @@ applicationScope: [199,193,1,325]
 
 例: 修改了角色 `伊斯特` 的头像图片
 
-![alt text](/image/zh_hans/commands/actor/changeactorattribute/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/changeactorattribute/image.png)

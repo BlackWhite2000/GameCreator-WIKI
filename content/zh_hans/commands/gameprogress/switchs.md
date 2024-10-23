@@ -18,9 +18,9 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 比如借助条件分歧来判断是否拥有某种道具。
 
-![alt text](/image/zh_hans/commands/gameprogress/switchs/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/switchs/image.png)
 
-![alt text](/image/zh_hans/commands/gameprogress/switchs/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/switchs/image-1.png)
 
 ## 游戏开关
 
@@ -28,6 +28,6 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 比如可以获取玩家是否是在移动端上玩游戏。
 
-![alt text](/image/zh_hans/commands/gameprogress/switchs/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/switchs/image-2.png)
 
-![alt text](/image/zh_hans/commands/gameprogress/switchs/image-3.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/switchs/image-3.png)

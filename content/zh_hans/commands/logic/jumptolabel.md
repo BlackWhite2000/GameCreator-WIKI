@@ -8,6 +8,6 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 执行标签跳转前，请确保事件页上已执行了指令 [标签](./label)
 
-![alt text](/image/zh_hans/commands/logic/jumptolabel/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/jumptolabel/image.png)
 
-![alt text](/image/zh_hans/commands/logic/jumptolabel/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/jumptolabel/image-1.png)

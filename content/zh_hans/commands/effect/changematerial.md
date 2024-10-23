@@ -12,6 +12,6 @@ applicationScope: [199,3,182,193,1,302,325]
 
 如下图，原本色调变更的红是0，通过更改材质变更为了-0.8。
 
-![alt text](/image/zh_hans/commands/effect/changematerial/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/effect/changematerial/image.png)
 
-![alt text](/image/zh_hans/commands/effect/changematerial/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/effect/changematerial/image-1.png)

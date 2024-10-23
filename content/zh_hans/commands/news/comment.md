@@ -8,6 +8,6 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 顾名思义，一个纯描述性指令，方便说明事件页上的功能用。
 
-![alt text](/image/zh_hans/commands/news/comment/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/news/comment/image.png)
 
-![alt text](/image/zh_hans/commands/news/comment/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/news/comment/image-1.png)

@@ -8,12 +8,12 @@ applicationScope: [199,3,193,1,302,325]
 
 鼠标右键预览区域，可以快速将鼠标右键的坐标填写至镜头坐标的输入框
 
-![alt text](/image/zh_hans/commands/scene/scrollscenecamera/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/scrollscenecamera/image.png)
 
 也支持指定场景对象来确定镜头的坐标
 
-![alt text](/image/zh_hans/commands/scene/scrollscenecamera/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/scrollscenecamera/image-1.png)
 
 ## 效果
 
-![alt text](/image/zh_hans/commands/scene/scrollscenecamera/1.gif)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/scrollscenecamera/1.gif)

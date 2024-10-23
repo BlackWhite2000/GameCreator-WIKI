@@ -8,4 +8,4 @@ applicationScope: [199,3,182,193,1,302,325]
 
 填写对应编号，即可将对应编号的图像给删除掉。
 
-![alt text](/image/zh_hans/commands/images/deleteimage/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/deleteimage/image.png)

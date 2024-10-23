@@ -8,6 +8,6 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 在指定位置对标签进行命名，之后需配合指令 [标签跳转](./jumptolabel)。完整的执行
 
-![alt text](/image/zh_hans/commands/logic/label/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/label/image.png)
 
-![alt text](/image/zh_hans/commands/logic/label/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/label/image-1.png)

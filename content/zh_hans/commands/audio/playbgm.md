@@ -8,8 +8,8 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 直接指定对应音频文件即可。
 
-![alt text](/image/zh_hans/commands/audio/playbgm/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/audio/playbgm/image.png)
 
 播放的音量大小基于指定音频文件时打开的音乐资源管理器右侧这里。
 
-![alt text](/image/zh_hans/commands/audio/playbgm/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/audio/playbgm/image-1.png)

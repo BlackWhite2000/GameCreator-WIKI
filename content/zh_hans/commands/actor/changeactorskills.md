@@ -10,10 +10,10 @@ applicationScope: [199,193,1]
 
 例: 指定角色 `1-伊斯特` 学习 `3-十字斩`
 
-![alt text](/image/zh_hans/commands/actor/changeactorskills/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/changeactorskills/image.png)
 
 ## 遗忘技能
 
 例: 指定角色 `1-伊斯特` 遗忘 `4-刃龙卷`
 
-![alt text](/image/zh_hans/commands/actor/changeactorskills/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/changeactorskills/image-2.png)

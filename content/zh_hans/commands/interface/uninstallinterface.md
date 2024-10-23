@@ -12,4 +12,4 @@ applicationScope: [182]
 
 因此使用此指令之前，需要确保界面在游戏后续进程中已经不需要再次显示
 
-![alt text](/image/zh_hans/commands/interface/uninstallinterface/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/uninstallinterface/image.png)

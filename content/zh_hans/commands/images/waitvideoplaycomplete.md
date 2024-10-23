@@ -8,4 +8,4 @@ applicationScope: [199,3,182,193,1,302,325]
 
 通过此指令，可以将视频播放完成后才可以执行后续的事件
 
-![alt text](/image/zh_hans/commands/images/waitvideoplaycomplete/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/waitvideoplaycomplete/image.png)

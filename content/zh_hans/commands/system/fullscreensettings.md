@@ -8,4 +8,4 @@ applicationScope: [182,314]
 
 勾选后触发，即可让游戏窗口变为全屏。
 
-![alt text](/image/zh_hans/commands/system/fullscreensettings/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/fullscreensettings/image.png)

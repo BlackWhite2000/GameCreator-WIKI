@@ -12,8 +12,8 @@ applicationScope: [182]
 
 注意：部分临时效果以及插件可能并未适配存档，请在需要时以合适的位置插入该指令。
 
-![alt text](/image/zh_hans/commands/system/silentoverload/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/silentoverload/image.png)
 
 无需其他设置，直接在需要的地方执行即可。
 
-![alt text](/image/zh_hans/commands/system/silentoverload/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/silentoverload/image-1.png)

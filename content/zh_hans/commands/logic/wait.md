@@ -14,14 +14,14 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 即游戏的时间帧
 
-![alt text](/image/zh_hans/commands/logic/wait/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/wait/image.png)
 
-![alt text](/image/zh_hans/commands/logic/wait/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/wait/image-1.png)
 
 ## 毫秒
 
 即时间单位毫秒
 
-![alt text](/image/zh_hans/commands/logic/wait/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/wait/image-2.png)
 
-![alt text](/image/zh_hans/commands/logic/wait/image-3.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/wait/image-3.png)

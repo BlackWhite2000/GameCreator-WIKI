@@ -6,4 +6,4 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 ## 界面展示
 
-![alt text](/image/zh_hans/commands/logic/clientscript/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/logic/clientscript/image.png)

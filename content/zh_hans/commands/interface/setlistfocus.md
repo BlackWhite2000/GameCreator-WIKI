@@ -10,4 +10,4 @@ applicationScope: [199,3,182,193,1,302,325]
 
 这样该列表组件的焦点效果就会被激活，通常情况下列表组件焦点效果都是被激活的，所以该指令的使用请根据实际情况来。
 
-![alt text](/image/zh_hans/commands/interface/setlistfocus/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/setlistfocus/image.png)

@@ -12,7 +12,7 @@ applicationScope: [199,193,1]
 
 例: 指定角色 `1-伊斯特` 从背包中佩戴装备 `1-铁剑`
 
-![alt text](/image/zh_hans/commands/actor/chngeactorequipment/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/chngeactorequipment/image.png)
 
 ## 卸下装备
 
@@ -20,7 +20,7 @@ applicationScope: [199,193,1]
 
 例: 指定角色 `1-伊斯特` 卸下 `0-武器` 部位的装备，卸下的装备编号存储至数值变量 `0002`
 
-![alt text](/image/zh_hans/commands/actor/chngeactorequipment/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/chngeactorequipment/image-1.png)
 
 ## 移除装备
 
@@ -28,4 +28,4 @@ applicationScope: [199,193,1]
 
 指定角色 `1-伊斯特` 移除 `2-身体` 部位的装备，移除的装备编号存储至数值变量 `0002`
 
-![alt text](/image/zh_hans/commands/actor/chngeactorequipment/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/chngeactorequipment/image-2.png)

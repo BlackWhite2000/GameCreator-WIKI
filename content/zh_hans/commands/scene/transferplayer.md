@@ -12,13 +12,13 @@ applicationScope: [199,3,193,1,302,325]
 
 ②：鼠标左键来选择玩家传送后的位置
 
-![alt text](/image/zh_hans/commands/scene/transferplayer/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/transferplayer/image.png)
 
 ## 变量模式
 
 除了直接选择外，也支持使用 [数值变量](../gameprogress/numbervariables)
 
-![alt text](/image/zh_hans/commands/scene/transferplayer/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/transferplayer/image-1.png)
 
 | 名称      | 说明                                                                    |
 | --------- | ----------------------------------------------------------------------- |

@@ -20,7 +20,7 @@ applicationScope: [199,3,193,1,302,325]
 
 最后的值便是希望修改为多少，这里填写 `50`
 
-![alt text](/image/zh_hans/commands/sceneobject/modifyobjectmodule/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/modifyobjectmodule/image.png)
 
 ## 如何获取属性名？
 
@@ -30,4 +30,4 @@ applicationScope: [199,3,193,1,302,325]
 
 会弹出一个tips。弹出的便是属性变量名
 
-![alt text](/image/zh_hans/commands/sceneobject/modifyobjectmodule/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/modifyobjectmodule/image-1.png)

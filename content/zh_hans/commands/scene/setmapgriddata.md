@@ -12,4 +12,4 @@ applicationScope: [199,3,193,1,302,325]
 
 这样便可以做到在某些剧情开启后，让玩家不能返回（因为障碍在传送的地方开启）
 
-![alt text](/image/zh_hans/commands/scene/setmapgriddata/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/setmapgriddata/image.png)

@@ -8,8 +8,8 @@ applicationScope: [199,3,182,193,1,302,325]
 
 可以通过指令给指定的内容添加材质效果，如下图为图像层增加色调变更
 
-![alt text](/image/zh_hans/commands/effect/addmaterial/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/effect/addmaterial/image.png)
 
 ## 支持指定多种类型
 
-![alt text](/image/zh_hans/commands/effect/addmaterial/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/effect/addmaterial/image-1.png)

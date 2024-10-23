@@ -10,7 +10,7 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 但是想做到自动存档的话，可以通过指令来实现。
 
-![alt text](/image/zh_hans/commands/system/save/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/save/image.png)
 
 ## 全局数据
 

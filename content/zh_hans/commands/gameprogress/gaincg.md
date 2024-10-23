@@ -8,8 +8,8 @@ applicationScope: [182,314]
 
 指定CG图片集即可解锁。
 
-![alt text](/image/zh_hans/commands/gameprogress/gaincg/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/gaincg/image.png)
 
 CG图片基于数据库中的CG鉴赏。
 
-![alt text](/image/zh_hans/commands/gameprogress/gaincg/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/gameprogress/gaincg/image-1.png)

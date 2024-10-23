@@ -10,21 +10,21 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 如图示中就是设置了 `鼠标右键` `按下时` 触发事件。
 
-![alt text](/image/zh_hans/commands/event/mouseevent/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/event/mouseevent/image.png)
 
-![alt text](/image/zh_hans/commands/event/mouseevent/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/event/mouseevent/image-1.png)
 
 ## 按键模式
 
 支持设置多种触发情况，根据实际情况进行选择即可。
 
-![alt text](/image/zh_hans/commands/event/mouseevent/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/event/mouseevent/image-2.png)
 
 ## 仅限于场景上使用
 
 勾选后，只有在游戏场景上才会触发鼠标事件。
 
-![alt text](/image/zh_hans/commands/event/mouseevent/image-3.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/event/mouseevent/image-3.png)
 
 ## 生命周期
 
@@ -46,4 +46,4 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 之后可以配合指令 [取消鼠标事件](./cancelmouseevent) 将该鼠标事件移除
 
-![alt text](/image/zh_hans/commands/event/mouseevent/image-4.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/event/mouseevent/image-4.png)

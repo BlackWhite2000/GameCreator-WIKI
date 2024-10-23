@@ -12,10 +12,10 @@ applicationScope: [199,3,193,1,302,325]
 
 设置过程中是有一个预览窗口的，所以设置起来也是非常方便。
 
-![alt text](/image/zh_hans/commands/sceneobject/backtotitlepage/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/backtotitlepage/image.png)
 
-![alt text](/image/zh_hans/commands/sceneobject/backtotitlepage/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/backtotitlepage/image-1.png)
 
 ## 效果
 
-![alt text](/image/zh_hans/commands/sceneobject/backtotitlepage/1.gif)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/backtotitlepage/1.gif)

@@ -12,4 +12,4 @@ applicationScope: [199,1]
 
 例: 修改了角色 `伊斯特` 拥有的技能 `刃龙卷` 的图标
 
-![alt text](/image/zh_hans/commands/actor/modifyskill/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/actor/modifyskill/image-1.png)

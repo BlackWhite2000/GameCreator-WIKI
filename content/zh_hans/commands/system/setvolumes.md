@@ -8,4 +8,4 @@ applicationScope: [199,3,193,1,302,325]
 
 可以在游戏中调整所有音量的大小。
 
-![alt text](/image/zh_hans/commands/system/setvolumes/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/system/setvolumes/image.png)

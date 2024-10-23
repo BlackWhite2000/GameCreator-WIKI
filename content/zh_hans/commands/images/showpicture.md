@@ -8,7 +8,7 @@ applicationScope: [199,3,182,193,1,302,325]
 
 通过指定图片即可显示在场景地图上。
 
-![alt text](/image/zh_hans/commands/images/showpicture/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showpicture/image.png)
 
 ## 开启可视化预览
 
@@ -16,9 +16,9 @@ applicationScope: [199,3,182,193,1,302,325]
 
 点击事件页上的这个按钮可以开启事件预览模式，这样就可以可视化预览游戏中的效果。
 
-![alt text](/image/zh_hans/commands/images/showpicture/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showpicture/image-1.png)
 
-![alt text](/image/zh_hans/commands/images/showpicture/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showpicture/image-2.png)
 
 ## 编号
 
@@ -28,10 +28,10 @@ applicationScope: [199,3,182,193,1,302,325]
 
 如下图中，显示动画编号是1，显示图片编号是2。所以显示图片层级比显示动画高。
 
-![alt text](/image/zh_hans/commands/images/showpicture/image-3.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showpicture/image-3.png)
 
 ## 高级设定
 
 开启高级设定，可以将指定源变为指定变量。
 
-![alt text](/image/zh_hans/commands/images/showpicture/image-4.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showpicture/image-4.png)

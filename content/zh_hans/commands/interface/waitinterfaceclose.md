@@ -8,6 +8,6 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 指定需要等待的界面即可。
 
-![alt text](/image/zh_hans/commands/interface/waitinterfaceclose/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/waitinterfaceclose/image.png)
 
-![alt text](/image/zh_hans/commands/interface/waitinterfaceclose/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/waitinterfaceclose/image-1.png)

@@ -8,8 +8,8 @@ applicationScope: [199,3,193,1,302,325]
 
 通过填写售卖的物品/数量/价格即可。
 
-![alt text](/image/zh_hans/commands/interface/openstore/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/openstore/image.png)
 
 之后只要触发了这个指令，就会自动打开商店界面。
 
-![alt text](/image/zh_hans/commands/interface/openstore/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/openstore/image-1.png)

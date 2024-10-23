@@ -16,19 +16,19 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 在下图中，我将游戏标题往上移动了一点，还修改了显示的文字以及文字颜色
 
-![alt text](/image/zh_hans/commands/interface/movecomponents/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/movecomponents/image.png)
 
-![alt text](/image/zh_hans/commands/interface/movecomponents/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/movecomponents/image-1.png)
 
 最终修改的属性都会在这个界面显示。，也可以在这个界面继续修改。
 
-![alt text](/image/zh_hans/commands/interface/movecomponents/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/movecomponents/image-2.png)
 
 ## 过渡效果
 
 将立即更改为渐变即可拥有过渡效果。与移动界面类似。
 
-![alt text](/image/zh_hans/commands/interface/movecomponents/image-3.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/movecomponents/image-3.png)
 
 ## 强制全属性变更
 
@@ -36,6 +36,6 @@ applicationScope: [199,3,182,193,1,302,314,325]
 
 会直接将该组件的全部属性都记录在移动界面内元件指令的参数界面上。
 
-![alt text](/image/zh_hans/commands/interface/movecomponents/image-4.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/movecomponents/image-4.png)
 
-![alt text](/image/zh_hans/commands/interface/movecomponents/image-5.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/interface/movecomponents/image-5.png)

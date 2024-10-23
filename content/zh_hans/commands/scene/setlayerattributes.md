@@ -10,4 +10,4 @@ applicationScope: [199,3,193,1,302,325]
 
 以实现在游戏中动态展示不同的图层效果。
 
-![alt text](/image/zh_hans/commands/scene/setlayerattributes/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/scene/setlayerattributes/image.png)

@@ -8,7 +8,7 @@ applicationScope: [199,3,182,193,1,302,325]
 
 通过指定视频文件即可显示在游戏上。
 
-![alt text](/image/zh_hans/commands/images/showvideo/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showvideo/image.png)
 
 ## 开启可视化预览
 
@@ -16,17 +16,17 @@ applicationScope: [199,3,182,193,1,302,325]
 
 点击事件页上的这个按钮即可开启。
 
-![alt text](/image/zh_hans/commands/images/showvideo/image-1.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showvideo/image-1.png)
 
 白框便是视频的大小，视频效果默认是无法观看的，需要点击播放预览。
 
-![alt text](/image/zh_hans/commands/images/showvideo/image-2.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showvideo/image-2.png)
 
 点击播放预览来观看视频。
 
-![alt text](/image/zh_hans/commands/images/showvideo/image-3.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showvideo/image-3.png)
 
-![alt text](/image/zh_hans/commands/images/showvideo/image-4.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showvideo/image-4.png)
 
 ## 编号
 
@@ -36,10 +36,10 @@ applicationScope: [199,3,182,193,1,302,325]
 
 如下图中，显示视频编号是2，显示图片编号是1。所以显示视频层级比显示图片高。
 
-![alt text](/image/zh_hans/commands/images/showvideo/image-5.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showvideo/image-5.png)
 
 ## 高级设定
 
 开启高级设定，可以将指定源变为指定变量。
 
-![alt text](/image/zh_hans/commands/images/showvideo/image-6.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/images/showvideo/image-6.png)

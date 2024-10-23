@@ -10,7 +10,7 @@ applicationScope: [199,3,193,1]
 
 如下图，就是设置了多个移动行为的指令
 
-![alt text](/image/zh_hans/commands/sceneobject/stopmoving/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/sceneobject/stopmoving/image.png)
 
 如果你是希望消除多个行为，更推荐使用 [清除对象行为](./clearobjectbehavior)
 

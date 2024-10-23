@@ -10,4 +10,4 @@ applicationScope: [199,3,193,1,302,325]
 
 金币默认可以通过商店购买物品消费，出售物品获得。
 
-![alt text](/image/zh_hans/commands/player/changegold/image.png)
+![alt text](https://oss.gcw.wiki/GCW/image/zh_hans/commands/player/changegold/image.png)
