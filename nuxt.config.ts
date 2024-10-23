@@ -57,10 +57,10 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: 'aliyun',
-    aliyun: {
-      baseURL: "https://oss.gcw.wiki",
-    },
+    image: {
+      provider: 'netlify',
+      domains: ['oss.gcw.wiki']
+    }
   },
 
   compatibilityDate: '2024-07-11'
