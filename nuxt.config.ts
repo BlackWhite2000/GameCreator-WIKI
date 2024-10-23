@@ -6,10 +6,10 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
-    '@nuxt/image',
+    // '@nuxt/image',
     '@nuxt/ui',
     '@nuxthq/studio',
-    'nuxt-og-image'
+    // 'nuxt-og-image'
   ],
 
   hooks: {
@@ -53,13 +53,6 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
-    }
-  },
-
-  image: {
-    image: {
-      provider: 'netlify',
-      domains: ['oss.gcw.wiki']
     }
   },
 
