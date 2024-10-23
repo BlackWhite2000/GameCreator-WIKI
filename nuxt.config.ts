@@ -6,10 +6,10 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
-    // '@nuxt/image',
+    '@nuxt/image',
     '@nuxt/ui',
     '@nuxthq/studio',
-    // 'nuxt-og-image'
+    'nuxt-og-image'
   ],
 
   hooks: {
@@ -54,6 +54,13 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  image: {
+    provider: 'aliyun',
+    aliyun: {
+      baseURL: "https://oss.gcw.wiki",
+    },
   },
 
   compatibilityDate: '2024-07-11'
