@@ -23,7 +23,7 @@ return parseFunctionText(text) // 返回 '1'
 const text = 'random(1,100)' // 获取随机数
 return parseFunctionText(text) // 返回 '18.1234...' 不会取整
 const text = 'reduce(50,100)' // 获取平均值
-return parseFunctionText(text) // 返回 '150'
+return parseFunctionText(text) // 返回 '75'
 const text = 'abs(-18)' // 获取绝对值
 return parseFunctionText(text) // 返回 '18'
 const text = 'sqrt(18)' // 获取开方
