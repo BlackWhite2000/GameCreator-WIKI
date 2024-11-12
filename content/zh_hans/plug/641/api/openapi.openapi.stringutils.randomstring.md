@@ -14,5 +14,8 @@ static randomString: (length: number, str?: string) => string;
 
 ## Example
 
+
+```ts
 const randomStr = randomString(10) // 返回 'a1b2c3d4e5'
+```
 

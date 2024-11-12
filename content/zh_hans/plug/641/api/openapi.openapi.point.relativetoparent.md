@@ -51,6 +51,8 @@ objectsArray
 
 </td><td>
 
+对象坐标数组
+
 
 </td></tr>
 <tr><td>
@@ -65,10 +67,21 @@ parent
 
 </td><td>
 
+父级容器坐标
+
 
 </td></tr>
 </tbody></table>
 **Returns:**
 
 { x: number; y: number; }\[\]
+
+## Example
+
+
+```ts
+const objectsArray = [{ x: 1, y: 2 }, { x: 3, y: 4 }]
+const parent = { x: 5, y: 6 }
+const result = OpenAPI.Point.relativeToParent(objectsArray, parent) // 返回相对于父级容器的坐标
+```
 

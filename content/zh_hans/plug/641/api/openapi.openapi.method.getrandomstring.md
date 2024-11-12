@@ -67,3 +67,10 @@ _(Optional)_ 随机的字符串
 
 string
 
+## Example
+
+
+```ts
+const randomString = OpenAPI.Method.getRandomString(6) // 返回 "aBcDeF"
+```
+

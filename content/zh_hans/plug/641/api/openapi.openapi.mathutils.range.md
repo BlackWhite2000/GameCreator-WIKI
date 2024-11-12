@@ -11,7 +11,7 @@
 **Signature:**
 
 ```typescript
-static range(end: number): number[];
+static range(start: number, end?: number, step?: number): number[];
 ```
 
 ## Parameters
@@ -34,6 +34,22 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+start
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+范围的起始数字（包含）。
+
+
+</td></tr>
+<tr><td>
+
 end
 
 
@@ -44,7 +60,23 @@ number
 
 </td><td>
 
-范围的结束数字（不包含）。
+_(Optional)_ 范围的结束数字（不包含）。
+
+
+</td></tr>
+<tr><td>
+
+step
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ 范围的步长值。默认为 `1`<!-- -->。
 
 
 </td></tr>
@@ -55,19 +87,20 @@ number\[\]
 
 {<!-- -->number\[\]<!-- -->} 包含从 `start` 到 `end` 的数字数组，步长为 `step`<!-- -->。
 
-## Example 1
+## Example
 
-// 返回 \[0, 1, 2, 3\] range(4);
 
-## Example 2
+```ts
+// 返回 [0, 1, 2, 3]
+OpenAPI.MathUtils.range(4);
 
-// 返回 \[0, 5, 10, 15\] range(0, 20, 5);
+// 返回 [0, 5, 10, 15]
+OpenAPI.MathUtils.range(0, 20, 5);
 
-## Example 3
+// 返回 [0, -1, -2, -3]
+OpenAPI.MathUtils.range(0, -4, -1);
 
-// 返回 \[0, -1, -2, -3\] range(0, -4, -1);
-
-## Example 4
-
-// 抛出错误: 步长值必须是非零整数。 range(1, 4, 0);
+// 抛出错误: 步长值必须是非零整数。
+OpenAPI.MathUtils.range(1, 4, 0);
+```
 

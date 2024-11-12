@@ -75,5 +75,9 @@ number
 
 ## Example
 
-meanBy(\[{ a: 1 }<!-- -->, { a: 2 }<!-- -->, { a: 3 }<!-- -->\], x =<!-- -->&gt; x.a); // 返回: 2 meanBy(\[\], x =<!-- -->&gt; x.a); // 返回: NaN
+
+```ts
+OpenAPI.MathUtils.meanBy([{ a: 1 }, { a: 2 }, { a: 3 }], x => x.a); // 返回: 2
+OpenAPI.MathUtils.meanBy([], x => x.a); // 返回: NaN
+```
 

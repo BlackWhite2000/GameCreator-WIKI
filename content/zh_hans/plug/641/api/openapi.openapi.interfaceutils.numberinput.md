@@ -179,3 +179,10 @@ _(Optional)_ 最大值按钮
 
 void
 
+## Example
+
+
+```ts
+OpenAPI.InterfaceUtils.NumberInput(ui, comp, 10, 0, 100, sub, add, minBtn, maxBtn);
+```
+

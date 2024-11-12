@@ -59,5 +59,10 @@ T\[\]
 
 ## Example
 
-const array = \[1, 2, 2, 3, 4, 4, 5\]; const result = uniq(array); // result 将为 \[1, 2, 3, 4, 5\]
+
+```ts
+const array = [1, 2, 2, 3, 4, 4, 5];
+const result = OpenAPI.ArrayUtils.uniq(array);
+// result 将为 [1, 2, 3, 4, 5]
+```
 

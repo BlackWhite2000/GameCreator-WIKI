@@ -6,6 +6,10 @@
 
 path库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 **Signature:**
 
 ```typescript
@@ -14,5 +18,8 @@ static get path(): any | undefined;
 
 ## Example
 
+
+```ts
 const path = OpenAPI.RunUtils.path // 返回引入的path库
+```
 

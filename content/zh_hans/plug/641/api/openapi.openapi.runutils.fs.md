@@ -6,6 +6,10 @@
 
 fs库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 **Signature:**
 
 ```typescript
@@ -14,5 +18,8 @@ static get fs(): any | undefined;
 
 ## Example
 
+
+```ts
 const fs = OpenAPI.RunUtils.fs // 返回引入的fs库
+```
 

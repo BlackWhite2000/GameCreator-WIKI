@@ -14,5 +14,10 @@ static parseGameVariableText: (text: string, gameData: any[], regex?: RegExp[] |
 
 ## Example
 
-const text = '你好, 我是\[@<!-- -->gs0\], 今年\[@<!-- -->gv1\]岁' // gameData 需要从编辑器中获取, 例如游戏变量组件 return parseGameVariableText(text, gameData) // 返回 '你好, 我是黑白, 今年18岁'
+
+```ts
+const text = '你好, 我是[@gs0], 今年[@gv1]岁'
+// gameData 需要从编辑器中获取, 例如游戏变量组件
+return parseGameVariableText(text, gameData) // 返回 '你好, 我是黑白, 今年18岁'
+```
 

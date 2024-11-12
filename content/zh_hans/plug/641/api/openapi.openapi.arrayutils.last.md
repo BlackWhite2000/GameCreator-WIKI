@@ -13,7 +13,7 @@
 **Signature:**
 
 ```typescript
-static last<T>(arr: readonly [...T[], T]): T;
+static last<T>(arr: readonly T[]): T | undefined;
 ```
 
 ## Parameters
@@ -41,7 +41,7 @@ arr
 
 </td><td>
 
-readonly \[...T\[\], T\]
+readonly T\[\]
 
 
 </td><td>
@@ -53,13 +53,20 @@ readonly \[...T\[\], T\]
 </tbody></table>
 **Returns:**
 
-T
+T \| undefined
 
 {<!-- -->T \| undefined<!-- -->} 数组的最后一个元素，如果数组为空则返回 `undefined`<!-- -->。
 
 ## Example
 
-const arr = \[1, 2, 3\]; const lastElement = last(arr); // lastElement 将为 3
 
-const emptyArr: number\[\] = \[\]; const noElement = last(emptyArr); // noElement 将为 undefined
+```ts
+const arr = [1, 2, 3];
+const lastElement = OpenAPI.ArrayUtils.last(arr);
+// lastElement 将为 3
+
+const emptyArr: number[] = [];
+const noElement = OpenAPI.ArrayUtils.last(emptyArr);
+// noElement 将为 undefined
+```
 

@@ -56,6 +56,33 @@ string \| undefined
 
 获取当前游戏根路径
 
+PC版本与WEB版本返回的路径不同，通常WEB版本将携带路由以及标识符，PC版本则返回本地路径
+
+
+</td></tr>
+<tr><td>
+
+[gamePathByEnv](./openapi.openapi.pathutils.gamepathbyenv.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+根据当前游戏环境获取当前游戏根路径
+
+如果是PC版本则返回相对路径，实际是返回空。WEB版本则返回绝对路径
+
 
 </td></tr>
 </tbody></table>

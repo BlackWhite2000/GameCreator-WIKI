@@ -4,6 +4,11 @@
 
 ## OpenAPI.Require class
 
+> Warning: This API is now obsolete.
+> 
+> 该类库已经废弃，不再维护。未来版本将删除该类库，请使用RunUtils。 
+> 
+
 第三方库
 
 **Signature:**

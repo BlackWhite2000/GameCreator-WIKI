@@ -83,3 +83,13 @@ _(Optional)_ 回调
 
 void
 
+## Example
+
+
+```ts
+const object = new GameSprite()
+OpenAPI.AnimationUtils.setAnimation(object, 1, Callback.New(() => {
+   console.log('动画播放完成')
+}, this))
+```
+

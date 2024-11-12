@@ -131,3 +131,12 @@ _(Optional)_ 回调
 
 void
 
+## Example
+
+
+```ts
+OpenAPI.AnimationUtils.setSceneObjectAnimation('taskName', object, 1, false, false, Callback.New(() => {
+console.log('动画播放完成')
+}, this))
+```
+

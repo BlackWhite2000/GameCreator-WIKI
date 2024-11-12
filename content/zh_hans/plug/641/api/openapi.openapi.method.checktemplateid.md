@@ -51,3 +51,10 @@ number\[\]
 
 boolean
 
+## Example
+
+
+```ts
+const checkTemplateID = OpenAPI.Method.checkTemplateID([1, 2, 3]) // 返回 false
+```
+

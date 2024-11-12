@@ -11,3 +11,11 @@
 ```typescript
 static get Origin(): string;
 ```
+
+## Example
+
+
+```ts
+const origin = OpenAPI.Method.Origin // 返回 "https://"
+```
+

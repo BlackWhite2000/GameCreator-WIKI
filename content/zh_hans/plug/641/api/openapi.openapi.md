@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-export module OpenAPI 
+export namespace OpenAPI 
 ```
 
 ## Classes
@@ -24,17 +24,6 @@ Description
 
 </th></tr></thead>
 <tbody><tr><td>
-
-[AbortError](./openapi.openapi.aborterror.md)
-
-
-</td><td>
-
-表示一个中止操作的错误类。  Error
-
-
-</td></tr>
-<tr><td>
 
 [AnimationUtils](./openapi.openapi.animationutils.md)
 
@@ -113,17 +102,6 @@ Javascript Clipper  6.4.2
 </td></tr>
 <tr><td>
 
-[FunctionUtils](./openapi.openapi.functionutils.md)
-
-
-</td><td>
-
-函数操作工具
-
-
-</td></tr>
-<tr><td>
-
 [GC](./openapi.openapi.gc.md)
 
 
@@ -179,17 +157,6 @@ UI操作工具
 </td></tr>
 <tr><td>
 
-[ObjectUtils](./openapi.openapi.objectutils.md)
-
-
-</td><td>
-
-对象操作工具
-
-
-</td></tr>
-<tr><td>
-
 [OsUtils](./openapi.openapi.osutils.md)
 
 
@@ -218,28 +185,6 @@ UI操作工具
 </td><td>
 
 点
-
-
-</td></tr>
-<tr><td>
-
-[PredicateUtils](./openapi.openapi.predicateutils.md)
-
-
-</td><td>
-
-谓词操作工具
-
-
-</td></tr>
-<tr><td>
-
-[PromiseUtils](./openapi.openapi.promiseutils.md)
-
-
-</td><td>
-
-Promise 操作工具
 
 
 </td></tr>
@@ -306,48 +251,6 @@ Created by 千叶不冷 on 2021-09-24 15:26:19. 通用悬浮框(提示框)
 </td><td>
 
 界面模块API
-
-
-</td></tr>
-</tbody></table>
-
-## Type Aliases
-
-<table><thead><tr><th>
-
-Type Alias
-
-
-</th><th>
-
-Description
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[NotFalsey](./openapi.openapi.notfalsey.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[Order](./openapi.openapi.order.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[Unzip](./openapi.openapi.unzip.md)
-
-
-</td><td>
 
 
 </td></tr>

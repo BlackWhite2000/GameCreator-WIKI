@@ -14,5 +14,9 @@ static parseVariableText: (text: string, getData?: (((s: any) => number) | ((s: 
 
 ## Example
 
-const text = '你好, 我是\[@<!-- -->s1\], 今年\[@<!-- -->v1\]岁' return parseVariableText(text) // 返回 '你好, 我是黑白, 今年18岁'
+
+```ts
+const text = '你好, 我是[@s1], 今年[@v1]岁'
+return parseVariableText(text) // 返回 '你好, 我是黑白, 今年18岁'
+```
 

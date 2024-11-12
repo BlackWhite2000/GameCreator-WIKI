@@ -42,10 +42,19 @@ any
 
 </td><td>
 
+输出的文本
+
 
 </td></tr>
 </tbody></table>
 **Returns:**
 
 void
+
+## Example
+
+
+```ts
+OpenAPI.GC.isCloudLog('这是一条日志')
+```
 

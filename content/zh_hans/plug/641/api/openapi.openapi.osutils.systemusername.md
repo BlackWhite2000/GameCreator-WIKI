@@ -6,8 +6,18 @@
 
 获取当前操作系统的用户名称
 
+只支持Windows系统
+
 **Signature:**
 
 ```typescript
 static get systemUserName(): string;
 ```
+
+## Example
+
+
+```ts
+const systemUserName = OpenAPI.OsUtils.systemUserName
+```
+

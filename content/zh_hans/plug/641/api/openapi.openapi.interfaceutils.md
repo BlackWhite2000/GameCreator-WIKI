@@ -32,6 +32,22 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+[initList(list, model, len, isFocus)](./openapi.openapi.interfaceutils.initlist.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+初始化一个空白的列表
+
+
+</td></tr>
+<tr><td>
+
 [NumberInput(ui, comp, value, min, max, subBtn, addBtn, minBtn, maxBtn)](./openapi.openapi.interfaceutils.numberinput.md)
 
 

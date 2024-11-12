@@ -32,7 +32,7 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-[clamp(value, maximum)](./openapi.openapi.mathutils.clamp.md)
+[clamp(value, minimum, maximum)](./openapi.openapi.mathutils.clamp.md)
 
 
 </td><td>
@@ -50,21 +50,7 @@ Description
 </td></tr>
 <tr><td>
 
-[clamp(value, minimum, maximum)](./openapi.openapi.mathutils.clamp_1.md)
-
-
-</td><td>
-
-`static`
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[inRange(value, maximum)](./openapi.openapi.mathutils.inrange.md)
+[inRange(value, minimum, maximum)](./openapi.openapi.mathutils.inrange.md)
 
 
 </td><td>
@@ -75,20 +61,6 @@ Description
 </td><td>
 
 检查值是否在指定范围内。
-
-
-</td></tr>
-<tr><td>
-
-[inRange(value, minimum, maximum)](./openapi.openapi.mathutils.inrange_1.md)
-
-
-</td><td>
-
-`static`
-
-
-</td><td>
 
 
 </td></tr>
@@ -132,7 +104,7 @@ Description
 </td></tr>
 <tr><td>
 
-[random(maximum)](./openapi.openapi.mathutils.random.md)
+[random(minimum, maximum)](./openapi.openapi.mathutils.random.md)
 
 
 </td><td>
@@ -150,21 +122,7 @@ Description
 </td></tr>
 <tr><td>
 
-[random(minimum, maximum)](./openapi.openapi.mathutils.random_1.md)
-
-
-</td><td>
-
-`static`
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[randomInt(maximum)](./openapi.openapi.mathutils.randomint.md)
+[randomInt(minimum, maximum)](./openapi.openapi.mathutils.randomint.md)
 
 
 </td><td>
@@ -182,21 +140,7 @@ Description
 </td></tr>
 <tr><td>
 
-[randomInt(minimum, maximum)](./openapi.openapi.mathutils.randomint_1.md)
-
-
-</td><td>
-
-`static`
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[range(end)](./openapi.openapi.mathutils.range.md)
+[range(start, end, step)](./openapi.openapi.mathutils.range.md)
 
 
 </td><td>
@@ -209,34 +153,6 @@ Description
 返回从 `start` 到 `end` 的数字数组，步长为 `step`<!-- -->。
 
 如果未提供 `step`<!-- -->，默认为 `1`<!-- -->。
-
-
-</td></tr>
-<tr><td>
-
-[range(start, end)](./openapi.openapi.mathutils.range_1.md)
-
-
-</td><td>
-
-`static`
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[range(start, end, step)](./openapi.openapi.mathutils.range_2.md)
-
-
-</td><td>
-
-`static`
-
-
-</td><td>
 
 
 </td></tr>

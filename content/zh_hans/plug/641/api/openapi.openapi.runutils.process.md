@@ -4,10 +4,22 @@
 
 ## OpenAPI.RunUtils.process property
 
-process库 const process = OpenAPI.RunUtils.process // 返回引入的process库
+process库
+
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
 
 **Signature:**
 
 ```typescript
 static get process(): any | undefined;
 ```
+
+## Example
+
+
+```ts
+const process = OpenAPI.RunUtils.process // 返回引入的process库
+```
+

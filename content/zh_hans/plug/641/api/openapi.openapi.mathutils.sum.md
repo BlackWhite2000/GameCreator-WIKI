@@ -57,5 +57,10 @@ number
 
 ## Example
 
-const numbers = \[1, 2, 3, 4, 5\]; const result = sum(numbers); // result 将为 15
+
+```ts
+const numbers = [1, 2, 3, 4, 5];
+const result = OpenAPI.MathUtils.sum(numbers);
+// result 将为 15
+```
 

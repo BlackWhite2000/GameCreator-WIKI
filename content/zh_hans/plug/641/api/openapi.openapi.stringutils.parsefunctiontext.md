@@ -14,5 +14,21 @@ static parseFunctionText: (text: string, regex?: RegExp[] | null) => string;
 
 ## Example
 
-const text = 'max(1,100)' // 获取最大值 return parseFunctionText(text) // 返回 '100' const text = 'min(1,100)' // 获取最小值 return parseFunctionText(text) // 返回 '1' const text = 'random(1,100)' // 获取随机数 return parseFunctionText(text) // 返回 '18.1234...' 不会取整 const text = 'reduce(50,100)' // 获取平均值 return parseFunctionText(text) // 返回 '150' const text = 'abs(-18)' // 获取绝对值 return parseFunctionText(text) // 返回 '18' const text = 'sqrt(18)' // 获取开方 return parseFunctionText(text) // 返回 '4.2426...' 不会取整 const text = 'round(1.1234)' // 获取整数 return parseFunctionText(text) // 返回 '1'
+
+```ts
+const text = 'max(1,100)' // 获取最大值
+return parseFunctionText(text) // 返回 '100'
+const text = 'min(1,100)' // 获取最小值
+return parseFunctionText(text) // 返回 '1'
+const text = 'random(1,100)' // 获取随机数
+return parseFunctionText(text) // 返回 '18.1234...' 不会取整
+const text = 'reduce(50,100)' // 获取平均值
+return parseFunctionText(text) // 返回 '150'
+const text = 'abs(-18)' // 获取绝对值
+return parseFunctionText(text) // 返回 '18'
+const text = 'sqrt(18)' // 获取开方
+return parseFunctionText(text) // 返回 '4.2426...' 不会取整
+const text = 'round(1.1234)' // 获取整数
+return parseFunctionText(text) // 返回 '1'
+```
 

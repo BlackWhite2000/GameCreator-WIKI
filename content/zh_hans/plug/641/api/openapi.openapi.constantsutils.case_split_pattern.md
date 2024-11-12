@@ -4,6 +4,8 @@
 
 ## OpenAPI.ConstantsUtils.CASE\_SPLIT\_PATTERN property
 
+蛇形命名法正则表达式
+
 **Signature:**
 
 ```typescript

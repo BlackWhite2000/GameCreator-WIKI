@@ -4,6 +4,11 @@
 
 ## OpenAPI.UI class
 
+> Warning: This API is now obsolete.
+> 
+> 请使用OpenAPI.InterfaceUtils 
+> 
+
 界面模块API
 
 **Signature:**

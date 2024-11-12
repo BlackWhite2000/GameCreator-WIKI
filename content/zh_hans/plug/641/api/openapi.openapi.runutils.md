@@ -56,6 +56,10 @@ any \| undefined
 
 child\_process库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 
 </td></tr>
 <tr><td>
@@ -78,6 +82,39 @@ any \| undefined
 </td><td>
 
 fs库
+
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
+
+</td></tr>
+<tr><td>
+
+[gameEnv](./openapi.openapi.runutils.gameenv.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+当前游戏环境
+
+0-编辑器
+
+1-PC
+
+2-WEB
 
 
 </td></tr>
@@ -102,6 +139,10 @@ any \| undefined
 
 nw.gui库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 
 </td></tr>
 <tr><td>
@@ -124,6 +165,10 @@ any \| undefined
 </td><td>
 
 os库
+
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
 
 
 </td></tr>
@@ -148,6 +193,10 @@ any \| undefined
 
 path库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 
 </td></tr>
 <tr><td>
@@ -169,7 +218,11 @@ any \| undefined
 
 </td><td>
 
-process库 const process = OpenAPI.RunUtils.process // 返回引入的process库
+process库
+
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
 
 
 </td></tr>
@@ -206,6 +259,10 @@ Description
 </td><td>
 
 获取默认引入的库
+
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
 
 
 </td></tr>

@@ -45,10 +45,20 @@ number\[\]
 
 </td><td>
 
+数值坐标数组
+
 
 </td></tr>
 </tbody></table>
 **Returns:**
 
 { x: number; y: number; }\[\]
+
+## Example
+
+
+```ts
+const arr = [1, 2, 3, 4, 5, 6]
+const result = OpenAPI.Point.toCoordinateObjects(arr) // 返回对象坐标数组
+```
 

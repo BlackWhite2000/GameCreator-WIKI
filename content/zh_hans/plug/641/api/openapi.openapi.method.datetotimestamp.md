@@ -51,3 +51,11 @@ string
 
 number
 
+## Example
+
+
+```ts
+const timestamp = OpenAPI.Method.dateToTimestamp('2024-01-01') // 返回 1704038400000
+const timestamp = OpenAPI.Method.dateToTimestamp('2024/01/01') // 返回 1704038400000
+```
+

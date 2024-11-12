@@ -57,5 +57,10 @@ number
 
 ## Example
 
-const numbers = \[1, 2, 3, 4, 5\]; const result = mean(numbers); // result 将为 3
+
+```ts
+const numbers = [1, 2, 3, 4, 5];
+const result = OpenAPI.MathUtils.mean(numbers);
+// result 将为 3
+```
 

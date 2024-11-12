@@ -15,3 +15,10 @@ static getRandomColor(): string;
 
 string
 
+## Example
+
+
+```ts
+const randomColor = OpenAPI.Method.getRandomColor() // 返回 "#FFFFFF"
+```
+

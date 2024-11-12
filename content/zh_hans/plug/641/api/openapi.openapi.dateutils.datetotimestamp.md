@@ -14,5 +14,11 @@ static dateToTimestamp: (date: string) => number;
 
 ## Example
 
-const timestamp = dateToTimestamp('2024-01-01') // 返回 1704038400000 const timestamp = dateToTimestamp('2024/01/01') // 返回 1704038400000 const timestamp = dateToTimestamp('2024-01-01 00:00:00') // 返回 1704038400000 const timestamp = dateToTimestamp('2024/01/01 00:00:00') // 返回 1704038400000
+
+```ts
+const timestamp = dateToTimestamp('2024-01-01') // 返回 1704038400000
+const timestamp = dateToTimestamp('2024/01/01') // 返回 1704038400000
+const timestamp = dateToTimestamp('2024-01-01 00:00:00') // 返回 1704038400000
+const timestamp = dateToTimestamp('2024/01/01 00:00:00') // 返回 1704038400000
+```
 

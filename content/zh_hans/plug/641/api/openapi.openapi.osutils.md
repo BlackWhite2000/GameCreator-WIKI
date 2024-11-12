@@ -56,6 +56,8 @@ string
 
 获取当前操作系统的用户名称
 
+只支持Windows系统
+
 
 </td></tr>
 </tbody></table>

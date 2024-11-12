@@ -115,3 +115,10 @@ _(Optional)_ \[可选 默认为false\] 展开列表，当ui为列表时会对里
 
 void
 
+## Example
+
+
+```ts
+OpenAPI.ShowTips.addTipEvent(ui, 1001, {"name":{text:"千叶不冷","age":{text:"18"}}}, 1000, false)
+```
+

@@ -11,7 +11,7 @@
 **Signature:**
 
 ```typescript
-static clamp(value: number, maximum: number): number;
+static clamp(value: number, minimum: number, maximum?: number): number;
 ```
 
 ## Parameters
@@ -50,6 +50,22 @@ number
 </td></tr>
 <tr><td>
 
+minimum
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+要限制的最小边界。
+
+
+</td></tr>
+<tr><td>
+
 maximum
 
 
@@ -60,7 +76,7 @@ number
 
 </td><td>
 
-要限制的最大边界。
+_(Optional)_ 要限制的最大边界。
 
 
 </td></tr>
@@ -73,5 +89,11 @@ number
 
 ## Example
 
-const result1 = clamp(10, 5); // result1 将会是 5，因为 10 被限制在边界 5 上 const result2 = clamp(10, 5, 15); // result2 将会是 10，因为它在边界 5 和 15 内 const result3 = clamp(2, 5, 15); // result3 将会是 5，因为 2 被限制在边界 5 下 const result4 = clamp(20, 5, 15); // result4 将会是 15，因为 20 被限制在边界 15 上
+
+```ts
+const result1 = OpenAPI.MathUtils.clamp(10, 5); // result1 将会是 5，因为 10 被限制在边界 5 上
+const result2 = OpenAPI.MathUtils.clamp(10, 5, 15); // result2 将会是 10，因为它在边界 5 和 15 内
+const result3 = OpenAPI.MathUtils.clamp(2, 5, 15); // result3 将会是 5，因为 2 被限制在边界 5 下
+const result4 = OpenAPI.MathUtils.clamp(20, 5, 15); // result4 将会是 15，因为 20 被限制在边界 15 上
+```
 

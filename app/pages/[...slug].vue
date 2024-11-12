@@ -19,6 +19,47 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => qu
   .findSurround(withoutTrailingSlash(route.path))
 )
 
+const pathIndex = route.path.split('/')[2]
+// 如果在插件内页
+if (pathIndex == 'plug') {
+  // 确保在API内页
+  const apiIndex = route.path.split('/')[4]
+  if (apiIndex && apiIndex == 'api') {
+    // 确保在插件内页
+    if (route.path.split('/').length > 4) {
+
+      // 得到最后一个路径
+      const lastPath = route.path.split('/').pop()
+      // 得到插件的名称
+      const pluginName = lastPath.split('.')[0]
+      // 移除页面名称开头的插件名称，只移除开头的，大小写不敏感
+      const pageName = page.value.title.replace(new RegExp(`^${pluginName}`, 'i'), '')
+      // 设置页面名称
+      page.value.title = pageName
+      if (pluginName == 'openapi') {
+        // 特殊处理，再次移除
+        const pageName = page.value.title.replace(new RegExp(`^${pluginName}`, 'i'), '')
+        page.value.title = pageName
+      }
+
+      // 设置页面描述
+      const pageDescription = page.value.description.split(' > ')
+      pageDescription.shift()
+      if (pluginName == 'openapi') {
+        // 特殊处理，再次移除
+        pageDescription.shift()
+      }
+      page.value.description = pageDescription.join(' > ')
+
+      // 移除页面内容的第一个元素
+      if (page.value.body.children && page.value.body.children.length > 0) {
+        page.value.body.children.shift()
+      }
+    }
+  }
+
+}
+
 useSeoMeta({
   title: page.value.title,
   ogTitle: `${page.value.title} - ${seo?.siteName}`,
@@ -26,11 +67,11 @@ useSeoMeta({
   ogDescription: page.value.description
 })
 
-defineOgImage({
-  component: 'Docs',
-  title: page.value.title,
-  description: page.value.description
-})
+// defineOgImage({
+//   component: 'Docs',
+//   title: page.value.title,
+//   description: page.value.description
+// })
 
 const headline = computed(() => findPageHeadline(page.value))
 

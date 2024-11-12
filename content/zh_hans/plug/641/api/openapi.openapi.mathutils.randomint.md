@@ -11,7 +11,7 @@
 **Signature:**
 
 ```typescript
-static randomInt(maximum: number): number;
+static randomInt(minimum: number, maximum?: number): number;
 ```
 
 ## Parameters
@@ -34,6 +34,22 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+minimum
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+下限值（包含）。
+
+
+</td></tr>
+<tr><td>
+
 maximum
 
 
@@ -44,7 +60,7 @@ number
 
 </td><td>
 
-上限值（不包含）。
+_(Optional)_ 上限值（不包含）。
 
 
 </td></tr>
@@ -61,5 +77,9 @@ number
 
 ## Example
 
-const result = randomInt(0, 5); // result 将是介于 0（包含）和 5（不包含）之间的随机整数 const result2 = randomInt(5, 0); // 这将抛出错误
+
+```ts
+const result = OpenAPI.MathUtils.randomInt(0, 5); // result 将是介于 0（包含）和 5（不包含）之间的随机整数
+const result2 = OpenAPI.MathUtils.randomInt(5, 0); // 这将抛出错误
+```
 

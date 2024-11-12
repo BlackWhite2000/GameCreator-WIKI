@@ -14,5 +14,8 @@ static get cursorSystemStyleName(): ['default', 'auto', 'pointer', 'text', 'wait
 
 ## Example
 
-const cursorStyle = OpenAPI.CursorUtils.cursorSystemStyleName // 返回 \['default', 'auto', 'pointer', 'text', 'wait', 'help', 'crosshair', 'move', 'n-resize', 's-resize', 'w-resize', 'e-resize', 'nw-resize', 'sw-resize', 'ne-resize', 'se-resize'\]
+
+```ts
+const cursorStyle = OpenAPI.CursorUtils.cursorSystemStyleName // 返回 ['default', 'auto', 'pointer', 'text', 'wait', 'help', 'crosshair', 'move', 'n-resize', 's-resize', 'w-resize', 'e-resize', 'nw-resize', 'sw-resize', 'ne-resize', 'se-resize']
+```
 

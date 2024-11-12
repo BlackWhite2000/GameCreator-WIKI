@@ -9,7 +9,7 @@
 **Signature:**
 
 ```typescript
-static inRange(value: number, maximum: number): boolean;
+static inRange(value: number, minimum: number, maximum?: number): boolean;
 ```
 
 ## Parameters
@@ -48,6 +48,22 @@ number
 </td></tr>
 <tr><td>
 
+minimum
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+范围的下限（包含）。
+
+
+</td></tr>
+<tr><td>
+
 maximum
 
 
@@ -58,7 +74,7 @@ number
 
 </td><td>
 
-范围的上限（不包含）。
+_(Optional)_ 范围的上限（不包含）。
 
 
 </td></tr>
@@ -75,5 +91,10 @@ boolean
 
 ## Example
 
-const result1 = inRange(3, 5); // result1 将返回 true。 const result2 = inRange(1, 2, 5); // result2 将返回 false。 const result3 = inRange(1, 5, 2); // 如果最小值大于或等于最大值，将抛出错误。
+
+```ts
+const result1 = OpenAPI.MathUtils.inRange(3, 5); // result1 将返回 true。
+const result2 = OpenAPI.MathUtils.inRange(1, 2, 5); // result2 将返回 false。
+const result3 = OpenAPI.MathUtils.inRange(1, 5, 2); // 如果最小值大于或等于最大值，将抛出错误。
+```
 

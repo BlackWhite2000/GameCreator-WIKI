@@ -6,6 +6,10 @@
 
 nw.gui库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 **Signature:**
 
 ```typescript
@@ -14,5 +18,8 @@ static get nw_gui(): any | undefined;
 
 ## Example
 
-const nw\_gui = OpenAPI.RunUtils.nw\_gui // 返回引入的nw.gui库
+
+```ts
+const nw_gui = OpenAPI.RunUtils.nw_gui // 返回引入的nw.gui库
+```
 

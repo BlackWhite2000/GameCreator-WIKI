@@ -80,5 +80,10 @@ T\[\]
 
 ## Example
 
-const result = sampleSize(\[1, 2, 3\], 2) // result 将是包含两个来自数组的元素的数组。 // \[1, 2\] 或 \[1, 3\] 或 \[2, 3\]
+
+```ts
+const result = OpenAPI.ArrayUtils.sampleSize([1, 2, 3], 2)
+// result 将是包含两个来自数组的元素的数组。
+// [1, 2] 或 [1, 3] 或 [2, 3]
+```
 

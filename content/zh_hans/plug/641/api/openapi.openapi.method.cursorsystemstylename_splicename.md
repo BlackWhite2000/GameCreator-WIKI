@@ -51,3 +51,10 @@ string\[\]
 
 string\[\]
 
+## Example
+
+
+```ts
+const cursorStyle = OpenAPI.Method.cursorSystemStyleName_spliceName(['default', 'auto']) // 返回 ['pointer', 'text', 'wait', 'help', 'crosshair', 'move', 'n-resize', 's-resize', 'w-resize', 'e-resize', 'nw-resize', 'sw-resize', 'ne-resize', 'se-resize']
+```
+

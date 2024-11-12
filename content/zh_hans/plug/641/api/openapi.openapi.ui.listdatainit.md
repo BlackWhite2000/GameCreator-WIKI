@@ -4,6 +4,11 @@
 
 ## OpenAPI.UI.listDataInit() method
 
+> Warning: This API is now obsolete.
+> 
+> 请使用OpenAPI.InterfaceUtils.initList
+> 
+
 界面列表组件数据初始化
 
 **Signature:**

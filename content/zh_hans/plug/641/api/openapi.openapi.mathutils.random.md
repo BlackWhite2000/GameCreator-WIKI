@@ -11,7 +11,7 @@
 **Signature:**
 
 ```typescript
-static random(maximum: number): number;
+static random(minimum: number, maximum?: number): number;
 ```
 
 ## Parameters
@@ -34,6 +34,22 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+minimum
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+下限值（包含）。
+
+
+</td></tr>
+<tr><td>
+
 maximum
 
 
@@ -44,7 +60,7 @@ number
 
 </td><td>
 
-上限值（不包含）。
+_(Optional)_ 上限值（不包含）。
 
 
 </td></tr>
@@ -61,5 +77,10 @@ number
 
 ## Example
 
-const result1 = random(0, 5); // 返回介于 0 和 5 之间的随机数。 const result2 = random(5, 0); // 如果最小值大于最大值，则抛出错误。 const result3 = random(5, 5); // 如果最小值等于最大值，则抛出错误。
+
+```ts
+const result1 = OpenAPI.MathUtils.random(0, 5); // 返回介于 0 和 5 之间的随机数。
+const result2 = OpenAPI.MathUtils.random(5, 0); // 如果最小值大于最大值，则抛出错误。
+const result3 = OpenAPI.MathUtils.random(5, 5); // 如果最小值等于最大值，则抛出错误。
+```
 

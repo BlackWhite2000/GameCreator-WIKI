@@ -16,5 +16,11 @@ static snakeCase: (str: string) => string;
 
 ## Example
 
-const convertedStr1 = snakeCase('camelCase') // 返回 'camel\_case' const convertedStr2 = snakeCase('some whitespace') // 返回 'some\_whitespace' const convertedStr3 = snakeCase('hyphen-text') // 返回 'hyphen\_text' const convertedStr4 = snakeCase('HTTPRequest') // 返回 'http\_request'
+
+```ts
+const convertedStr1 = snakeCase('camelCase') // 返回 'camel_case'
+const convertedStr2 = snakeCase('some whitespace') // 返回 'some_whitespace'
+const convertedStr3 = snakeCase('hyphen-text') // 返回 'hyphen_text'
+const convertedStr4 = snakeCase('HTTPRequest') // 返回 'http_request'
+```
 

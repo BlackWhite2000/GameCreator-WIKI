@@ -14,5 +14,10 @@ static getModuleData: (id: number, comp: Callback, length?: number) => void;
 
 ## Example
 
-const moduleData = getModuleData(1, (data) =<!-- -->&gt; { console.log(data) }<!-- -->) // 返回 '模块数据'
+
+```ts
+const moduleData = getModuleData(1, Callback.New((data) => {
+    console.log(data)
+}, this)) // 返回 '模块数据'
+```
 

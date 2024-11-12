@@ -6,6 +6,10 @@
 
 os库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 **Signature:**
 
 ```typescript
@@ -14,5 +18,8 @@ static get os(): any | undefined;
 
 ## Example
 
+
+```ts
 const os = OpenAPI.RunUtils.os // 返回引入的os库
+```
 

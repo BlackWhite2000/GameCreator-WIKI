@@ -6,6 +6,10 @@
 
 child\_process库
 
+-- 只支持PC版本
+
+-- WEB版本基于LocalStorage
+
 **Signature:**
 
 ```typescript
@@ -14,5 +18,8 @@ static get child_process(): any | undefined;
 
 ## Example
 
-const child\_process = OpenAPI.RunUtils.child\_process // 返回引入的child\_process库
+
+```ts
+const child_process = OpenAPI.RunUtils.child_process // 返回引入的child_process库
+```
 

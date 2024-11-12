@@ -9,10 +9,14 @@
 **Signature:**
 
 ```typescript
-static timestampToDate: (timestamp: number, data_type?: "" | "y" | "m" | "d" | "h" | "i" | "s") => string | number | undefined;
+static timestampToDate: (timestamp: number, data_type?: '' | 'y' | 'm' | 'd' | 'h' | 'i' | 's') => string | number | undefined;
 ```
 
 ## Example
 
-const date = timestampToDate(1704038400000) // 返回 '2024/01/01 00:00:00' const date = timestampToDate(1704038400000, 'y') // 返回 '2024'
+
+```ts
+const date = timestampToDate(1704038400000) // 返回 '2024/01/01 00:00:00'
+const date = timestampToDate(1704038400000, 'y') // 返回 '2024'
+```
 

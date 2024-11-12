@@ -14,5 +14,8 @@ static get randomColor(): string;
 
 ## Example
 
-const randomColor = randomColor() // 返回 '\#ffffff'
+
+```ts
+const randomColor = randomColor() // 返回 '#ffffff'
+```
 

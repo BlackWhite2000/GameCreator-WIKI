@@ -42,6 +42,8 @@ string
 
 </td><td>
 
+事件页
+
 
 </td></tr>
 </tbody></table>
@@ -51,4 +53,8 @@ string \| null
 
 ## Example
 
+
+```ts
+const eventPage = OpenAPI.EventUtils.eventPageName('enentPage') // 返回设定的事件页名称
+```
 

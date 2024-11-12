@@ -99,3 +99,12 @@ _(Optional)_ 回调
 
 void
 
+## Example
+
+
+```ts
+OpenAPI.AnimationUtils.setImageAnimation('taskName', object, 1, Callback.New(() => {
+  console.log('动画播放完成')
+}, this))
+```
+

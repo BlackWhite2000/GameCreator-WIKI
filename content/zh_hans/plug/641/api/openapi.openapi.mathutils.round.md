@@ -77,5 +77,11 @@ number
 
 ## Example
 
-const result1 = round(1.2345); // result1 将是 1 const result2 = round(1.2345, 2); // result2 将是 1.23 const result3 = round(1.2345, 3); // result3 将是 1.235 const result4 = round(1.2345, 3.1); // 这将抛出一个错误
+
+```ts
+const result1 = OpenAPI.MathUtils.round(1.2345); // result1 将是 1
+const result2 = OpenAPI.MathUtils.round(1.2345, 2); // result2 将是 1.23
+const result3 = OpenAPI.MathUtils.round(1.2345, 3); // result3 将是 1.235
+const result4 = OpenAPI.MathUtils.round(1.2345, 3.1); // 这将抛出一个错误
+```
 

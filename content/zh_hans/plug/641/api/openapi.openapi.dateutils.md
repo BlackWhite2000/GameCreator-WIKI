@@ -68,7 +68,7 @@ Description
 
 </td><td>
 
-(timestamp: number, data\_type?: "" \| "y" \| "m" \| "d" \| "h" \| "i" \| "s") =&gt; string \| number \| undefined
+(timestamp: number, data\_type?: '' \| 'y' \| 'm' \| 'd' \| 'h' \| 'i' \| 's') =&gt; string \| number \| undefined
 
 
 </td><td>

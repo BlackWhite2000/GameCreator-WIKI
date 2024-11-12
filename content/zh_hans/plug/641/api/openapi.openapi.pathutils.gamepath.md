@@ -6,6 +6,8 @@
 
 获取当前游戏根路径
 
+PC版本与WEB版本返回的路径不同，通常WEB版本将携带路由以及标识符，PC版本则返回本地路径
+
 **Signature:**
 
 ```typescript
@@ -14,5 +16,8 @@ static get gamePath(): string | undefined;
 
 ## Example
 
+
+```ts
 const gamePath = OpenAPI.RunUtils.gamePath // 返回当前游戏根路径
+```
 

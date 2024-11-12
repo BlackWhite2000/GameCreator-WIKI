@@ -83,4 +83,9 @@ html .shiki span {
 .dark .prose :where(pre):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   background-color: #131b30 !important;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>

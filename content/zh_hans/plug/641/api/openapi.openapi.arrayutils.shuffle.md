@@ -59,5 +59,10 @@ T\[\]
 
 ## Example
 
-const array = \[1, 2, 3, 4, 5\]; const shuffledArray = shuffle(array); // shuffledArray 将是一个新数组，其中 array 的元素以随机顺序洗牌，例如 \[3, 1, 4, 5, 2\]
+
+```ts
+const array = [1, 2, 3, 4, 5];
+const shuffledArray = OpenAPI.ArrayUtils.shuffle(array);
+// shuffledArray 将是一个新数组，其中 array 的元素以随机顺序洗牌，例如 [3, 1, 4, 5, 2]
+```
 

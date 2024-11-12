@@ -14,5 +14,8 @@ static arabicToRoman: (num: number) => string;
 
 ## Example
 
+
+```ts
 const romanNum = arabicToRoman(2024) // 返回 'MMXXIV'
+```
 

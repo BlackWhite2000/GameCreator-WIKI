@@ -11,7 +11,7 @@
 **Signature:**
 
 ```typescript
-static head<T>(arr: readonly [T, ...T[]]): T;
+static head<T>(arr: readonly T[]): T | undefined;
 ```
 
 ## Parameters
@@ -39,7 +39,7 @@ arr
 
 </td><td>
 
-readonly \[T, ...T\[\]\]
+readonly T\[\]
 
 
 </td><td>
@@ -51,13 +51,20 @@ readonly \[T, ...T\[\]\]
 </tbody></table>
 **Returns:**
 
-T
+T \| undefined
 
 {<!-- -->T \| undefined<!-- -->} 数组的第一个元素，如果数组为空则返回 `undefined`<!-- -->。
 
 ## Example
 
-const arr = \[1, 2, 3\]; const firstElement = head(arr); // firstElement 将会是 1
 
-const emptyArr: number\[\] = \[\]; const noElement = head(emptyArr); // noElement 将会是 undefined
+```ts
+const arr = [1, 2, 3];
+const firstElement = OpenAPI.ArrayUtils.head(arr);
+// firstElement 将会是 1
+
+const emptyArr: number[] = [];
+const noElement = OpenAPI.ArrayUtils.head(emptyArr);
+// noElement 将会是 undefined
+```
 

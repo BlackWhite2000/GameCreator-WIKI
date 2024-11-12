@@ -59,5 +59,10 @@ T
 
 ## Example
 
-const array = \[1, 2, 3, 4, 5\]; const randomElement = sample(array); // randomElement 将是数组中随机选择的一个元素。
+
+```ts
+const array = [1, 2, 3, 4, 5];
+const randomElement = OpenAPI.ArrayUtils.sample(array);
+// randomElement 将是数组中随机选择的一个元素。
+```
 
