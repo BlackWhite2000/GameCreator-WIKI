@@ -4,17 +4,17 @@ title: 使用方式
 
 ## 显示立绘
 
-![](https://oss.gcw.wiki/docs/202312291605152.gif)
+![](https://cdn.gcw.wiki/docs/202312291605152.gif)
 
 插件重写了显示立绘的逻辑，现在显示立绘将会有淡入的动画效果了。
 
 该功能也可通过世界设定中关闭。相关的动画参数也可以在世界设定中修改。
 
-![](https://oss.gcw.wiki/docs/202312291126623.png)
+![](https://cdn.gcw.wiki/docs/202312291126623.png)
 
 ## 禁用立绘、启用立绘
 
-![](https://oss.gcw.wiki/docs/202312291127702.png)
+![](https://cdn.gcw.wiki/docs/202312291127702.png)
 
 插件新增了禁用立绘、启用立绘两个指令，可以方便的让立绘有禁用、启用效果。
 
@@ -22,15 +22,15 @@ title: 使用方式
 
 禁用立绘、启用立绘编号均支持指定多个编号。
 
-![](https://oss.gcw.wiki/docs/202312291606102.gif)
+![](https://cdn.gcw.wiki/docs/202312291606102.gif)
 
 禁用效果可通过世界设定来修改。
 
-![](https://oss.gcw.wiki/docs/202312291127299.png)
+![](https://cdn.gcw.wiki/docs/202312291127299.png)
 
 ## 对齐立绘
 
-![](https://oss.gcw.wiki/docs/202312291606711.gif)
+![](https://cdn.gcw.wiki/docs/202312291606711.gif)
 
 对齐立绘可以让你更加快速的调整多个立绘的位置，终于不需要控制一个个移动立绘指令来修改立绘位置了
 
@@ -38,7 +38,7 @@ title: 使用方式
 
 智能识别模式可以自动根据你当前的编号来确定对齐的情况
 
-![](https://oss.gcw.wiki/docs/202312291127217.png)
+![](https://cdn.gcw.wiki/docs/202312291127217.png)
 
 对齐立绘的具体情况可根据界面【定义对齐立绘用】来修改
 
@@ -46,7 +46,7 @@ title: 使用方式
 
 如创建组件 avatar_5_1、avatar_5_2、avatar_5_3、avatar_5_4、avatar_5_5 这样如果有五张立绘的话，就会自动根据这个情况来使用。
 
-![](https://oss.gcw.wiki/docs/202312291128282.png)
+![](https://cdn.gcw.wiki/docs/202312291128282.png)
 
 ### 手动识别模式
 
@@ -56,27 +56,27 @@ title: 使用方式
 
 这种可以很方便的去实现多个立绘放大缩小，表情切换等等
 
-![](https://oss.gcw.wiki/docs/202312291128022.png)
+![](https://cdn.gcw.wiki/docs/202312291128022.png)
 
 ## 表情气泡
 
-![](https://oss.gcw.wiki/docs/202312291607913.gif)
+![](https://cdn.gcw.wiki/docs/202312291607913.gif)
 
 可以在立绘旁边显示一个表情气泡，丰富剧情表现
 
 表情气泡支持图片、动画，大家可根据实际情况来选择
 
-![](https://oss.gcw.wiki/docs/202312291128204.png)
+![](https://cdn.gcw.wiki/docs/202312291128204.png)
 
 表情气泡位置是基于界面【定义表情气泡用】来的
 
-![](https://oss.gcw.wiki/docs/202312291128013.png)
+![](https://cdn.gcw.wiki/docs/202312291128013.png)
 
 ### 表情气泡宽高定义
 
 直接修改组件 emojiImage、emojiAnimation 的宽高、缩放就好
 
-![](https://oss.gcw.wiki/docs/202312291129074.png)
+![](https://cdn.gcw.wiki/docs/202312291129074.png)
 
 ### 表情气泡位置定义
 
@@ -86,4 +86,4 @@ y轴由于无法很好确定立绘的当前高度，因此是固定的。
 
 为了弥补这种情况，在表情气泡模块中可以开启 原属性基础上叠加 来根据实际情况来微调表情气泡的位置。
 
-![](https://oss.gcw.wiki/docs/202312291129480.png)
+![](https://cdn.gcw.wiki/docs/202312291129480.png)

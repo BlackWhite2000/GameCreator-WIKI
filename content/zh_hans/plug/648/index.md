@@ -20,15 +20,15 @@ title: 使用方式
 
 安装完插件后，在界面模块 16号分类 中找到 **EquipDeScriptCustom_Root**
 
-![](https://oss.gcw.wiki/docs/202411122046945.png)
+![](https://cdn.gcw.wiki/docs/202411122046945.png)
 
 将预设的 **EquipDeScriptCustom_Root** 全部复制粘贴到 4-背包界面、11-商店界面、16-队伍编成。接下来请根据自己的实际情况调整组件的位置。
 
-![](https://oss.gcw.wiki/docs/202411122047318.png)
+![](https://cdn.gcw.wiki/docs/202411122047318.png)
 
-![](https://oss.gcw.wiki/docs/202411122047163.png)
+![](https://cdn.gcw.wiki/docs/202411122047163.png)
 
-![](https://oss.gcw.wiki/docs/202411122047036.png)
+![](https://cdn.gcw.wiki/docs/202411122047036.png)
 
 这样就完成了！效果将与演示效果一样！
 
@@ -42,7 +42,7 @@ title: 使用方式
 
 该组件可自由删除、新增。
 
-![](https://oss.gcw.wiki/docs/202411122047320.png)
+![](https://cdn.gcw.wiki/docs/202411122047320.png)
 
 #### EqCust_intro
 
@@ -62,7 +62,7 @@ EqCustTitle 不是属性相关的组件，是表示了一个标题。如预设�
 
 在世界设定中，找到 如果装备属性是0的情况下 的下拉菜单，可以修改不同情况下的显示效果。
 
-![](https://oss.gcw.wiki/docs/202411122048702.png)
+![](https://cdn.gcw.wiki/docs/202411122048702.png)
 
 ### 自动排列
 
@@ -72,7 +72,7 @@ EqCustTitle 不是属性相关的组件，是表示了一个标题。如预设�
 
 同时推荐开启自动排列情况下，EqCustTitle 组件隐藏，因为 EqCustTitle 组件设计之初就不是为自动排列考虑的。
 
-![](https://oss.gcw.wiki/docs/202411122048416.png)
+![](https://cdn.gcw.wiki/docs/202411122048416.png)
 
 ### 容器高度自适应
 
@@ -88,23 +88,23 @@ EquipDeScriptCustom_Root 会自动去重新计算高度。
 
 如果你是通过下图开始新增属性的，那么本插件将会自动适配，直接新增 EqCust 组件即可。
 
-![](https://oss.gcw.wiki/docs/202411122048862.png)
+![](https://cdn.gcw.wiki/docs/202411122048862.png)
 
 #### 情况二
 
 如果你是在其他地方新增的属性，例如新增属性 new
 
-![](https://oss.gcw.wiki/docs/202411122048731.png)
+![](https://cdn.gcw.wiki/docs/202411122048731.png)
 
 那么在世界设定中的 附加属性 中填写 new ，之后去新增 EqCust 组件即可。
 
-![](https://oss.gcw.wiki/docs/202411122048358.png)
+![](https://cdn.gcw.wiki/docs/202411122048358.png)
 
-![](https://oss.gcw.wiki/docs/202411122048592.png)
+![](https://cdn.gcw.wiki/docs/202411122048592.png)
 
-![](https://oss.gcw.wiki/docs/202411122048159.png)
+![](https://cdn.gcw.wiki/docs/202411122048159.png)
 
-![](https://oss.gcw.wiki/docs/202411122049585.png)
+![](https://cdn.gcw.wiki/docs/202411122049585.png)
 
 ## 装备描述调用变量
 
@@ -118,4 +118,4 @@ EquipDeScriptCustom_Root 会自动去重新计算高度。
 
 [$s4] = 二周目字符串变量编号4
 
-![](https://oss.gcw.wiki/docs/202411122049369.png)
+![](https://cdn.gcw.wiki/docs/202411122049369.png)
