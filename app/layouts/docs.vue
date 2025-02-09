@@ -1,126 +1,85 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content'
+// import type { ContentNavigationItem } from '@nuxt/content'
 
-const navigation = inject<Ref<NavItem[]>>('navigation')
-
+// const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 const route = useRoute()
-const { navPageFromPath } = useContentHelpers()
+const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('zh_hans'))
 
-const locale = ref('zh_hans')
-const langData = await useLangData(locale.value);
+const filteredChildren = ref([])
+const updateNavigation = () => {
+  if (!navigation.value) return
 
-const headerLinks = ref([{
-  label: 'Docs',
-  icon: 'i-ph-book-bookmark-duotone',
-  to: '/docs',
-  search: false,
-  children: [{
-    label: langData?.gettingStartedLabel,
-    description: langData?.gettingStartedLabel,
-    icon: 'i-heroicons-rocket-launch',
-    to: `/${locale.value}/getting-started/introduction`,
-    active: route.path.startsWith(`/${locale.value}/getting-started`)
-  }, {
-    label: langData?.templateLabel,
-    description: langData?.templateLabel,
-    icon: 'i-heroicons-hashtag',
-    to: `/${locale.value}/template`,
-    active: route.path.startsWith(`/${locale.value}/template`)
-  }, {
-    label: langData?.commandsLabel,
-    description: langData?.commandsLabel,
-    icon: 'i-heroicons-window',
-    to: `/${locale.value}/commands`,
-    active: route.path.startsWith(`/${locale.value}/commands`)
-  }, {
-    label: langData?.plugLabel,
-    description: langData?.plugLabel,
-    icon: 'i-heroicons-puzzle-piece',
-    to: `/${locale.value}/plug`,
-    active: route.path.startsWith(`/${locale.value}/plug`)
-  }, {
-    label: 'API',
-    description: 'API',
-    icon: 'i-heroicons-cube',
-    to: `/${locale.value}/library`,
-    active: route.path.startsWith(`/${locale.value}/library`)
-  }
-  ]
-}])
-
-const links = computed(() => headerLinks.value.find(link => link.to === '/docs')?.children ?? [])
-
-const navigationLinks = computed(() => {
-  const path = [`/${locale.value}`, route.params.slug?.[1]].filter(Boolean).join('/')
-  const data = mapContentNavigation(navPageFromPath(path, navigation.value)?.children || [])
-  const arr = route.path.split('/')
-  const pathIndex = route.path.split('/')[2]
-  if (arr.length < 2 || (pathIndex != 'getting-started' && pathIndex != 'template' && pathIndex != 'plug')) return sortTree(data)
-
-  if (pathIndex == 'plug') {
-    for (let i = 0; i < data.length; i++) {
-      if (data[i].label == "OpenAPI") {
-        for (let j = 0; j < data[i].children.length; j++) {
-          if (data[i].children[j].label == "API") {
-            for (let k = 0; k < data[i].children[j].children.length; k++) {
-              const item = data[i].children[j].children[k]
-              const path = item.to.split('/').pop()
-              const pathArr = path.split('.')
-              pathArr.shift()
-              if (pathArr.length > 0) {
-                pathArr.shift()
-                if (pathArr.length > 0) {
-                  const newName = pathArr.join('.')
-                  if (newName) {
-                    item.label = newName.charAt(0).toUpperCase() + newName.slice(1)
-                  }
-                }
-              }
-            }
-            data[i].children[j].children.splice(1, 2)
-          }
-        }
-        break
-      }
-    }
-    return data
-  }
-  return data;
-})
-
-function sortTree(nodes) {
-  // 递归处理子节点并排序
-  return nodes.map(node => {
-    if (node.children) {
-      node.children = sortTree(node.children);
-    }
-    return node;
-  }).sort((a, b) => {
-    if (a.children && !b.children) {
-      return -1;
-    } else if (!a.children && b.children) {
-      return 1;
-    } else {
-      return 0;
-    }
-  });
+  filteredChildren.value = sortTree(navigation.value[0].children.filter(child => route.path.includes(child.path))[0]?.children) || []
 }
 
+/**
+ * 监听路由变化，自动更新 navigation
+ */
+watch(() => route.path, () => {
+  updateNavigation()
+}, { immediate: true })
+
+/**
+ * 递归排序函数
+ */
+function sortTree(nodes) {
+  return nodes.map(node => {
+    if (node.children) {
+      node.children = sortTree(node.children)
+    }
+    return node
+  }).sort((a, b) => {
+    if (a.children && !b.children) {
+      return 1
+    } else if (!a.children && b.children) {
+      return -1
+    } else {
+      return 0
+    }
+  })
+}
+
+const navigation2 = ref([
+  {
+    title: '开始使用',
+    icon: 'i-heroicons-rocket-launch',
+    path: '/zh_hans/getting-started/introduction'
+  },
+  {
+    title: '模板教程',
+    icon: 'i-heroicons-window',
+    path: '/zh_hans/template'
+  },
+  {
+    title: '指令教程',
+    icon: 'i-heroicons-square-3-stack-3d',
+    path: '/zh_hans/commands'
+  },
+  {
+    title: '插件教程',
+    icon: 'i-heroicons-wallet',
+    path: '/zh_hans/plug'
+  },
+  {
+    title: 'API',
+    icon: 'i-heroicons-cube',
+    path: '/zh_hans/library'
+  }
+])
 </script>
 
 <template>
-  <UContainer class="max-w-[120rem]">
+  <UContainer class="max-w-full">
     <UPage>
       <template #left>
-        <UAside :links="links">
-          <UDivider type="dashed" class="mb-6" />
-          <UNavigationTree :links="navigationLinks" default-open :multiple="false" />
-          <template #bottom></template>
-        </UAside>
+        <UPageAside>
+          <UContentNavigation color="neutral" :navigation="navigation2" />
+          <USeparator class="py-8" />
+          <UContentNavigation highlight :navigation="filteredChildren" />
+        </UPageAside>
       </template>
+
       <slot />
     </UPage>
   </UContainer>
 </template>
-
-<style></style>

@@ -9,41 +9,41 @@ const props = defineProps({
   }
 })
 
-const langData = await useLangData(locale.value)
+const langData = 'zh_hans'
 
 const allTargets = computed(() => [
   {
-    name: langData?.numberVariables,
+    name: '数值变量设值',
     type: 0,
     url: `/${locale.value}/commands/gameprogress/numbervariables`,
   },
   {
-    name: langData?.switch,
+    name: '开关设置',
     type: 2,
     url: `/${locale.value}/commands/gameprogress/switchs`
   },
   {
-    name: langData?.stringVariables,
+    name: '字符串设值',
     type: 1,
     url: `/${locale.value}/commands/gameprogress/stringvariables`
   },
   {
-    name: langData?.ngNumberVariables,
+    name: '二周目数值变量设值',
     type: 0,
     url: `/${locale.value}/commands/gameprogress/ngnumbervariables`
   },
   {
-    name: langData?.ngSwitch,
+    name: '二周目开关设置',
     type: 2,
     url: `/${locale.value}/commands/gameprogress/ngswitchs`
   },
   {
-    name: langData?.ngStringVariables,
+    name: '二周目字符串设值',
     type: 1,
     url: `/${locale.value}/commands/gameprogress/ngstringvariables`
   },
   {
-    name: langData?.objectSwitch,
+    name: '二周目对象开关设置',
     type: 2,
     url: `/${locale.value}/commands/gameprogress/objectswitchs`
   }
@@ -55,10 +55,11 @@ const filteredTargets = computed(() => allTargets.value.filter(item => item.type
 <template>
   <div class="flex flex-wrap" v-if="filteredTargets">
     <div v-for="item in filteredTargets" :key="item.url">
-      <ULink :to="item.url === route.path ? null : item.url" class="mr-6"
+      <NuxtLink :to="item.url === route.path ? null : item.url"
+        class="text-[var(--ui-primary)] w-max hover:underline cursor-pointer mr-6"
         :inactive-class="item.url === route.path ? 'font-bold cursor-default text-white' : ''">
         {{ item.name }}
-      </ULink>
+      </NuxtLink>
     </div>
   </div>
 </template>

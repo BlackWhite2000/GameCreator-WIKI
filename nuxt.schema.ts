@@ -1,4 +1,4 @@
-import { field, group } from '@nuxthq/studio/theme'
+import { field, group } from '@nuxt/content/preview'
 
 export default defineNuxtSchema({
   appConfig: {
@@ -17,42 +17,42 @@ export default defineNuxtSchema({
               title: 'Search Bar',
               description: 'Icon to display in the search bar.',
               icon: 'i-mdi-magnify',
-              default: 'i-heroicons-magnifying-glass-20-solid'
+              default: 'i-lucide-search'
             }),
             dark: field({
               type: 'icon',
               title: 'Dark mode',
               description: 'Icon of color mode button for dark mode.',
               icon: 'i-mdi-moon-waning-crescent',
-              default: 'i-heroicons-moon-20-solid'
+              default: 'i-lucide-moon'
             }),
             light: field({
               type: 'icon',
               title: 'Light mode',
               description: 'Icon of color mode button for light mode.',
               icon: 'i-mdi-white-balance-sunny',
-              default: 'i-heroicons-sun-20-solid'
+              default: 'i-lucide-sun'
             }),
             external: field({
               type: 'icon',
               title: 'External Link',
               description: 'Icon for external link.',
               icon: 'i-mdi-arrow-top-right',
-              default: 'i-heroicons-arrow-up-right-20-solid'
+              default: 'i-lucide-external-link'
             }),
             chevron: field({
               type: 'icon',
               title: 'Chevron',
               description: 'Icon for chevron.',
               icon: 'i-mdi-chevron-down',
-              default: 'i-heroicons-chevron-down-20-solid'
+              default: 'i-lucide-chevron-down'
             }),
             hash: field({
               type: 'icon',
               title: 'Hash',
               description: 'Icon for hash anchors.',
               icon: 'i-ph-hash',
-              default: 'i-heroicons-hashtag-20-solid'
+              default: 'i-lucide-hash'
             })
           }
         }),
@@ -62,12 +62,12 @@ export default defineNuxtSchema({
           description: 'Primary color of your UI.',
           icon: 'i-mdi-palette-outline',
           default: 'green',
-          required: ['sky', 'mint', 'rose', 'amber', 'violet', 'emerald', 'fuchsia', 'indigo', 'lime', 'orange', 'pink', 'purple', 'red', 'teal', 'yellow', 'green', 'blue', 'cyan', 'gray', 'white', 'black']
+          required: ['red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose']
         }),
-        gray: field({
+        neutral: field({
           type: 'string',
-          title: 'Gray',
-          description: 'Gray color of your UI.',
+          title: 'Neutral',
+          description: 'Neutral color of your UI.',
           icon: 'i-mdi-palette-outline',
           default: 'slate',
           required: ['slate', 'cool', 'zinc', 'neutral', 'stone']
@@ -75,14 +75,14 @@ export default defineNuxtSchema({
       }
     }),
     seo: group({
-      title: 'GCW',
-      description: 'GameCreator WIKI - 一站式查询游戏制作教程',
+      title: 'SEO',
+      description: 'SEO configuration.',
       icon: 'i-ph-app-window',
       fields: {
         siteName: field({
           type: 'string',
-          title: 'GCW',
-          description: 'GameCreator WIKI - 一站式查询游戏制作教程',
+          title: 'Site Name',
+          description: 'Name used in ogSiteName and used as second part of your page title (My page title - Nuxt UI Pro).',
           icon: 'i-mdi-web',
           default: []
         })
@@ -93,6 +93,20 @@ export default defineNuxtSchema({
       description: 'Header configuration.',
       icon: 'i-mdi-page-layout-header',
       fields: {
+        title: field({
+          type: 'string',
+          title: 'Title',
+          description: 'Title to display in the header.',
+          icon: 'i-mdi-format-title',
+          default: ''
+        }),
+        to: field({
+          type: 'string',
+          title: 'To',
+          description: 'URL to redirect to when the title is clicked.',
+          icon: 'i-mdi-link-variant',
+          default: ''
+        }),
         logo: group({
           title: 'Logo',
           description: 'Header logo configuration.',

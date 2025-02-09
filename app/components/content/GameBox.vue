@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-const isOpen = ref(false)
 const props = defineProps({
   src: {
     type: String,
@@ -10,21 +9,14 @@ const props = defineProps({
 
 <template>
   <div>
-    <div @click="isOpen = true" class="text-primary w-max hover:underline cursor-pointer">
-      <slot />
-    </div>
-    <UModal v-model="isOpen" prevent-close :ui="{ width: 'sm:max-w-[max-content]' }">
-      <UCard>
-        <template #header>
-          <div class="flex items-center justify-end">
-            <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1"
-              @click="isOpen = false" />
-          </div>
-        </template>
+    <UModal fullscreen>
+      <div class="text-[var(--ui-primary)] w-max hover:underline cursor-pointer" color="neutral" variant="subtle">
+        <slot />
+      </div>
 
-        <iframe width="1200" height="720" class="block" :src="props.src">
-        </iframe>
-      </UCard>
+      <template #body>
+        <iframe class="w-full h-full" :src="props.src" />
+      </template>
     </UModal>
   </div>
 </template>
