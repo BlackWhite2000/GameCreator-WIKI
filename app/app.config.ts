@@ -32,12 +32,18 @@ export default defineAppConfig({
     search: true,
     colorMode: true,
     links: [
-      // {
-      // 'icon': 'i-simple-icons-github',
-      // 'to': 'https://github.com/nuxt-ui-pro/docs/tree/v3',
-      // 'target': '_blank',
-      // 'aria-label': 'GitHub'
-      // }
+      {
+        'icon': 'i-ant-design-home-filled',
+        'to': 'https://www.gamecreator.com.cn',
+        'target': '_blank',
+        'aria-label': 'GameCreator'
+      },
+      {
+        'icon': 'i-simple-icons-github',
+        'to': 'https://github.com/BlackWhite2000/GameCreator-WIKI',
+        'target': '_blank',
+        'aria-label': 'GitHub'
+      }
     ]
   },
   footer: {
@@ -68,26 +74,21 @@ export default defineAppConfig({
     ]
   },
   toc: {
-    // title: 'Table of Contents',
+    title: '目录',
     bottom: {
-      // title: 'Community',
-      // edit: 'https://github.com/nuxt-ui-pro/docs/edit/v3/content',
-      // links: [{
-      //   icon: 'i-lucide-star',
-      //   label: 'Star on GitHub',
-      //   to: 'https://github.com/nuxt/ui',
-      //   target: '_blank'
-      // }, {
-      //   icon: 'i-lucide-book-open',
-      //   label: 'Nuxt UI Pro docs',
-      //   to: 'https://ui3.nuxt.dev/getting-started/installation/pro/nuxt',
-      //   target: '_blank'
-      // }, {
-      //   icon: 'i-simple-icons-nuxtdotjs',
-      //   label: 'Purchase a license',
-      //   to: 'https://ui.nuxt.com/pro/purchase',
-      //   target: '_blank'
-      // }]
+      title: '文档',
+      edit: 'https://github.com/BlackWhite2000/GameCreator-WIKI/edit/master/content',
+      links: [{
+        icon: 'i-lucide-star',
+        label: '访问仓库',
+        to: 'https://github.com/BlackWhite2000/GameCreator-WIKI',
+        target: '_blank'
+      }, {
+        icon: 'i-ant-design-home-filled',
+        label: 'GameCreator',
+        to: 'https://www.gamecreator.com.cn',
+        target: '_blank'
+      }]
     }
   }
 })
