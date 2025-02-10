@@ -18,3 +18,14 @@
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
 }
+
+:root {
+  --ui-container: 80rem;
+}
+
+.dark {
+  --ui-bg: var(--ui-color-neutral-950);
+  --ui-bg-muted: var(--ui-color-neutral-900);
+  --ui-bg-elevated: var(--ui-color-neutral-900);
+  --ui-bg-accented: var(--ui-color-neutral-800);
+}
