@@ -1,4 +1,6 @@
-# ClientSceneObject 场景对象-客户端基类
+---
+title:  ClientSceneObject 场景对象-客户端基类
+---
 >实际在游戏画面中出现的场景对象类，所有客户端场景对象实现类都继承于该类<br>【内部的显示层次】<br>-- 动画层：底层 animationLowLayer 使用playAnimation播放的动画比目标效果层更低的层次会添加到这里<br>-- 自定义底层（预设中比行走图低的层，包括行走图） customLayer<br>-- 动画层：高层 animationHighLayer 使用playAnimation播放的动画比目标效果层更高的层次会添加到这里<br>-- 自定义高层（预设中比行走图更高的层次）customHighLayer<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-07-24
@@ -6,52 +8,52 @@
 **继承**  →[SceneObjectEntity](/zh_hans/library/2d/common/sceneobjectentity)→[SceneObject](/zh_hans/library/2d/common/sceneobject)<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **player** : ClientPlayer;<br>所属的玩家  |
-| **root** : GameSprite;<br>显示对象的根容器，在场景上的场景对象实际上是将该容器添加到场景的显示容器（displayObject）上  |
-| **shadow** : GameSprite;<br>影子，默认是添加在场景的影子层上，以便比所有对象低  |
-| **animationLowLayer** : GameSprite;<br>底层动画层 使用playAnimation播放的动画比目标效果层更低的层次会添加到这里  |
-| **avatar** : Avatar;<br>行走图  |
-| **avatarContainer** : GameSprite;<br>行走图容器，装载行走图的父节点  |
-| **customLayer** : GameSprite;<br>自定义层 预设中比行走图低的层，包括行走图（avatar）  |
-| **animationHighLayer** : GameSprite;<br>高层动画层 使用playAnimation播放的动画比目标效果层更高的层次会添加到这里  |
-| **customHighLayer** : GameSprite;<br>模型对象预设高层（预设中比行走图更高的层次）  |
-| **systemUILayer** : GameSprite;<br>最高层系统UI层  |
-| **scene** : ClientScene;<br>所在的场景，在添加到场景时会设置此值，移除时并不会被置空  |
-| **lockDrag** : boolean;<br>【编辑器预览用】拖拽对象锁定  |
-| **lockDelete** : boolean;<br>【编辑器预览用】删除对象锁定  |
-| **lockKeyMove** : boolean;<br>【编辑器预览用】按键移动对象锁定  |
-| **[actionIndex](#actionindex)** : number;<br>根据动作索引播放动作  |
-| **animations** : Animation[];<br>[只读]动画集合  |
+| <div style="width:1000px;text-align:left">属性</div>                                                                  |
+| --------------------------------------------------------------------------------------------------------------------- |
+| **player** : ClientPlayer;<br>所属的玩家                                                                              |
+| **root** : GameSprite;<br>显示对象的根容器，在场景上的场景对象实际上是将该容器添加到场景的显示容器（displayObject）上 |
+| **shadow** : GameSprite;<br>影子，默认是添加在场景的影子层上，以便比所有对象低                                        |
+| **animationLowLayer** : GameSprite;<br>底层动画层 使用playAnimation播放的动画比目标效果层更低的层次会添加到这里       |
+| **avatar** : Avatar;<br>行走图                                                                                        |
+| **avatarContainer** : GameSprite;<br>行走图容器，装载行走图的父节点                                                   |
+| **customLayer** : GameSprite;<br>自定义层 预设中比行走图低的层，包括行走图（avatar）                                  |
+| **animationHighLayer** : GameSprite;<br>高层动画层 使用playAnimation播放的动画比目标效果层更高的层次会添加到这里      |
+| **customHighLayer** : GameSprite;<br>模型对象预设高层（预设中比行走图更高的层次）                                     |
+| **systemUILayer** : GameSprite;<br>最高层系统UI层                                                                     |
+| **scene** : ClientScene;<br>所在的场景，在添加到场景时会设置此值，移除时并不会被置空                                  |
+| **lockDrag** : boolean;<br>【编辑器预览用】拖拽对象锁定                                                               |
+| **lockDelete** : boolean;<br>【编辑器预览用】删除对象锁定                                                             |
+| **lockKeyMove** : boolean;<br>【编辑器预览用】按键移动对象锁定                                                        |
+| **[actionIndex](#actionindex)** : number;<br>根据动作索引播放动作                                                     |
+| **animations** : Animation[];<br>[只读]动画集合                                                                       |
 ## **Protected 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **_x** : number;<br>水平坐标  |
-| **_y** : number;<br>垂直坐标  |
+| <div style="width:1000px;text-align:left">属性</div> |
+| ---------------------------------------------------- |
+| **_x** : number;<br>水平坐标                         |
+| **_y** : number;<br>垂直坐标                         |
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[constructor](#constructor)**(soData? : [SceneObject](/zh_hans/library/2d/common/sceneobject),  scene? : [ClientScene](/zh_hans/library/2d/client/clientscene))<br>构造函数
-| **[dispose](#dispose)**(): void<br>释放
-| **[drawShadow](#drawshadow)**(scalePer? : number): void<br>绘制影子，比如当需要缩放影子时调用此函数
-| **[stopRender](#stoprender)**(stopCurrentFrame? : boolean): void<br>停止渲染，Game.pause 时会自动调用场景中对象的此函数
-| **[recoveryRender](#recoveryrender)**(continueCurrentFrame? : boolean): void<br>恢复渲染，Game.pause 时会自动调用场景中对象的此函数
-| **[refreshCoordinate](#refreshcoordinate)**(): void<br>进入新的坐标后应调用此函数
-| **[update](#update)**(nowTime : number): void<br>刷新：场景会调用所有场景上面的场景对象的该函数，执行逻辑应由子类实现，该类下此函数无任何代码实现
-| **[playAnimation](#playanimation)**(aniID : number,  loop : boolean,  isHit : boolean,  fps? : number,  superposition? : boolean,  ignoreReplay? : boolean): [GCAnimation](/zh_hans/library/2d/client/gcanimation)<br>播放动画，目标对象是行走图
-| **[stopAnimation](#stopanimation)**(aniID : any): void<br>停止动画
-| **[stopAllAnimation](#stopallanimation)**(): void<br>停止所有动画
-| **[hasListener](#haslistener)**(type : string): boolean<br>检查 EventDispatcher 对象是否为特定事件类型注册了任何侦听器。
-| **[event](#event)**(type : string,  data? : any): boolean<br>派发事件。
-| **[on](#on)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知。
-| **[once](#once)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除。
-| **[off](#off)**(type : string,  caller : any,  listener : Function,  onceOnly? : boolean): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>从 EventDispatcher 对象中删除侦听器。
-| **[offAll](#offall)**(type? : string): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>从 EventDispatcher 对象中删除指定事件类型的所有侦听器。
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[constructor](#constructor)**(soData? : [SceneObject](/zh_hans/library/2d/common/sceneobject),  scene? : [ClientScene](/zh_hans/library/2d/client/clientscene))<br>构造函数                                                                                                      |
+| **[dispose](#dispose)**(): void<br>释放                                                                                                                                                                                                                                            |
+| **[drawShadow](#drawshadow)**(scalePer? : number): void<br>绘制影子，比如当需要缩放影子时调用此函数                                                                                                                                                                                |
+| **[stopRender](#stoprender)**(stopCurrentFrame? : boolean): void<br>停止渲染，Game.pause 时会自动调用场景中对象的此函数                                                                                                                                                            |
+| **[recoveryRender](#recoveryrender)**(continueCurrentFrame? : boolean): void<br>恢复渲染，Game.pause 时会自动调用场景中对象的此函数                                                                                                                                                |
+| **[refreshCoordinate](#refreshcoordinate)**(): void<br>进入新的坐标后应调用此函数                                                                                                                                                                                                  |
+| **[update](#update)**(nowTime : number): void<br>刷新：场景会调用所有场景上面的场景对象的该函数，执行逻辑应由子类实现，该类下此函数无任何代码实现                                                                                                                                  |
+| **[playAnimation](#playanimation)**(aniID : number,  loop : boolean,  isHit : boolean,  fps? : number,  superposition? : boolean,  ignoreReplay? : boolean): [GCAnimation](/zh_hans/library/2d/client/gcanimation)<br>播放动画，目标对象是行走图                                   |
+| **[stopAnimation](#stopanimation)**(aniID : any): void<br>停止动画                                                                                                                                                                                                                 |
+| **[stopAllAnimation](#stopallanimation)**(): void<br>停止所有动画                                                                                                                                                                                                                  |
+| **[hasListener](#haslistener)**(type : string): boolean<br>检查 EventDispatcher 对象是否为特定事件类型注册了任何侦听器。                                                                                                                                                           |
+| **[event](#event)**(type : string,  data? : any): boolean<br>派发事件。                                                                                                                                                                                                            |
+| **[on](#on)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知。                                   |
+| **[once](#once)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除。 |
+| **[off](#off)**(type : string,  caller : any,  listener : Function,  onceOnly? : boolean): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>从 EventDispatcher 对象中删除侦听器。                                                                              |
+| **[offAll](#offall)**(type? : string): [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)<br>从 EventDispatcher 对象中删除指定事件类型的所有侦听器。                                                                                                                |
 ## Protected 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[updateShadow](#updateshadow)**(): void<br>刷新影子，更新影子坐标，refreshCoordinate会调用此函数以便更新影子坐标
+| <div style="width:1000px;text-align:left" >方法</div>                                                              |
+| ------------------------------------------------------------------------------------------------------------------ |
+| **[updateShadow](#updateshadow)**(): void<br>刷新影子，更新影子坐标，refreshCoordinate会调用此函数以便更新影子坐标 |
 ## 详情
 
 ### actionIndex

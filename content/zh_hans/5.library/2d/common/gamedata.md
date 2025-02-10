@@ -1,4 +1,6 @@
-# GameData 自定义模块的游戏数据类
+---
+title:  GameData 自定义模块的游戏数据类
+---
 >制作者更新了数据后，玩家来自存档的数据读取后格式会被修正，<br>比如旧版本的存档没有的属性或数据格式被修改，会使用预设的默认值<br>-- 如原来没有age属性，制作者修改后age属性默认值是10,那么玩家读档后该值则是10<br>-- 如原来存在age属性，数值类型，存档值为20，制作者修改后age是字符串类型，默认值是"kds"，那么玩家读档后age值为"kds"<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2019-08-16
@@ -8,13 +10,13 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[getModuleData](#getmoduledata)**(moduleID : number,  dataID : number): any<br>[静态]获取系统预设的自定义模块数据模型
-| **[newModuleData](#newmoduledata)**(moduleID : number,  dataID : number,  isCopy? : boolean): any<br>[静态]新建一个指定模块的数据
-| **[changeModuleDataToCopyMode](#changemoduledatatocopymode)**(data : any,  moduleID : number): void<br>[静态]更改模块数据为副本模式，使用此函数可以将引用关系的数据转化为副本
-| **[isCopyModeData](#iscopymodedata)**(data : any): boolean<br>[静态]判断数据是否是副本模式
-| **[getLength](#getlength)**(moduleID : number,  typeID? : number): number<br>[静态]获取指定模块的数据总长度（编辑器的对于该模块的更改最大值可以修改）
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getModuleData](#getmoduledata)**(moduleID : number,  dataID : number): any<br>[静态]获取系统预设的自定义模块数据模型                                                       |
+| **[newModuleData](#newmoduledata)**(moduleID : number,  dataID : number,  isCopy? : boolean): any<br>[静态]新建一个指定模块的数据                                             |
+| **[changeModuleDataToCopyMode](#changemoduledatatocopymode)**(data : any,  moduleID : number): void<br>[静态]更改模块数据为副本模式，使用此函数可以将引用关系的数据转化为副本 |
+| **[isCopyModeData](#iscopymodedata)**(data : any): boolean<br>[静态]判断数据是否是副本模式                                                                                    |
+| **[getLength](#getlength)**(moduleID : number,  typeID? : number): number<br>[静态]获取指定模块的数据总长度（编辑器的对于该模块的更改最大值可以修改）                         |
 
 ## 详情
 

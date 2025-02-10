@@ -1,4 +1,6 @@
-# ArrayUtils 数组工具类
+---
+title:  ArrayUtils 数组工具类
+---
 >GC内部封装的一些常用数组方法<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-01-01
@@ -8,29 +10,29 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[randOrder](#randorder)**(arr : any[]): void<br>[静态]数组内随机打乱排序
-| **[insert](#insert)**(arr : any[],  index : number,  ...arg : any[]): number<br>[静态]添加数据
-| **[delete](#delete)**(arr : any[],  index : number): any<br>[静态]删除数据
-| **[remove](#remove)**(arr : any[],  obj : any): any<br>[静态]移除数据，返回新的数组
-| **[removeSameObjectD2](#removesameobjectd2)**(arr : any[],  attrName : string,  ifNullIgnore : boolean): any[]<br>[静态]剔除相同的元素，根据子元素属性是否相同，返回新的数组
-| **[get](#get)**(arr : any[],  index : number): any<br>[静态]获取数据
-| **[set](#set)**(arr : any[],  index : number,  paramValue : any): any[]<br>[静态]更改数据中的值
-| **[insertToNullPosition](#inserttonullposition)**(arr : any[],  obj : any): number<br>[静态]插入数据 找到空值或添加
-| **[getNullPosition](#getnullposition)**(arr : any[],  startIndex? : number): number<br>[静态]找到一个空的位置
-| **[removeSameObject](#removesameobject)**(arr : any[]): any[]<br>[静态]剔除相同的元素
-| **[matchAttributes](#matchattributes)**(arr : any,  matchData : any,  onlyOne : boolean,  symbol? : string,  indexOfMode? : boolean): any[]<br>[静态]匹配数据，如在一组对象的数据中，筛选出对象中含有的某些属性值为多少的对象集合
-| **[matchAttributesD2](#matchattributesd2)**(arr : any,  attribute : string,  matchData : any,  onlyOne : boolean,  symbol? : string): any[]<br>[静态]匹配数据 深度2，用于匹配对象中的对象是否含有该属性
-| **[matchAttributesD3](#matchattributesd3)**(arr : any,  attribute : string,  attribute2 : string,  matchData : any,  onlyOne : boolean,  symbol? : string): any[]<br>[静态]匹配数据 深度3
-| **[getChildAttributeToCreateArray](#getchildattributetocreatearray)**(arr : any,  attributeName : string,  ignoreNullChild? : boolean): any[]<br>[静态]获取对象/数组内对象的指定属性的值组成一个新的数组
-| **[getElementSize](#getelementsize)**(arr : any[],  value : any): number<br>[静态]获取数组中元素出现的个数
-| **[createObjects](#createobjects)**(objCls: any, size: number, onCreateOne?: (index : number,  obj : any) => void,  arr? : any[]): any[]<br>[静态]批量装载创建对象
-| **[swap](#swap)**(arr : any[],  index1 : number,  index2 : number): void<br>[静态]互换数组中的位置
-| **[setIndex](#setindex)**(arr : any[],  element : any,  index : number): void<br>[静态]调整数组中元素位置
-| **[sort](#sort)**(arr : any[],  attributeName : string,  isAsc : boolean): void<br>[静态]按照asc排序（忽略大小写）
-| **[compare](#compare)**(aArr : any[],  bArr : any[])<br>[静态]比较，列出B数组相对于A数组中不同的元素
-| **[getTreeNodeArray](#gettreenodearray)**(treeNode : any,  childrenAttr? : string,  arrayList? : any[],  checkIsOpen? : boolean,  isOpenAttr? : string,  ignoreChildrenCondition? : Callback): any[]<br>[静态]获取树型结构下全部节点中的子节点列表（含自身节点）
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[randOrder](#randorder)**(arr : any[]): void<br>[静态]数组内随机打乱排序                                                                                                                                                                                       |
+| **[insert](#insert)**(arr : any[],  index : number,  ...arg : any[]): number<br>[静态]添加数据                                                                                                                                                                   |
+| **[delete](#delete)**(arr : any[],  index : number): any<br>[静态]删除数据                                                                                                                                                                                       |
+| **[remove](#remove)**(arr : any[],  obj : any): any<br>[静态]移除数据，返回新的数组                                                                                                                                                                              |
+| **[removeSameObjectD2](#removesameobjectd2)**(arr : any[],  attrName : string,  ifNullIgnore : boolean): any[]<br>[静态]剔除相同的元素，根据子元素属性是否相同，返回新的数组                                                                                     |
+| **[get](#get)**(arr : any[],  index : number): any<br>[静态]获取数据                                                                                                                                                                                             |
+| **[set](#set)**(arr : any[],  index : number,  paramValue : any): any[]<br>[静态]更改数据中的值                                                                                                                                                                  |
+| **[insertToNullPosition](#inserttonullposition)**(arr : any[],  obj : any): number<br>[静态]插入数据 找到空值或添加                                                                                                                                              |
+| **[getNullPosition](#getnullposition)**(arr : any[],  startIndex? : number): number<br>[静态]找到一个空的位置                                                                                                                                                    |
+| **[removeSameObject](#removesameobject)**(arr : any[]): any[]<br>[静态]剔除相同的元素                                                                                                                                                                            |
+| **[matchAttributes](#matchattributes)**(arr : any,  matchData : any,  onlyOne : boolean,  symbol? : string,  indexOfMode? : boolean): any[]<br>[静态]匹配数据，如在一组对象的数据中，筛选出对象中含有的某些属性值为多少的对象集合                                |
+| **[matchAttributesD2](#matchattributesd2)**(arr : any,  attribute : string,  matchData : any,  onlyOne : boolean,  symbol? : string): any[]<br>[静态]匹配数据 深度2，用于匹配对象中的对象是否含有该属性                                                          |
+| **[matchAttributesD3](#matchattributesd3)**(arr : any,  attribute : string,  attribute2 : string,  matchData : any,  onlyOne : boolean,  symbol? : string): any[]<br>[静态]匹配数据 深度3                                                                        |
+| **[getChildAttributeToCreateArray](#getchildattributetocreatearray)**(arr : any,  attributeName : string,  ignoreNullChild? : boolean): any[]<br>[静态]获取对象/数组内对象的指定属性的值组成一个新的数组                                                         |
+| **[getElementSize](#getelementsize)**(arr : any[],  value : any): number<br>[静态]获取数组中元素出现的个数                                                                                                                                                       |
+| **[createObjects](#createobjects)**(objCls: any, size: number, onCreateOne?: (index : number,  obj : any) => void,  arr? : any[]): any[]<br>[静态]批量装载创建对象                                                                                               |
+| **[swap](#swap)**(arr : any[],  index1 : number,  index2 : number): void<br>[静态]互换数组中的位置                                                                                                                                                               |
+| **[setIndex](#setindex)**(arr : any[],  element : any,  index : number): void<br>[静态]调整数组中元素位置                                                                                                                                                        |
+| **[sort](#sort)**(arr : any[],  attributeName : string,  isAsc : boolean): void<br>[静态]按照asc排序（忽略大小写）                                                                                                                                               |
+| **[compare](#compare)**(aArr : any[],  bArr : any[])<br>[静态]比较，列出B数组相对于A数组中不同的元素                                                                                                                                                             |
+| **[getTreeNodeArray](#gettreenodearray)**(treeNode : any,  childrenAttr? : string,  arrayList? : any[],  checkIsOpen? : boolean,  isOpenAttr? : string,  ignoreChildrenCondition? : Callback): any[]<br>[静态]获取树型结构下全部节点中的子节点列表（含自身节点） |
 
 ## 详情
 

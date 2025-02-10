@@ -1,4 +1,6 @@
-# FileUtils 文件操作工具
+---
+title: FileUtils 文件操作工具
+---
 >一般用于文本文件 如JSON/XML等储存数据格式的文件<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-06-22
@@ -6,22 +8,22 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **hasFileOperationJurisdiction** : boolean;<br>[静态][只读]是否拥有文件系统权限：如写入文件、获取目录下全部文件列表等  |
+| <div style="width:1000px;text-align:left">属性</div>                                                                  |
+| --------------------------------------------------------------------------------------------------------------------- |
+| **hasFileOperationJurisdiction** : boolean;<br>[静态][只读]是否拥有文件系统权限：如写入文件、获取目录下全部文件列表等 |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[exists](#exists)**(localURL : string,  onFin : Callback): void<br>[静态]文件（夹）是否存在
-| **[getDirectoryListing](#getdirectorylisting)**(directoryLocalPath : string,  onFin : Callback): void<br>[静态]【仅PC端游戏有效】获取指定目录下的所有文件或文件夹（不包含子文件夹内的文件）
-| **[getAllChildFiles](#getallchildfiles)**(directoryLocalPath : string,  onFin : Callback): void<br>[静态]【仅PC端游戏有效】获取指定目录下的所有文件或文件夹（包含子文件夹内的文件）
-| **[loadJsonFile](#loadjsonfile)**(localURL : string,  onFin : Callback): void<br>[静态]加载JSON文件
-| **[loadFile](#loadfile)**(localURL : string,  onFin : Callback): void<br>[静态]加载文件（文本格式）
-| **[save](#save)**(dataObject : any,  localURL : string,  onFin : Callback,  format? : boolean): void<br>[静态]保存文件
-| **[deleteFile](#deletefile)**(localURL : string,  onFin? : Callback): void<br>[静态]删除文件
-| **[createDirectoryForce](#createdirectoryforce)**(localURL : string,  onFin : Callback): void<br>[静态]【仅PC端游戏有效】创建文件夹，会创建不存在的目录
-| **[cloneFile](#clonefile)**(fromLocalURL : string,  toLocalURL : string,  onFin : Callback,  onProgress? : Callback): void<br>[静态]【仅PC端游戏有效】复制粘贴文件
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[exists](#exists)**(localURL : string,  onFin : Callback): void<br>[静态]文件（夹）是否存在                                                                                               |
+| **[getDirectoryListing](#getdirectorylisting)**(directoryLocalPath : string,  onFin : Callback): void<br>[静态]【仅PC端游戏有效】获取指定目录下的所有文件或文件夹（不包含子文件夹内的文件） |
+| **[getAllChildFiles](#getallchildfiles)**(directoryLocalPath : string,  onFin : Callback): void<br>[静态]【仅PC端游戏有效】获取指定目录下的所有文件或文件夹（包含子文件夹内的文件）         |
+| **[loadJsonFile](#loadjsonfile)**(localURL : string,  onFin : Callback): void<br>[静态]加载JSON文件                                                                                         |
+| **[loadFile](#loadfile)**(localURL : string,  onFin : Callback): void<br>[静态]加载文件（文本格式）                                                                                         |
+| **[save](#save)**(dataObject : any,  localURL : string,  onFin : Callback,  format? : boolean): void<br>[静态]保存文件                                                                      |
+| **[deleteFile](#deletefile)**(localURL : string,  onFin? : Callback): void<br>[静态]删除文件                                                                                                |
+| **[createDirectoryForce](#createdirectoryforce)**(localURL : string,  onFin : Callback): void<br>[静态]【仅PC端游戏有效】创建文件夹，会创建不存在的目录                                     |
+| **[cloneFile](#clonefile)**(fromLocalURL : string,  toLocalURL : string,  onFin : Callback,  onProgress? : Callback): void<br>[静态]【仅PC端游戏有效】复制粘贴文件                          |
 
 ## 详情
 

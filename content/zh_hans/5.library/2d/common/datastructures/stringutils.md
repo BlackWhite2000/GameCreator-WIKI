@@ -1,4 +1,6 @@
-# StringUtils 字符串工具类
+---
+title: StringUtils 字符串工具类
+---
 >GC内部封装的字符串处理工具类<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2019-01-02
@@ -8,11 +10,11 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[getRealLength](#getreallength)**(str : string): number<br>[静态]获取字符真实长度，会计算汉字
-| **[clearHtmlTag](#clearhtmltag)**(str : string): string<br>[静态]清除HTML格式
-| **[getMiddleDiff](#getmiddlediff)**(str1 : string,  str2 : string): [number, number]<br>[静态]获取两个字符串中间不相同的地方的信息
+| <div style="width:1000px;text-align:left" >方法</div>                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------- |
+| **[getRealLength](#getreallength)**(str : string): number<br>[静态]获取字符真实长度，会计算汉字                                    |
+| **[clearHtmlTag](#clearhtmltag)**(str : string): string<br>[静态]清除HTML格式                                                      |
+| **[getMiddleDiff](#getmiddlediff)**(str1 : string,  str2 : string): [number, number]<br>[静态]获取两个字符串中间不相同的地方的信息 |
 
 ## 详情
 

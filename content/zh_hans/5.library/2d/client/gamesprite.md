@@ -1,4 +1,6 @@
-# GameSprite 游戏精灵类
+---
+title: GameSprite 游戏精灵类
+---
 >各种高级显示对象的基类（子类包含Avatar、Animation、各种UI控件等）<br>-- 滤镜叠加实现（即父子级滤镜不会被覆盖而是叠加）<br>-- 色调（R+,B+,G+,GRAY,Rx,Gx,Bx）<br>-- 色相（采用ColorMatrix）<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2019-02-01
@@ -6,65 +8,65 @@
 **继承**  →Sprite<br>
 **子类**  [GCAnimation](/zh_hans/library/2d/client/gcanimation)、[Avatar](/zh_hans/library/2d/client/avatar)、[ClientSceneLayer](/zh_hans/library/2d/client/clientscenelayer)、[GameImageLayer](/zh_hans/library/2d/client/gameimagelayer)、[GameLayer](/zh_hans/library/2d/client/gamelayer)<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **[ON_DISPOSE](#on_dispose)** : string;<br>[静态]事件：当销毁前派发的事件  |
-| **objectID** : number;<br>唯一ID  |
-| **isDisposed** : boolean;<br>是否已释放  |
-| **data** : any;<br>装载的自定义数据，此外作为List的项显示对象界面时，该变量会记录其对应的UIListItemData  |
-| **opacity** : number;<br>透明度 最终透明度alpha = opacity * dpOpacity * opacityPer(目前仅用于编辑器内)  |
-| **rotation1** : number;<br>旋转度1 最终旋转度rotation = rotation1 + rotation2 默认值=0  |
-| **rotation2** : number;<br>旋转度2 最终旋转度rotation = rotation1 + rotation2 默认值=0  |
-| **filterEnabled** : boolean;<br>是否允许使用滤镜（允许使用时材质效果才会生效） 默认值 = true  |
-| **[hue](#hue)** : number;<br>色相 -180~180  |
-| **[blur](#blur)** : number;<br>模糊度 0~N  |
-| **disabled** : boolean;<br>不可用状态，将禁用鼠标响应并且调整为灰度  |
-| **dpX** : number;<br>深度坐标系：水平坐标  |
-| **dpY** : number;<br>深度坐标系：垂直坐标  |
-| **dpZ** : number;<br>深度坐标系：深度，该值与相机深度的距离决定实际显示效果，如近大远小  |
-| **dpWidth** : number;<br>深度坐标系：高度（像素）  |
-| **dpHeight** : number;<br>深度坐标系：宽度（像素）  |
-| **dpOpacity** : number;<br>深度坐标系：透明度，最终透明度会乘以这个值  |
-| **dpScaleX** : number;<br>深度坐标系：水平缩放比例 默认值=1 表示100%  |
-| **dpScaleY** : number;<br>深度坐标系：垂直缩放比例 默认值=1 表示100%  |
-| **useDPCoordScaleMode** : boolean;<br>是否使用缩放模式，图片一般更改尺寸，而界面、动画、立绘则一般更改缩放倍率  |
-| **dpDisplayPriority** : number;<br>显示优先度，用于同深度dpZ时区分显示，越大，显示在越前面  |
-| **_dpDirty** : boolean;<br>用于项目层实现深度坐标系代码用变量：脏标记  |
-| **_dpCameraX** : number;<br>用于项目层实现深度坐标系代码用变量：相机水平坐标  |
-| **_dpCameraY** : number;<br>用于项目层实现深度坐标系代码用变量：相机垂直坐标  |
-| **_dpCameraZ** : number;<br>用于项目层实现深度坐标系代码用变量：相机深度坐标  |
-| **_dpTextureWidth** : number;<br>用于项目层实现深度坐标系代码用变量：图片实际尺寸宽度  |
-| **_dpTextureHeight** : number;<br>用于项目层实现深度坐标系代码用变量：图片实际尺寸高度  |
+| <div style="width:1000px;text-align:left">属性</div>                                                           |
+| -------------------------------------------------------------------------------------------------------------- |
+| **[ON_DISPOSE](#on_dispose)** : string;<br>[静态]事件：当销毁前派发的事件                                      |
+| **objectID** : number;<br>唯一ID                                                                               |
+| **isDisposed** : boolean;<br>是否已释放                                                                        |
+| **data** : any;<br>装载的自定义数据，此外作为List的项显示对象界面时，该变量会记录其对应的UIListItemData        |
+| **opacity** : number;<br>透明度 最终透明度alpha = opacity * dpOpacity * opacityPer(目前仅用于编辑器内)         |
+| **rotation1** : number;<br>旋转度1 最终旋转度rotation = rotation1 + rotation2 默认值=0                         |
+| **rotation2** : number;<br>旋转度2 最终旋转度rotation = rotation1 + rotation2 默认值=0                         |
+| **filterEnabled** : boolean;<br>是否允许使用滤镜（允许使用时材质效果才会生效） 默认值 = true                   |
+| **[hue](#hue)** : number;<br>色相 -180~180                                                                     |
+| **[blur](#blur)** : number;<br>模糊度 0~N                                                                      |
+| **disabled** : boolean;<br>不可用状态，将禁用鼠标响应并且调整为灰度                                            |
+| **dpX** : number;<br>深度坐标系：水平坐标                                                                      |
+| **dpY** : number;<br>深度坐标系：垂直坐标                                                                      |
+| **dpZ** : number;<br>深度坐标系：深度，该值与相机深度的距离决定实际显示效果，如近大远小                        |
+| **dpWidth** : number;<br>深度坐标系：高度（像素）                                                              |
+| **dpHeight** : number;<br>深度坐标系：宽度（像素）                                                             |
+| **dpOpacity** : number;<br>深度坐标系：透明度，最终透明度会乘以这个值                                          |
+| **dpScaleX** : number;<br>深度坐标系：水平缩放比例 默认值=1 表示100%                                           |
+| **dpScaleY** : number;<br>深度坐标系：垂直缩放比例 默认值=1 表示100%                                           |
+| **useDPCoordScaleMode** : boolean;<br>是否使用缩放模式，图片一般更改尺寸，而界面、动画、立绘则一般更改缩放倍率 |
+| **dpDisplayPriority** : number;<br>显示优先度，用于同深度dpZ时区分显示，越大，显示在越前面                     |
+| **_dpDirty** : boolean;<br>用于项目层实现深度坐标系代码用变量：脏标记                                          |
+| **_dpCameraX** : number;<br>用于项目层实现深度坐标系代码用变量：相机水平坐标                                   |
+| **_dpCameraY** : number;<br>用于项目层实现深度坐标系代码用变量：相机垂直坐标                                   |
+| **_dpCameraZ** : number;<br>用于项目层实现深度坐标系代码用变量：相机深度坐标                                   |
+| **_dpTextureWidth** : number;<br>用于项目层实现深度坐标系代码用变量：图片实际尺寸宽度                          |
+| **_dpTextureHeight** : number;<br>用于项目层实现深度坐标系代码用变量：图片实际尺寸高度                         |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[setTonal](#settonal)**(r : number,  g : number,  b : number,  gray : number,  mr? : number,  mg? : number,  mb? : number): void<br>更改色调
-| **[getTonal](#gettonal)**(): number[]<br>获取色调参数：r g b gray mr mg mb
-| **[isInherit](#isinherit)**(sp : TreeNode): boolean<br>是否继承于指定的对象
-| **[dpCoordToRealCoord](#dpcoordtorealcoord)**(): void<br>根据【深度坐标】计算并设置【实际坐标】
-| **[realCoordToDPCoord](#realcoordtodpcoord)**(calcCoord : boolean,  calcSize : boolean): any<br>根据【实际的坐标】转换为【深度坐标】
-| **[installMaterialData](#installmaterialdata)**(materialData : any,  resetTime? : boolean): void<br>安装材质数据
-| **[getAllMaterialDatas](#getallmaterialdatas)**(): any[]<br>获取当前拥有的全材质数据，可用于储存，同时可使用 installMaterialData 安装该材质数据
-| **[addMaterial](#addmaterial)**(materialData : MaterialData,  passage? : number): boolean<br>添加材质，根据材质数据
-| **[addMaterialAt](#addmaterialat)**(materialData : MaterialData,  index : number,  passage? : number): boolean<br>添加材质到指定的位置上，根据材质数据
-| **[addMaterialByID](#addmaterialbyid)**(materialID : number,  passage? : number): boolean<br>添加材质，根据材质ID，材质参数使用默认值
-| **[addMaterialAtByID](#addmaterialatbyid)**(materialID : number,  index : number,  passage? : number): boolean<br>添加材质，根据材质ID，材质参数使用默认值
-| **[removeMaterial](#removematerial)**(materialData : MaterialData,  passage? : number): boolean<br>移除材质，根据材质数据，如若该数据已存在里面则会被移除
-| **[removeMaterialAt](#removematerialat)**(index : number,  passage? : number): boolean<br>移除材质，根据材质所在的位置
-| **[removeMaterialByID](#removematerialbyid)**(materialID : number,  passage? : number): boolean<br>移除材质，根据材质ID
-| **[getMaterialByID](#getmaterialbyid)**(materialID : number,  passage? : number): MaterialData<br>获取材质数据，根据ID
-| **[getMaterialAt](#getmaterialat)**(index : number,  passage? : number): MaterialData<br>获取材质数据，根据位置索引
-| **[getMaterialLength](#getmateriallength)**(passage? : number): number<br>获取指定通道内的材质数据总数
-| **[getMaterialPassLength](#getmaterialpasslength)**(): number<br>获取材质通道总数
-| **[clearMaterials](#clearmaterials)**(): void<br>清空所有材质
-| **[clearMaterialsInPass](#clearmaterialsinpass)**(passage : number,  deletePass? : boolean): void<br>清空指定通道里的材质
-| **[setMaterialIndex](#setmaterialindex)**(material : MaterialData,  toIndex : number,  passage? : number): boolean<br>更换同一个通道内的材质位置
-| **[swapMaterialIndex](#swapmaterialindex)**(fromIndex : number,  toIndex : number,  passage? : number): boolean<br>更换材质位置
-| **[swapMaterialPass](#swapmaterialpass)**(passFromIndex : number,  passToIndex : number): boolean<br>更换通道顺序，通道顺序影响渲染先后顺序
-| **[setMaterialsByGameSprite](#setmaterialsbygamesprite)**(gameSprite : [GameSprite](/zh_hans/library/2d/client/gamesprite),  cloneMode : boolean): void<br>设置为指定的GameSprite相同的材质
-| **[setMaterialDirty](#setmaterialdirty)**(): void<br>调用此函数表示更改了材质，让系统根据最新的材质计算来进行渲染
-| **[setMaterialValueFast](#setmaterialvaluefast)**(materialValues : any,  passage? : number): void<br>调用此函数快速设置传递给shader的值，比直接修改材质后调用setMaterialDirty效率要更高一些，减少了数据的转换计算。
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[setTonal](#settonal)**(r : number,  g : number,  b : number,  gray : number,  mr? : number,  mg? : number,  mb? : number): void<br>更改色调                                                                      |
+| **[getTonal](#gettonal)**(): number[]<br>获取色调参数：r g b gray mr mg mb                                                                                                                                          |
+| **[isInherit](#isinherit)**(sp : TreeNode): boolean<br>是否继承于指定的对象                                                                                                                                         |
+| **[dpCoordToRealCoord](#dpcoordtorealcoord)**(): void<br>根据【深度坐标】计算并设置【实际坐标】                                                                                                                     |
+| **[realCoordToDPCoord](#realcoordtodpcoord)**(calcCoord : boolean,  calcSize : boolean): any<br>根据【实际的坐标】转换为【深度坐标】                                                                                |
+| **[installMaterialData](#installmaterialdata)**(materialData : any,  resetTime? : boolean): void<br>安装材质数据                                                                                                    |
+| **[getAllMaterialDatas](#getallmaterialdatas)**(): any[]<br>获取当前拥有的全材质数据，可用于储存，同时可使用 installMaterialData 安装该材质数据                                                                     |
+| **[addMaterial](#addmaterial)**(materialData : MaterialData,  passage? : number): boolean<br>添加材质，根据材质数据                                                                                                 |
+| **[addMaterialAt](#addmaterialat)**(materialData : MaterialData,  index : number,  passage? : number): boolean<br>添加材质到指定的位置上，根据材质数据                                                              |
+| **[addMaterialByID](#addmaterialbyid)**(materialID : number,  passage? : number): boolean<br>添加材质，根据材质ID，材质参数使用默认值                                                                               |
+| **[addMaterialAtByID](#addmaterialatbyid)**(materialID : number,  index : number,  passage? : number): boolean<br>添加材质，根据材质ID，材质参数使用默认值                                                          |
+| **[removeMaterial](#removematerial)**(materialData : MaterialData,  passage? : number): boolean<br>移除材质，根据材质数据，如若该数据已存在里面则会被移除                                                           |
+| **[removeMaterialAt](#removematerialat)**(index : number,  passage? : number): boolean<br>移除材质，根据材质所在的位置                                                                                              |
+| **[removeMaterialByID](#removematerialbyid)**(materialID : number,  passage? : number): boolean<br>移除材质，根据材质ID                                                                                             |
+| **[getMaterialByID](#getmaterialbyid)**(materialID : number,  passage? : number): MaterialData<br>获取材质数据，根据ID                                                                                              |
+| **[getMaterialAt](#getmaterialat)**(index : number,  passage? : number): MaterialData<br>获取材质数据，根据位置索引                                                                                                 |
+| **[getMaterialLength](#getmateriallength)**(passage? : number): number<br>获取指定通道内的材质数据总数                                                                                                              |
+| **[getMaterialPassLength](#getmaterialpasslength)**(): number<br>获取材质通道总数                                                                                                                                   |
+| **[clearMaterials](#clearmaterials)**(): void<br>清空所有材质                                                                                                                                                       |
+| **[clearMaterialsInPass](#clearmaterialsinpass)**(passage : number,  deletePass? : boolean): void<br>清空指定通道里的材质                                                                                           |
+| **[setMaterialIndex](#setmaterialindex)**(material : MaterialData,  toIndex : number,  passage? : number): boolean<br>更换同一个通道内的材质位置                                                                    |
+| **[swapMaterialIndex](#swapmaterialindex)**(fromIndex : number,  toIndex : number,  passage? : number): boolean<br>更换材质位置                                                                                     |
+| **[swapMaterialPass](#swapmaterialpass)**(passFromIndex : number,  passToIndex : number): boolean<br>更换通道顺序，通道顺序影响渲染先后顺序                                                                         |
+| **[setMaterialsByGameSprite](#setmaterialsbygamesprite)**(gameSprite : [GameSprite](/zh_hans/library/2d/client/gamesprite),  cloneMode : boolean): void<br>设置为指定的GameSprite相同的材质                         |
+| **[setMaterialDirty](#setmaterialdirty)**(): void<br>调用此函数表示更改了材质，让系统根据最新的材质计算来进行渲染                                                                                                   |
+| **[setMaterialValueFast](#setmaterialvaluefast)**(materialValues : any,  passage? : number): void<br>调用此函数快速设置传递给shader的值，比直接修改材质后调用setMaterialDirty效率要更高一些，减少了数据的转换计算。 |
 
 ## 详情
 

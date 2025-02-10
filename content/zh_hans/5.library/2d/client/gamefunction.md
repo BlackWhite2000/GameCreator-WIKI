@@ -1,4 +1,6 @@
-# GameFunction 游戏内置功能函数
+---
+title:  GameFunction 游戏内置功能函数
+---
 >即将会被上层自定义事件取缔而不作为GC2D内核中内置的功能<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2019-02-04
@@ -8,12 +10,12 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[shake](#shake)**(strength : number,  t : number): void<br>[静态]场景震动:当前帧直接震动，总计震动了t帧
-| **[tonal](#tonal)**(r : number,  g : number,  b : number,  gray : number,  t : number,  mr : number,  mg : number,  mb : number,  layer? : number,  tCur? : number): void<br>[静态]更改场景色调:当前帧直接更改色调，总计更改了t帧
-| **[cameraMove](#cameramove)**(type : number,  x : number,  y : number,  soIndex : number,  tween : boolean,  t : number,  tCur? : number,  window_width? : number,  window_height? : number): void<br>[静态]场景镜头移动:当前帧直接开始移动，总计移动了t帧
-| **[fogSet](#fogset)**(url : string,  sx : number,  sy : number,  dx : number,  dy : number,  alpha : number,  blendMode : number): void<br>[静态]场景雾图形变更
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[shake](#shake)**(strength : number,  t : number): void<br>[静态]场景震动:当前帧直接震动，总计震动了t帧                                                                                                                                                  |
+| **[tonal](#tonal)**(r : number,  g : number,  b : number,  gray : number,  t : number,  mr : number,  mg : number,  mb : number,  layer? : number,  tCur? : number): void<br>[静态]更改场景色调:当前帧直接更改色调，总计更改了t帧                          |
+| **[cameraMove](#cameramove)**(type : number,  x : number,  y : number,  soIndex : number,  tween : boolean,  t : number,  tCur? : number,  window_width? : number,  window_height? : number): void<br>[静态]场景镜头移动:当前帧直接开始移动，总计移动了t帧 |
+| **[fogSet](#fogset)**(url : string,  sx : number,  sy : number,  dx : number,  dy : number,  alpha : number,  blendMode : number): void<br>[静态]场景雾图形变更                                                                                            |
 
 ## 详情
 

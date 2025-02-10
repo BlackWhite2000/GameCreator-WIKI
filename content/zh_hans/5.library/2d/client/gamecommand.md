@@ -1,4 +1,6 @@
-# GameCommand 游戏客户端指令处理
+---
+title: GameCommand 游戏客户端指令处理
+---
 >主要功能：<br>-- 用于配合自定义指令的制作<br>-- 触发事件：场景事件、场景对象事件、界面事件、独立的事件库事件（而片段事件的触发参考[CommandPage](/zh_hans/library/2d/common/commandpage)）<br>-- 提交玩家的输入<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2019-01-12
@@ -6,23 +8,23 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **COMMAND_STATE_CONTINUE** : number;<br>[静态]指令状态：继续  |
-| **COMMAND_STATE_STOP** : number;<br>[静态]指令状态：终止  |
-| **COMMAND_STATE_NEED_INPUT** : number;<br>[静态]指令状态：需要玩家输入  |
-| **isNeedPlayerInput** : boolean;<br>[静态]是否玩家输入中  |
-| **inputTriggerLine** : number;<br>[静态]当前需要输入的触发线ID  |
+| <div style="width:1000px;text-align:left">属性</div>                   |
+| ---------------------------------------------------------------------- |
+| **COMMAND_STATE_CONTINUE** : number;<br>[静态]指令状态：继续           |
+| **COMMAND_STATE_STOP** : number;<br>[静态]指令状态：终止               |
+| **COMMAND_STATE_NEED_INPUT** : number;<br>[静态]指令状态：需要玩家输入 |
+| **isNeedPlayerInput** : boolean;<br>[静态]是否玩家输入中               |
+| **inputTriggerLine** : number;<br>[静态]当前需要输入的触发线ID         |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[start](#start)**(triggerLineID? : number): void<br>[静态]启动
-| **[startSceneCommand](#startscenecommand)**(indexType : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback): boolean<br>[静态][场景-事件] 主动开始触发该事件
-| **[startSceneObjectCommand](#startsceneobjectcommand)**(sceneObjectIndex : number,  indexType : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback,  triggerSceneObject? : [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)): boolean<br>[静态][场景对象-事件] 主动开始新触发该事件
-| **[startUICommand](#startuicommand)**(comp : UIBase,  indexType : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback): boolean<br>[静态][界面-事件] 主动开始执行
-| **[startCommonCommand](#startcommoncommand)**(id : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback,  triggerSceneObject? : [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject),  executorSceneObject? : [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)): void<br>[静态][独立事件-事件库事件] 主动开始执行
-| **[inputMessageAndContinueExecute](#inputmessageandcontinueexecute)**(inputMessage? : any[],  force? : boolean,  delayFrame? : number,  triggerLineID? : number): void<br>[静态]输入信息并继续执行下去，事件页的等待玩家输入，将接收到输入的参数。
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[start](#start)**(triggerLineID? : number): void<br>[静态]启动                                                                                                                                                                                                                                                                                             |
+| **[startSceneCommand](#startscenecommand)**(indexType : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback): boolean<br>[静态][场景-事件] 主动开始触发该事件                                                                                                                                                                                  |
+| **[startSceneObjectCommand](#startsceneobjectcommand)**(sceneObjectIndex : number,  indexType : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback,  triggerSceneObject? : [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)): boolean<br>[静态][场景对象-事件] 主动开始新触发该事件                                          |
+| **[startUICommand](#startuicommand)**(comp : UIBase,  indexType : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback): boolean<br>[静态][界面-事件] 主动开始执行                                                                                                                                                                              |
+| **[startCommonCommand](#startcommoncommand)**(id : number,  inputMessage? : any[],  onCommandExecuteOver? : Callback,  triggerSceneObject? : [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject),  executorSceneObject? : [ClientSceneObject](/zh_hans/library/2d/client/clientsceneobject)): void<br>[静态][独立事件-事件库事件] 主动开始执行 |
+| **[inputMessageAndContinueExecute](#inputmessageandcontinueexecute)**(inputMessage? : any[],  force? : boolean,  delayFrame? : number,  triggerLineID? : number): void<br>[静态]输入信息并继续执行下去，事件页的等待玩家输入，将接收到输入的参数。                                                                                                           |
 
 ## 详情
 

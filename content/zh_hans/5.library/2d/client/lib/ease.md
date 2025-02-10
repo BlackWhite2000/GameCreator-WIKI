@@ -1,4 +1,6 @@
-# Ease 缓动函数
+---
+title:  Ease 缓动函数
+---
 >定义了缓动函数，以便实现[Tween]中的缓动效果，使用Tween方式的相关代码可以参考Tween<br>== 相关代码 ==<br>// 获取线性过渡中在100~1000中的50%时的状态值<br>var totalTime = 1000;<br>var currentTime = 500; // 即进行到了50%的程度，同时该值也可以大于totalTime，即超过100%<br>var start = 100;<br>var end = 1000;<br>var v = Ease.linearNone(currentTime,start,end-start,totalTime);<br>alert(v); // 550，即（1000-100）*(500/1000) + 100 = 550<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2017-01-01
@@ -8,45 +10,45 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[linearNone](#linearnone)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。
-| **[linearIn](#linearin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。
-| **[linearInOut](#linearinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。
-| **[linearOut](#linearout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。
-| **[bounceIn](#bouncein)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。
-| **[bounceInOut](#bounceinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[bounceOut](#bounceout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[backIn](#backin)**(t : number,  b : number,  c : number,  d : number,  s? : number): number<br>[静态]开始时往后运动，然后反向朝目标移动。
-| **[backInOut](#backinout)**(t : number,  b : number,  c : number,  d : number,  s? : number): number<br>[静态]开始运动时是向后跟踪，再倒转方向并朝目标移动，稍微过冲目标，然后再次倒转方向，回来朝目标移动。
-| **[backOut](#backout)**(t : number,  b : number,  c : number,  d : number,  s? : number): number<br>[静态]开始运动时是朝目标移动，稍微过冲，再倒转方向回来朝着目标。
-| **[elasticIn](#elasticin)**(t : number,  b : number,  c : number,  d : number,  a? : number,  p? : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。
-| **[elasticInOut](#elasticinout)**(t : number,  b : number,  c : number,  d : number,  a? : number,  p? : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[elasticOut](#elasticout)**(t : number,  b : number,  c : number,  d : number,  a? : number,  p? : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[strongIn](#strongin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以零速率开始运动，然后在执行时加快运动速度。
-| **[strongInOut](#stronginout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[strongOut](#strongout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[sineInOut](#sineinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[sineIn](#sinein)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以零速率开始运动，然后在执行时加快运动速度。
-| **[sineOut](#sineout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[quintIn](#quintin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以零速率开始运动，然后在执行时加快运动速度。
-| **[quintInOut](#quintinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[quintOut](#quintout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[quartIn](#quartin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。
-| **[quartInOut](#quartinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[quartOut](#quartout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[cubicIn](#cubicin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。
-| **[cubicInOut](#cubicinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[cubicOut](#cubicout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[quadIn](#quadin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。
-| **[quadInOut](#quadinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[quadOut](#quadout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[expoIn](#expoin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。
-| **[expoInOut](#expoinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[expoOut](#expoout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
-| **[circIn](#circin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。
-| **[circInOut](#circinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。
-| **[circOut](#circout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[linearNone](#linearnone)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。                                                                                       |
+| **[linearIn](#linearin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。                                                                                           |
+| **[linearInOut](#linearinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。                                                                                     |
+| **[linearOut](#linearout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]定义无加速持续运动。                                                                                         |
+| **[bounceIn](#bouncein)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。                                                               |
+| **[bounceInOut](#bounceinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                               |
+| **[bounceOut](#bounceout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                 |
+| **[backIn](#backin)**(t : number,  b : number,  c : number,  d : number,  s? : number): number<br>[静态]开始时往后运动，然后反向朝目标移动。                                                                 |
+| **[backInOut](#backinout)**(t : number,  b : number,  c : number,  d : number,  s? : number): number<br>[静态]开始运动时是向后跟踪，再倒转方向并朝目标移动，稍微过冲目标，然后再次倒转方向，回来朝目标移动。 |
+| **[backOut](#backout)**(t : number,  b : number,  c : number,  d : number,  s? : number): number<br>[静态]开始运动时是朝目标移动，稍微过冲，再倒转方向回来朝着目标。                                         |
+| **[elasticIn](#elasticin)**(t : number,  b : number,  c : number,  d : number,  a? : number,  p? : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。                                 |
+| **[elasticInOut](#elasticinout)**(t : number,  b : number,  c : number,  d : number,  a? : number,  p? : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                 |
+| **[elasticOut](#elasticout)**(t : number,  b : number,  c : number,  d : number,  a? : number,  p? : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                   |
+| **[strongIn](#strongin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以零速率开始运动，然后在执行时加快运动速度。                                                                   |
+| **[strongInOut](#stronginout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                               |
+| **[strongOut](#strongout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                 |
+| **[sineInOut](#sineinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                                   |
+| **[sineIn](#sinein)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以零速率开始运动，然后在执行时加快运动速度。                                                                       |
+| **[sineOut](#sineout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                     |
+| **[quintIn](#quintin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以零速率开始运动，然后在执行时加快运动速度。                                                                     |
+| **[quintInOut](#quintinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                                 |
+| **[quintOut](#quintout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                   |
+| **[quartIn](#quartin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。                                                                 |
+| **[quartInOut](#quartinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                                 |
+| **[quartOut](#quartout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                   |
+| **[cubicIn](#cubicin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。                                                                 |
+| **[cubicInOut](#cubicinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                                 |
+| **[cubicOut](#cubicout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                   |
+| **[quadIn](#quadin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。                                                                   |
+| **[quadInOut](#quadinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                                   |
+| **[quadOut](#quadout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                     |
+| **[expoIn](#expoin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。                                                                   |
+| **[expoInOut](#expoinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                                   |
+| **[expoOut](#expoout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                     |
+| **[circIn](#circin)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]方法以零速率开始运动，然后在执行时加快运动速度。                                                                   |
+| **[circInOut](#circinout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]开始运动时速率为零，先对运动进行加速，再减速直到速率为零。                                                   |
+| **[circOut](#circout)**(t : number,  b : number,  c : number,  d : number): number<br>[静态]以较快速度开始运动，然后在执行时减慢运动速度，直至速率为零。                                                     |
 
 ## 详情
 

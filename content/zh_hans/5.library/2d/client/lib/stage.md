@@ -1,4 +1,6 @@
-# Stage 舞台类
+---
+title:  Stage 舞台类
+---
 >只有一个舞台，可通过stage来访问<br>支持事件：<br>EventObject.KEY_DOWN 按键按下<br>EventObject.KEY_UP 按键弹起<br>EventObject.RESIZE 当窗口尺寸改变时<br>EventObject.FULL_SCREEN_CHANGE 当全屏改变时<br>EventObject.FOCUS_CHANGE 当焦点改变时<br>EventObject.FOCUS 当产生焦点时<br>EventObject.BLUR 当失去焦点时<br>EventObject.RENDER 每帧渲染时<br>// 事件监听示例<br>stage.on(EventObject.CLICK,this,this.onClick);<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2017-01-01
@@ -6,27 +8,27 @@
 **继承**  →[Sprite](/zh_hans/library/2d/client/lib/sprite)→TreeNode<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **width** : number;<br>当前宽度  |
-| **height** : number;<br>当前高度  |
-| **[scaleMode](#scalemode)** : string;<br>缩放模式。默认值为 "noscale"  |
-| **[alignH](#alignh)** : string;<br>水平对齐方式。默认值为"left"  |
-| **[alignV](#alignv)** : string;<br>垂直对齐方式。默认值为"top"  |
-| **bgColor** : string;<br>舞台的背景颜色，默认为黑色  |
-| **mouseX** : number;<br>[只读]鼠标在 Stage 上的 X 轴坐标  |
-| **mouseY** : number;<br>[只读]鼠标在 Stage 上的 Y 轴坐标。  |
-| **clientScaleX** : number;<br>[只读]当前视窗由缩放模式导致的 X 轴缩放系数。  |
-| **clientScaleY** : number;<br>[只读]当前视窗由缩放模式导致的 Y 轴缩放系数。  |
-| **[screenMode](#screenmode)** : string;<br>场景布局类型。  |
-| **visible** : boolean;<br>是否显示  |
-| **[fullScreenEnabled](#fullscreenenabled)** : boolean;<br>是否开启全屏，用户点击后进入全屏  |
+| <div style="width:1000px;text-align:left">属性</div>                                       |
+| ------------------------------------------------------------------------------------------ |
+| **width** : number;<br>当前宽度                                                            |
+| **height** : number;<br>当前高度                                                           |
+| **[scaleMode](#scalemode)** : string;<br>缩放模式。默认值为 "noscale"                      |
+| **[alignH](#alignh)** : string;<br>水平对齐方式。默认值为"left"                            |
+| **[alignV](#alignv)** : string;<br>垂直对齐方式。默认值为"top"                             |
+| **bgColor** : string;<br>舞台的背景颜色，默认为黑色                                        |
+| **mouseX** : number;<br>[只读]鼠标在 Stage 上的 X 轴坐标                                   |
+| **mouseY** : number;<br>[只读]鼠标在 Stage 上的 Y 轴坐标。                                 |
+| **clientScaleX** : number;<br>[只读]当前视窗由缩放模式导致的 X 轴缩放系数。                |
+| **clientScaleY** : number;<br>[只读]当前视窗由缩放模式导致的 Y 轴缩放系数。                |
+| **[screenMode](#screenmode)** : string;<br>场景布局类型。                                  |
+| **visible** : boolean;<br>是否显示                                                         |
+| **[fullScreenEnabled](#fullscreenenabled)** : boolean;<br>是否开启全屏，用户点击后进入全屏 |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[setScreenSize](#setscreensize)**(screenWidth : number,  screenHeight : number): void<br>设置屏幕大小，场景会根据屏幕大小进行适配。可以动态调用此方法，来更改游戏显示的大小
-| **[exitFullscreen](#exitfullscreen)**(): void<br>退出全屏模式
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[setScreenSize](#setscreensize)**(screenWidth : number,  screenHeight : number): void<br>设置屏幕大小，场景会根据屏幕大小进行适配。可以动态调用此方法，来更改游戏显示的大小 |
+| **[exitFullscreen](#exitfullscreen)**(): void<br>退出全屏模式                                                                                                                 |
 
 ## 详情
 

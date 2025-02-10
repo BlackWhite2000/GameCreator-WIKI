@@ -1,4 +1,6 @@
-# ClientPlayer 客户端玩家类
+---
+title:  ClientPlayer 客户端玩家类
+---
 >每个玩家只有唯一的玩家类实例，可能是该类或其子类的实例（单机版有且只有一个玩家，所以只有一个实例）<br>单机版内核直接监听本地变量的改变<br>网络版内核的监听是通过RPC请求服务器监听变量，服务器每次发现变量改变后会同步给该玩家的客户端<br>&nbsp;&nbsp;-- 没有权限监听其他玩家的变量<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2019-06-03
@@ -8,11 +10,11 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[constructor](#constructor)**(isMyPlayer? : boolean)<br>构造函数
-| **[addListenerPlayerVariable](#addlistenerplayervariable)**(type : number,  varID : number,  onChange : Callback,  isOnce? : boolean,  immediatelyCallback? : boolean): void<br>监听玩家变量
-| **[removeListenerPlayerVariable](#removelistenerplayervariable)**(type : number,  varID : number,  onChange : Callback): void<br>取消监听玩家变量
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[constructor](#constructor)**(isMyPlayer? : boolean)<br>构造函数                                                                                                                           |
+| **[addListenerPlayerVariable](#addlistenerplayervariable)**(type : number,  varID : number,  onChange : Callback,  isOnce? : boolean,  immediatelyCallback? : boolean): void<br>监听玩家变量 |
+| **[removeListenerPlayerVariable](#removelistenerplayervariable)**(type : number,  varID : number,  onChange : Callback): void<br>取消监听玩家变量                                            |
 
 ## 详情
 

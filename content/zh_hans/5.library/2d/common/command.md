@@ -1,4 +1,6 @@
-# Command 事件指令
+---
+title:  Command 事件指令
+---
 >该类是事件页（[CommandPage]）中的事件指令数据类<br>支持自定义事件指令<br>相关类：[Command](/zh_hans/library/2d/common/command)、[CommandPage]、[CommandTrigger]<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-10-09
@@ -6,18 +8,18 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **[EVENT_SYSTEM_COMMAND_START](#event_system_command_start)** : string;<br>[静态]事件：系统指令事件开始，可以通过监听玩家的场景对象  |
-| **type** : number;<br>指令类型 系统指令10000以内，自定义指令10000以上，如10001表示1号自定义指令  |
-| **customID** : number;<br>自定义指令的ID（如果该指令是自定义指令的话，否则返回null）  |
-| **params** : any[];<br>指令参数，储存事件编辑器中输入的参数值  |
-| **paramsCompiled** : any[];<br>预编译后的指令参数：一般用于预编译后自定义储存，以便在执行指令时可以调用，提升事件执行性能（如缓存一些事先计算好的值）  |
+| <div style="width:1000px;text-align:left">属性</div>                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[EVENT_SYSTEM_COMMAND_START](#event_system_command_start)** : string;<br>[静态]事件：系统指令事件开始，可以通过监听玩家的场景对象                   |
+| **type** : number;<br>指令类型 系统指令10000以内，自定义指令10000以上，如10001表示1号自定义指令                                                       |
+| **customID** : number;<br>自定义指令的ID（如果该指令是自定义指令的话，否则返回null）                                                                  |
+| **params** : any[];<br>指令参数，储存事件编辑器中输入的参数值                                                                                         |
+| **paramsCompiled** : any[];<br>预编译后的指令参数：一般用于预编译后自定义储存，以便在执行指令时可以调用，提升事件执行性能（如缓存一些事先计算好的值） |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[callExecuteFunction](#callexecutefunction)**(triggerLineID : number,  player : Player,  params : any[],  gameFunc? : string): void<br>调用执行客户端方法：需要执行客户端效果或让玩家输入信息时需要使用该方法
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[callExecuteFunction](#callexecutefunction)**(triggerLineID : number,  player : Player,  params : any[],  gameFunc? : string): void<br>调用执行客户端方法：需要执行客户端效果或让玩家输入信息时需要使用该方法 |
 
 ## 详情
 

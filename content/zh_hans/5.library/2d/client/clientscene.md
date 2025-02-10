@@ -1,4 +1,6 @@
-# ClientScene 客户端游戏场景
+---
+title:  ClientScene 客户端游戏场景
+---
 >场景一般由地图图像和场景上的对象（[ClientSceneObject]）组成<br>-- 图层支持：图块图层和图片图层，可自定义，支持无限层<br>-- 场景对象支持：添加场景对象在场景上<br>-- 镜头控制 Camera<br>【新建场景】 ps:利用相机以及当前的场景还可以很方便的制作小地图<br>&nbsp;// 方法一：创建一个5号场景（不包含场景中预摆放的对象），一个实例仅允许设置一次id<br>&nbsp;var s = new ClientScene();<br>&nbsp;s.id = 5;<br>&nbsp;s.startRender();<br>&nbsp;stage.addChild(s.displayObject); // 游戏显示层参考 GameLayer.d.ts<br>&nbsp;// 方法二：通过ClientScene.createScene来创建场景，无需指定场景的绑定类，系统根据预设自动新建该场景的绑定类<br>&nbsp;ClientScene.createScene(sceneModelID, null, Callback.New(()=>{}, this), true);<br>【其他事件】<br>&nbsp;EventObject.LOADED 地图全部图层资源加载完毕时 如 scene.on(EventObject.LOADED,this,()=>{});<br>【层次】总层次可参考 [GameLayer]<br>以下是引擎默认的游戏显示层次参考：<br>-- 场景层 sceneLayer<br>&nbsp;&nbsp;&nbsp;&nbsp;- 编辑器预设的自定义底层（比对象层更低的图层）<br>&nbsp;&nbsp;&nbsp;&nbsp;- 影子层 shadowLayer<br>&nbsp;&nbsp;&nbsp;&nbsp;- 动画层-底层 animationLowLayer<br>&nbsp;&nbsp;&nbsp;&nbsp;- 对象层-底层 sceneObjectLowLayer 同时开启了[子对象根据Y值自动更换层次]<br>&nbsp;&nbsp;&nbsp;&nbsp;- 对象层-中层 sceneObjectLayer 同时开启了[子对象根据Y值自动更换层次]<br>&nbsp;&nbsp;&nbsp;&nbsp;- 编辑器预设的自定义高层 （比对象层更高的图层）<br>&nbsp;&nbsp;&nbsp;&nbsp;- 对象层-高层 sceneObjectHighLayer 同时开启了[子对象根据Y值自动更换层次]<br>&nbsp;&nbsp;&nbsp;&nbsp;- 动画层-高层 animationHighLayer<br>&nbsp;&nbsp;&nbsp;&nbsp;- 雾层 fogLayer<br>&nbsp;&nbsp;&nbsp;&nbsp;- 天气层 weaterLayer<br>-- 图片层 imageLayer<br>-- UI层 uiLayer<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-07-22
@@ -6,62 +8,62 @@
 **继承**  →[Scene](/zh_hans/library/2d/common/scene)<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **[BASE_DATA_LOADED](#base_data_loaded)** : string;<br>[静态]事件：基础数据加载完毕（可用于快速切入场景，而后再加载动态相关资源）回调参数：onBaseDataLoaded(scene:ClientScene) 默认值="ClientScene_BASE_DATA_LOADED"  |
-| **[EVENT_IN_NEW_SCENE](#event_in_new_scene)** : string;<br>[静态]事件：进入新的场景 onInNewScene(sceneID:number,state:number) state:0-切换场景 1-新游戏 2-读取存档  |
-| **EMPTY** : ClientScene;<br>[静态]空的场景，游戏启动时则为空场景状态，可用于判定  |
-| **isDisposed** : boolean;<br>是否已卸载  |
-| **mapSupportPause** : boolean;<br>支持暂停（支持Game.pause效果，暂停后场景停止渲染）  |
-| **sceneObjects** : ClientSceneObject[];<br>场景对象列表：场景上全部的场景对象 [场景对象.index] -> [场景对象]  |
-| **settingLayers** : ClientSceneLayer[];<br>预先设定的图层显示对象集合(来自地图编辑器中预设)  |
-| **displayObject** : GameSprite;<br>场景的显示对象（根容器）  |
-| **shadowLayer** : ClientSceneLayer;<br>影子层  |
-| **animationLowLayer** : ClientSceneLayer;<br>动画层：底层  |
-| **sceneObjectLowLayer** : ClientSceneLayer;<br>对象层：底层  |
-| **sceneObjectLayer** : ClientSceneLayer;<br>对象层：中间层  |
-| **sceneObjectHighLayer** : ClientSceneLayer;<br>场景对象：最高层  |
-| **animationHighLayer** : ClientSceneLayer;<br>动画层：高层  |
-| **fogLayer** : ClientSceneLayer;<br>雾层  |
-| **weaterLayer** : ClientSceneLayer;<br>天气层  |
-| **camera** : Camera;<br>场景的镜头  |
-| **localX** : number;<br>[只读]获取鼠标X所在的场景位置（单位：像素）  |
-| **localY** : number;<br>[只读]获取鼠标Y所在的场景位置（单位：像素）  |
-| **globalPos** : Point;<br>[只读]获取鼠标绝对位置（相对于舞台）（单位：像素）  |
+| <div style="width:1000px;text-align:left">属性</div>                                                                                                                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[BASE_DATA_LOADED](#base_data_loaded)** : string;<br>[静态]事件：基础数据加载完毕（可用于快速切入场景，而后再加载动态相关资源）回调参数：onBaseDataLoaded(scene:ClientScene) 默认值="ClientScene_BASE_DATA_LOADED" |
+| **[EVENT_IN_NEW_SCENE](#event_in_new_scene)** : string;<br>[静态]事件：进入新的场景 onInNewScene(sceneID:number,state:number) state:0-切换场景 1-新游戏 2-读取存档                                                   |
+| **EMPTY** : ClientScene;<br>[静态]空的场景，游戏启动时则为空场景状态，可用于判定                                                                                                                                     |
+| **isDisposed** : boolean;<br>是否已卸载                                                                                                                                                                              |
+| **mapSupportPause** : boolean;<br>支持暂停（支持Game.pause效果，暂停后场景停止渲染）                                                                                                                                 |
+| **sceneObjects** : ClientSceneObject[];<br>场景对象列表：场景上全部的场景对象 [场景对象.index] -> [场景对象]                                                                                                         |
+| **settingLayers** : ClientSceneLayer[];<br>预先设定的图层显示对象集合(来自地图编辑器中预设)                                                                                                                          |
+| **displayObject** : GameSprite;<br>场景的显示对象（根容器）                                                                                                                                                          |
+| **shadowLayer** : ClientSceneLayer;<br>影子层                                                                                                                                                                        |
+| **animationLowLayer** : ClientSceneLayer;<br>动画层：底层                                                                                                                                                            |
+| **sceneObjectLowLayer** : ClientSceneLayer;<br>对象层：底层                                                                                                                                                          |
+| **sceneObjectLayer** : ClientSceneLayer;<br>对象层：中间层                                                                                                                                                           |
+| **sceneObjectHighLayer** : ClientSceneLayer;<br>场景对象：最高层                                                                                                                                                     |
+| **animationHighLayer** : ClientSceneLayer;<br>动画层：高层                                                                                                                                                           |
+| **fogLayer** : ClientSceneLayer;<br>雾层                                                                                                                                                                             |
+| **weaterLayer** : ClientSceneLayer;<br>天气层                                                                                                                                                                        |
+| **camera** : Camera;<br>场景的镜头                                                                                                                                                                                   |
+| **localX** : number;<br>[只读]获取鼠标X所在的场景位置（单位：像素）                                                                                                                                                  |
+| **localY** : number;<br>[只读]获取鼠标Y所在的场景位置（单位：像素）                                                                                                                                                  |
+| **globalPos** : Point;<br>[只读]获取鼠标绝对位置（相对于舞台）（单位：像素）                                                                                                                                         |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[createScene](#createscene)**(sceneID : number,  onBaseDataLoaded? : Callback,  onLoaded? : Callback,  syncCallbackWhenAssetExist? : boolean): void<br>[静态]创建场景，会根据预设的实现类来创建对应的实例场景
-| **[dispose](#dispose)**(): void<br>释放当前的场景
-| **[addLayer](#addlayer)**(layer : ClientSceneLayer): void<br>添加图层
-| **[addLayerAt](#addlayerat)**(layer : ClientSceneLayer,  index : number): void<br>添加图层到指定层
-| **[removeLayer](#removelayer)**(layer : ClientSceneLayer): void<br>移除图层
-| **[removeLayerAt](#removelayerat)**(index : number): void<br>指定移除某一层的图层
-| **[setLayerIndex](#setlayerindex)**(layer : ClientSceneLayer,  index : number): void<br>设置图层到指定的层，该层必须已经在场景上
-| **[getLayerLength](#getlayerlength)**(): number<br>获取当前的图层总数
-| **[getLayer](#getlayer)**(index : number): ClientSceneLayer<br>获取层，根据实际层次索引
-| **[getLayerByPreset](#getlayerbypreset)**(id : number): ClientSceneLayer<br>获取层，根据预设层次
-| **[getLayerByName](#getlayerbyname)**(name : string): ClientSceneLayer<br>获取层根据名称
-| **[getPresetSceneObjectDatas](#getpresetsceneobjectdatas)**(): SceneObject[]<br>获取场景预设的场景对象数据（不包含出生点）
-| **[addSceneObject](#addsceneobject)**(soData : [SceneObject](/zh_hans/library/2d/common/sceneobject),  isEntity? : boolean,  useModelClass? : boolean,  className? : string): ClientSceneObject<br>场景对象添加到场景上
-| **[removeSceneObject](#removesceneobject)**(so : [SceneObject](/zh_hans/library/2d/common/sceneobject),  removeFromList? : boolean): ClientSceneObject<br>从场景上移除场景对象
-| **[addNewSceneObject](#addnewsceneobject)**(modelID : number,  presetSceneObjectData? : any): ClientSceneObject<br>添加新对象，以默认值生成新的对象，同时也可以追加修改属性（presetSceneObjectData）
-| **[addSceneObjectFromClone](#addsceneobjectfromclone)**(fromSceneID : number,  fromSceneObjectindex : number,  isCopy? : boolean,  presetSceneObjectData? : any): ClientSceneObject<br>克隆并添加场景对象
-| **[getGlobalPos](#getglobalpos)**(localX : number,  localY : number): [Point](/zh_hans/library/2d/common/point)<br>获取绝对鼠标位置（相对于舞台）根据指定的场景位置
-| **[updateCamera](#updatecamera)**(): void<br>立刻刷新镜头（默认情况下场景会逐帧刷新镜头，如绑定的场景对象在移动时）
-| **[startRender](#startrender)**(): void<br>开始渲染，场景如果未调用的话则处于静止状态，运动的图层等都不播放
-| **[stopRender](#stoprender)**(LayerMoveToZero? : boolean): void<br>停止渲染
-| **[hasListener](#haslistener)**(type : string): boolean<br>检查场景是否为特定事件类型注册了任何侦听器
-| **[event](#event)**(type : string,  data? : any): boolean<br>场景派发事件
-| **[on](#on)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>使用场景注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知
-| **[once](#once)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>使用场景注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除
-| **[off](#off)**(type : string,  caller : any,  listener : Function,  onceOnly? : boolean): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>从场景中删除侦听器
-| **[offAll](#offall)**(type? : string): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>从场景中删除指定事件类型的所有侦听器
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[createScene](#createscene)**(sceneID : number,  onBaseDataLoaded? : Callback,  onLoaded? : Callback,  syncCallbackWhenAssetExist? : boolean): void<br>[静态]创建场景，会根据预设的实现类来创建对应的实例场景                                     |
+| **[dispose](#dispose)**(): void<br>释放当前的场景                                                                                                                                                                                                   |
+| **[addLayer](#addlayer)**(layer : ClientSceneLayer): void<br>添加图层                                                                                                                                                                               |
+| **[addLayerAt](#addlayerat)**(layer : ClientSceneLayer,  index : number): void<br>添加图层到指定层                                                                                                                                                  |
+| **[removeLayer](#removelayer)**(layer : ClientSceneLayer): void<br>移除图层                                                                                                                                                                         |
+| **[removeLayerAt](#removelayerat)**(index : number): void<br>指定移除某一层的图层                                                                                                                                                                   |
+| **[setLayerIndex](#setlayerindex)**(layer : ClientSceneLayer,  index : number): void<br>设置图层到指定的层，该层必须已经在场景上                                                                                                                    |
+| **[getLayerLength](#getlayerlength)**(): number<br>获取当前的图层总数                                                                                                                                                                               |
+| **[getLayer](#getlayer)**(index : number): ClientSceneLayer<br>获取层，根据实际层次索引                                                                                                                                                             |
+| **[getLayerByPreset](#getlayerbypreset)**(id : number): ClientSceneLayer<br>获取层，根据预设层次                                                                                                                                                    |
+| **[getLayerByName](#getlayerbyname)**(name : string): ClientSceneLayer<br>获取层根据名称                                                                                                                                                            |
+| **[getPresetSceneObjectDatas](#getpresetsceneobjectdatas)**(): SceneObject[]<br>获取场景预设的场景对象数据（不包含出生点）                                                                                                                          |
+| **[addSceneObject](#addsceneobject)**(soData : [SceneObject](/zh_hans/library/2d/common/sceneobject),  isEntity? : boolean,  useModelClass? : boolean,  className? : string): ClientSceneObject<br>场景对象添加到场景上                             |
+| **[removeSceneObject](#removesceneobject)**(so : [SceneObject](/zh_hans/library/2d/common/sceneobject),  removeFromList? : boolean): ClientSceneObject<br>从场景上移除场景对象                                                                      |
+| **[addNewSceneObject](#addnewsceneobject)**(modelID : number,  presetSceneObjectData? : any): ClientSceneObject<br>添加新对象，以默认值生成新的对象，同时也可以追加修改属性（presetSceneObjectData）                                                |
+| **[addSceneObjectFromClone](#addsceneobjectfromclone)**(fromSceneID : number,  fromSceneObjectindex : number,  isCopy? : boolean,  presetSceneObjectData? : any): ClientSceneObject<br>克隆并添加场景对象                                           |
+| **[getGlobalPos](#getglobalpos)**(localX : number,  localY : number): [Point](/zh_hans/library/2d/common/point)<br>获取绝对鼠标位置（相对于舞台）根据指定的场景位置                                                                                 |
+| **[updateCamera](#updatecamera)**(): void<br>立刻刷新镜头（默认情况下场景会逐帧刷新镜头，如绑定的场景对象在移动时）                                                                                                                                 |
+| **[startRender](#startrender)**(): void<br>开始渲染，场景如果未调用的话则处于静止状态，运动的图层等都不播放                                                                                                                                         |
+| **[stopRender](#stoprender)**(LayerMoveToZero? : boolean): void<br>停止渲染                                                                                                                                                                         |
+| **[hasListener](#haslistener)**(type : string): boolean<br>检查场景是否为特定事件类型注册了任何侦听器                                                                                                                                               |
+| **[event](#event)**(type : string,  data? : any): boolean<br>场景派发事件                                                                                                                                                                           |
+| **[on](#on)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>使用场景注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知                                   |
+| **[once](#once)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>使用场景注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除 |
+| **[off](#off)**(type : string,  caller : any,  listener : Function,  onceOnly? : boolean): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>从场景中删除侦听器                                                                              |
+| **[offAll](#offall)**(type? : string): [ClientScene](/zh_hans/library/2d/client/clientscene)<br>从场景中删除指定事件类型的所有侦听器                                                                                                                |
 ## Protected 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[onRender](#onrender)**(): void<br>渲染：当Game.pause时则不处理刷新（update）
+| <div style="width:1000px;text-align:left" >方法</div>                           |
+| ------------------------------------------------------------------------------- |
+| **[onRender](#onrender)**(): void<br>渲染：当Game.pause时则不处理刷新（update） |
 ## 详情
 
 ### BASE_DATA_LOADED

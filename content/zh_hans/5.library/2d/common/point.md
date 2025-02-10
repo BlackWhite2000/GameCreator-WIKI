@@ -1,4 +1,6 @@
-# Point 点对象
+---
+title:  Point 点对象
+---
 >表示二维坐标系的x,y，用于辅助计算<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-06-03
@@ -6,24 +8,24 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **x** : number;<br>水平坐标  |
-| **y** : number;<br>垂直坐标  |
+| <div style="width:1000px;text-align:left">属性</div> |
+| ---------------------------------------------------- |
+| **x** : number;<br>水平坐标                          |
+| **y** : number;<br>垂直坐标                          |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[constructor](#constructor)**(x? : number,  y? : number)<br>构造函数
-| **[setTo](#setto)**(x : number,  y : number): [Point](/zh_hans/library/2d/common/point)<br>一次设置水平和垂直坐标
-| **[distance](#distance)**(x : number,  y : number): number<br>计算当前点和指定点(x，y)的距离。
-| **[toString](#tostring)**(): string<br>返回字符串形式的值显示：x,y
-| **[interpolate](#interpolate)**(to : [Point](/zh_hans/library/2d/common/point),  from : [Point](/zh_hans/library/2d/common/point),  per : number): [Point](/zh_hans/library/2d/common/point)<br>[静态]返回from-to两点中间的点
-| **[interpolate2](#interpolate2)**(toX : number,  toY : number,  fromX : number,  fromY : number,  per : number): number[]<br>[静态]返回from-to两点中间的点
-| **[distance](#distance)**(from : [Point](/zh_hans/library/2d/common/point),  to : [Point](/zh_hans/library/2d/common/point)): number<br>[静态]返回from-to两点中间的距离
-| **[distance2](#distance2)**(fromX : number,  fromY : number,  toX : number,  toY : number): number<br>[静态]返回from-to两点中间的距离
-| **[distanceSquare](#distancesquare)**(p1 : [Point](/zh_hans/library/2d/common/point),  p2 : [Point](/zh_hans/library/2d/common/point)): number<br>[静态]距离的平方
-| **[distanceSquare2](#distancesquare2)**(ax : number,  ay : number,  bx : number,  by : number): number<br>[静态]距离的平方
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[constructor](#constructor)**(x? : number,  y? : number)<br>构造函数                                                                                                                                                        |
+| **[setTo](#setto)**(x : number,  y : number): [Point](/zh_hans/library/2d/common/point)<br>一次设置水平和垂直坐标                                                                                                             |
+| **[distance](#distance)**(x : number,  y : number): number<br>计算当前点和指定点(x，y)的距离。                                                                                                                                |
+| **[toString](#tostring)**(): string<br>返回字符串形式的值显示：x,y                                                                                                                                                            |
+| **[interpolate](#interpolate)**(to : [Point](/zh_hans/library/2d/common/point),  from : [Point](/zh_hans/library/2d/common/point),  per : number): [Point](/zh_hans/library/2d/common/point)<br>[静态]返回from-to两点中间的点 |
+| **[interpolate2](#interpolate2)**(toX : number,  toY : number,  fromX : number,  fromY : number,  per : number): number[]<br>[静态]返回from-to两点中间的点                                                                    |
+| **[distance](#distance)**(from : [Point](/zh_hans/library/2d/common/point),  to : [Point](/zh_hans/library/2d/common/point)): number<br>[静态]返回from-to两点中间的距离                                                       |
+| **[distance2](#distance2)**(fromX : number,  fromY : number,  toX : number,  toY : number): number<br>[静态]返回from-to两点中间的距离                                                                                         |
+| **[distanceSquare](#distancesquare)**(p1 : [Point](/zh_hans/library/2d/common/point),  p2 : [Point](/zh_hans/library/2d/common/point)): number<br>[静态]距离的平方                                                            |
+| **[distanceSquare2](#distancesquare2)**(ax : number,  ay : number,  bx : number,  by : number): number<br>[静态]距离的平方                                                                                                    |
 
 ## 详情
 

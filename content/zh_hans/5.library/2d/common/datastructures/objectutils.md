@@ -1,4 +1,6 @@
-# ObjectUtils 对象工具类
+---
+title: ObjectUtils 对象工具类
+---
 >GC内部封装的对象的常用函数<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-07-24
@@ -8,18 +10,18 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[getInstanceID](#getinstanceid)**(): number<br>[静态]获取唯一ID：程序启动后该值从0开始自动累加，保证每次ID唯一，但不适合储存
-| **[getRandID](#getrandid)**(): string<br>[静态]获取随机唯一ID：适合储存，基本上不会遇到同样的ID值
-| **[clone](#clone)**(form : any,  to : any): void<br>[静态]将A的属性克隆给B（直接设置）
-| **[cloneExcludeNonExistentAttribute](#cloneexcludenonexistentattribute)**(form : any,  to : any): void<br>[静态]将A的属性克隆给B，仅对于B存在的属性才克隆
-| **[depthClone<T>](#depthclone<t>)**(o : T): T<br>[静态]深度克隆属性
-| **[same](#same)**(a : any,  b : any): boolean<br>[静态]判断两个对象是否不同 遍历a的属性是否与b相同
-| **[depthSame](#depthsame)**(a : any,  b : any): boolean<br>[静态]判断两个对象是否不同 遍历a的属性是否与b相同 深度对比
-| **[assignment](#assignment)**(a : any,  b : any): void<br>[静态]赋值，将B的值赋值给A，不变更类型
-| **[reDefineGetSet](#redefinegetset)**(target : string,  defineContent : any): void<br>[静态]重定义get/set
-| **[redefinedEventFunc](#redefinedeventfunc)**(clsName : string,  types : string[],  toObjName : string): void<br>[静态]映射指定类事件相关方法，将types替换成指定对象的方法
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getInstanceID](#getinstanceid)**(): number<br>[静态]获取唯一ID：程序启动后该值从0开始自动累加，保证每次ID唯一，但不适合储存                                             |
+| **[getRandID](#getrandid)**(): string<br>[静态]获取随机唯一ID：适合储存，基本上不会遇到同样的ID值                                                                          |
+| **[clone](#clone)**(form : any,  to : any): void<br>[静态]将A的属性克隆给B（直接设置）                                                                                     |
+| **[cloneExcludeNonExistentAttribute](#cloneexcludenonexistentattribute)**(form : any,  to : any): void<br>[静态]将A的属性克隆给B，仅对于B存在的属性才克隆                  |
+| **[depthClone<T>](#depthclone<t>)**(o : T): T<br>[静态]深度克隆属性                                                                                                        |
+| **[same](#same)**(a : any,  b : any): boolean<br>[静态]判断两个对象是否不同 遍历a的属性是否与b相同                                                                         |
+| **[depthSame](#depthsame)**(a : any,  b : any): boolean<br>[静态]判断两个对象是否不同 遍历a的属性是否与b相同 深度对比                                                      |
+| **[assignment](#assignment)**(a : any,  b : any): void<br>[静态]赋值，将B的值赋值给A，不变更类型                                                                           |
+| **[reDefineGetSet](#redefinegetset)**(target : string,  defineContent : any): void<br>[静态]重定义get/set                                                                  |
+| **[redefinedEventFunc](#redefinedeventfunc)**(clsName : string,  types : string[],  toObjName : string): void<br>[静态]映射指定类事件相关方法，将types替换成指定对象的方法 |
 
 ## 详情
 

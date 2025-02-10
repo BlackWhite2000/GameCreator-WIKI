@@ -1,4 +1,6 @@
-# Graphics 图像绘制
+---
+title:  Graphics 图像绘制
+---
 >系统根据绘制命令来渲染图像，一次命令会产生一次渲染绘制（drawcall）。<br>渲染次数对性能影响较大，一般整个游戏每帧全局渲染次数控制在1000以内会较为合适<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2017-01-01
@@ -8,20 +10,20 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[dispose](#dispose)**(): void<br>销毁该对象
-| **[clear](#clear)**(): void<br>清空全部绘制命令。
-| **[drawTexture](#drawtexture)**(tex : Texture,  x? : number,  y? : number,  width? : number,  height? : number,  m? : Matrix,  alpha? : number): void<br>绘制整张贴图
-| **[fillTexture](#filltexture)**(tex : Texture,  x : number,  y : number,  width? : number,  height? : number,  type? : string,  offset? : [Point](/zh_hans/library/2d/common/point)): void<br>填充贴图，可裁剪只显示贴图的一部分
-| **[fillText](#filltext)**(text : string,  x : number,  y : number,  font : string,  color : string,  textAlign : string): void<br>绘制文本
-| **[drawLine](#drawline)**(fromX : number,  fromY : number,  toX : number,  toY : number,  lineColor : string,  lineWidth? : number): void<br>绘制线
-| **[drawLines](#drawlines)**(x : number,  y : number,  points : number[],  lineColor : string,  lineWidth? : number): void<br>绘制一系列线段
-| **[drawCurves](#drawcurves)**(x : number,  y : number,  points : number[],  lineColor : string,  lineWidth? : number): void<br>绘制一系列曲线
-| **[drawRect](#drawrect)**(x : number,  y : number,  width : number,  height : number,  fillColor : any,  lineColor? : string,  lineWidth? : number): void<br>绘制矩形
-| **[drawCircle](#drawcircle)**(x : number,  y : number,  radius : number,  fillColor : string,  lineColor? : string,  lineWidth? : number): void<br>绘制圆形
-| **[drawPie](#drawpie)**(x : number,  y : number,  radius : number,  startAngle : number,  endAngle : number,  fillColor : string,  lineColor? : string,  lineWidth? : number): void<br>绘制扇形
-| **[drawPoly](#drawpoly)**(x : number,  y : number,  points : number[],  fillColor : any,  lineColor? : string,  lineWidth? : number): void<br>绘制多边形
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[dispose](#dispose)**(): void<br>销毁该对象                                                                                                                                                                                    |
+| **[clear](#clear)**(): void<br>清空全部绘制命令。                                                                                                                                                                                |
+| **[drawTexture](#drawtexture)**(tex : Texture,  x? : number,  y? : number,  width? : number,  height? : number,  m? : Matrix,  alpha? : number): void<br>绘制整张贴图                                                            |
+| **[fillTexture](#filltexture)**(tex : Texture,  x : number,  y : number,  width? : number,  height? : number,  type? : string,  offset? : [Point](/zh_hans/library/2d/common/point)): void<br>填充贴图，可裁剪只显示贴图的一部分 |
+| **[fillText](#filltext)**(text : string,  x : number,  y : number,  font : string,  color : string,  textAlign : string): void<br>绘制文本                                                                                       |
+| **[drawLine](#drawline)**(fromX : number,  fromY : number,  toX : number,  toY : number,  lineColor : string,  lineWidth? : number): void<br>绘制线                                                                              |
+| **[drawLines](#drawlines)**(x : number,  y : number,  points : number[],  lineColor : string,  lineWidth? : number): void<br>绘制一系列线段                                                                                      |
+| **[drawCurves](#drawcurves)**(x : number,  y : number,  points : number[],  lineColor : string,  lineWidth? : number): void<br>绘制一系列曲线                                                                                    |
+| **[drawRect](#drawrect)**(x : number,  y : number,  width : number,  height : number,  fillColor : any,  lineColor? : string,  lineWidth? : number): void<br>绘制矩形                                                            |
+| **[drawCircle](#drawcircle)**(x : number,  y : number,  radius : number,  fillColor : string,  lineColor? : string,  lineWidth? : number): void<br>绘制圆形                                                                      |
+| **[drawPie](#drawpie)**(x : number,  y : number,  radius : number,  startAngle : number,  endAngle : number,  fillColor : string,  lineColor? : string,  lineWidth? : number): void<br>绘制扇形                                  |
+| **[drawPoly](#drawpoly)**(x : number,  y : number,  points : number[],  fillColor : any,  lineColor? : string,  lineWidth? : number): void<br>绘制多边形                                                                         |
 
 ## 详情
 

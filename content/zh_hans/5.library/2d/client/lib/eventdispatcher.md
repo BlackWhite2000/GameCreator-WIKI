@@ -1,4 +1,6 @@
-# EventDispatcher 事件调度器
+---
+title: EventDispatcher 事件调度器
+---
 >可调度事件的所有类的基类。<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2017-01-01
@@ -8,15 +10,15 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[hasListener](#haslistener)**(type : string): boolean<br>检查 EventDispatcher 对象是否为特定事件类型注册了任何侦听器。
-| **[event](#event)**(type : string,  data? : any): boolean<br>派发事件。
-| **[on](#on)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知。
-| **[once](#once)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除。
-| **[off](#off)**(type : string,  caller : any,  listener : Function,  onceOnly? : boolean): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>从 EventDispatcher 对象中删除侦听器。
-| **[offAll](#offall)**(type? : string): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>从 EventDispatcher 对象中删除指定事件类型的所有侦听器。
-| **[isMouseEvent](#ismouseevent)**(type : string): boolean<br>检测指定事件类型是否是鼠标事件。
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[hasListener](#haslistener)**(type : string): boolean<br>检查 EventDispatcher 对象是否为特定事件类型注册了任何侦听器。                                                                                                                                                           |
+| **[event](#event)**(type : string,  data? : any): boolean<br>派发事件。                                                                                                                                                                                                            |
+| **[on](#on)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知。                                   |
+| **[once](#once)**(type : string,  caller : any,  listener : Function,  args? : Array<any>): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除。 |
+| **[off](#off)**(type : string,  caller : any,  listener : Function,  onceOnly? : boolean): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>从 EventDispatcher 对象中删除侦听器。                                                                              |
+| **[offAll](#offall)**(type? : string): [EventDispatcher](/zh_hans/library/2d/client/lib/eventdispatcher)<br>从 EventDispatcher 对象中删除指定事件类型的所有侦听器。                                                                                                                |
+| **[isMouseEvent](#ismouseevent)**(type : string): boolean<br>检测指定事件类型是否是鼠标事件。                                                                                                                                                                                      |
 
 ## 详情
 

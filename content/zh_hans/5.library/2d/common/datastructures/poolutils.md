@@ -1,4 +1,6 @@
-# PoolUtils 对象池工具
+---
+title: PoolUtils 对象池工具
+---
 >GC内部封装的对象池工具<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2017-10-25
@@ -8,11 +10,11 @@
 
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[constructor](#constructor)**(cls : any)<br>构造函数
-| **[free](#free)**(obj : any): void<br>归还对象
-| **[takeout](#takeout)**(): any<br>取出对象，没有闲置对象则会新建
+| <div style="width:1000px;text-align:left" >方法</div>            |
+| ---------------------------------------------------------------- |
+| **[constructor](#constructor)**(cls : any)<br>构造函数           |
+| **[free](#free)**(obj : any): void<br>归还对象                   |
+| **[takeout](#takeout)**(): any<br>取出对象，没有闲置对象则会新建 |
 
 ## 详情
 

@@ -1,4 +1,6 @@
-# HitArea 鼠标点击区域
+---
+title:  HitArea 鼠标点击区域
+---
 >可以设置绘制一系列矢量图作为点击区域和非点击区域（目前只支持圆形，矩形，多边形）<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2017-01-01
@@ -6,18 +8,18 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **hit** : Graphics;<br>可点击区域，可以设置绘制一系列矢量图作为点击区域（支持圆形，矩形，多边形）  |
+| <div style="width:1000px;text-align:left">属性</div>                                              |
+| ------------------------------------------------------------------------------------------------- |
+| **hit** : Graphics;<br>可点击区域，可以设置绘制一系列矢量图作为点击区域（支持圆形，矩形，多边形） |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[isHitGraphic](#ishitgraphic)**(x : number,  y : number,  graphic : [Graphics](/zh_hans/library/2d/client/lib/graphics)): boolean<br>[静态]是否击中Graphic
-| **[ptInPolygon](#ptinpolygon)**(x : number,  y : number,  areaPoints : number[]): boolean<br>[静态]坐标是否在多边形内
-| **[isHit](#ishit)**(x : number,  y : number): boolean<br>是否包含某个点
-| **[contains](#contains)**(x : number,  y : number): boolean<br>检测对象是否包含指定的点。
-| (): unHit Graphics<br>不可点击区域，可以设置绘制一系列矢量图作为非点击区域（支持圆形，矩形，多边形）
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[isHitGraphic](#ishitgraphic)**(x : number,  y : number,  graphic : [Graphics](/zh_hans/library/2d/client/lib/graphics)): boolean<br>[静态]是否击中Graphic |
+| **[ptInPolygon](#ptinpolygon)**(x : number,  y : number,  areaPoints : number[]): boolean<br>[静态]坐标是否在多边形内                                        |
+| **[isHit](#ishit)**(x : number,  y : number): boolean<br>是否包含某个点                                                                                      |
+| **[contains](#contains)**(x : number,  y : number): boolean<br>检测对象是否包含指定的点。                                                                    |
+| (): unHit Graphics<br>不可点击区域，可以设置绘制一系列矢量图作为非点击区域（支持圆形，矩形，多边形）                                                         |
 
 ## 详情
 

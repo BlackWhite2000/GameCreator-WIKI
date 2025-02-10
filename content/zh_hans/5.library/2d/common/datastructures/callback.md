@@ -1,4 +1,6 @@
-# Callback 回调方法
+---
+title: Callback 回调方法
+---
 >一般用于各种回调函数中为了携带执行域和参数<br>【使用方法】：<br>Callback.New(this.xxx,this,[1,2,3]);<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-01-01
@@ -6,24 +8,24 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **EMPTY** : Callback;<br>[静态]空的单一实例，一般用于必须回调中的空实现  |
-| **caller** : any;<br>调用者执行域  |
-| **callbackFunc** : Function;<br>回调方法  |
-| **args** : any[];<br>回调参数  |
+| <div style="width:1000px;text-align:left">属性</div>                    |
+| ----------------------------------------------------------------------- |
+| **EMPTY** : Callback;<br>[静态]空的单一实例，一般用于必须回调中的空实现 |
+| **caller** : any;<br>调用者执行域                                       |
+| **callbackFunc** : Function;<br>回调方法                                |
+| **args** : any[];<br>回调参数                                           |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[run](#run)**(): any<br>运行
-| **[runWith](#runwith)**(addArgs : any[]): any<br>运行追加额外的参数 追加的参数在回调时总是在后面
-| **[delayRun](#delayrun)**(delay : number,  delayFunc? : Function,  args? : any[]): [Callback](/zh_hans/library/2d/common/datastructures/callback)<br>延迟执行
-| **[delayRunConver](#delayrunconver)**(delay : number,  delayFunc? : Function,  clearDelayFunc? : Function,  args? : any[]): [Callback](/zh_hans/library/2d/common/datastructures/callback)<br>延迟执行，但会覆盖掉之前的延迟
-| **[stopDelay](#stopdelay)**(clearDelayFunc? : Function): void<br>停止延期
-| **[New](#new)**(callbackFunc : Function,  caller : any,  args? : any[]): [Callback](/zh_hans/library/2d/common/datastructures/callback)<br>[静态]新建回调对象，同new CallBack
-| **[CallLater](#calllater)**(func : Function,  caller : any,  args? : any[],  delay? : number): void<br>[静态]延迟到下一帧执行，保证相同的方法和作用域只能执行一次，可用于优化效率
-| **[CallLaterBeforeRender](#calllaterbeforerender)**(func : Function,  caller : any,  args? : any[]): void<br>[静态]延迟到下一次渲染时执行，保证相同的方法和作用域只能执行一次，可用于优化效率
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[run](#run)**(): any<br>运行                                                                                                                                                                                               |
+| **[runWith](#runwith)**(addArgs : any[]): any<br>运行追加额外的参数 追加的参数在回调时总是在后面                                                                                                                             |
+| **[delayRun](#delayrun)**(delay : number,  delayFunc? : Function,  args? : any[]): [Callback](/zh_hans/library/2d/common/datastructures/callback)<br>延迟执行                                                                |
+| **[delayRunConver](#delayrunconver)**(delay : number,  delayFunc? : Function,  clearDelayFunc? : Function,  args? : any[]): [Callback](/zh_hans/library/2d/common/datastructures/callback)<br>延迟执行，但会覆盖掉之前的延迟 |
+| **[stopDelay](#stopdelay)**(clearDelayFunc? : Function): void<br>停止延期                                                                                                                                                    |
+| **[New](#new)**(callbackFunc : Function,  caller : any,  args? : any[]): [Callback](/zh_hans/library/2d/common/datastructures/callback)<br>[静态]新建回调对象，同new CallBack                                                |
+| **[CallLater](#calllater)**(func : Function,  caller : any,  args? : any[],  delay? : number): void<br>[静态]延迟到下一帧执行，保证相同的方法和作用域只能执行一次，可用于优化效率                                            |
+| **[CallLaterBeforeRender](#calllaterbeforerender)**(func : Function,  caller : any,  args? : any[]): void<br>[静态]延迟到下一次渲染时执行，保证相同的方法和作用域只能执行一次，可用于优化效率                                |
 
 ## 详情
 

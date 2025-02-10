@@ -1,4 +1,6 @@
-# GameImageLayer 图像层
+---
+title: GameImageLayer 图像层
+---
 ><br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2020-11-30
@@ -6,21 +8,21 @@
 **继承**  →GameSprite<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **camera** : Camera;<br>相机  |
-| **[imageSprites](#imagesprites)** : any;<br>[静态]记录全部通道的显示对象 默认值={}  |
+| <div style="width:1000px;text-align:left">属性</div>                               |
+| ---------------------------------------------------------------------------------- |
+| **camera** : Camera;<br>相机                                                       |
+| **[imageSprites](#imagesprites)** : any;<br>[静态]记录全部通道的显示对象 默认值={} |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[updateFrame](#updateframe)**(force? : boolean): void<br>刷新帧，如果更改了相机设置希望在当前帧立刻刷新的话可自行调用该函数，否则会在帧刷中自动每帧调用（意味着下一帧才调用）
-| **[setImageSprite](#setimagesprite)**(passageID : number,  sp : GameSprite): void<br>[静态]设置通道显示对象
-| **[getImageSprite](#getimagesprite)**(passageID : number): GameSprite<br>[静态]获取占用该通道的显示对象
-| **[deletePassage](#deletepassage)**(passageID : number): void<br>[静态]删除通道
-| **[regPassageFrameUpdate](#regpassageframeupdate)**(passageID : number,  onUpdate : Function,  thisPtr : any,  args? : any[],  sign? : string): void<br>[静态]注册帧刷效果，支持注册多个
-| **[clearPassageFrameUpdate](#clearpassageframeupdate)**(passageID : number,  sign? : string): void<br>[静态]清理通道的帧刷函数效果
-| **[getPassageFrameUpdates](#getpassageframeupdates)**(): any<br>[静态]获取通道帧刷函数
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[updateFrame](#updateframe)**(force? : boolean): void<br>刷新帧，如果更改了相机设置希望在当前帧立刻刷新的话可自行调用该函数，否则会在帧刷中自动每帧调用（意味着下一帧才调用）          |
+| **[setImageSprite](#setimagesprite)**(passageID : number,  sp : GameSprite): void<br>[静态]设置通道显示对象                                                                              |
+| **[getImageSprite](#getimagesprite)**(passageID : number): GameSprite<br>[静态]获取占用该通道的显示对象                                                                                  |
+| **[deletePassage](#deletepassage)**(passageID : number): void<br>[静态]删除通道                                                                                                          |
+| **[regPassageFrameUpdate](#regpassageframeupdate)**(passageID : number,  onUpdate : Function,  thisPtr : any,  args? : any[],  sign? : string): void<br>[静态]注册帧刷效果，支持注册多个 |
+| **[clearPassageFrameUpdate](#clearpassageframeupdate)**(passageID : number,  sign? : string): void<br>[静态]清理通道的帧刷函数效果                                                       |
+| **[getPassageFrameUpdates](#getpassageframeupdates)**(): any<br>[静态]获取通道帧刷函数                                                                                                   |
 
 ## 详情
 

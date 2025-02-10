@@ -1,4 +1,6 @@
-# os 系统
+---
+title:  os 系统
+---
 >使用该类让渲染引擎初始化以及一些常用的函数（如发布后的窗口操作）<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2017-01-16
@@ -6,37 +8,37 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **defaultFamily** : string;<br>[静态]默认字体  |
-| **[canvas](#canvas)** : HTMLCanvasElement;<br>[静态][只读]获取canvas元素对象  |
-| **MAX_TEXTURE_SIZE** : number;<br>[静态][只读]支持的贴图最大尺寸  |
-| **[platform](#platform)** : number;<br>[静态][只读]获取所在平台  |
-| **fullscreen** : boolean;<br>[静态]【仅PC端和Android端】设置全屏或取消全屏，发布后支持  |
-| **horizontalScreen** : boolean;<br>[静态]设备横屏显示  |
-| **insomnia** : boolean;<br>[静态]设备允许常亮（目前仅支持安卓设备）  |
+| <div style="width:1000px;text-align:left">属性</div>                                   |
+| -------------------------------------------------------------------------------------- |
+| **defaultFamily** : string;<br>[静态]默认字体                                          |
+| **[canvas](#canvas)** : HTMLCanvasElement;<br>[静态][只读]获取canvas元素对象           |
+| **MAX_TEXTURE_SIZE** : number;<br>[静态][只读]支持的贴图最大尺寸                       |
+| **[platform](#platform)** : number;<br>[静态][只读]获取所在平台                        |
+| **fullscreen** : boolean;<br>[静态]【仅PC端和Android端】设置全屏或取消全屏，发布后支持 |
+| **horizontalScreen** : boolean;<br>[静态]设备横屏显示                                  |
+| **insomnia** : boolean;<br>[静态]设备允许常亮（目前仅支持安卓设备）                    |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[init](#init)**(stageWidth? : number,  stageHeight? : number,  isWebGL? : boolean,  is3D? : boolean): void<br>[静态]系统初始化
-| **[add_ENTERFRAME](#add_enterframe)**(onHappen : Function,  thisPtr : any,  args? : any[]): void<br>[静态]添加帧循环，让函数逐帧执行（帧刷）
-| **[remove_ENTERFRAME](#remove_enterframe)**(onHappen : Function,  thisPtr : any): void<br>[静态]移除帧循环
-| **[setCursor](#setcursor)**(style : string): void<br>[静态]当前鼠标样式 如 os.setCursor("wait");
-| **[restoreCursor](#restorecursor)**(): void<br>[静态]恢复更改前的记录光标
-| **[detectOS](#detectos)**(): string<br>[静态]获取操作系统
-| **[resizeTo](#resizeto)**(width : number,  height : number): void<br>[静态]【仅PC端】设置窗口尺寸（单位：像素），发布后支持
-| **[moveTo](#moveto)**(x : number,  y : number): void<br>[静态]【仅PC端】设置窗口位置（单位：像素），发布后支持
-| **[setResizable](#setresizable)**(resizable : boolean): void<br>[静态]【仅PC端】设置是否允许更改窗口尺寸，发布后支持
-| **[setAlwaysOnTop](#setalwaysontop)**(alwaysOnTop : boolean): void<br>[静态]【仅PC端】设置是否允许窗口显示在最前方，发布后支持
-| **[maximize](#maximize)**(): void<br>[静态]【仅PC端】最大化窗口，发布后支持
-| **[minimize](#minimize)**(): void<br>[静态]【仅PC端和Android端】最小化窗口，发布后支持
-| **[restore](#restore)**(): void<br>[静态]【仅PC端】还原窗口（用于最大化或最小化后调用可还原），发布后支持
-| **[closeWindow](#closewindow)**(): void<br>[静态]【仅PC端和Android端】关闭当前窗口，在编辑器中也可以关闭
-| **[inGC](#ingc)**(): boolean<br>[静态]是否在GC环境中
-| **[showFPS](#showfps)**(): void<br>[静态]显示FPS，必须在引擎初始化之后才生效
-| **[hideFPS](#hidefps)**(): void<br>[静态]隐藏FPS，必须在引擎初始化之后才生效
-| **[shake](#shake)**(time : number | number[]): voi<br>[静态]设备震动（目前仅支持安卓设备）
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[init](#init)**(stageWidth? : number,  stageHeight? : number,  isWebGL? : boolean,  is3D? : boolean): void<br>[静态]系统初始化             |
+| **[add_ENTERFRAME](#add_enterframe)**(onHappen : Function,  thisPtr : any,  args? : any[]): void<br>[静态]添加帧循环，让函数逐帧执行（帧刷） |
+| **[remove_ENTERFRAME](#remove_enterframe)**(onHappen : Function,  thisPtr : any): void<br>[静态]移除帧循环                                   |
+| **[setCursor](#setcursor)**(style : string): void<br>[静态]当前鼠标样式 如 os.setCursor("wait");                                             |
+| **[restoreCursor](#restorecursor)**(): void<br>[静态]恢复更改前的记录光标                                                                    |
+| **[detectOS](#detectos)**(): string<br>[静态]获取操作系统                                                                                    |
+| **[resizeTo](#resizeto)**(width : number,  height : number): void<br>[静态]【仅PC端】设置窗口尺寸（单位：像素），发布后支持                  |
+| **[moveTo](#moveto)**(x : number,  y : number): void<br>[静态]【仅PC端】设置窗口位置（单位：像素），发布后支持                               |
+| **[setResizable](#setresizable)**(resizable : boolean): void<br>[静态]【仅PC端】设置是否允许更改窗口尺寸，发布后支持                         |
+| **[setAlwaysOnTop](#setalwaysontop)**(alwaysOnTop : boolean): void<br>[静态]【仅PC端】设置是否允许窗口显示在最前方，发布后支持               |
+| **[maximize](#maximize)**(): void<br>[静态]【仅PC端】最大化窗口，发布后支持                                                                  |
+| **[minimize](#minimize)**(): void<br>[静态]【仅PC端和Android端】最小化窗口，发布后支持                                                       |
+| **[restore](#restore)**(): void<br>[静态]【仅PC端】还原窗口（用于最大化或最小化后调用可还原），发布后支持                                    |
+| **[closeWindow](#closewindow)**(): void<br>[静态]【仅PC端和Android端】关闭当前窗口，在编辑器中也可以关闭                                     |
+| **[inGC](#ingc)**(): boolean<br>[静态]是否在GC环境中                                                                                         |
+| **[showFPS](#showfps)**(): void<br>[静态]显示FPS，必须在引擎初始化之后才生效                                                                 |
+| **[hideFPS](#hidefps)**(): void<br>[静态]隐藏FPS，必须在引擎初始化之后才生效                                                                 |
+| **[shake](#shake)**(time : number                                                                                                            | number[]): voi<br>[静态]设备震动（目前仅支持安卓设备） |
 
 ## 详情
 

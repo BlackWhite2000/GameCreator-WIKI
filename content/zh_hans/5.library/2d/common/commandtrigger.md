@@ -1,4 +1,6 @@
-# CommandTrigger 事件触发器
+---
+title:  CommandTrigger 事件触发器
+---
 >触发器用于触发事件，总是绑定在场景对象身上的，并且由某个对象触发并由某个对象执行（即触发者和执行者）<br>触发器的主种类分为：场景的触发器、场景对象的触发器、界面控件的触发器、事件库触发器（独立）、独立事件片段触发器<br>支持同一时间内多个触发器同时执行事件<br>支持自定义触发器，比如场景的进入事件、界面控件的点击事件等<br>支持暂停执行事件以及暂停等待的时间推进<br>支持多线模式：不用等待该事件执行完毕也仍然可以再次执行该事件<br>支持接收玩家的自定义参数输入（如制作等待玩家输入名字、等待玩家输入密码、QTE等功能）<br>跨场景执行：部分触发器可以跨场景执行，并不会因为更换场景而终止，满足以下条件即可：<br>&nbsp;&nbsp;-- 触发者和执行者都是玩家的场景对象（如界面控件的点击事件）<br>读档后会恢复全部正在执行的事件（如读档前A事件执行到第3行，那么读档后A事件从第4行开始执行）<br>相关类：[Command](/zh_hans/library/2d/common/command)、[CommandPage](/zh_hans/library/2d/common/commandpage)、[CommandTrigger](/zh_hans/library/2d/common/commandtrigger)<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2018-10-11
@@ -6,40 +8,40 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **[EVENT_START](#event_start)** : string;<br>[静态]执行开始事件：当触发器开始执行时派发的一个事件（Event）  |
-| **[EVENT_OVER](#event_over)** : string;<br>[静态]执行结束事件：当触发器执行结束时派发的一个事件（Event）  |
-| **[EVENT_BEHAVIOR_OVER](#event_behavior_over)** : string;<br>[静态]该触发器此前派发的对象行为事件执行完毕时事件：（同指令中的[等待行为结束]）  |
-| **COMMAND_MAIN_TYPE_SCENE** : number;<br>[静态]枚举-事件主类别：场景相关的事件类别 默认值=0  |
-| **COMMAND_MAIN_TYPE_SCENE_OBJECT** : number;<br>[静态]枚举-事件主类别：场景对象相关的事件类别 默认值=1  |
-| **COMMAND_MAIN_TYPE_UI** : number;<br>[静态]枚举-事件主类别：界面相关的事件类别 默认值=2  |
-| **COMMAND_MAIN_TYPE_CALL_COMMON_EVENT** : number;<br>[静态]枚举-事件主类别：独立的事件库事件的事件类别 默认值=3  |
-| **COMMAND_MAIN_TYPE_FRAGMENT_EVENT** : number;<br>[静态]枚举-事件主类别：片段事件的事件类别 默认值=4  |
-| **id** : number;<br>唯一ID，触发线（TriggerLineID）对应的就是触发器的ID  |
-| **[mainType](#maintype)** : number;<br>触发器主类型 对应CommandTrigger::COMMAND_MAIN_TYPE_XXXXX  |
-| **[indexType](#indextype)** : number;<br>触发器子类型 主类型下的子类型  |
-| **[from](#from)** : any;<br>记录对应事件来源  |
-| **[multiline](#multiline)** : boolean;<br>是否多线模式：表示该触发器是每次生成的一个新触发器，独立运行  |
-| **scene** : ClientScene;<br>所在的场景，此处一般指当前游戏场景  |
-| **[trigger](#trigger)** : SceneObjectEntity;<br>触发事件的场景对象（事件触发者）  |
-| **[executor](#executor)** : SceneObjectEntity;<br>执行事件的目标（事件执行者）  |
-| **[pause](#pause)** : boolean;<br>暂停指令继续推进：暂停执行标记，表示事件暂时停止执行  |
-| **[delayPause](#delaypause)** : boolean;<br>是否暂停【等待】指令继续执行（在等待中也会暂停，而恢复后会等待剩余的时间/帧数）  |
-| **[cmdReturn](#cmdreturn)** : boolean;<br>中断执行标记，表示事件指令该作用域中断了，返回到上一层作用域继续执行（如若已经是顶层则事件指令执行完毕）  |
-| **[inputMessage](#inputmessage)** : any[];<br>玩家提交输入值 默认值=[]  |
-| **[triggerPlayer](#triggerplayer)** : Player;<br>[只读]获取触发事件的玩家，单机版只有当前的唯一玩家  |
-| **[hasBehavior](#hasbehavior)** : boolean;<br>[只读]该触发器是否还有派发出去仍未执行完毕的行为  |
+| <div style="width:1000px;text-align:left">属性</div>                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[EVENT_START](#event_start)** : string;<br>[静态]执行开始事件：当触发器开始执行时派发的一个事件（Event）                                         |
+| **[EVENT_OVER](#event_over)** : string;<br>[静态]执行结束事件：当触发器执行结束时派发的一个事件（Event）                                           |
+| **[EVENT_BEHAVIOR_OVER](#event_behavior_over)** : string;<br>[静态]该触发器此前派发的对象行为事件执行完毕时事件：（同指令中的[等待行为结束]）      |
+| **COMMAND_MAIN_TYPE_SCENE** : number;<br>[静态]枚举-事件主类别：场景相关的事件类别 默认值=0                                                        |
+| **COMMAND_MAIN_TYPE_SCENE_OBJECT** : number;<br>[静态]枚举-事件主类别：场景对象相关的事件类别 默认值=1                                             |
+| **COMMAND_MAIN_TYPE_UI** : number;<br>[静态]枚举-事件主类别：界面相关的事件类别 默认值=2                                                           |
+| **COMMAND_MAIN_TYPE_CALL_COMMON_EVENT** : number;<br>[静态]枚举-事件主类别：独立的事件库事件的事件类别 默认值=3                                    |
+| **COMMAND_MAIN_TYPE_FRAGMENT_EVENT** : number;<br>[静态]枚举-事件主类别：片段事件的事件类别 默认值=4                                               |
+| **id** : number;<br>唯一ID，触发线（TriggerLineID）对应的就是触发器的ID                                                                            |
+| **[mainType](#maintype)** : number;<br>触发器主类型 对应CommandTrigger::COMMAND_MAIN_TYPE_XXXXX                                                    |
+| **[indexType](#indextype)** : number;<br>触发器子类型 主类型下的子类型                                                                             |
+| **[from](#from)** : any;<br>记录对应事件来源                                                                                                       |
+| **[multiline](#multiline)** : boolean;<br>是否多线模式：表示该触发器是每次生成的一个新触发器，独立运行                                             |
+| **scene** : ClientScene;<br>所在的场景，此处一般指当前游戏场景                                                                                     |
+| **[trigger](#trigger)** : SceneObjectEntity;<br>触发事件的场景对象（事件触发者）                                                                   |
+| **[executor](#executor)** : SceneObjectEntity;<br>执行事件的目标（事件执行者）                                                                     |
+| **[pause](#pause)** : boolean;<br>暂停指令继续推进：暂停执行标记，表示事件暂时停止执行                                                             |
+| **[delayPause](#delaypause)** : boolean;<br>是否暂停【等待】指令继续执行（在等待中也会暂停，而恢复后会等待剩余的时间/帧数）                        |
+| **[cmdReturn](#cmdreturn)** : boolean;<br>中断执行标记，表示事件指令该作用域中断了，返回到上一层作用域继续执行（如若已经是顶层则事件指令执行完毕） |
+| **[inputMessage](#inputmessage)** : any[];<br>玩家提交输入值 默认值=[]                                                                             |
+| **[triggerPlayer](#triggerplayer)** : Player;<br>[只读]获取触发事件的玩家，单机版只有当前的唯一玩家                                                |
+| **[hasBehavior](#hasbehavior)** : boolean;<br>[只读]该触发器是否还有派发出去仍未执行完毕的行为                                                     |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[offset](#offset)**(value : number): void<br>偏移指令行
-| **[waitFrame](#waitframe)**(frame : number): void<br>等待指定帧数后继续执行指令
-| **[waitTime](#waittime)**(time : number): void<br>等待指定时间后继续执行
-| **[addBehavior](#addbehavior)**(targetSo : SceneObjectEntity,  behaviorData : any[],  loop : boolean,  targetSceneObject : SceneObject,  cover : boolean,  startIndex? : number,  Immediate? : boolean,  forceStopLastBehavior? : boolean,  delayFrame? : number,  executor? : SceneObjectEntity): void<br>添加对象行为组
-| **[addCommonEventCommandPageLayer](#addcommoneventcommandpagelayer)**(commonEventID : number): void<br>调用事件库事件时追加层级，在当前的触发器中追加执行指定的事件库的事件，在事件库事件执行完毕后会回到原来的事件中继续接着执行
-| **[addFragmentEventCommandPageLayer](#addfragmenteventcommandpagelayer)**(feData : string): void<br>追加片段事件层级，在当前的触发器中追加执行片段事件，在该片段事件执行完毕后会回到原来的事件中继续接着执行
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[offset](#offset)**(value : number): void<br>偏移指令行                                                                                                                                                                                                                                                                 |
+| **[waitFrame](#waitframe)**(frame : number): void<br>等待指定帧数后继续执行指令                                                                                                                                                                                                                                           |
+| **[waitTime](#waittime)**(time : number): void<br>等待指定时间后继续执行                                                                                                                                                                                                                                                  |
+| **[addBehavior](#addbehavior)**(targetSo : SceneObjectEntity,  behaviorData : any[],  loop : boolean,  targetSceneObject : SceneObject,  cover : boolean,  startIndex? : number,  Immediate? : boolean,  forceStopLastBehavior? : boolean,  delayFrame? : number,  executor? : SceneObjectEntity): void<br>添加对象行为组 |
+| **[addCommonEventCommandPageLayer](#addcommoneventcommandpagelayer)**(commonEventID : number): void<br>调用事件库事件时追加层级，在当前的触发器中追加执行指定的事件库的事件，在事件库事件执行完毕后会回到原来的事件中继续接着执行                                                                                         |
+| **[addFragmentEventCommandPageLayer](#addfragmenteventcommandpagelayer)**(feData : string): void<br>追加片段事件层级，在当前的触发器中追加执行片段事件，在该片段事件执行完毕后会回到原来的事件中继续接着执行                                                                                                              |
 
 ## 详情
 

@@ -1,4 +1,6 @@
-# SinglePlayerGame 单机游戏类
+---
+title: SinglePlayerGame 单机游戏类
+---
 >对于单机游戏追加的初始化、存档取档等功能<br>-- 全局信息在游戏启动时会自动读取：如二周目变量、存档数信息、自定义全局数据等<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2020-02-02
@@ -6,31 +8,31 @@
 **继承**  无<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **[EVENT_RECOVER_TRIGGER](#event_recover_trigger)** : string;<br>[静态]事件：读档后恢复的事件触发线  |
-| **[EVENT_ON_BEFORE_RECOVERY_DATA](#event_on_before_recovery_data)** : string;<br>[静态]事件：调用recoveryData前派发  |
-| **[EVENT_ON_AFTER_RECOVERY_DATA](#event_on_after_recovery_data)** : string;<br>[静态]事件：调用recoveryData后派发  |
-| **[syncSaveMode](#syncsavemode)** : boolean;<br>[静态]同步储存模式：存档时保证当前帧打包好存档数据，以便保证不会出现异步储存时数据发生了改变导致储存信息不太正确的问题（但也会更耗时）  |
-| **[saveConfig](#saveconfig)** : any;<br>[静态]存档配置 系统根据该存档配置进行储存一些基础的信息  |
+| <div style="width:1000px;text-align:left">属性</div>                                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[EVENT_RECOVER_TRIGGER](#event_recover_trigger)** : string;<br>[静态]事件：读档后恢复的事件触发线                                                                                    |
+| **[EVENT_ON_BEFORE_RECOVERY_DATA](#event_on_before_recovery_data)** : string;<br>[静态]事件：调用recoveryData前派发                                                                    |
+| **[EVENT_ON_AFTER_RECOVERY_DATA](#event_on_after_recovery_data)** : string;<br>[静态]事件：调用recoveryData后派发                                                                      |
+| **[syncSaveMode](#syncsavemode)** : boolean;<br>[静态]同步储存模式：存档时保证当前帧打包好存档数据，以便保证不会出现异步储存时数据发生了改变导致储存信息不太正确的问题（但也会更耗时） |
+| **[saveConfig](#saveconfig)** : any;<br>[静态]存档配置 系统根据该存档配置进行储存一些基础的信息                                                                                        |
 
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[newGame](#newgame)**(): void<br>[静态]新的游戏：新游戏会进入一个预设好的出生点场景，所有玩家变量和属性等都是初始值
-| **[getSaveInfo](#getsaveinfo)**()<br>[静态]获取全档案信息，返回全部存档列表信息
-| **[getSaveInfoByID](#getsaveinfobyid)**(id : number)<br>[静态]获取档案列表中指定的存档信息
-| **[saveGlobalData](#saveglobaldata)**(onFin : Callback): void<br>[静态]储存自定义全局信息，全局数据在任何新的游戏、存档都通用的数据（比如用于储存用户的按键设置或多周目数据）
-| **[deleteGlobalData](#deleteglobaldata)**(onFin? : Callback): void<br>[静态]删除全局自定义数据信息，同时也会删除二周目变量信息
-| **[saveGame](#savegame)**(index : number,  onFin : Callback,  indexInfo? : any): void<br>[静态]存档：支持事件执行中调用存档
-| **[loadGame](#loadgame)**(index : number,  onFin : Callback): void<br>[静态]读档 调用此函数会派发ClientScene.EVENT_IN_NEW_SCENE事件以便项目层实现进入相应的场景
-| **[delSaveFile](#delsavefile)**(index : number,  onFin : Callback): void<br>[静态]删除存档
-| **[getSceneObjectSwitch](#getsceneobjectswitch)**(sceneID : number,  soIndex : number): number[]<br>[静态]获取对象开关，一般用于更换场景后安装对象的开关，对象开关并不会随着切换场景而重置，并且也会存入至存档中
-| **[recoveryData](#recoverydata)**(): void<br>[静态]恢复存档数据，一般以读档形式进入场景后恢复数据，包含：
-| **[regSaveCustomData](#regsavecustomdata)**(dataName : string,  dataFunction : Callback): void<br>[静态]注册与存档绑定的自定义数据
-| **[regSaveCustomGlobalData](#regsavecustomglobaldata)**(globalDataName : string,  globalDataFunction : Callback): void<br>[静态]注册与游戏绑定的自定义数据（与存档无关，游戏启动即会自动加载的数据 GC-LifeData）
-| **[getSaveCustomData](#getsavecustomdata)**(dataName : string): any<br>[静态]获取当前存档的自定义数据，读档后才能够获取
-| **[getSaveCustomGlobalData](#getsavecustomglobaldata)**(globalDataName : string): any<br>[静态]读取自定义全局数据
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[newGame](#newgame)**(): void<br>[静态]新的游戏：新游戏会进入一个预设好的出生点场景，所有玩家变量和属性等都是初始值                                                                                            |
+| **[getSaveInfo](#getsaveinfo)**()<br>[静态]获取全档案信息，返回全部存档列表信息                                                                                                                                  |
+| **[getSaveInfoByID](#getsaveinfobyid)**(id : number)<br>[静态]获取档案列表中指定的存档信息                                                                                                                       |
+| **[saveGlobalData](#saveglobaldata)**(onFin : Callback): void<br>[静态]储存自定义全局信息，全局数据在任何新的游戏、存档都通用的数据（比如用于储存用户的按键设置或多周目数据）                                    |
+| **[deleteGlobalData](#deleteglobaldata)**(onFin? : Callback): void<br>[静态]删除全局自定义数据信息，同时也会删除二周目变量信息                                                                                   |
+| **[saveGame](#savegame)**(index : number,  onFin : Callback,  indexInfo? : any): void<br>[静态]存档：支持事件执行中调用存档                                                                                      |
+| **[loadGame](#loadgame)**(index : number,  onFin : Callback): void<br>[静态]读档 调用此函数会派发ClientScene.EVENT_IN_NEW_SCENE事件以便项目层实现进入相应的场景                                                  |
+| **[delSaveFile](#delsavefile)**(index : number,  onFin : Callback): void<br>[静态]删除存档                                                                                                                       |
+| **[getSceneObjectSwitch](#getsceneobjectswitch)**(sceneID : number,  soIndex : number): number[]<br>[静态]获取对象开关，一般用于更换场景后安装对象的开关，对象开关并不会随着切换场景而重置，并且也会存入至存档中 |
+| **[recoveryData](#recoverydata)**(): void<br>[静态]恢复存档数据，一般以读档形式进入场景后恢复数据，包含：                                                                                                        |
+| **[regSaveCustomData](#regsavecustomdata)**(dataName : string,  dataFunction : Callback): void<br>[静态]注册与存档绑定的自定义数据                                                                               |
+| **[regSaveCustomGlobalData](#regsavecustomglobaldata)**(globalDataName : string,  globalDataFunction : Callback): void<br>[静态]注册与游戏绑定的自定义数据（与存档无关，游戏启动即会自动加载的数据 GC-LifeData） |
+| **[getSaveCustomData](#getsavecustomdata)**(dataName : string): any<br>[静态]获取当前存档的自定义数据，读档后才能够获取                                                                                          |
+| **[getSaveCustomGlobalData](#getsavecustomglobaldata)**(globalDataName : string): any<br>[静态]读取自定义全局数据                                                                                                |
 
 ## 详情
 

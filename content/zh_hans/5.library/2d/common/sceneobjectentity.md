@@ -1,4 +1,6 @@
-# SceneObjectEntity 场景对象实体类
+---
+title:  SceneObjectEntity 场景对象实体类
+---
 >所有实际的场景对象实体都继承此类<br>拥有特性：<br>-- 对象开关（存档时系统会自动记录所有场景的对象开关，同时可以影响到出现条件）<br>-- 添加对象行为（详情参考:[SceneObjectBehaviors](/zh_hans/library/2d/common/sceneobjectbehaviors)）<br>-- 携带自定义事件：如RPG模板中可能拥有点击事件、碰触事件多种触发事件<br>-- 状态页：根据满足出现条件决定出现的哪一页状态<br>-- 场景对象模块：可安装多个模块，安装后拥有模块的特性<br><br>
 >维护人员：**黑暗之神KDS**  
 >创建时间：2020-02-22
@@ -6,53 +8,53 @@
 **继承**  →[SceneObject](/zh_hans/library/2d/common/sceneobject)<br>
 **子类**  无<br>
 ## **Public 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **[EVENT_BEFORE_CHANGE_STATUS_PAGE](#event_before_change_status_page)** : string;<br>[静态]事件：当切换状态页前，首次创建时不派发该事件。派发对象 SceneObjectEntity 一般用于全局监听所有场景对象的切换状态页事件  |
-| **[EVENT_BEFORE_CHANGE_STATUS_PAGE_FOR_INSTANCE](#event_before_change_status_page_for_instance)** : string;<br>[静态]事件：当切换状态页前，首次创建时不派发该事件。派发对象 [Object SceneObjectEntity] 一般用于对某个对象监听切换状态页事件  |
-| **[EVENT_CHANGE_STATUS_PAGE](#event_change_status_page)** : string;<br>[静态]事件：当切换状态页后，首次创建时不派发该事件。派发对象 SceneObjectEntity 一般用于全局监听所有场景对象的切换状态页事件  |
-| **[EVENT_CHANGE_STATUS_PAGE_FOR_INSTANCE](#event_change_status_page_for_instance)** : string;<br>[静态]事件：当切换状态页后，首次创建时不派发该事件。派发对象 [Object SceneObjectEntity] 一般用于对某个对象监听切换状态页事件  |
-| **[EVENT_ON_ADD_MODULE](#event_on_add_module)** : string;<br>[静态]事件：当附加模块时 派发对象=SceneObjectEntity  |
-| **[EVENT_ON_REMOVE_MODULE](#event_on_remove_module)** : string;<br>[静态]事件：当移除模块时 派发对象=SceneObjectEntity onRemoveModule(soe:SceneObjectEntity,soModule:SceneObjectModule)  |
-| **isDisposed** : boolean;<br>是否已释放  |
-| **isCopy** : boolean;<br>[只读]是否副本  |
-| **copyFrom** : <br>[只读]克隆的来源 sceneID=源场景编号 sceneObjectIndex=源对象编号  |
-| **inScene** : boolean;<br>是否在场景上 默认值=false  |
-| **currentStatusPageIndex** : number;<br>当前对应的状态页面索引 0~N  |
-| **triggerLines** : any;<br>事件触发线：全部触发器 { [triggerLineID: number]: CommandTrigger }  |
-| **triggerSingleLines** : any;<br>事件触发线：单线唯一 { [triggerLineID: string]: CommandTrigger }  |
-| **customCommandPages** : CommandPage[];<br>场景对象事件页 下标=indexType 0~n  |
-| **[moduleLength](#modulelength)** : number;<br>[只读]获取所有模块的数目  |
+| <div style="width:1000px;text-align:left">属性</div>                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[EVENT_BEFORE_CHANGE_STATUS_PAGE](#event_before_change_status_page)** : string;<br>[静态]事件：当切换状态页前，首次创建时不派发该事件。派发对象 SceneObjectEntity 一般用于全局监听所有场景对象的切换状态页事件                            |
+| **[EVENT_BEFORE_CHANGE_STATUS_PAGE_FOR_INSTANCE](#event_before_change_status_page_for_instance)** : string;<br>[静态]事件：当切换状态页前，首次创建时不派发该事件。派发对象 [Object SceneObjectEntity] 一般用于对某个对象监听切换状态页事件 |
+| **[EVENT_CHANGE_STATUS_PAGE](#event_change_status_page)** : string;<br>[静态]事件：当切换状态页后，首次创建时不派发该事件。派发对象 SceneObjectEntity 一般用于全局监听所有场景对象的切换状态页事件                                          |
+| **[EVENT_CHANGE_STATUS_PAGE_FOR_INSTANCE](#event_change_status_page_for_instance)** : string;<br>[静态]事件：当切换状态页后，首次创建时不派发该事件。派发对象 [Object SceneObjectEntity] 一般用于对某个对象监听切换状态页事件               |
+| **[EVENT_ON_ADD_MODULE](#event_on_add_module)** : string;<br>[静态]事件：当附加模块时 派发对象=SceneObjectEntity                                                                                                                            |
+| **[EVENT_ON_REMOVE_MODULE](#event_on_remove_module)** : string;<br>[静态]事件：当移除模块时 派发对象=SceneObjectEntity onRemoveModule(soe:SceneObjectEntity,soModule:SceneObjectModule)                                                     |
+| **isDisposed** : boolean;<br>是否已释放                                                                                                                                                                                                     |
+| **isCopy** : boolean;<br>[只读]是否副本                                                                                                                                                                                                     |
+| **copyFrom** : <br>[只读]克隆的来源 sceneID=源场景编号 sceneObjectIndex=源对象编号                                                                                                                                                          |
+| **inScene** : boolean;<br>是否在场景上 默认值=false                                                                                                                                                                                         |
+| **currentStatusPageIndex** : number;<br>当前对应的状态页面索引 0~N                                                                                                                                                                          |
+| **triggerLines** : any;<br>事件触发线：全部触发器 { [triggerLineID: number]: CommandTrigger }                                                                                                                                               |
+| **triggerSingleLines** : any;<br>事件触发线：单线唯一 { [triggerLineID: string]: CommandTrigger }                                                                                                                                           |
+| **customCommandPages** : CommandPage[];<br>场景对象事件页 下标=indexType 0~n                                                                                                                                                                |
+| **[moduleLength](#modulelength)** : number;<br>[只读]获取所有模块的数目                                                                                                                                                                     |
 ## **Protected 属性**
-|<div style="width:1000px;text-align:left">属性</div>   |
-| ---  |
-| **behaviors** : SceneObjectBehaviors[];<br>行为集，由多个行为组合而成  |
+| <div style="width:1000px;text-align:left">属性</div>                  |
+| --------------------------------------------------------------------- |
+| **behaviors** : SceneObjectBehaviors[];<br>行为集，由多个行为组合而成 |
 ## Public 方法
-|<div style="width:1000px;text-align:left" >方法</div>   |
-| ---  |
-| **[getSwitch](#getswitch)**(varID : number): number<br>获取对象的开关
-| **[setSwitch](#setswitch)**(varID : number,  value : number): void<br>设置对象的开关：存档时系统会自动记录全场景中所有对象的对象开关数据，同时可以影响到出现条件。
-| **[installSwitchs](#installswitchs)**(switchs : number[]): void<br>安装开关，一般用于读取数据后一次写入
-| **[getCustomAttrs](#getcustomattrs)**(): string[]<br>获取自定义属性名称集
-| **[addBehavior](#addbehavior)**(behaviorData : any[],  loop : boolean,  targetSceneObject : [SceneObject](/zh_hans/library/2d/common/sceneobject),  onOver : Callback,  cover : boolean,  startIndex? : number,  Immediate? : boolean,  forceStopLastBehavior? : boolean,  delayFrame? : number,  executor? : [SceneObjectEntity](/zh_hans/library/2d/common/sceneobjectentity)): [SceneObjectBehaviors](/zh_hans/library/2d/common/sceneobjectbehaviors)<br>添加一组行为
-| **[clearBehaviors](#clearbehaviors)**(): void<br>清理行为组，清理后对象不在拥有设定的任何行为
-| **[getCommandTrigger](#getcommandtrigger)**(mainType : number,  indexType : number,  scene : [Scene](/zh_hans/library/2d/common/scene),  executor : [SceneObjectEntity](/zh_hans/library/2d/common/sceneobjectentity)): [CommandTrigger](/zh_hans/library/2d/common/commandtrigger)<br>获取事件触发器:单线事件拿到的是唯一触发器，而多线事件则新生成触发器
-| **[addModule](#addmodule)**(soModule : SceneObjectModule,  sendEvent? : boolean): boolean<br>添加模块
-| **[addModuleAt](#addmoduleat)**(soModule : SceneObjectModule,  index : number,  sendEvent? : boolean): boolean<br>添加模块-到指定的位置上
-| **[addModuleByID](#addmodulebyid)**(moduleID : number,  sendEvent? : boolean): SceneObjectModule<br>添加模块-根据模块编号
-| **[addModuleByIDAt](#addmodulebyidat)**(moduleID : number,  index : number,  sendEvent? : boolean): SceneObjectModule<br>添加模块-到指定的位置上-根据模块的编号
-| **[removeAllModules](#removeallmodules)**(isDispose? : boolean,  sendEvent? : boolean): void<br>移除所有模块
-| **[removeModuleByID](#removemodulebyid)**(moduleID : number,  isDispose? : boolean,  sendEvent? : boolean): SceneObjectModule<br>移除指定编号的模块
-| **[removeModule](#removemodule)**(soModule : SceneObjectModule,  isDispose? : boolean,  sendEvent? : boolean): boolean<br>移除模块-根据其拥有的模块
-| **[removeModuleAt](#removemoduleat)**(index : number,  isDispose? : boolean,  sendEvent? : boolean): boolean<br>移除模块-根据指定的位置
-| **[setModuleIndex](#setmoduleindex)**(soModule : SceneObjectModule,  toIndex : number): boolean<br>设置已拥有的模块到指定位置
-| **[setModuleIndexByID](#setmoduleindexbyid)**(moduleID : number,  toIndex : number): boolean<br>设置已拥有的模块到指定位置-根据模块编号
-| **[setModuleIndexByIndex](#setmoduleindexbyindex)**(fromIndex : number,  toIndex : number): boolean<br>调整模块位置
-| **[getModule](#getmodule)**(moduleID : number): SceneObjectModule<br>获取已拥有的模块-根据模块编号
-| **[getModuleByName](#getmodulebyname)**(moduleName : string): SceneObjectModule<br>获取已拥有的模块-根据模块名称
-| **[getModuleAt](#getmoduleat)**(index : number): SceneObjectModule<br>获取已拥有的模块-根据模块位置
-| **[getModuleIndex](#getmoduleindex)**(soModule : SceneObjectModule): number<br>获取已拥有的模块的位置
-| **[getModuleIndexByID](#getmoduleindexbyid)**(moduleID : number): number<br>获取已拥有的模块位置-根据模块的编号
+| <div style="width:1000px;text-align:left" >方法</div>                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getSwitch](#getswitch)**(varID : number): number<br>获取对象的开关                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **[setSwitch](#setswitch)**(varID : number,  value : number): void<br>设置对象的开关：存档时系统会自动记录全场景中所有对象的对象开关数据，同时可以影响到出现条件。                                                                                                                                                                                                                                                                                                        |
+| **[installSwitchs](#installswitchs)**(switchs : number[]): void<br>安装开关，一般用于读取数据后一次写入                                                                                                                                                                                                                                                                                                                                                                   |
+| **[getCustomAttrs](#getcustomattrs)**(): string[]<br>获取自定义属性名称集                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **[addBehavior](#addbehavior)**(behaviorData : any[],  loop : boolean,  targetSceneObject : [SceneObject](/zh_hans/library/2d/common/sceneobject),  onOver : Callback,  cover : boolean,  startIndex? : number,  Immediate? : boolean,  forceStopLastBehavior? : boolean,  delayFrame? : number,  executor? : [SceneObjectEntity](/zh_hans/library/2d/common/sceneobjectentity)): [SceneObjectBehaviors](/zh_hans/library/2d/common/sceneobjectbehaviors)<br>添加一组行为 |
+| **[clearBehaviors](#clearbehaviors)**(): void<br>清理行为组，清理后对象不在拥有设定的任何行为                                                                                                                                                                                                                                                                                                                                                                             |
+| **[getCommandTrigger](#getcommandtrigger)**(mainType : number,  indexType : number,  scene : [Scene](/zh_hans/library/2d/common/scene),  executor : [SceneObjectEntity](/zh_hans/library/2d/common/sceneobjectentity)): [CommandTrigger](/zh_hans/library/2d/common/commandtrigger)<br>获取事件触发器:单线事件拿到的是唯一触发器，而多线事件则新生成触发器                                                                                                                |
+| **[addModule](#addmodule)**(soModule : SceneObjectModule,  sendEvent? : boolean): boolean<br>添加模块                                                                                                                                                                                                                                                                                                                                                                     |
+| **[addModuleAt](#addmoduleat)**(soModule : SceneObjectModule,  index : number,  sendEvent? : boolean): boolean<br>添加模块-到指定的位置上                                                                                                                                                                                                                                                                                                                                 |
+| **[addModuleByID](#addmodulebyid)**(moduleID : number,  sendEvent? : boolean): SceneObjectModule<br>添加模块-根据模块编号                                                                                                                                                                                                                                                                                                                                                 |
+| **[addModuleByIDAt](#addmodulebyidat)**(moduleID : number,  index : number,  sendEvent? : boolean): SceneObjectModule<br>添加模块-到指定的位置上-根据模块的编号                                                                                                                                                                                                                                                                                                           |
+| **[removeAllModules](#removeallmodules)**(isDispose? : boolean,  sendEvent? : boolean): void<br>移除所有模块                                                                                                                                                                                                                                                                                                                                                              |
+| **[removeModuleByID](#removemodulebyid)**(moduleID : number,  isDispose? : boolean,  sendEvent? : boolean): SceneObjectModule<br>移除指定编号的模块                                                                                                                                                                                                                                                                                                                       |
+| **[removeModule](#removemodule)**(soModule : SceneObjectModule,  isDispose? : boolean,  sendEvent? : boolean): boolean<br>移除模块-根据其拥有的模块                                                                                                                                                                                                                                                                                                                       |
+| **[removeModuleAt](#removemoduleat)**(index : number,  isDispose? : boolean,  sendEvent? : boolean): boolean<br>移除模块-根据指定的位置                                                                                                                                                                                                                                                                                                                                   |
+| **[setModuleIndex](#setmoduleindex)**(soModule : SceneObjectModule,  toIndex : number): boolean<br>设置已拥有的模块到指定位置                                                                                                                                                                                                                                                                                                                                             |
+| **[setModuleIndexByID](#setmoduleindexbyid)**(moduleID : number,  toIndex : number): boolean<br>设置已拥有的模块到指定位置-根据模块编号                                                                                                                                                                                                                                                                                                                                   |
+| **[setModuleIndexByIndex](#setmoduleindexbyindex)**(fromIndex : number,  toIndex : number): boolean<br>调整模块位置                                                                                                                                                                                                                                                                                                                                                       |
+| **[getModule](#getmodule)**(moduleID : number): SceneObjectModule<br>获取已拥有的模块-根据模块编号                                                                                                                                                                                                                                                                                                                                                                        |
+| **[getModuleByName](#getmodulebyname)**(moduleName : string): SceneObjectModule<br>获取已拥有的模块-根据模块名称                                                                                                                                                                                                                                                                                                                                                          |
+| **[getModuleAt](#getmoduleat)**(index : number): SceneObjectModule<br>获取已拥有的模块-根据模块位置                                                                                                                                                                                                                                                                                                                                                                       |
+| **[getModuleIndex](#getmoduleindex)**(soModule : SceneObjectModule): number<br>获取已拥有的模块的位置                                                                                                                                                                                                                                                                                                                                                                     |
+| **[getModuleIndexByID](#getmoduleindexbyid)**(moduleID : number): number<br>获取已拥有的模块位置-根据模块的编号                                                                                                                                                                                                                                                                                                                                                           |
 
 ## 详情
 
