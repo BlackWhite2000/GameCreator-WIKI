@@ -25,16 +25,16 @@ if (!data.value || !data.value.page) {
 const page = computed(() => data.value?.page)
 const surround = computed(() => data.value?.surround)
 
-// useSeoMeta({
-//   title: page.value.seo.title,
-//   ogTitle: `${page.value.seo.title} - ${seo?.siteName}`,
-//   description: page.value.seo.description,
-//   ogDescription: page.value.seo.description
-// })
+useSeoMeta({
+  title: page.value?.seo.title,
+  ogTitle: `${page.value?.seo.title} - ${seo?.siteName}`,
+  description: page.value?.seo.description,
+  ogDescription: page.value?.seo.description
+})
 
 // defineOgImageComponent('Docs')
 
-const headline = computed(() => findPageHeadline(navigation.value, page.value))
+const headline = computed(() => findPageHeadline(navigation?.value, page.value))
 
 const links = computed(() => [toc?.bottom?.edit && {
   icon: 'i-lucide-external-link',

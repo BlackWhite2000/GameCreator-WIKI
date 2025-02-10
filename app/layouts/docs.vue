@@ -9,7 +9,7 @@ const filteredChildren = ref([])
 const updateNavigation = () => {
   if (!navigation.value) return
 
-  filteredChildren.value = sortTree(navigation.value[0].children.filter(child => route.path.includes(child.path))[0]?.children) || []
+  filteredChildren.value = sortTree(navigation.value[0]?.children?.filter(child => route.path.includes(child?.path))[0]?.children) || []
 }
 
 /**
@@ -23,7 +23,7 @@ watch(() => route.path, () => {
  * 递归排序函数
  */
 function sortTree(nodes) {
-  return nodes.map(node => {
+  return nodes?.map(node => {
     if (node.children) {
       node.children = sortTree(node.children)
     }
