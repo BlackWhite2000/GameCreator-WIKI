@@ -23,6 +23,6 @@ OpenAPI 其实是内置了多种方便开发使用的方法
 - [操作系统工具 OsUtils](641/api/osutils)
 - [路径工具 PathUtils](641/api/pathutils)
 - [运行时工具 RunUtils](641/api/runutils)
-- [通用悬浮框 ShowTips](641/api/showTips)
+- [通用悬浮框 ShowTips](641/api/showtips)
 - [字符串操作工具 StringUtils](641/api/stringutils)
 - [插件系统API System](641/api/system)
