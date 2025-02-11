@@ -28,11 +28,16 @@ jobs:
       - name: Compress build output
         run: tar -czf build-output.tar.gz .output/
 
+      - name: Create a temporary folder and move the compressed file
+        run: |
+          mkdir temp-folder
+          mv build-output.tar.gz temp-folder/
+
       - name: Deploy compressed file via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build-output.tar.gz
+          local-dir: ./temp-folder/
           server-dir: "/"
