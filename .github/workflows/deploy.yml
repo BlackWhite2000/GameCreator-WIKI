@@ -1,4 +1,4 @@
-name: build and deploy
+name: build
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
       - name: Compress build output
         run: tar -czf build-output.tar.gz .output/
 
-      - name: Deploy via FTP (with clean and compressed file)
+      - name: Deploy compressed file via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -36,4 +36,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build-output.tar.gz
           server-dir: "/"
-          clean: true
