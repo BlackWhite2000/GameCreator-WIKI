@@ -28,16 +28,21 @@ jobs:
       - name: Compress build output
         run: tar -czf build-output.tar.gz .output/
 
-      - name: Create a temporary folder and move the compressed file
-        run: |
-          mkdir temp-folder
-          mv build-output.tar.gz temp-folder/
-
-      - name: Deploy compressed file via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Setup SSH connection with private key
+        uses: appleboy/ssh-action@v0.1.0
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./temp-folder/
-          server-dir: "/"
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+
+      - name: Upload compressed file via SCP
+        run: |
+          scp -i ${{ secrets.SSH_PRIVATE_KEY }} build-output.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}
+
+      - name: Extract the uploaded file via SSH
+        run: |
+          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "tar -xzvf ${{ secrets.REMOTE_PATH }}/build-output.tar.gz -C ${{ secrets.REMOTE_PATH }}"
+
+      - name: Clean up local files
+        run: rm build-output.tar.gz
