@@ -1,4 +1,4 @@
-name: build
+name: build and deploy
 
 on:
   push:
@@ -25,11 +25,15 @@ jobs:
         env:
           NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
 
-      - name: Deploy via FTP
+      - name: Compress build output
+        run: tar -czf build-output.tar.gz .output/
+
+      - name: Deploy via FTP (with clean and compressed file)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: .output/
+          local-dir: ./build-output.tar.gz
           server-dir: "/"
+          clean: true
