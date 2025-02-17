@@ -9,4 +9,4 @@ navigation:
 
 可以在游戏中调整所有音量的大小。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/system/setvolumes/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/setvolumes/image.png)

@@ -9,6 +9,6 @@ navigation:
 
 在指定位置对标签进行命名，之后需配合指令 [标签跳转](./jumptolabel)。完整的执行
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/label/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/label/image.png)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/label/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/label/image-1.png)

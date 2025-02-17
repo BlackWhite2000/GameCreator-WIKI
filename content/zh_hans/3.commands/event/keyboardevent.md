@@ -11,15 +11,15 @@ navigation:
 
 如图示中就是设置了 `按键R` `按下时` 触发事件
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image.png)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image-1.png)
 
 ## 按键模式
 
 支持绑定单按键以及多按键，根据实际情况进行选择即可。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image-2.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image-2.png)
 
 ## 生命周期
 
@@ -41,4 +41,4 @@ navigation:
 
 之后可以配合指令 [取消按键事件](./cancelkeyboardevent) 将该按键事件移除
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image-3.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/event/keyboardevent/image-3.png)

@@ -9,8 +9,8 @@ navigation:
 
 指定CG图片集即可解锁。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/gaincg/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/gaincg/image.png)
 
 CG图片基于数据库中的CG鉴赏。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/gaincg/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/gaincg/image-1.png)

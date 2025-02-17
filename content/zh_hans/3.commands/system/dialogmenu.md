@@ -11,8 +11,8 @@ navigation:
 
 ### 开启状态下，按钮显示
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/system/dialogmenu/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/dialogmenu/image.png)
 
 ### 关闭状态下按钮隐藏
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/system/dialogmenu/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/dialogmenu/image-1.png)

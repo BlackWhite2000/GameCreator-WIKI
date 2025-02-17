@@ -11,4 +11,4 @@ navigation:
 
 例: 生成敌人等级为 `1` 的 `1001-史莱姆`，生成出来时使用动画 `38-复活术`
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/battle/generateenemies/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/battle/generateenemies/image.png)

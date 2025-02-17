@@ -11,6 +11,6 @@ navigation:
 
 尽管指令叫显示雾，但是实际功能可以做其他不一样的效果。具体效果视素材而决定
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/fogsetting/1.gif)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/scene/fogsetting/1.gif)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/fogsetting/2.gif)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/scene/fogsetting/2.gif)

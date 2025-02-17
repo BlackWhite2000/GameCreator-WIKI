@@ -13,16 +13,16 @@ navigation:
 
 但是自动焦点模式对于拥有多层关系的组件是无效的，对于那种情况可以选择追加按钮。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-2.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-2.png)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-3.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-3.png)
 
 鼠标悬停后的高亮就是选择的焦点效果。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-4.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-4.png)
 
 ## 追加按钮
 
 填写上组件名称，即可手动设置焦点效果
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-5.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/setbuttonfocus/image-5.png)

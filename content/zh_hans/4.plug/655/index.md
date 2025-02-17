@@ -20,11 +20,11 @@ title: 使用方式
 
 > 带有颜色的标识符，换行了，那程序就无法判断这个标识符了。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image.png)
 
 > 带有颜色的标识符没有换行，所以悬浮框正常显示
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-1.png)
 
 > 不兼容部分材质效果。
 
@@ -32,7 +32,7 @@ title: 使用方式
 
 因为这个材质会把文本拆分出来，因此请将材质删掉。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-2.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-2.png)
 
 ## 使用方法
 
@@ -44,7 +44,7 @@ title: 使用方式
 
 同时还提供了两种事件页，方便写一些过渡之类的事件。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-3.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-3.png)
 
 ### 第二步：设定模块数据
 
@@ -52,7 +52,7 @@ title: 使用方式
 
 需要注意 `标识符` 以及 `标识色`，需要对应显示对话的文本内容以及文本颜色。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-4.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-4.png)
 
 ### 第三步：创建界面组件
 
@@ -64,13 +64,13 @@ title: 使用方式
 
 `dialogText` 数据来源基于 `对话悬浮框` 模块中的 `文本`。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-5.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-5.png)
 
 ### 最终：显示对话的内容
 
 基于以上的步骤，那么这句话的 `鼠标悬停到这句话` 将会拥有悬浮框的效果。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-6.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-6.png)
 
 ## 更多配置细节
 
@@ -80,15 +80,15 @@ title: 使用方式
 
 开启模块中的 `更多数据拓展` 即可自行创建需要的图片、文本。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-7.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-7.png)
 
 之后需要在悬浮框界面中创建名为 `dialogImage_0`、`dialogText_0` 的组件。
 
 0 是编号，对应列表中前面的数字
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-8.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-8.png)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-9.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-9.png)
 
 ## 文本调用变量
 
@@ -101,19 +101,19 @@ title: 使用方式
 [$s4] = 二周目字符串变量编号4
 ```
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-10.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-10.png)
 
 ## 对话框最前方才显示悬浮框
 
 在 `世界设定` 开启 `对话框最前方才显示悬浮框` 后，只有对话框在界面最前方时，才会显示悬浮框。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-13.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-13.png)
 
 考虑到个别情况可能对话框不一定在最前方，如对话菜单在最前方情况。
 
 因此可以设置白名单，指定的界面最前方显示时，悬浮框依然显示。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-14.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-14.png)
 
 ## 拓展组件的数量
 
@@ -121,7 +121,7 @@ title: 使用方式
 
 如果使用的拓展组件有明确的数量，可以在这里修改。输入的数量越精确，对程序的优化越好。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-11.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-11.png)
 
 ## 当对话文本播放完毕时、播放时
 
@@ -129,4 +129,4 @@ title: 使用方式
 
 你也可以修改成在播放过程中就可以显示，不过我个人推荐播放完毕时。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-12.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/plug/gamedialogcolorshowui/index/image-12.png)

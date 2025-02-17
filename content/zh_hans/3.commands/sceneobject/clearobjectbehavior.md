@@ -9,4 +9,4 @@ navigation:
 
 直接使用即可，使用后指定的场景对象将立即停止当前执行的对象行为。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/clearobjectbehavior/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/clearobjectbehavior/image.png)

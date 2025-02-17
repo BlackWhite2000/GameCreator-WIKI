@@ -17,10 +17,10 @@ navigation:
 
 二周目数值设值的用法基本与 [数值变量设值](/zh_hans/commands/gameprogress/numbervariables) 一致，因此具体用法请查阅数值变量设值
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/ngnumbervariables/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/ngnumbervariables/image.png)
 
 ## 存储
 
 为了确保二周目变量能全局生效，使用后需执行一次 [存档#全局数据](../system/save#全局数据)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/ngnumbervariables/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/ngnumbervariables/image-1.png)

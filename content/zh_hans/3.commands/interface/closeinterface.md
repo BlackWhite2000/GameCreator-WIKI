@@ -11,4 +11,4 @@ navigation:
 
 在游戏中绝大部分的关闭界面都是通过此指令实现的。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/closeinterface/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/closeinterface/image.png)

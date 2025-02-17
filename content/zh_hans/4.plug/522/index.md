@@ -6,21 +6,21 @@ title: 使用方式
 
 找到 数据库->谜题 然后创建即可
 
-![](https://cdn.gcw.wiki/docs/202312241944564.png)
+![](https://assbak.gcw.wiki/docs/202312241944564.png)
 
 ## 创建关卡
 
 找到 数据库->世界设定->谜题设置
 
-![](https://cdn.gcw.wiki/docs/202312241945185.png)
+![](https://assbak.gcw.wiki/docs/202312241945185.png)
 
 ## 数值集合模式
 
 勾选数值集合模式后，将会在绑定的变量里输出设定的线索数值总和。
 
-![](https://cdn.gcw.wiki/docs/202312241945699.png)
+![](https://assbak.gcw.wiki/docs/202312241945699.png)
 
-![](https://cdn.gcw.wiki/docs/202312241945544.png)
+![](https://assbak.gcw.wiki/docs/202312241945544.png)
 
 ## 常规模式（原指定线索）
 
@@ -28,13 +28,13 @@ title: 使用方式
 
 关卡线索集合中的 1,2,3,4 表示选择 谜题模块中编号为 1、2、3、4 的线索
 
-![](https://cdn.gcw.wiki/docs/202312241945306.png)
+![](https://assbak.gcw.wiki/docs/202312241945306.png)
 
 以 , 为分割符(英文的逗号)
 
-![](https://cdn.gcw.wiki/docs/202312241945759.png)
+![](https://assbak.gcw.wiki/docs/202312241945759.png)
 
-![](https://cdn.gcw.wiki/docs/202312241946647.png)
+![](https://assbak.gcw.wiki/docs/202312241946647.png)
 
 ### 正确答案以及输出变量
 
@@ -42,7 +42,7 @@ title: 使用方式
 
 如果正确则设置指定的数值变量为 1 ，如果错误则 0
 
-![](https://cdn.gcw.wiki/docs/202312241946238.png)
+![](https://assbak.gcw.wiki/docs/202312241946238.png)
 
 ## 多答案模式
 
@@ -54,7 +54,7 @@ title: 使用方式
 
 如果全部回答错误则输出 0
 
-![](https://cdn.gcw.wiki/docs/202312241946898.png)
+![](https://assbak.gcw.wiki/docs/202312241946898.png)
 
 ## 顺序模式
 
@@ -62,21 +62,21 @@ title: 使用方式
 
 也就是如果正确答案是1,3,2。那么必须按照1,3,2顺序来放置线索。
 
-![](https://cdn.gcw.wiki/docs/202312241946414.png)
+![](https://assbak.gcw.wiki/docs/202312241946414.png)
 
 ## 当前关卡索引来判断使用的谜题
 
 通过填写当前关卡索引来确定指定的线索集合
 
-![](https://cdn.gcw.wiki/docs/202312241946480.png)
+![](https://assbak.gcw.wiki/docs/202312241946480.png)
 
 ## 支持通过指令变更当前关卡索引
 
 新增了 更改当前关卡索引 指令，可以通过此指令来更改索引
 
-![](https://cdn.gcw.wiki/docs/202312241946109.png)
+![](https://assbak.gcw.wiki/docs/202312241946109.png)
 
-![](https://cdn.gcw.wiki/docs/202312241946068.png)
+![](https://assbak.gcw.wiki/docs/202312241946068.png)
 
 ## 谜题界面创建线索
 
@@ -88,7 +88,7 @@ title: 使用方式
 
 注2：不要去修改dec容器的坐标，确保x，y是0
 
-![](https://cdn.gcw.wiki/docs/202312241947012.png)
+![](https://assbak.gcw.wiki/docs/202312241947012.png)
 
 ### 开始
 
@@ -96,7 +96,7 @@ title: 使用方式
 
 在 解谜界面 中，找到 dec 容器下的按钮组件，也可以自行创建按钮组件
 
-![](https://cdn.gcw.wiki/docs/202312241947281.png)
+![](https://assbak.gcw.wiki/docs/202312241947281.png)
 
 如果你有10个的线索，则自行在里面创建10个按钮组件即可。
 
@@ -106,11 +106,11 @@ title: 使用方式
 
 编号是 1 则创建 线索1
 
-![](https://cdn.gcw.wiki/docs/202312241947755.png)
+![](https://assbak.gcw.wiki/docs/202312241947755.png)
 
 除了对命名有要求外，其他都没有要求，可自行修改位置、尺寸、样式
 
-![](https://cdn.gcw.wiki/docs/202312241947451.png)
+![](https://assbak.gcw.wiki/docs/202312241947451.png)
 
 ## 创建更多的答案
 
@@ -120,7 +120,7 @@ title: 使用方式
 
 如：
 
-![](https://cdn.gcw.wiki/docs/202312241947265.png)
+![](https://assbak.gcw.wiki/docs/202312241947265.png)
 
 ## 解谜详细内容界面
 
@@ -134,21 +134,21 @@ v3.0 以上版本的新功能
 
 指定好线索类型后，在世界设定中开启并定义类型即可
 
-![](https://cdn.gcw.wiki/docs/202312241949080.png)
+![](https://assbak.gcw.wiki/docs/202312241949080.png)
 
-![](https://cdn.gcw.wiki/docs/202312241950667.png)
+![](https://assbak.gcw.wiki/docs/202312241950667.png)
 
 启用线索类型后，解谜详细内容界面的标签组件将会线索，用于分类线索
 
-![](https://cdn.gcw.wiki/docs/202312241951448.png)
+![](https://assbak.gcw.wiki/docs/202312241951448.png)
 
 ## 玩家获取线索
 
 新增了指令 获得解谜线索 ，编号对应 数据库->谜题 里面的编号
 
-![](https://cdn.gcw.wiki/docs/202312241931112.png)
+![](https://assbak.gcw.wiki/docs/202312241931112.png)
 
-![](https://cdn.gcw.wiki/docs/202312241931397.png)
+![](https://assbak.gcw.wiki/docs/202312241931397.png)
 
 ## 拖拽时底色的变更
 
@@ -156,11 +156,11 @@ v3.0 以上版本的新功能
 
 此按钮组件的样式、坐标、大小可随意修改，但是名称不可更改
 
-![](https://cdn.gcw.wiki/docs/202312241932585.png)
+![](https://assbak.gcw.wiki/docs/202312241932585.png)
 
-![](https://cdn.gcw.wiki/docs/202312241932637.png)
+![](https://assbak.gcw.wiki/docs/202312241932637.png)
 
-![](https://cdn.gcw.wiki/docs/202312241932787.png)
+![](https://assbak.gcw.wiki/docs/202312241932787.png)
 
 ## 放置后底色的变更
 
@@ -168,19 +168,19 @@ v3.0 以上版本的新功能
 
 此按钮组件的样式、坐标、大小可随意修改，但是名称不可更改
 
-![](https://cdn.gcw.wiki/docs/202312241935633.png)
+![](https://assbak.gcw.wiki/docs/202312241935633.png)
 
-![](https://cdn.gcw.wiki/docs/202312241935472.png)
+![](https://assbak.gcw.wiki/docs/202312241935472.png)
 
-![](https://cdn.gcw.wiki/docs/202312241935330.png)
+![](https://assbak.gcw.wiki/docs/202312241935330.png)
 
 ## 提交按钮
 
 通过在世界设定里面设置触发结果事件，之后点击 button 按钮即可触发
 
-![](https://cdn.gcw.wiki/docs/202404212122304.png)
+![](https://assbak.gcw.wiki/docs/202404212122304.png)
 
-![](https://cdn.gcw.wiki/docs/202404212122633.png)
+![](https://assbak.gcw.wiki/docs/202404212122633.png)
 
 ## 显示界面
 

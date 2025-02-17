@@ -34,7 +34,7 @@ GameCreator 文档库
   使用GameCreator
   :::
   :::div{class="mt-16"}
-    ![](https://cdn.gcw.wiki/gcw/image/zh_hans/getting-started/2.aboutgc/100.png)
+    ![](https://assbak.gcw.wiki/gcw/image/zh_hans/getting-started/2.aboutgc/100.png)
   :::
 ::
 

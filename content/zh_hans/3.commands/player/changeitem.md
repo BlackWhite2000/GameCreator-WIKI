@@ -9,4 +9,4 @@ navigation:
 
 操作很简单，设置是否增加或减少，以及指定道具以及道具的数目即可。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/player/changeitem/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/player/changeitem/image.png)

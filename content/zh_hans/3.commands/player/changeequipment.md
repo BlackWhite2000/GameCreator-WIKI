@@ -9,10 +9,10 @@ navigation:
 
 操作很简单，设置是否增加或减少，以及指定装备跟装备的数目即可。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/player/changeequipment/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/player/changeequipment/image.png)
 
 ## 属性浮动
 
 开启属性浮动可以控制该装备属性的随机性，有效使用此设置可以提升玩家的体验。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/player/changeequipment/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/player/changeequipment/image-1.png)

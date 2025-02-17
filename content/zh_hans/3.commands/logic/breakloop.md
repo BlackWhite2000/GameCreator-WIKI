@@ -9,4 +9,4 @@ navigation:
 
 使用中断循环时，请确保写在循环事件内。一般中断循环都需要配合指令 [条件分歧](./conditionalbranch) 来进行判断执行。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/breakloop/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/breakloop/image.png)

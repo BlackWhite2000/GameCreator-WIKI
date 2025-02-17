@@ -7,4 +7,4 @@ navigation:
 
 ## 界面展示
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/clientscript/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/clientscript/image.png)

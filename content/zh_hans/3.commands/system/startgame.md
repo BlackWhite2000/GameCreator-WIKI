@@ -11,4 +11,4 @@ navigation:
 
 如标题界面中，开始游戏按钮就是通过此指令实现的。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/system/startgame/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/startgame/image.png)

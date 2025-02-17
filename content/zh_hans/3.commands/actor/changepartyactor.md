@@ -9,11 +9,11 @@ navigation:
 
 指定角色即可加入玩家的队伍
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/changepartyactor/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/actor/changepartyactor/image.png)
 
 类似 数据库->玩家设定->队伍 的设置。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/changepartyactor/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/actor/changepartyactor/image-1.png)
 
 ## 战斗中立刻生效
 
@@ -25,4 +25,4 @@ navigation:
 
 指定角色，即可让角色离开玩家队伍。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/changepartyactor/image-2.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/actor/changepartyactor/image-2.png)

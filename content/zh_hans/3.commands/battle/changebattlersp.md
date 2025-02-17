@@ -11,4 +11,4 @@ navigation:
 
 例: 增加 `敌方队伍编号 1` 的角色魔法值 `200`
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/battle/changebattlersp/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/battle/changebattlersp/image.png)

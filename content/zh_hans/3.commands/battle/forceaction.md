@@ -11,4 +11,4 @@ navigation:
 
 例: 强制角色 `伊斯特` 攻击，攻击目标为 `上一个目标`。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/battle/forceaction/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/battle/forceaction/image.png)

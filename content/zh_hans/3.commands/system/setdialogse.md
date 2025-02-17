@@ -11,6 +11,6 @@ navigation:
 
 如果想关闭可以使用此指令，当然开启也可以使用此指令。默认是开启的。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/system/setdialogse/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/setdialogse/image.png)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/system/setdialogse/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/setdialogse/image-1.png)

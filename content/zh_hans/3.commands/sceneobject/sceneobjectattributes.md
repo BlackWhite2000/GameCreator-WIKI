@@ -13,12 +13,12 @@ navigation:
 
 指定对象 `0-玩家的场景对象`
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/sceneobjectattributes/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/sceneobjectattributes/image.png)
 
 选择 `穿透` 设置为 `开启`
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-1.png)
 
 最终场景对象将会拥有穿透效果
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-2.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/sceneobjectattributes/image-2.png)

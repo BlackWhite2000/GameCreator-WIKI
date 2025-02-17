@@ -11,7 +11,7 @@ navigation:
 
 如下图，就是设置了多个移动行为的指令
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/stopmoving/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/stopmoving/image.png)
 
 如果你是希望消除多个行为，更推荐使用 [清除对象行为](./clearobjectbehavior)
 

@@ -15,4 +15,4 @@ navigation:
 
 通过指定场景对象，然后选择增加或移除指定的模块即可。
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/changeobjectmodule/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/changeobjectmodule/image.png)

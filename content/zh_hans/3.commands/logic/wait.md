@@ -15,14 +15,14 @@ navigation:
 
 即游戏的时间帧
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image.png)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image-1.png)
 
 ## 毫秒
 
 即时间单位毫秒
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image-2.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image-2.png)
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image-3.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/logic/wait/image-3.png)

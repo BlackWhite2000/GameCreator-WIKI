@@ -21,7 +21,7 @@ navigation:
 
 最后的值便是希望修改为多少，这里填写 `50`
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/modifyobjectmodule/image.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/modifyobjectmodule/image.png)
 
 ## 如何获取属性名？
 
@@ -31,4 +31,4 @@ navigation:
 
 会弹出一个tips。弹出的便是属性变量名
 
-![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/modifyobjectmodule/image-1.png)
+![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/modifyobjectmodule/image-1.png)
