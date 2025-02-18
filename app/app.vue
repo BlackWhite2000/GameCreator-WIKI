@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { zh_cn } from '@nuxt/ui/locale'
+import { Analytics } from '@vercel/analytics/nuxt'
 
 // const route = useRoute()
 const { seo } = useAppConfig()
@@ -23,10 +24,10 @@ useHead({
 
 useSeoMeta({
   titleTemplate: `%s - ${seo?.siteName}`,
-  ogSiteName: seo?.siteName
-  // ogImage: 'https://docs-template.nuxt.dev/social-card.png',
-  // twitterImage: 'https://docs-template.nuxt.dev/social-card.png',
-  // twitterCard: 'summary_large_image'
+  ogSiteName: seo?.siteName,
+  ogImage: 'https://assbak.gcw.wiki/gcw/social-card.png',
+  twitterImage: 'https://assbak.gcw.wiki/gcw/social-card.png',
+  twitterCard: 'summary_large_image'
 })
 
 provide('navigation', navigation)
@@ -35,6 +36,7 @@ provide('navigation', navigation)
 <template>
   <UApp :locale="zh_cn">
     <NuxtLoadingIndicator />
+    <Analytics />
 
     <AppHeader />
 

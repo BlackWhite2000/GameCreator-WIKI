@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui-pro',
+    '@nuxtjs/robots',
+    'nuxt-og-image',
+    '@nuxtjs/sitemap',
+    'nuxt-schema-org',
     '@nuxt/content'
   ],
 
@@ -11,6 +15,11 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  site: {
+    url: 'https://www.gcw.wiki',
+    name: 'GameCreator WIKI'
+  },
 
   future: {
     compatibilityVersion: 4

@@ -1,4 +1,8 @@
 import { defineContentConfig, defineCollection, z } from '@nuxt/content'
+import { asSitemapCollection } from '@nuxtjs/sitemap/content'
+import { asSchemaOrgCollection } from 'nuxt-schema-org/content'
+import { asRobotsCollection } from '@nuxtjs/robots/content'
+import { asOgImageCollection } from 'nuxt-og-image/content'
 
 const commonSchema = z.object({})
 
@@ -23,13 +27,21 @@ export default defineContentConfig({
         })).optional()
       })
     }),
-    zh_hans: defineCollection({
-      type: 'page',
-      source: {
-        include: 'zh_hans/**',
-        prefix: '/zh_hans'
-      },
-      schema: commonSchema
-    })
+    zh_hans: defineCollection(
+      asSitemapCollection(
+        asSchemaOrgCollection(
+          asRobotsCollection(
+            asOgImageCollection({
+              type: 'page',
+              source: {
+                include: 'zh_hans/**',
+                prefix: '/zh_hans'
+              },
+              schema: commonSchema
+            })
+          )
+        )
+      )
+    )
   }
 })
