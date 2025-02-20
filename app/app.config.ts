@@ -19,7 +19,7 @@ export default defineAppConfig({
     }
   },
   seo: {
-    siteName: 'GameCreator WIKI - 记录零基础游戏制作教程，轻松实现你的游戏创作梦'
+    siteName: 'GC学习文档 - 记录零基础游戏制作教程，轻松实现你的游戏创作梦'
   },
   header: {
     title: '',
@@ -32,18 +32,18 @@ export default defineAppConfig({
     search: true,
     colorMode: true,
     links: [
-      {
-        'icon': 'i-ant-design-home-filled',
-        'to': 'https://www.gamecreator.com.cn',
-        'target': '_blank',
-        'aria-label': 'GameCreator'
-      },
-      {
-        'icon': 'i-simple-icons-github',
-        'to': 'https://github.com/BlackWhite2000/GameCreator-WIKI',
-        'target': '_blank',
-        'aria-label': 'GitHub'
-      }
+      //   {
+      //     'icon': 'i-ant-design-home-filled',
+      //     'to': 'https://www.gamecreator.com.cn',
+      //     'target': '_blank',
+      //     'aria-label': 'GameCreator'
+      //   },
+      //   {
+      //     'icon': 'i-simple-icons-github',
+      //     'to': 'https://github.com/BlackWhite2000/GameCreator-WIKI',
+      //     'target': '_blank',
+      //     'aria-label': 'GitHub'
+      //   }
     ]
   },
   footer: {
@@ -74,21 +74,21 @@ export default defineAppConfig({
     ]
   },
   toc: {
-    title: '目录',
-    bottom: {
-      title: '文档',
-      edit: 'https://github.com/BlackWhite2000/GameCreator-WIKI/edit/master/content',
-      links: [{
-        icon: 'i-lucide-star',
-        label: '访问仓库',
-        to: 'https://github.com/BlackWhite2000/GameCreator-WIKI',
-        target: '_blank'
-      }, {
-        icon: 'i-ant-design-home-filled',
-        label: 'GameCreator',
-        to: 'https://www.gamecreator.com.cn',
-        target: '_blank'
-      }]
-    }
+    // title: '目录',
+    // bottom: {
+    //   title: '文档',
+    //   edit: 'https://github.com/BlackWhite2000/GameCreator-WIKI/edit/master/content',
+    //   links: [{
+    //     icon: 'i-lucide-star',
+    //     label: '访问仓库',
+    //     to: 'https://github.com/BlackWhite2000/GameCreator-WIKI',
+    //     target: '_blank'
+    //   }, {
+    //     icon: 'i-ant-design-home-filled',
+    //     label: 'GameCreator',
+    //     to: 'https://www.gamecreator.com.cn',
+    //     target: '_blank'
+    //   }]
+    // }
   }
 })

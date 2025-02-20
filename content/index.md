@@ -22,17 +22,6 @@ GameCreator 文档库
   查阅文档
   :::
 
-  :::u-button
-  ---
-  color: neutral
-  icon: i-heroicons-arrow-top-right-on-square-20-solid
-  size: xl
-  target: _blank
-  to: https://www.gamecreator.com.cn/soft
-  variant: subtle
-  ---
-  使用GameCreator
-  :::
   :::div{class="mt-16"}
     ![](https://assbak.gcw.wiki/gcw/image/zh_hans/getting-started/2.aboutgc/100.png)
   :::
