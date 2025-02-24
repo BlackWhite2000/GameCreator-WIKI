@@ -13,6 +13,6 @@ navigation:
 
 如下图，原本色调变更的红是0，通过更改材质变更为了-0.8。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/effect/changematerial/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/effect/changematerial/image.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/effect/changematerial/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/effect/changematerial/image-1.png)

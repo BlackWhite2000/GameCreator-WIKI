@@ -11,4 +11,4 @@ navigation:
 
 以实现在游戏中动态展示不同的图层效果。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/scene/setlayerattributes/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/setlayerattributes/image.png)

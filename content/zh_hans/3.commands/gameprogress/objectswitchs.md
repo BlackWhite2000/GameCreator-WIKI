@@ -32,13 +32,13 @@ navigation:
 
 场景对象开关的编号A、B、C，类似其他变量的编号ID。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/objectswitchs/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/objectswitchs/image.png)
 
 设置指定场景对象编号A的开关状态，之后就可以借助如 [条件分歧](../logic/conditionalbranch) 来判断。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/objectswitchs/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/objectswitchs/image-1.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/objectswitchs/image-2.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/objectswitchs/image-2.png)
 
 其他用法
 

@@ -13,4 +13,4 @@ navigation:
 
 因此使用此指令之前，需要确保界面在游戏后续进程中已经不需要再次显示
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/uninstallinterface/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/uninstallinterface/image.png)

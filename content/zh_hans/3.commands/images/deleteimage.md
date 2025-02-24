@@ -9,4 +9,4 @@ navigation:
 
 填写对应编号，即可将对应编号的图像给删除掉。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/images/deleteimage/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/deleteimage/image.png)

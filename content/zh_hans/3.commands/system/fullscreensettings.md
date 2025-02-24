@@ -9,4 +9,4 @@ navigation:
 
 勾选后触发，即可让游戏窗口变为全屏。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/fullscreensettings/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/system/fullscreensettings/image.png)

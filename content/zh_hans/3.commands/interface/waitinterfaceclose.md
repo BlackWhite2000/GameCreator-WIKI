@@ -9,6 +9,6 @@ navigation:
 
 指定需要等待的界面即可。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/waitinterfaceclose/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/waitinterfaceclose/image.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/waitinterfaceclose/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/waitinterfaceclose/image-1.png)

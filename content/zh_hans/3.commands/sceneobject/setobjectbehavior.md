@@ -13,10 +13,10 @@ navigation:
 
 设置过程中是有一个预览窗口的，所以设置起来也是非常方便。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/backtotitlepage/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/backtotitlepage/image.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/backtotitlepage/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/backtotitlepage/image-1.png)
 
 ## 效果
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/backtotitlepage/1.gif)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/backtotitlepage/1.gif)

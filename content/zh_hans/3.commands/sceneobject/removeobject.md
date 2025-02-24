@@ -13,4 +13,4 @@ navigation:
 
 所以称为暂时移除。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/removeobject/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/removeobject/image.png)

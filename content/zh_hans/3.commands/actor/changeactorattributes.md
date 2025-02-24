@@ -11,4 +11,4 @@ navigation:
 
 例: 指定角色 `1-伊斯特` 增加经验值 `2000`
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/actor/changeactorattributes/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/actor/changeactorattributes/image.png)

@@ -19,9 +19,9 @@ navigation:
 
 比如借助条件分歧来判断是否拥有某种道具。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image-1.png)
 
 ## 游戏开关
 
@@ -29,6 +29,6 @@ navigation:
 
 比如可以获取玩家是否是在移动端上玩游戏。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image-2.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image-2.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image-3.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/switchs/image-3.png)

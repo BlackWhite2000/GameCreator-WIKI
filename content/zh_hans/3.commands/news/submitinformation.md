@@ -13,19 +13,19 @@ navigation:
 
 因为是需要玩家输入内容，所以使用可输入文本组件来创建输入框。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-1.png)
 
 ### 设置获取输入值
 
 直接以类别字符串，然后获取这个表格界面上的组件属性即可。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-2.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-2.png)
 
 最终是获取以下三个值
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-3.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-3.png)
 
 获取的值将会分别赋值到`输入值0`、`输入值1`、`输入值2`上。对应类别前面的数字。
 
@@ -35,21 +35,21 @@ navigation:
 
 在打开表格输入界面后面写上等待玩家提交信息，这样后续的事件只有等玩家提交信息后才会继续执行。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-4.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-4.png)
 
 之后在表格输入界面找个提交按钮，写上提交信息即可。执行完毕是否要关闭界面，就取决于自己的实际需求了。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-5.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-5.png)
 
 ### 游戏效果
 
 玩家开始填写
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-6.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-6.png)
 
 点击提交后，成功弹出了刚才输入的值。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-7.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/submitinformation/image-7.png)
 
 ## 输入值是临时变量
 

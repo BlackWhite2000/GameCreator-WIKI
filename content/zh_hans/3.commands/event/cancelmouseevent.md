@@ -13,6 +13,6 @@ navigation:
 
 选择对应变量，执行事件即可
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/event/cancelmouseevent/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/event/cancelmouseevent/image.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/event/cancelmouseevent/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/event/cancelmouseevent/image-1.png)

@@ -11,7 +11,7 @@ navigation:
 
 你可以像使用word文档一样轻松的使用它
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/1.png)
 
 ## 名称
 
@@ -19,11 +19,11 @@ navigation:
 
 也支持显示变量，如图中的`[@s1]`表示编号为1的字符串变量。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/2.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/2.png)
 
 关于变量如何调用，可通过插入了解。内容区调用变量的方法也同理。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/3.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/3.png)
 
 ## 气泡对话(漫画对话框模式)
 
@@ -33,7 +33,7 @@ navigation:
 
 指定希望跟随的场景对象即可。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/4.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/4.png)
 
 但是使用漫画对话框的情况下，最好调整好样式。
 
@@ -41,21 +41,21 @@ navigation:
 
 如： 
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/5.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/5.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/6.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/6.png)
 
 模板默认预设里提供了漫画对话框模式下专用的样式，可供参考：
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/7.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/7.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/8.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/8.png)
 
 ## 对话框样式
 
 对话最终的样式排版都取决于指定的对话样式。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/9.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/9.png)
 
 ## 自定义对话框样式
 
@@ -63,13 +63,13 @@ navigation:
 
 直接选择对应组件然后替换素材、修改位置即可。步骤全程可视化，所以请大胆尝试。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/10.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/10.png)
 
 ## 预览漫画模式
 
 开启预览漫画模式可以获取行走图来当参考目标。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/11.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/11.png)
 
 
 ## 对话与选项一起出现
@@ -78,13 +78,13 @@ navigation:
 
 而如果希望同时出现也很简单，只需要使用文字效果 `跳过本次对话` 即可
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/12.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/12.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/13.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/13.png)
 
 ## 预览对话
 
 开启预览对话可以直接在指令界面中预览游戏的效果。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/news/showdialog/14.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/showdialog/14.png)
 

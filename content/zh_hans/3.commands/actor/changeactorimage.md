@@ -9,4 +9,4 @@ navigation:
 
 指定角色 `1-伊斯特` 修改头像、行走图、战斗图为 `狼女` 形象
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/actor/changeactorimage/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/actor/changeactorimage/image.png)

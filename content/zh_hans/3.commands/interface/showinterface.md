@@ -13,4 +13,4 @@ navigation:
 
 在游戏中绝大部分的打开界面都是通过此指令实现的。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/showinterface/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/showinterface/image.png)

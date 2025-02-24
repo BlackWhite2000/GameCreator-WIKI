@@ -9,8 +9,8 @@ navigation:
 
 直接指定对应音频文件即可。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/audio/playbgs/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/audio/playbgs/image.png)
 
 播放的音量大小基于指定音频文件时打开的音乐资源管理器右侧这里。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/audio/playbgs/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/audio/playbgs/image-1.png)

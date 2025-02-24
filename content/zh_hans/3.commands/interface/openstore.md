@@ -9,8 +9,8 @@ navigation:
 
 通过填写售卖的物品/数量/价格即可。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/openstore/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/openstore/image.png)
 
 之后只要触发了这个指令，就会自动打开商店界面。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/interface/openstore/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/openstore/image-1.png)

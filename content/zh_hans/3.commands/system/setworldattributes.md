@@ -9,4 +9,4 @@ navigation:
 
 根据出现的设置来修改即可，每个模板出现的可设置项都不同。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/system/setworldattributes/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/system/setworldattributes/image.png)

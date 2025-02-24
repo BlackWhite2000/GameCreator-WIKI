@@ -23,7 +23,7 @@ GameCreator 文档库
   :::
 
   :::div{class="mt-16"}
-    ![](https://assbak.gcw.wiki/gcw/image/zh_hans/getting-started/2.aboutgc/100.png)
+    ![](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/getting-started/2.aboutgc/100.png)
   :::
 ::
 

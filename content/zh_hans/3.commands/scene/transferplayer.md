@@ -13,13 +13,13 @@ navigation:
 
 ②：鼠标左键来选择玩家传送后的位置
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/scene/transferplayer/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/transferplayer/image.png)
 
 ## 变量模式
 
 除了直接选择外，也支持使用 [数值变量](../gameprogress/numbervariables)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/scene/transferplayer/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/transferplayer/image-1.png)
 
 | 名称      | 说明                                                                    |
 | --------- | ----------------------------------------------------------------------- |

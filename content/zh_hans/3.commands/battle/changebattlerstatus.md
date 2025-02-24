@@ -11,7 +11,7 @@ navigation:
 
 例: 给 `敌方队伍编号 1` 附加状态 `中毒`
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/battle/changebattlerstatus/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/battle/changebattlerstatus/image.png)
 
 ## 强制附加
 

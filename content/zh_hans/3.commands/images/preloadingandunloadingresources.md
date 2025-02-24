@@ -16,7 +16,7 @@ navigation:
 
 尤其是如果要发布到在线平台上，则更要考虑预加载的问题。因为线上游玩的话，用户的加载速度是取决于宽带的。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image.png)
 
 ### 加载进度条
 
@@ -24,9 +24,9 @@ navigation:
 
 通常会指定 `滑块组件` 的属性 `value`
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image-1.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image-1.png)
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image-2.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image-2.png)
 
 ## 卸载资源
 
@@ -35,4 +35,4 @@ navigation:
 
 通过卸载资源，可以将已经加载的资源从缓存中清除掉。
 
-![alt text](https://assbak.gcw.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image-3.png)
+![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/preloadingandunloadingresources/image-3.png)
