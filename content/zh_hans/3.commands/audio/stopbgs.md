@@ -9,4 +9,4 @@ navigation:
 
 直接使用即可，支持设置淡出效果。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/audio/stopbgs/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/audio/stopbgs/image.png)

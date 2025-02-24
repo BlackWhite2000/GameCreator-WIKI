@@ -9,6 +9,6 @@ navigation:
 
 直接设置旋转度即可，支持过渡
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/rotatescenecamera/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/rotatescenecamera/image.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/rotatescenecamera/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/rotatescenecamera/image-1.png)

@@ -9,7 +9,7 @@ navigation:
 
 通过指定动画即可将动画显示在场景地图上。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/showanimation/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/images/showanimation/image.png)
 
 ## 开启可视化预览
 
@@ -17,9 +17,9 @@ navigation:
 
 点击事件页上的这个按钮可以开启事件预览模式，这样就可以可视化预览游戏中的效果。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/showanimation/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/images/showanimation/image-1.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/showanimation/image-2.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/images/showanimation/image-2.png)
 
 ## 编号
 
@@ -29,10 +29,10 @@ navigation:
 
 如下图中，显示动画编号是1，显示图片编号是2。所以显示图片层级比显示动画高。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/showanimation/image-3.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/images/showanimation/image-3.png)
 
 ## 高级设定
 
 开启高级设定，可以将指定源变为指定变量。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/images/showanimation/image-4.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/images/showanimation/image-4.png)

@@ -7,15 +7,15 @@ navigation:
 
 ## 使用
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/event/commonevent/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/commonevent/image.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/event/commonevent/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/commonevent/image-1.png)
 
 ## 实时修改
 
 打开事件库界面后，可以直接对事件页增减指令
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/event/commonevent/1.gif)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/commonevent/1.gif)
 
 ## 独立事件
 
@@ -23,4 +23,4 @@ navigation:
 
 就像排队一样，另外起了一支队伍去排队。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/event/commonevent/image-3.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/event/commonevent/image-3.png)

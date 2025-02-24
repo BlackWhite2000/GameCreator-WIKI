@@ -9,4 +9,4 @@ navigation:
 
 如果指令执行在事件页、事件库，则只会停止对应事件页、事件库。不会对外部事件产生影响。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/logic/exiteventprocessing/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/exiteventprocessing/image.png)

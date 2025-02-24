@@ -17,13 +17,13 @@ navigation:
 
 这样的话可以方便管理被克隆的场景对象，有点类似游戏中的作者房间。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image.png)
 
 然后在这个地图上设定希望克隆的场景对象。
 
 克隆对象会把克隆的场景对象携带的属性/事件等等设定都克隆上，比如下图中场景对象的显示对象指令也会一起被克隆。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-1.png)
 
 ### 设定克隆参数
 
@@ -31,15 +31,15 @@ navigation:
 
 然后指定被克隆的场景对象编号。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-2.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-2.png)
 
 接下来设置场景对象克隆后的坐标即可。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-3.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-3.png)
 
 ## 效果
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/1.gif)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/1.gif)
 
 
 ## 其他参数
@@ -50,10 +50,10 @@ navigation:
 
 如果想清楚知道克隆后的对象编号可以通过绑定变量来实现。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-4.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-4.png)
 
 ### 生成对象后执行事件
 
 克隆对象生成后，如果希望还能执行事件可以在此处事件页上写事件。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-5.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/sceneobject/cloneobject/image-5.png)

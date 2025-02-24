@@ -9,6 +9,6 @@ navigation:
 
 执行标签跳转前，请确保事件页上已执行了指令 [标签](./label)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/logic/jumptolabel/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/jumptolabel/image.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/logic/jumptolabel/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/logic/jumptolabel/image-1.png)

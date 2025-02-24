@@ -9,6 +9,6 @@ navigation:
 
 顾名思义，一个纯描述性指令，方便说明事件页上的功能用。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/comment/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/news/comment/image.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/news/comment/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/news/comment/image-1.png)

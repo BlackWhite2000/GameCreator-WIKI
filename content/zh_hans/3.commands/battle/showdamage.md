@@ -11,4 +11,4 @@ navigation:
 
 例: 在 `敌方队伍编号 1` 的角色上显示物理伤害 `999999` 的动画效果
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/battle/showdamage/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/battle/showdamage/image.png)

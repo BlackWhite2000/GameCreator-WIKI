@@ -13,15 +13,15 @@ navigation:
 
 如下图，原本显示界面的透明度是1，移动界面这里改成了0。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-1.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-2.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-2.png)
 
 ## 效果
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/1.gif)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/1.gif)
 
 ## 开启可视化预览
 
@@ -29,18 +29,18 @@ navigation:
 
 **非常推荐开启可视化预览来进行操作，这样直接在预览区域拖拽即可。全程所见即所得。**
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-3.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-3.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-4.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-4.png)
 
 ## 持续帧数
 
 持续帧数等于过渡需要的时间
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-5.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-5.png)
 
 ## 高级设定
 
 开启高级设定，可以将指定源变为指定变量。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-6.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/interface/moveinterface/image-6.png)

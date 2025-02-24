@@ -9,6 +9,6 @@ navigation:
 
 支持实时预览，根据自己实际情况来调整色调即可
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/tintscene/1.gif)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/tintscene/1.gif)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/tintscene/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/tintscene/image-1.png)

@@ -11,7 +11,7 @@ navigation:
 
 但是想做到自动存档的话，可以通过指令来实现。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/system/save/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/system/save/image.png)
 
 ## 全局数据
 

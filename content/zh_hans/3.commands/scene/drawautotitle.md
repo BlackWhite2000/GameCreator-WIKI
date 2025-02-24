@@ -11,7 +11,7 @@ navigation:
 
 指定自动元件后，直接填写对应图层以及场景的格子坐标信息即可。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/drawautotitle/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/drawautotitle/image.png)
 
 ## 图层
 
@@ -19,4 +19,4 @@ navigation:
 
 如果无法确定自己图块层编号是多少，可以鼠标悬停对应图块层来查看tips信息，最前面的 2 便是编号。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/drawautotitle/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/drawautotitle/image-1.png)

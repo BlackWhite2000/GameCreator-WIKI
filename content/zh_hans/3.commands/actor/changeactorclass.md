@@ -11,4 +11,4 @@ navigation:
 
 例: 将 `1-伊斯特` 的职业更改为 `1-剑士`
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/actor/changeactorclass/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/changeactorclass/image.png)

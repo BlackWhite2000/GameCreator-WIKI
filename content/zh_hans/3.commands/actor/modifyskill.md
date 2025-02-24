@@ -13,4 +13,4 @@ navigation:
 
 例: 修改了角色 `伊斯特` 拥有的技能 `刃龙卷` 的图标
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/actor/modifyskill/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/modifyskill/image-1.png)

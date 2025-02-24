@@ -11,13 +11,13 @@ navigation:
 
 指定对应类型即可删除该类型的全部材质
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/effect/deletematerial/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/effect/deletematerial/image.png)
 
 ### 删除指定材质
 
 可以指定对应材质效果来进行删除
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/effect/deletematerial/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/effect/deletematerial/image-1.png)
 
 #### 材质通道
 

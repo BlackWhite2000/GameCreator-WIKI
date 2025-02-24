@@ -25,8 +25,8 @@ useHead({
 useSeoMeta({
   titleTemplate: `%s - ${seo?.siteName}`,
   ogSiteName: seo?.siteName,
-  ogImage: 'https://cdn.gcw.wiki.wiki/gcw/social-card.png',
-  twitterImage: 'https://cdn.gcw.wiki.wiki/gcw/social-card.png',
+  ogImage: 'https://cdn.gcw.wiki/gcw/social-card.png',
+  twitterImage: 'https://cdn.gcw.wiki/gcw/social-card.png',
   twitterCard: 'summary_large_image'
 })
 

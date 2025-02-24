@@ -21,32 +21,32 @@ navigation:
 
 通过不同的计算方式来得到最终的结果
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image.png)
 
 比如这里是等于，因此这个数值变量的值等于12
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-1.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-1.png)
 
 如果在这个基础上使用加法的话，最终会得到的会是 `12+1=13`
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-2.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-2.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-3.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-3.png)
 
 数值变量的值可以互相嵌套，数值变量等于数值变量。
 
 也支持随机数，通过设定最小与最大来生成这个范围内的随机数。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-4.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-4.png)
 
 ## 游戏数值
 
 如果使用游戏数值的话，可以获取游戏中关于数字的值。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-5.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-5.png)
 
 比如获取玩家当前的金币数量是多少。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-6.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-6.png)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-7.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/gameprogress/numbervariables/image-7.png)

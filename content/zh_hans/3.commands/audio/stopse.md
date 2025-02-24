@@ -9,4 +9,4 @@ navigation:
 
 直接使用即可。
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/audio/stopse/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/audio/stopse/image.png)

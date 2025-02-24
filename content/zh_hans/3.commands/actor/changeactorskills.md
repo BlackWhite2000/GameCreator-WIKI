@@ -11,10 +11,10 @@ navigation:
 
 例: 指定角色 `1-伊斯特` 学习 `3-十字斩`
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/actor/changeactorskills/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/changeactorskills/image.png)
 
 ## 遗忘技能
 
 例: 指定角色 `1-伊斯特` 遗忘 `4-刃龙卷`
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/actor/changeactorskills/image-2.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/changeactorskills/image-2.png)

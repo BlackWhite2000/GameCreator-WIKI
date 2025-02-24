@@ -9,6 +9,6 @@ navigation:
 
 支持实时预览，根据自己实际情况来调整震动效果即可
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/shakescene/1.gif)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/shakescene/1.gif)
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/scene/shakescene/2.gif)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/scene/shakescene/2.gif)

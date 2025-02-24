@@ -13,4 +13,4 @@ navigation:
 
 例: 修改了角色 `伊斯特` 的头像图片
 
-![alt text](https://cdn.gcw.wiki.wiki/gcw/image/zh_hans/commands/actor/changeactorattribute/image.png)
+![alt text](https://cdn.gcw.wiki/gcw/image/zh_hans/commands/actor/changeactorattribute/image.png)
