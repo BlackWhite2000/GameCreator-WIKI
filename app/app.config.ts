@@ -19,7 +19,7 @@ export default defineAppConfig({
     }
   },
   seo: {
-    siteName: 'GC学习文档 - 记录零基础游戏制作教程，轻松实现你的游戏创作梦'
+    siteName: 'GameCreator WIKI - 记录零基础游戏制作教程，轻松实现你的游戏创作梦'
   },
   header: {
     title: '',
